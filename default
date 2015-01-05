@@ -3,17 +3,16 @@
 
 #variables to customize the minute paper
 
-scale = 500000 #chart scale
-speedMin = 100
-speedMax = 160
+scale = 250000 #chart scale
+speedMin = 40
+speedMax = 80
 yStart = -110 # y-coord of the first speed line
-textSize = 4
-
+textSize = 5
 
 #SCRIPT STARTS HERE
 
 dist = speedMax - speedMin
-distance = 250 / dist
+distance = 230 / dist
 
 for i <- speedMin to speedMax {
   y1 = yStart
@@ -31,30 +30,35 @@ for i <- speedMin to speedMax {
   speed2mm = speed2min * 100
 
   # scale down to the paper scale
-  scaleDiv = scale / 10
-  s1 = speed1mm / scaleDiv
-  s2 = speed2mm / scaleDiv
+  s1 = speed1mm / scale 
+  s2 = speed2mm / scale 
+  a = scale / 400
+  extend = a / i
+  
+  #minute lines - right side
+  
+  for j <- 1 to extend {
+    line s1 * j y1 s2 * j y2
+  }
 
-  #minute lines
-  min = -720 / s1
-  max = 800 / s1
-  for j <- min to max {
-    spacing1 = j * s1
-    spacing2 = j * s2
-    line spacing1 / 10 y1 spacing2 / 10 y2
+  s1l = s1 * -1
+  s2l = s2 * -1
+
+  #minute lines - left side
+  for j <- 0 to extend {
+    line s1l * j y1 s2l * j y2
   }
 
   line -80 y1 80 y1 #speed lines
-
   text -90 y1 textSize i #show knots
-
   yStart = yStart + distance
 }
 
 line -80 yStart 80 yStart #last speed line
-text -90 130 textSize speedMax #last speed text
-text -89 -130 9 "MINUTE PAPER FOR PILOTS       MAP SCALE 1:" #show the minute paper scale
-text 50 -130 9 scale #show the minute paper scale
+text -90 120 textSize speedMax #last speed text
+text -89 -120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale
+text 14 -120 7 scale #show the minute paper scale
+text -80 125 5 "disable fit to page when printing!"
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
 line 90 60 90 70
@@ -66,3 +70,5 @@ text 82 57 5 "5 cm"
 text 81 116 5 "print"
 text 81 120 5 "scale "
 text 81 124 5 "check"
+
+text 0 125 5 "generated at www.siigna.com"
