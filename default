@@ -9,12 +9,11 @@ SAVING TO PNG: Right click and choose "save image as..."
 */
 
 #draw a line from (-80,80) to (80,80):
-line -80 80 80 80
+line -80 -80 80 -80
+circle 0 -80 20 
+text -10 -82 8 "hello world" #draw a text: height 8, message "hello world" 
 
-#draw a text with the text height 8, reading "hello world" 
-text 0 -82 8 "hello world"
-
-The sample script below shows how a for-loop is used:
+#The sample script below shows how a for-loop is used:
 
 
 for i <- -2 to 3 {
