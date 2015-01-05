@@ -1,0 +1,74 @@
+#vfr flight plan for pilots
+
+#number of waypoints. range: 0 to 7
+numberOfWaypoints = 7
+
+#ENTER DATA
+tas = 60
+text -17 -112 7 "reg. OY-9262" #A/C REGISTRATION
+text -37 -96 6 "pilot.: John Doe" #PILOT
+text 18 -133 7 "from: EKRD" #FROM
+text 50 -133 7 "to: EKVH" #FROM
+
+#WAYPOINT TITLES
+text -30 -87 8 "WPT 1" #WPT 1
+text -30 -58 8 "WPT 2" #WPT 2
+text -30 -29 8 "WPT 3" #WPT 3
+text -30  0 8 "WPT 4" #WPT 4
+text -30 29 8 "WPT 5" #WPT 5
+text -30 58 8 "__" #WPT 6
+text -30 87 8 "__" #WPT 7
+
+#DATA FOR EACH WAYPOINT
+for i <- 0 to numberOfWaypoints{
+  
+
+  #ENTER DATA FOR EACH WAYPOINT HERE 
+ 
+  a = i * 29 # wpt entry height
+
+  #LINEART
+  line -40 a - 94 90 a - 94 #main seperators
+  line -40 a - 94.3 90 a - 94.3 #main seperators
+  line -40 a - 84 50 a - 84 #sub 1
+  line -40 a - 74 50 a - 74 #sub 1
+ 
+  #grid
+  for j <- 0 to 4 {
+    q = 18 * j
+    line q - 22 a - 84 q - 22 a - 65
+  }
+
+  #VALUES
+
+  #notes
+  text 52 a - 91 4 "shorthand/notes"
+
+  text -39 a - 86 11 i + 1 #wpt number
+}
+line 50 -94 50 130 #right line
+
+#HEADER
+text -18 -132 8 "VFR FLIGHT"
+text -18 -125 10 "PLANNER"
+line 14 -135 14 -94 #vertLine
+
+text 18 -125 7 "TAS:"
+text 32 -125 7 tas
+text 38 -125 7 "KTS"
+
+#footer
+line -40 110 90 110
+
+#fuel calculation
+text -38 114 4 "fuel consumption"
+
+#glide
+
+#LEFT SIDE: frequencies 
+line -41 -136 -41 130
+text -90 -134 4 "frequencies"
+
+for i <- -13 to 14 {
+  line -90 i * 9.7 -43 i * 9.7
+}
