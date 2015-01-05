@@ -3,13 +3,19 @@
 
 #variables to customize the minute paper
 
-scale = 250000 #chart scale
+##############################################
+#USER INPUT:
+
+scale = 250000
 speedMin = 40
 speedMax = 80
+
+##############################################
+
+#SCRIPT STARTS HERE:
+
 yStart = -110 # y-coord of the first speed line
 textSize = 5
-
-#SCRIPT STARTS HERE
 
 dist = speedMax - speedMin
 distance = 230 / dist
