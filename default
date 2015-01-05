@@ -1,5 +1,5 @@
 /* this is a WIP of a mock-up of our concept for what we call the "Internet of Digital Design" (IDD) .
-    Please read through this quick intro:
+   Please read through this quick intro:
 NAVIGATION: pan and zoom with the mouse center wheel
 DRAWING: Currently lines, text, and circles are supported
 COMMENTING: anything within dash and * is ignored.
