@@ -1,7 +1,7 @@
 #vfr flight plan for pilots
 
 #number of waypoints. range: 0 to 7
-numberOfWaypoints = 7
+numberOfWaypoints = 2
 
 #ENTER DATA
 tas = 60
@@ -26,13 +26,6 @@ dist2 = 30
 windVel2 = 15
 windDir2 = 300
 
-#WPT3
-text -30 -29 8 "WPT 3" #WPT 3
-text -30  0 8 "WPT 4" #WPT 4
-text -30 29 8 "WPT 5" #WPT 5
-text -30 58 8 "__" #WPT 6
-text -30 87 8 "__" #WPT 7
-
 #WAYPOINT DATA DISPLAY AND CALCULATION
 
 #WPT1
@@ -56,7 +49,7 @@ for i <- 0 to numberOfWaypoints{
 
   #LINEART
   line -40 a - 94 90 a - 94 #main seperators
-  line -40 a - 94.3 90 a - 94.3 #main seperators
+  line -40 a - 64.7 90 a - 64.7 #main seperators
   line -40 a - 84 50 a - 84 #sub 1
   line -40 a - 74 50 a - 74 #sub 1
  
@@ -114,8 +107,47 @@ text -38 114 4 "fuel consumption"
 
 #LEFT SIDE: frequencies 
 line -41 -136 -41 130
-text -90 -134 4 "frequencies"
+text -90 -133 7 "FREQUENCIES"
 
-for i <- -13 to 14 {
-  line -90 i * 9.7 -43 i * 9.7
+for i <- -18 to 19 {
+  line -80 i * 7 -43 i * 7
 }
+
+step = 7
+offset  = 4
+
+#INFORMATION
+text -90 offset + step * -18 5 "information"
+text -80 offset + step * -17 5 "COIF EAST: 127.075"
+text -80 offset + step * -16 5 "COIF WEST: 129.475"
+
+#APPROACH
+text -90 offset + step * -13 5 "approach"
+text -80 offset + step * -11 5 "AAR APP: 127.075"
+text -80 offset + step * -10 5 "KAR APP: 129.475"
+text -80 offset + step * -9 5 "AAL APP: 129.475"
+text -80 offset + step * -8 5 "BLL APP: 129.475"
+
+#TOWER
+text -90 offset + step * -5 5 "tower"
+text -80 offset + step * -4 5 "AAR TWR: 127.075"
+text -80 offset + step * -3 5 "KAR TWR: 129.475"
+text -80 offset + step * -2 5 "AAL TWR: 129.475"
+text -80 offset + step * -1 5 "BLL TWR: 129.475"
+
+#RADIO
+text -90 offset + step * 2 5 "radio"
+text -80 offset + step * 3 5 "EKRD: 127.075"
+text -80 offset + step * 4 5 "EKVB: 129.475"
+text -80 offset + step * 5 5 "EKHS: 129.475"
+text -80 offset + step * 6 5 "EKVH: 129.475"
+text -80 offset + step * 7 5 "EKSV: 129.475"
+
+#ATIS
+text -90 offset + step * 11 5 "atis"
+text -80 offset + step * 12 5 "EKBI: 127.075"
+text -80 offset + step * 13 5 "EKYT: 129.475"
+
+#EMERGENCY
+text -90 offset + step * 15 5 "emergency"
+text -80 offset + step * 16 5 "IAD: 121.5"
