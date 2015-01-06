@@ -1,0 +1,5 @@
+#RADIAL MENU MOCK-UP
+#this is a mock-up of the radial menu, used to extract the coordinates for generating it parametrically
+
+circle 0 0 100
+circle 0 0 80
