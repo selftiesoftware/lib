@@ -1,4 +1,7 @@
-line -50 -50 -50 50
-line -50 50 50 50
-line 50 50 50 -50
-line 50 -50 -50 -50
+pos = 20
+neg = -20
+
+line neg neg neg pos
+line neg pos pos pos
+line pos pos pos neg
+line pos neg neg neg
