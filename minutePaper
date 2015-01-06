@@ -14,7 +14,7 @@ speedMax = 80
 
 #SCRIPT STARTS HERE:
 
-yStart = -110 # y-coord of the first speed line
+yStart = 110 # y-coord of the first speed line
 textSize = 5
 
 dist = speedMax - speedMin
@@ -22,7 +22,7 @@ distance = 230 / dist
 
 for i <- speedMin to speedMax {
   y1 = yStart
-  y2 = yStart + distance
+  y2 = yStart - distance
 
   speed1 = i * 1852
   speed1div = speed1
@@ -57,24 +57,24 @@ for i <- speedMin to speedMax {
 
   line -80 y1 80 y1 #speed lines
   text -90 y1 textSize i #show knots
-  yStart = yStart + distance
+  yStart = yStart - distance
 }
 
 line -80 yStart 80 yStart #last speed line
-text -90 120 textSize speedMax #last speed text
-text -89 -120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale
-text 14 -120 7 scale #show the minute paper scale
-text -80 125 5 "disable fit to page when printing!"
+text -90 -120 textSize speedMax #last speed text
+text -89 120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale
+text 14 120 7 scale #show the minute paper scale
+text -80 -125 5 "disable fit to page when printing!"
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
-line 90 60 90 70
-line 90 80 90 90
-line 90 100 90 110
-line 86 110 90 110
-line 86 60 90 60
-text 82 57 5 "5 cm"
-text 81 116 5 "print"
-text 81 120 5 "scale "
-text 81 124 5 "check"
+line 90 -60 90 -70
+line 90 -80 90 -90
+line 90 -100 90 -110
+line 86 -110 90 -110
+line 86 -60 90 -60
+text 82 -57 5 "5 cm"
+text 81 -116 5 "print"
+text 81 -120 5 "scale "
+text 81 -124 5 "check"
 
-text 0 125 5 "generated at www.siigna.com"
+text 0 -125 5 "generated at www.siigna.com"

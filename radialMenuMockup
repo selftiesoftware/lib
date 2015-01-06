@@ -1,12 +1,34 @@
 #RADIAL MENU MOCK-UP
-#circle 0 0 100
-#circle 0 0 80
-circle 0 0 16
 
-circle 90 0 16
-circle 0 90 16
-circle -90 0 16
-circle 0 -90 16
+circle 0 0 16 #CENTER
+circle 90 0 16 #EAST
+circle 0 90 16 #SOUTH
+circle -90 0 16 #WEST
+circle 0 -90 16 #NORTH
+
+textSize = 10
+
+text -4 2 textSize "file"
+text -9 -89 textSize "create"
+text 79 2 textSize "helpers"
+text -10 92 textSize "modify"
+text -105 2 textSize "properties"
+
+text 34 -79 7 "polyline"
+text -44 -79 7 "text"
+
+text 72 -45 7 "snap"
+text 74 -39 7 "on/off"
+text 76  41 7 "track"
+text 70 48 7 "on/off"
+
+text 35 82 7 "move"
+text -47 82 7 "scale"
+
+text -85 -40 7 "color"
+
+text -85  39 7 "line"
+text -85 45 7 "weight"
 
 #LOWER HALF
 
