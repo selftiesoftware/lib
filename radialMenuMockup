@@ -1,5 +1,18 @@
 #RADIAL MENU MOCK-UP
-#this is a mock-up of the radial menu, used to extract the coordinates for generating it parametrically
+#circle 0 0 100
+#circle 0 0 80
+circle 0 0 16
 
-circle 0 0 100
-circle 0 0 80
+circle 90 0 16
+circle 0 90 16
+circle -90 0 16
+circle 0 -90 16
+
+arc 0 0 100 0.26 0.7 #15 deg to 40 deg
+arc 0 0 80 0.26 0.7 #15 deg to 40 deg
+line 78 20 96 25
+line 61 52 76 65
+
+
+arc 0 0 100 0.87 1.3 #50 deg to 75 deg
+arc 0 0 80 0.87 1.3 #50 deg to 75 deg
