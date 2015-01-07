@@ -7,7 +7,7 @@
 #USER INPUT:
 
 scale = 250000
-speedMin = 40
+speedMin = 50
 speedMax = 80
 
 ##############################################
