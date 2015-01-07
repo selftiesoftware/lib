@@ -62,7 +62,7 @@ for i <- speedMin to speedMax {
 
 line -80 yStart 80 yStart #last speed line
 text -90 -120 textSize speedMax #last speed text
-text -89 120 12 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale
+text -89 120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale
 text 14 120 7 scale #show the minute paper scale
 text -80 -125 5 "disable fit to page when printing!"
 
