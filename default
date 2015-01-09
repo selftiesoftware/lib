@@ -8,7 +8,7 @@ PRINTING: PDF (A4) currently scale 1:1 is supported
 SAVING TO PNG: Right click and choose "save image as..."
 */
 
-#draw a line from (-80,80) to (80,80):
+#draw a line from (-80,-80) to (80,-80):
 line -80 -80 80 -80
 circle 0 -80 20 
 text -10 -82 8 "hello world" #draw a text: height 8, message "hello world" 
