@@ -6,7 +6,7 @@ dist = 6
 
 line 0 -140 0 140
 
-text col1x1 y size "XIV"
+text col1x1 y size "XXXIV"
 text col1x2 y size "230V - fatninger"
  y = y - dist 
 text col1x1 y size "XIV"
@@ -84,6 +84,9 @@ text col1x2 y size "gevindskærer"
 text col1x1 y size "XXII"
 text col1x2 y size "gipsskruer"
  y = y - dist 
+text col1x1 y size "XXXIV"
+text col1x2 y size "halogenspots" 
+y = y - dist 
 text col1x1 y size "XXX"
 text col1x2 y size "hængelåse"
  y = y - dist 
