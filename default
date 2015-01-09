@@ -14,7 +14,7 @@ circle 80 110 10
 
 
 #draw a text:
-text -10 -122 8 "these lines were generated using loops!"
+text -35 -126 8 "these lines and curves were generated using loops!"
 
 #The sample scripts below shows how for-loops are used:
 for i <- -1 to 3 {
@@ -25,7 +25,7 @@ for i <- -1 to 3 {
 
 #another loop using bezier curves:
 for i <- -1 to 3 {
-    for j <- -1 to 8 {
-        bezierCurve -90 j * 18 90 i * 27 40 i * 20 -50 j * 4
+    for j <- -1 to 7 {
+        bezierCurve -90 j * 18 233 i * 27 40 i * -120 -50 j * 19
     }
 }
