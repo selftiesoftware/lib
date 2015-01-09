@@ -5,22 +5,22 @@ numberOfWaypoints = 2
 
 #ENTER DATA
 tas = 60
-text -17 -112 7 "reg. OY-9262" #A/C REGISTRATION
-text -37 -96 6 "pilot.: John Doe" #PILOT
-text 18 -133 7 "from: EKRD" #FROM
-text 50 -133 7 "to: EKVH" #FROM
+text -17 112 7 "reg. OY-9262" #A/C REGISTRATION
+text -37 96 6 "pilot.: John Doe" #PILOT
+text 18 133 7 "from: EKRD" #FROM
+text 50 133 7 "to: EKVH" #FROM
 
 #WAYPOINT DATA
 
 #WPT1
-text -30 -87 8 "WPT 1" #TITLE OF WPT 1
+text -30 87 8 "WPT 1" #TITLE OF WPT 1
 TT1 = 40
 dist1 = 50
 windVel1 = 15
 windDir1 = 300
 
 #WPT2
-text -30 -58 8 "WPT 2" #WPT 2
+text -30 58 8 "WPT 2" #WPT 2
 TT2 = 90
 dist2 = 30
 windVel2 = 15
@@ -29,79 +29,79 @@ windDir2 = 300
 #WAYPOINT DATA DISPLAY AND CALCULATION
 
 #WPT1
-text -33 -75.5 8 TT1
-text 2 -75.5 8 dist1
-text 3 -91 4 windVel1
-text 9 -91 4 windDir1
+text -33 75.5 8 TT1
+text 2 75.5 8 dist1
+text 3 91 4 windVel1
+text 9 91 4 windDir1
 
 #WCA
 
 #WPT2
-text -33 -46.5 8 TT2
-text 2 -46.5 8 dist2
+text -33 46.5 8 TT2
+text 2 46.5 8 dist2
 dA = dist1 + dist2
-text 2 -37 8 dA
+text 2 37 8 dA
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
  
-  a = i * 29 # wpt entry height
+  a = i * -29 # wpt entry height
 
   #LINEART
-  line -40 a - 94 90 a - 94 #main seperators
-  line -40 a - 64.7 90 a - 64.7 #main seperators
-  line -40 a - 84 50 a - 84 #sub 1
-  line -40 a - 74 50 a - 74 #sub 1
+  line -40 a + 94 90 a + 94 #main seperators
+  line -40 a + 64.7 90 a + 64.7 #main seperators
+  line -40 a + 84 50 a + 84 #sub 1
+  line -40 a + 74 50 a + 74 #sub 1
  
   #explanations
-  text -40 a - 81 3.5 "TT"
-  text -21 a - 81 3.5 "TH"
-  text -40 a - 71 3.5 "WCA"
-  text -21 a - 71 4.5 "MH"
-  text  -3 a - 81 3.5 "DIST,INT"
-  text  -3 a - 71 3.5 "DIST,ACC"
-  text  15 a - 91 3.5 "GS"
-  text  15 a - 81 3.5 "TIME,INT"
-  text  15 a - 71 3.5 "TIME,ACC"
-  text  33 a - 91 3.5 "ETA"
-  text  33 a - 81 3.5 "ATA"
-  text  33 a - 71 3.5 "DIFF"
+  text -40 a + 81 3.5 "TT"
+  text -21 a + 81 3.5 "TH"
+  text -40 a + 71 3.5 "WCA"
+  text -21 a + 71 4.5 "MH"
+  text  -3 a + 81 3.5 "DIST,INT"
+  text  -3 a + 71 3.5 "DIST,ACC"
+  text  15 a + 91 3.5 "GS"
+  text  15 a + 81 3.5 "TIME,INT"
+  text  15 a + 71 3.5 "TIME,ACC"
+  text  33 a + 91 3.5 "ETA"
+  text  33 a + 81 3.5 "ATA"
+  text  33 a + 71 3.5 "DIFF"
 
-  text  -3 a - 91 3.5 "wind:        /"
+  text  -3 a + 91 3.5 "wind:        /"
 
   #grid
-  line 32 a - 94 32 a - 84 #GS / WIND sep lines
-  line 14 a - 94 14 a - 84 #GS / WIND sep lines
+  line 32 a + 94 32 a + 84 #GS / WIND sep lines
+  line 14 a + 94 14 a + 84 #GS / WIND sep lines
   for j <- 0 to 4 {
     q = 18 * j
-    line q - 22 a - 84 q - 22 a - 65
+    line q - 22 a + 84 q - 22 a + 65
   }
 
   #VALUES
 
   #notes
-  text 52 a - 91 4 "shorthand/notes"
+  text 52 a + 91 4 "shorthand/notes"
 
-  text -39 a - 86 11 i + 1 #wpt number
+  text -39 a + 86 11 i + 1 #wpt number
 }
-line 50 -94 50 130 #right line
+line 50 94 50 -130 #right line
 
 #HDG CALCULATIONS
 
 #HEADER
-text -18 -132 8 "VFR FLIGHT"
-text -18 -125 10 "PLANNER"
-line 14 -135 14 -94 #vertLine
+text -18 132 8 "VFR FLIGHT"
+text -18 125 10 "PLANNER"
+line 14 135 14 94 #vertLine
 
-text 18 -125 7 "TAS:"
-text 32 -125 7 tas
-text 38 -125 7 "KTS"
+text 18 125 7 "TAS:"
+text 32 125 7 tas
+text 38 125 7 "KTS"
 
 #footer
-line -40 110 90 110
+line -40 -110 90 -110
 
 #fuel calculation
-text -38 114 4 "fuel consumption"
+text -38 -114 4 "fuel consumption"
 
 #glide
 
