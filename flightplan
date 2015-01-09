@@ -106,48 +106,48 @@ text -38 114 4 "fuel consumption"
 #glide
 
 #LEFT SIDE: frequencies 
-line -41 -136 -41 130
-text -90 -133 7 "FREQUENCIES"
+line -41 136 -41 -130
+text -90 133 7 "FREQUENCIES"
 
 for i <- -18 to 19 {
-  line -80 i * 7 -43 i * 7
+  line -80 i * -7 -43 i * -7
 }
 
 step = 7
-offset  = 4
+offset  = -4
 
 #INFORMATION
-text -90 offset + step * -18 5 "information"
-text -80 offset + step * -17 5 "COIF EAST: 127.075"
-text -80 offset + step * -16 5 "COIF WEST: 129.475"
+text -90 offset + step * 18 5 "information"
+text -80 offset + step * 17 5 "COIF EAST: 127.075"
+text -80 offset + step * 16 5 "COIF WEST: 129.475"
 
 #APPROACH
-text -90 offset + step * -13 5 "approach"
-text -80 offset + step * -11 5 "AAR APP: 127.075"
-text -80 offset + step * -10 5 "KAR APP: 129.475"
-text -80 offset + step * -9 5 "AAL APP: 129.475"
-text -80 offset + step * -8 5 "BLL APP: 129.475"
+text -90 offset + step * 13 5 "approach"
+text -80 offset + step * 11 5 "AAR APP: 127.075"
+text -80 offset + step * 10 5 "KAR APP: 129.475"
+text -80 offset + step * 9 5 "AAL APP: 129.475"
+text -80 offset + step * 8 5 "BLL APP: 129.475"
 
 #TOWER
-text -90 offset + step * -5 5 "tower"
-text -80 offset + step * -4 5 "AAR TWR: 127.075"
-text -80 offset + step * -3 5 "KAR TWR: 129.475"
-text -80 offset + step * -2 5 "AAL TWR: 129.475"
-text -80 offset + step * -1 5 "BLL TWR: 129.475"
+text -90 offset + step * 5 5 "tower"
+text -80 offset + step * 4 5 "AAR TWR: 127.075"
+text -80 offset + step * 3 5 "KAR TWR: 129.475"
+text -80 offset + step * 2 5 "AAL TWR: 129.475"
+text -80 offset + step * 1 5 "BLL TWR: 129.475"
 
 #RADIO
-text -90 offset + step * 2 5 "radio"
-text -80 offset + step * 3 5 "EKRD: 127.075"
-text -80 offset + step * 4 5 "EKVB: 129.475"
-text -80 offset + step * 5 5 "EKHS: 129.475"
-text -80 offset + step * 6 5 "EKVH: 129.475"
-text -80 offset + step * 7 5 "EKSV: 129.475"
+text -90 offset + step * -2 5 "radio"
+text -80 offset + step * -3 5 "EKRD: 127.075"
+text -80 offset + step * -4 5 "EKVB: 129.475"
+text -80 offset + step * -5 5 "EKHS: 129.475"
+text -80 offset + step * -6 5 "EKVH: 129.475"
+text -80 offset + step * -7 5 "EKSV: 129.475"
 
 #ATIS
-text -90 offset + step * 11 5 "atis"
-text -80 offset + step * 12 5 "EKBI: 127.075"
-text -80 offset + step * 13 5 "EKYT: 129.475"
+text -90 offset + step * -11 5 "atis"
+text -80 offset + step * -12 5 "EKBI: 127.075"
+text -80 offset + step * -13 5 "EKYT: 129.475"
 
 #EMERGENCY
-text -90 offset + step * 15 5 "emergency"
-text -80 offset + step * 16 5 "IAD: 121.5"
+text -90 offset + step * -15 5 "emergency"
+text -80 offset + step * -16 5 "IAD: 121.5"
