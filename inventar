@@ -2,165 +2,231 @@ y = 130
 col1x1 = -80
 col1x2 = -60
 size = 6
-dist = 8
+dist = 6
 
-text col1x1 y size "XIV" text col1x2 y size "230V - fatninger"
- y = y - dist 
-text col1x1 y size "XIV" text col1x2 y size "230V - pærer"
- y = y - dist 
-text col1x1 y size "XIV" text col1x2 y size "230V - stil"
- y = y - dist 
-text col1x1 y size "XXV" text col1x2 y size "AUDIO - ledninger"
- y = y - dist 
-text col1x1 y size "XXV" text col1x2 y size "AUDIO - stik"
- y = y - dist 
-text col1x1 y size "XXX" text col1x2 y size "beslag"
- y = y - dist 
-text col1x1 y size "XI" text col1x2 y size "BITS"
- y = y - dist 
-text col1x1 y size "XVIII" text col1x2 y size "blyanter"
- y = y - dist 
-text col1x1 y size "XII" text col1x2 y size "bolte"
- y = y - dist 
-text col1x1 y size "XI" text col1x2 y size "BOR"
- y = y - dist 
-text col1x1 y size "XII" text col1x2 y size "clips"
- y = y - dist 
-text col1x1 y size "XXXII" text col1x2 y size "CNC - ledninger"
- y = y - dist 
-text col1x1 y size "VI" text col1x2 y size "computerledninger"
- y = y - dist 
-text col1x1 y size "VI" text col1x2 y size "computerstik"
- y = y - dist 
-text col1x1 y size "I" text col1x2 y size "cykelgrej"
- y = y - dist 
-text col1x1 y size "XX" text col1x2 y size "dyvler"
- y = y - dist 
-text col1x1 y size "XVII" text col1x2 y size "dørstopper"
- y = y - dist 
-text col1x1 y size "XV" text col1x2 y size "elektronik - boards"
- y = y - dist 
-text col1x1 y size "XV" text col1x2 y size "elektronik - ledninger"
- y = y - dist 
-text col1x1 y size "XV" text col1x2 y size "elektronik - multimeter"
- y = y - dist 
-text col1x1 y size "XIX" text col1x2 y size "engangshandsker"
- y = y - dist 
-text col1x1 y size "XIX" text col1x2 y size "engangskitler"
- y = y - dist 
-text col1x1 y size "XXII" text col1x2 y size "flisekryds"
- y = y - dist 
-text col1x1 y size "XX" text col1x2 y size "fræsejern"
- y = y - dist 
-text col1x1 y size "XXIX" text col1x2 y size "gevindskærer"
- y = y - dist 
-text col1x1 y size "XXII" text col1x2 y size "gipsskruer"
- y = y - dist 
-text col1x1 y size "XXX" text col1x2 y size "hængelåse"
- y = y - dist 
-text col1x1 y size "XVII" text col1x2 y size "isoleringsbånd"
- y = y - dist 
-text col1x1 y size "XVI" text col1x2 y size "kabelclips"
- y = y - dist 
-text col1x1 y size "XVII" text col1x2 y size "kit kiler"
- y = y - dist 
-text col1x1 y size "XXIII" text col1x2 y size "klemmer"
- y = y - dist 
-text col1x1 y size "XXIX" text col1x2 y size "klude"
- y = y - dist 
-text col1x1 y size "III" text col1x2 y size "lader til boremaskine"
- y = y - dist 
-text col1x1 y size "III" text col1x2 y size "lader til hækklipper"
- y = y - dist 
-text col1x1 y size "XXXIII" text col1x2 y size "LAN kabel"
- y = y - dist 
-text col1x1 y size "XXIII" text col1x2 y size "lim"
- y = y - dist 
-text col1x1 y size "XXXI" text col1x2 y size "limpistol"
- y = y - dist 
-text col1x1 y size "XXXI" text col1x2 y size "limstave"
- y = y - dist 
-text col1x1 y size "XXXI" text col1x2 y size "loddekolbe"
- y = y - dist 
+line 0 -130 0 130
 
-y = 130
-col1x1 = 20
-col1x2 = 60
+text col1x1 y size "XIV"
+text col1x2 y size "230V - fatninger"
+ y = y - dist 
+text col1x1 y size "XIV"
+text col1x2 y size "230V - pærer"
+ y = y - dist 
+text col1x1 y size "XIV"
+text col1x2 y size "230V - stil"
+ y = y - dist 
+text col1x1 y size "XXV"
+text col1x2 y size "AUDIO - ledninger"
+ y = y - dist 
+text col1x1 y size "XXV"
+text col1x2 y size "AUDIO - stik"
+ y = y - dist 
+text col1x1 y size "XXX"
+text col1x2 y size "beslag"
+ y = y - dist 
+text col1x1 y size "XI"
+text col1x2 y size "BITS"
+ y = y - dist 
+text col1x1 y size "XVIII"
+text col1x2 y size "blyanter"
+ y = y - dist 
+text col1x1 y size "XII"
+text col1x2 y size "bolte"
+ y = y - dist 
+text col1x1 y size "XI"
+text col1x2 y size "BOR"
+ y = y - dist 
+text col1x1 y size "XII"
+text col1x2 y size "clips"
+ y = y - dist 
+text col1x1 y size "XXXII"
+text col1x2 y size "CNC - ledninger"
+ y = y - dist 
+text col1x1 y size "VI"
+text col1x2 y size "computerledninger"
+ y = y - dist 
+text col1x1 y size "VI"
+text col1x2 y size "computerstik"
+ y = y - dist 
+text col1x1 y size "I"
+text col1x2 y size "cykelgrej"
+ y = y - dist 
+text col1x1 y size "XX"
+text col1x2 y size "dyvler"
+ y = y - dist 
+text col1x1 y size "XVII"
+text col1x2 y size "dørstopper"
+ y = y - dist 
+text col1x1 y size "XV"
+text col1x2 y size "elektronik - boards"
+ y = y - dist 
+text col1x1 y size "XV"
+text col1x2 y size "elektronik - ledninger"
+ y = y - dist 
+text col1x1 y size "XV"
+text col1x2 y size "elektronik - multimeter"
+ y = y - dist 
+text col1x1 y size "XIX"
+text col1x2 y size "engangshandsker"
+ y = y - dist 
+text col1x1 y size "XIX"
+text col1x2 y size "engangskitler"
+ y = y - dist 
+text col1x1 y size "XXII"
+text col1x2 y size "flisekryds"
+ y = y - dist 
+text col1x1 y size "XX"
+text col1x2 y size "fræsejern"
+ y = y - dist 
+text col1x1 y size "XXIX"
+text col1x2 y size "gevindskærer"
+ y = y - dist 
+text col1x1 y size "XXII"
+text col1x2 y size "gipsskruer"
+ y = y - dist 
+text col1x1 y size "XXX"
+text col1x2 y size "hængelåse"
+ y = y - dist 
+text col1x1 y size "XVII"
+text col1x2 y size "isoleringsbånd"
+ y = y - dist 
+text col1x1 y size "XVI"
+text col1x2 y size "kabelclips"
+ y = y - dist 
+text col1x1 y size "XVII"
+text col1x2 y size "kit kiler"
+y = y - dist 
+text col1x1 y size "XXIII"
+text col1x2 y size "klemmer"
+ y = y - dist 
+text col1x1 y size "XXIX"
+text col1x2 y size "klude"
+ y = y - dist 
+text col1x1 y size "III"
+text col1x2 y size "lader til boremaskine"
+ y = y - dist 
+text col1x1 y size "III"
+text col1x2 y size "lader til hækklipper"
+
 
 #LEFT
-text col1x1 y size "XXXI" text col1x2 y size "loddetin"
- y = y - dist 
-text col1x1 y size "XXVI" text col1x2 y size "modelmaterialer - metal"
- y = y - dist 
-text col1x1 y size "XXVI" text col1x2 y size "modelmaterialer - plastic"
- y = y - dist 
-text col1x1 y size "XXVI" text col1x2 y size "modelmaterialer - træ"
- y = y - dist 
-text col1x1 y size "XXX" text col1x2 y size "møbelbeslag"
- y = y - dist 
-text col1x1 y size "II" text col1x2 y size "møbelhjul"
- y = y - dist 
-text col1x1 y size "II" text col1x2 y size "møbelskruer"
- y = y - dist 
-text col1x1 y size "XII" text col1x2 y size "møtrikker"
- y = y - dist 
-text col1x1 y size "XVIII" text col1x2 y size "målebånd"
- y = y - dist 
-text col1x1 y size "VII" text col1x2 y size "olie"
- y = y - dist 
-text col1x1 y size "XVI" text col1x2 y size "opladere"
- y = y - dist 
-text col1x1 y size "VIII" text col1x2 y size "rawplugs"
- y = y - dist 
-text col1x1 y size "V" text col1x2 y size "RC batterier"
- y = y - dist 
-text col1x1 y size "V" text col1x2 y size "RC ladere"
- y = y - dist 
-text col1x1 y size "XVIII" text col1x2 y size "reb"
- y = y - dist 
-text col1x1 y size "VII" text col1x2 y size "rustbeskyttelse"
- y = y - dist 
-text col1x1 y size "XIII" text col1x2 y size "sandpapir"
- y = y - dist 
-text col1x1 y size "XXII" text col1x2 y size "savklinger"
- y = y - dist 
-text col1x1 y size "XXII" text col1x2 y size "skraber"
- y = y - dist 
-text col1x1 y size "XXIX" text col1x2 y size "skruemaskine - tilbehør"
- y = y - dist 
-text col1x1 y size "X" text col1x2 y size "SKRUER - 0-50mm"
- y = y - dist 
-text col1x1 y size "IX" text col1x2 y size "SKRUER - 50-100 mm"
- y = y - dist 
-text col1x1 y size "XXIII" text col1x2 y size "skruetvinger"
- y = y - dist 
-text col1x1 y size "XIII" text col1x2 y size "slibeklods"
- y = y - dist 
-text col1x1 y size "XVIII" text col1x2 y size "snor"
- y = y - dist 
-text col1x1 y size "XXVII" text col1x2 y size "spotlys"
- y = y - dist 
-text col1x1 y size "XII" text col1x2 y size "spændeskiver"
- y = y - dist 
-text col1x1 y size "XVI" text col1x2 y size "strips"
- y = y - dist 
-text col1x1 y size "IV" text col1x2 y size "strømforsyninger"
- y = y - dist 
-text col1x1 y size "XXVIII" text col1x2 y size "støvmasker"
- y = y - dist 
-text col1x1 y size "XIII" text col1x2 y size "stålbørste"
- y = y - dist 
-text col1x1 y size "XXII" text col1x2 y size "svamp"
- y = y - dist 
-text col1x1 y size "XXI" text col1x2 y size "tape"
- y = y - dist 
-text col1x1 y size "XXIX" text col1x2 y size "topnøgler"
- y = y - dist 
-text col1x1 y size "VI" text col1x2 y size "tv ledninger"
- y = y - dist 
-text col1x1 y size "VI" text col1x2 y size "tv stik"
- y = y - dist 
-text col1x1 y size "XXIX" text col1x2 y size "twist"
- y = y - dist 
-text col1x1 y size "XVII" text col1x2 y size "tætningslister"
+y = 130
+col1x1 = 10
+col1x2 = 30
 
+text col1x1 y size "XXXI"
+text col1x2 y size "loddekolbe" 
+ y = y - dist 
+text col1x1 y size "XXXI"
+text col1x2 y size "loddetin"
+ y = y - dist 
+text col1x1 y size "XXVI"
+text col1x2 y size "modelmaterialer - metal"
+ y = y - dist 
+text col1x1 y size "XXVI"
+text col1x2 y size "modelmaterialer - plastic"
+ y = y - dist 
+text col1x1 y size "XXVI"
+text col1x2 y size "modelmaterialer - træ"
+ y = y - dist 
+text col1x1 y size "XXX"
+text col1x2 y size "møbelbeslag"
+ y = y - dist 
+text col1x1 y size "II"
+text col1x2 y size "møbelhjul"
+ y = y - dist 
+text col1x1 y size "II"
+text col1x2 y size "møbelskruer"
+ y = y - dist 
+text col1x1 y size "XII"
+text col1x2 y size "møtrikker"
+ y = y - dist 
+text col1x1 y size "XVIII"
+text col1x2 y size "målebånd"
+ y = y - dist 
+text col1x1 y size "VII"
+text col1x2 y size "olie"
+ y = y - dist 
+text col1x1 y size "XVI"
+text col1x2 y size "opladere"
+ y = y - dist 
+text col1x1 y size "VIII"
+text col1x2 y size "rawplugs"
+ y = y - dist 
+text col1x1 y size "V"
+text col1x2 y size "RC batterier"
+ y = y - dist 
+text col1x1 y size "V"
+text col1x2 y size "RC ladere"
+ y = y - dist 
+text col1x1 y size "XVIII"
+text col1x2 y size "reb"
+ y = y - dist 
+text col1x1 y size "VII"
+text col1x2 y size "rustbeskyttelse"
+ y = y - dist 
+text col1x1 y size "XIII"
+text col1x2 y size "sandpapir"
+ y = y - dist 
+text col1x1 y size "XXII"
+text col1x2 y size "savklinger"
+ y = y - dist 
+text col1x1 y size "XXII"
+text col1x2 y size "skraber"
+ y = y - dist 
+text col1x1 y size "XXIX"
+text col1x2 y size "skruemaskine - tilbehør"
+ y = y - dist 
+text col1x1 y size "X"
+text col1x2 y size "SKRUER - 0-50mm"
+ y = y - dist 
+text col1x1 y size "IX"
+text col1x2 y size "SKRUER - 50-100 mm"
+ y = y - dist 
+text col1x1 y size "XXIII"
+text col1x2 y size "skruetvinger"
+ y = y - dist 
+text col1x1 y size "XIII"
+text col1x2 y size "slibeklods"
+ y = y - dist 
+text col1x1 y size "XVIII"
+text col1x2 y size "snor"
+ y = y - dist 
+text col1x1 y size "XXVII"
+text col1x2 y size "spotlys"
+ y = y - dist 
+text col1x1 y size "XII"
+text col1x2 y size "spændeskiver"
+ y = y - dist 
+text col1x1 y size "XVI"
+text col1x2 y size "strips"
+ y = y - dist 
+text col1x1 y size "IV"
+text col1x2 y size "strømforsyninger"
+ y = y - dist 
+text col1x1 y size "XXVIII"
+text col1x2 y size "støvmasker"
+ y = y - dist 
+text col1x1 y size "XIII"
+text col1x2 y size "stålbørste"
+ y = y - dist 
+text col1x1 y size "XXII"
+text col1x2 y size "svamp"
+ y = y - dist 
+text col1x1 y size "XXI"
+text col1x2 y size "tape"
+ y = y - dist 
+text col1x1 y size "XXIX"
+text col1x2 y size "topnøgler"
+ y = y - dist 
+text col1x1 y size "VI"
+text col1x2 y size "tv ledninger"
+ y = y - dist 
+text col1x1 y size "VI"
+text col1x2 y size "tv stik"
+ y = y - dist 
+text col1x1 y size "XXIX"
+text col1x2 y size "twist"
+ y = y - dist 
+text col1x1 y size "XVII"
+text col1x2 y size "tætningslister"
