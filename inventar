@@ -64,10 +64,7 @@ text col1x1 y size "XX"
 text col1x2 y size "elektronik - LED"
 y = y - dist 
 text col1x1 y size "XV"
-text col1x2 y size "elektronik - ledninger"
- y = y - dist 
-text col1x1 y size "XV"
-text col1x2 y size "elektronik - multimeter"
+text col1x2 y size "multimeter"
  y = y - dist 
 text col1x1 y size "XXVII"
 text col1x2 y size "elmotorer"
@@ -90,7 +87,7 @@ text col1x2 y size "fræsejern"
 text col1x1 y size "XXIX"
 text col1x2 y size "gevindskærer"
  y = y - dist 
-text col1x1 y size "XXII"
+text col1x1 y size "IX"
 text col1x2 y size "gipsskruer"
  y = y - dist 
 text col1x1 y size "XXXIV"
