@@ -1,5 +1,5 @@
-bezierCurve 0 0 20 10 30 50 40 -10
+bezierCurve 0 0 20 40 30 50 40 10
 
-line 0 0 20 -10
-line 20 -10 30 -50
-line 30 -50 40 -10
+line 0 0 20 40
+line 20 40 30 50
+line 30 50 40 10
