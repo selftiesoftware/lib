@@ -1,1 +1,7 @@
-text 0 0 20 "test"
+y = -130
+col1x1 = -180
+col1x2 = -20
+size = 6
+
+text(col1x1 y size "XIV") 
+text(col1x2 y size "230V - fatninger")
