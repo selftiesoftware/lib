@@ -1,0 +1,26 @@
+text -90 120 9 "A Manifesto for the Internet of Digital Design"
+
+y = 110
+dist = 6
+text -90 y 6 "The term “Internet of Things” (IOT) is well known." 
+
+y = y - dist
+
+text -90 y 6 "It refers to the digital link to – and between – physical objects. While IOT would mean that objects become"
+
+
+y = y - dist
+
+text -90 y 6 "smarter and able to optimize and share resources intelligently, the information which represents the design"
+
+y = y - dist
+
+text -90 y 6 "of these objects is all but intelligent. Design strategies are business secrets and designs are proprietary things."
+
+y = 80
+
+text -90 y 6 "What if, on the contrary, designs were open source, conceived as an open, web-based process?" 
+
+y = y - dist
+
+text -90 y 6 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design."
