@@ -131,19 +131,22 @@ text col1x2 y size "lader til boremaskine"
  y = y - dist 
 text col1x1 y size "III"
 text col1x2 y size "lader til hækklipper"
+ y = y - dist
 text col1x1 y size "XXXI"
 text col1x2 y size "loddekolbe" 
  y = y - dist 
 text col1x1 y size "XXXI"
 text col1x2 y size "loddetin"
  y = y - dist
+text col1x1 y size "XXVI"
+text col1x2 y size "modelmaterialer - metal"
+ y = y - dist 
+
 #LEFT ########################################
 y = 130
 col1x1 = 10
 col1x2 = 30
-text col1x1 y size "XXVI"
-text col1x2 y size "modelmaterialer - metal"
- y = y - dist 
+
 text col1x1 y size "XXVI"
 text col1x2 y size "modelmaterialer - plastic"
  y = y - dist 
