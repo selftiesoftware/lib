@@ -57,3 +57,36 @@ text -80 y 8 " and available to all to push adaptive and resource-saving designs
 y = y - dist
 
 text -80 y 8 "As shown in this functional RepoCad' prototype it could happen like this:"
+
+y = 10
+dist = 4
+
+text -80 y 5 "STEP 1 - CREATION: an online drawing app should be made: RepoCad (earlier: Siigna)" 
+
+y = y - dist
+
+text -80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of a design tool" 
+
+
+y = y - dist
+
+text -80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of
+Wikipediae"
+
+y = y - dist
+y = -10
+
+
+text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemeted where the scripts" 
+
+y = y - dist
+
+text -80 y 5 "defining drawings are coupled to online versioning. This means nothing is" 
+
+y = y - dist
+
+text -80 y 5 "ever lost - but far more importantly it means designs can fork in to different"
+
+y = y - dist
+
+text -80 y 5 " branches, evolve, and maybe merge again at a later stage. "
