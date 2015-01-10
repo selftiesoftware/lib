@@ -47,13 +47,13 @@ text -80 y 6 "• With this concept we can fully utilizes the power of the inter
 
 
 y = 45
-dist = 8
-text -80 y 8 "We need to start making both the tools, the process and the resulting design"
+dist = 6.5
+text -80 y 8 "We need to make design tools, process results open source, dynamic,"
 
 y = y - dist
 
-text -80 y 8 "open source, optimized, and dynamic in order to facilitate better"
+text -80 y 8 " and available to all to push adaptive and resource-saving designs globally."
 
 y = y - dist
 
-text -80 y 8 "adaptation, resource-saving and evolution. It could happen like this:"
+text -80 y 8 "As shown in this functional RepoCad' prototype it could happen like this:"
