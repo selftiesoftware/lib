@@ -1,6 +1,6 @@
 #vfr flight plan for pilots
 
-#NOTE: THIS SCRIPT WILL BE FINALISED WHEN FUNCTIONS ARE IMPLEMENTED (needed to compute wind correction angles and ground speed)
+#NOTE: THIS SCRIPT WILL BE FINALIZED WHEN FUNCTIONS ARE IMPLEMENTED (needed to do cos and sin operations and to compute wind correction angles and ground speed)
 
 #number of waypoints. range: 0 to 7
 numberOfWaypoints = 2
