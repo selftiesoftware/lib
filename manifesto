@@ -45,7 +45,7 @@ internet"
 
 y = 35
 dist = 8
-text -80 y 8 "We need to start makeing both the tools, the process and the resulting design"
+text -80 y 8 "We need to start making both the tools, the process and the resulting design"
 
 y = y - dist
 
