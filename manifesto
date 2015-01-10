@@ -45,13 +45,12 @@ internet"
 
 y = 35
 dist = 8
-text -80 y 8 "We need to start make both the design process and the resulting design"
+text -80 y 8 "We need to start makeing both the tools, the process and the resulting design"
 
 y = y - dist
 
-text -80 y 8 "open source, parametric, dynamic in order to
-create designs better suited for"
+text -80 y 8 "open source, optimized, and dynamic in order to facilitate better"
 
 y = y - dist
 
-text -80 y 8 "adaptation, optimization and evolution, as defined in the following statements:"
+text -80 y 8 "adaptation, resource-saving and evolution. It could happen like this:"
