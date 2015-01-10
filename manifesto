@@ -99,7 +99,7 @@ text -80 y 5 " branches, evolve, and maybe merge again at a later stage. "
 ################################################
 
 y = y - dist
-y = -5
+y = -35
 
 #TODO - write this...
 text -80 y 5 "STEP 3 - EXPANSION: 3d is implemented, and post-processors for CAM fabrication" 
