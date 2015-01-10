@@ -4,7 +4,7 @@ col1x2 = -60
 size = 6
 dist = 6
 
-line 0 -140 0 130
+line 0 -130 0 135
 
 text col1x1 y size "XXXIV"
 text col1x2 y size "230V - fatninger"
