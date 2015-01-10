@@ -1,49 +1,52 @@
-text -90 120 9 "A Manifesto for the Internet of Digital Design"
+text -90 120 8 "A Manifesto for the Internet of Digital Design"
 
 text 0 130 4 "by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture"
 
 y = 110
-dist = 6
-text -90 y 6 "The term “Internet of Things” (IOT) is well known." 
+dist = 5
+text -90 y 5.5 "The term “Internet of Things” (IOT) is well known." 
 
 y = y - dist
 
-text -90 y 6 "It refers to the digital link to – and between – physical objects. While IOT would mean that objects become"
+text -90 y 5.5 "It refers to the digital link to – and between – physical objects. While IOT would mean that objects become"
 
 
 y = y - dist
 
-text -90 y 6 "smarter and able to optimize and share resources intelligently, the information which represents the design"
+text -90 y 5.5 "smarter and able to optimize and share resources intelligently, the information which represents the design"
 
 y = y - dist
 
-text -90 y 6 "of these objects is all but intelligent. Design strategies are business secrets and designs are proprietary things."
+text -90 y 5.5 "of these objects is all but intelligent. Design strategies are business secrets and designs are proprietary things."
 
-y = 80
+y = 85
 
-text -90 y 6 "What if, on the contrary, designs were open source, conceived as an open, web-based process?" 
-
-y = y - dist
-
-text -90 y 6 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design."
+text -90 y 5.5 "What if, on the contrary, designs were open source, conceived as an open, web-based process?" 
 
 y = y - dist
 
-y = 60
-
-text -80 y 6 "• Much of the technology is already available. It just needs to be put together - hence the project 'RepoCad'"
+text -90 y 5.5 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design (IOD)."
 
 y = y - dist
 
-text -80 y 6 "• the design strategies already exist, known as parametric and computational design"
+y = 70
+
+text -80 y 6 "• Two available means need to merge to enable IOD: web-based and versioned drawing and -library "
 
 y = y - dist
 
-text -80 y 6 "• With these preconditions we can develop a design tool that fully utilizes the power of the
-internet"
+text -80 y 6 "• Hence the name 'RepoCad' as 'Repository' is used describe open storage of the bits and bytes"
+
+y = y - dist
+
+text -80 y 6 "which make up the software - and the designs"
+
+y = y - dist
+
+text -80 y 6 "• With this concept we can fully utilizes the power of the internet in new architecture and design"
 
 
-y = 35
+y = 45
 dist = 8
 text -80 y 8 "We need to start making both the tools, the process and the resulting design"
 
