@@ -1,5 +1,7 @@
 text -90 120 9 "A Manifesto for the Internet of Digital Design"
 
+text 0 130 4 "by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture"
+
 y = 110
 dist = 6
 text -90 y 6 "The term “Internet of Things” (IOT) is well known." 
@@ -24,3 +26,18 @@ text -90 y 6 "What if, on the contrary, designs were open source, conceived as a
 y = y - dist
 
 text -90 y 6 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design."
+
+y = y - dist
+
+y = 60
+
+text -80 y 6 "• Much of the technology is already available. It just needs to be put together - hence the project 'RepoCad'"
+
+y = y - dist
+
+text -80 y 6 "• the design strategies already exist, known as parametric and computational design"
+
+y = y - dist
+
+text -80 y 6 "• With these preconditions we can develop a design tool that fully utilizes the power of the
+internet"
