@@ -123,10 +123,10 @@ text -80 offset + step * 16 5 "COIF WEST: 129.475"
 
 #APPROACH
 text -90 offset + step * 13 5 "approach"
-text -80 offset + step * 11 5 "AAR APP: 127.075"
-text -80 offset + step * 10 5 "KAR APP: 129.475"
-text -80 offset + step * 9 5 "AAL APP: 129.475"
-text -80 offset + step * 8 5 "BLL APP: 129.475"
+text -80 offset + step * 12 5 "AAR APP: 127.075"
+text -80 offset + step * 11 5 "KAR APP: 129.475"
+text -80 offset + step * 10 5 "AAL APP: 129.475"
+text -80 offset + step * 9 5 "BLL APP: 129.475"
 
 #TOWER
 text -90 offset + step * 5 5 "tower"
