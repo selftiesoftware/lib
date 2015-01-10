@@ -74,17 +74,19 @@ y = y - dist
 
 text -80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of Wikipedia"
 
+#TODO: describe import statements.., both tools and drawings can be imported. But drawings can also be done manually, using icons that reflect the available scripts/functions. When added manually, the corresponding code is added to the script. Mimicking object oriented programming. 
+
 ################################################
 
 y = y - dist
 y = -5
 
 
-text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemeted where the scripts" 
+text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemented where the scripts" 
 
 y = y - dist
 
-text -80 y 5 "defining drawings are coupled to online versioning. This means nothing is" 
+text -80 y 5 "defining drawings - and tools - are coupled with online versioning. This means nothing is" 
 
 y = y - dist
 
@@ -93,3 +95,13 @@ text -80 y 5 "ever lost - but far more importantly it means designs can fork in 
 y = y - dist
 
 text -80 y 5 " branches, evolve, and maybe merge again at a later stage. "
+
+################################################
+
+y = y - dist
+y = -5
+
+#TODO - write this...
+text -80 y 5 "STEP 3 - EXPANSION: 3d is implemented, and post-processors for CAM fabrication" 
+
+y = y - dist
