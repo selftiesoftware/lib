@@ -1,4 +1,4 @@
-text -90 120 8 "A Manifesto for the Internet of Digital Design"
+text -90 120 8 "A Manifesto for the Internet of Digital Design - WORK IN PROGRESS"
 
 text 0 130 4 "by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture"
 
@@ -58,7 +58,9 @@ y = y - dist
 
 text -80 y 8 "As shown in this functional RepoCad' prototype it could happen like this:"
 
-y = 10
+#################################################
+
+y = 15
 dist = 4
 
 text -80 y 5 "STEP 1 - CREATION: an online drawing app should be made: RepoCad (earlier: Siigna)" 
@@ -70,11 +72,12 @@ text -80 y 5 "The design tool itself should be open source, free and run in a br
 
 y = y - dist
 
-text -80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of
-Wikipediae"
+text -80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of Wikipedia"
+
+################################################
 
 y = y - dist
-y = -10
+y = -5
 
 
 text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemeted where the scripts" 
