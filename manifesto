@@ -48,7 +48,7 @@ text -80 y 6 "• With this concept we can fully utilizes the power of the inter
 
 y = 45
 dist = 6.5
-text -80 y 8 "We need to make design tools, process results open source, dynamic,"
+text -80 y 8 "Design tools, process, and results must be open source and dynamic,"
 
 y = y - dist
 
