@@ -30,6 +30,9 @@ text col1x2 y size "BITS"
 text col1x1 y size "XVIII"
 text col1x2 y size "blyanter"
  y = y - dist 
+text col1x1 y size "XXVII"
+text col1x2 y size "blæsere"
+ y = y - dist 
 text col1x1 y size "XII"
 text col1x2 y size "bolte"
  y = y - dist 
@@ -62,6 +65,9 @@ text col1x2 y size "elektronik - boards"
  y = y - dist 
 text col1x1 y size "XX"
 text col1x2 y size "elektronik - LED"
+y = y - dist 
+text col1x1 y size "XXVII"
+text col1x2 y size "elektronik - ledning"
 y = y - dist 
 text col1x1 y size "XV"
 text col1x2 y size "multimeter"
@@ -168,6 +174,12 @@ text col1x2 y size "olie"
 text col1x1 y size "XVI"
 text col1x2 y size "opladere"
  y = y - dist 
+text col1x1 y size "XX"
+text col1x2 y size "pakgarn og salve"
+ y = y - dist 
+text col1x1 y size "XXVI"
+text col1x2 y size "plasticposer"
+ y = y - dist 
 text col1x1 y size "VIII"
 text col1x2 y size "rawplugs"
  y = y - dist 
@@ -189,6 +201,9 @@ text col1x2 y size "sandpapir"
 text col1x1 y size "XXII"
 text col1x2 y size "savklinger"
  y = y - dist 
+text col1x1 y size "XVI"
+text col1x2 y size "sikringer"
+ y = y - dist
 text col1x1 y size "XXII"
 text col1x2 y size "skraber"
  y = y - dist 
@@ -206,6 +221,9 @@ text col1x2 y size "skruetvinger"
  y = y - dist 
 text col1x1 y size "XIII"
 text col1x2 y size "slibeklods"
+ y = y - dist 
+text col1x1 y size "XIII"
+text col1x2 y size "sliberondel"
  y = y - dist 
 text col1x1 y size "XVIII"
 text col1x2 y size "snor"
@@ -254,3 +272,9 @@ text col1x2 y size "USB nøgler"
  y = y - dist 
 text col1x1 y size "XXXIII"
 text col1x2 y size "USB kabel"
+ y = y - dist 
+text col1x1 y size "XX"
+text col1x2 y size "vandslange-studser"
+ y = y - dist 
+text col1x1 y size "XX"
+text col1x2 y size "VVS fittings"
