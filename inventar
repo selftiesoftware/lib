@@ -16,16 +16,16 @@ text col1x1 y size "XXIV"
 text col1x2 y size "230V - stik"
  y = y - dist 
 text col1x1 y size "XXV"
-text col1x2 y size "AUDIO - ledninger"
+text col1x2 y size "audio - ledninger"
  y = y - dist 
 text col1x1 y size "XXV"
-text col1x2 y size "AUDIO - stik"
+text col1x2 y size "audio - stik"
  y = y - dist 
 text col1x1 y size "XXX"
 text col1x2 y size "beslag"
  y = y - dist 
 text col1x1 y size "XI"
-text col1x2 y size "BITS"
+text col1x2 y size "bits"
  y = y - dist 
 text col1x1 y size "XVIII"
 text col1x2 y size "blyanter"
@@ -37,7 +37,7 @@ text col1x1 y size "XII"
 text col1x2 y size "bolte"
  y = y - dist 
 text col1x1 y size "XI"
-text col1x2 y size "BOR"
+text col1x2 y size "bor"
  y = y - dist 
 text col1x1 y size "XII"
 text col1x2 y size "clips"
