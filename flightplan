@@ -5,7 +5,7 @@ numberOfWaypoints = 2
 
 #ENTER DATA
 tas = 60
-text -17 112 7 "reg. OY-9262" #A/C REGISTRATION
+text -17 112 7 "reg. OY-ABC" #A/C REGISTRATION
 text -37 96 6 "pilot.: John Doe" #PILOT
 text 18 133 7 "from: EKRD" #FROM
 text 50 133 7 "to: EKVH" #FROM
