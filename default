@@ -1,7 +1,31 @@
-line 0 100 60 100
-line 60 100 100 55
-line 100 55 100 0
-arc 0 0 100 4.65 0
+#draw a line from (-90,130) to (90,130):
 
-bezierCurve 0 100 55 100 100 55 100 0
+line -90 130 90 130
+circle 53 80 10 
 
+#draw a text:
+
+text -35 -126 8 "these lines and curves were generated using loops!"
+
+#The sample scripts below shows how for-loops are used:
+
+for i <- -4 to 3 {
+    for j <- 2 to 8 {
+        line -90 j * 18 90 i * 27
+    }
+}
+
+#another loop using bezier curves:
+for i <- -1 to 3 {
+    for j <- -1 to 3 {
+        startX = -90
+        startY = j * 18
+        control1X = 233
+        control1Y = i * 27
+        control2X = 33
+        control2Y = 177
+        endX = -15 * j
+        endY = 60      
+        bezierCurve startX startY control1X control1Y control2X control2Y endX endY
+    }
+}
