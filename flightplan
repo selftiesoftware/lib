@@ -3,7 +3,7 @@
 #NOTE: THIS SCRIPT WILL BE FINALIZED WHEN FUNCTIONS ARE IMPLEMENTED (needed to do cos and sin operations and to compute wind correction angles and ground speed)
 
 #number of waypoints. range: 0 to 7
-numberOfWaypoints = 2
+numberOfWaypoints = 7
 
 #ENTER DATA
 tas = 60
@@ -15,34 +15,34 @@ text 50 133 7 "to: EKVH" #FROM
 #WAYPOINT DATA
 
 #WPT1
-text -30 87 8 "WPT 1" #TITLE OF WPT 1
-TT1 = 40
-dist1 = 50
-windVel1 = 15
-windDir1 = 300
+#text -30 87 8 "WPT 1" #TITLE OF WPT 1
+#TT1 = 40
+#dist1 = 50
+#windVel1 = 15
+#windDir1 = 300
 
 #WPT2
-text -30 58 8 "WPT 2" #WPT 2
-TT2 = 90
-dist2 = 30
-windVel2 = 15
-windDir2 = 300
+#text -30 58 8 "WPT 2" #WPT 2
+#TT2 = 90
+#dist2 = 30
+#windVel2 = 15
+#windDir2 = 300
 
 #WAYPOINT DATA DISPLAY AND CALCULATION
 
 #WPT1
-text -33 75.5 8 TT1
-text 2 75.5 8 dist1
-text 3 91 4 windVel1
-text 9 91 4 windDir1
+#text -33 75.5 8 TT1
+#text 2 75.5 8 dist1
+#text 3 91 4 windVel1
+#text 9 91 4 windDir1
 
 #WCA
 
 #WPT2
-text -33 46.5 8 TT2
-text 2 46.5 8 dist2
-dA = dist1 + dist2
-text 2 37 8 dA
+#text -33 46.5 8 TT2
+#text 2 46.5 8 dist2
+#dA = dist1 + dist2
+#text 2 37 8 dA
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
@@ -96,7 +96,7 @@ text -18 125 10 "PLANNER"
 line 14 135 14 94 #vertLine
 
 text 18 125 7 "TAS:"
-text 32 125 7 tas
+#text 32 125 7 tas
 text 38 125 7 "KTS"
 
 #footer
