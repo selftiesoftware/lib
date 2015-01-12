@@ -5,8 +5,8 @@ height = 140
 length = 320
 
 #end
-x = -70
-y = -70
+x = -70 #lower left x
+y = -70 #lower left y
 
 c1x = x
 c1y = y 
@@ -18,6 +18,19 @@ c4x = c3x
 c4y = c1y
 
 line c1x c1y c2x c2y
-line c2x c2y c3x c3y
+line c2x c2y c3x - 110 c3y #top left
+arc c1x + width / 2 c2y 40 0 3.14 #cutout
+line c2x + 110 c2y c3x c3y #top right
 line c3x c3y c4x c4y
 line c4x c4y c1x c1y
+
+#holes 
+offsetX  = 10
+offsetY = 40
+circle x + offsetX y + offsetY 2
+circle x + offsetX c2y - offsetY 2
+
+circle c3x - offsetX y + offsetY 2
+circle c3x - offsetX c2y - offsetY 2
+
+circle x + width / 2 y + offsetX 2
