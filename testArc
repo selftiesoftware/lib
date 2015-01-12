@@ -1,0 +1,9 @@
+pi = 3.14
+
+arc 0 0 100 0 pi / 2
+
+arc 0 0 80 pi / 2 pi
+
+arc 0 0 60 pi pi + pi / 2
+
+arc 0 0 40 pi + pi / 2 2 * pi
