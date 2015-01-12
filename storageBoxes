@@ -3,20 +3,25 @@
 #PARAMETERS
 
 #GEOMETRY
-width = 140
+width = 120
 height = 140
 length = 280
 
-#HOLES
+#handle cut out width
+widthHole = 100
+
+#holes for zip-ties
 offsetX  = 10
 offsetY = 40
+
+################ START SCRIPT ##################
 
 text -80 120 15 "storage boxes"
 text -80 110 9 "(laser) cut from 2-3mm fiberboard/plywood and assemble with zip ties"
 text -80 100 9 "put wooden sticks (x-section 10 x 10mm) along inside edges "
 text -80 90 9 "and tighten zip ties around them, pulling two elements together"
 
-##################### ENDS #####################
+#### ENDS ####
 x = -70 #lower left x
 y = -70 #lower left y
 
@@ -32,10 +37,13 @@ c4x = c3x
 c4y = c1y
 
 #### FRONT ####
+holeL = c3x - widthHole
+holeR = c2x + widthHole
+d = holeR - holeL
 line c1x c1y c2x c2y
-line c2x c2y c3x - 110 c3y #top left
-arc c1x + width / 2 c2y 40 0 3.14 #cutout
-line c2x + 110 c2y c3x c3y #top right
+line c2x c2y holeL c3y #top left
+arc c1x + width / 2 c2y d / 2 0 3.14 #cutout
+line holeR c2y c3x c3y #top right
 line c3x c3y c4x c4y
 line c4x c4y c1x c1y
 
