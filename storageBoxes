@@ -1,11 +1,23 @@
 #storage boxes
 
-width = 80
-height = 100
+width = 140
+height = 140
 length = 320
 
-#bottom
-line -1 * width / 2 height / 2 width / 2 height / 2
-line -1 * width / 2 height / 2 -1 * width / 2 -70
-line -1 * width / 2 -70 width / 2 -70
-line width / 2 -70 width / 2 height / 2
+#end
+x = -70
+y = -70
+
+c1x = x
+c1y = y 
+c2x = x
+c2y = y + height
+c3x = x + width
+c3y = c2y
+c4x = c3x
+c4y = c1y
+
+line c1x c1y c2x c2y
+line c2x c2y c3x c3y
+line c3x c3y c4x c4y
+line c4x c4y c1x c1y
