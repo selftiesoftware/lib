@@ -67,19 +67,29 @@ text -80 y 5 "STEP 1 - CREATION: an online drawing app should be made: RepoCad (
 
 y = y - dist
 
-text -80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of a design tool" 
-
+text -80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of the design tool" 
 
 y = y - dist
 
 text -80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of Wikipedia"
 
-#TODO: describe import statements.., both tools and drawings can be imported. But drawings can also be done manually, using icons that reflect the available scripts/functions. When added manually, the corresponding code is added to the script. Mimicking object oriented programming. 
+y = y - dist
+
+text -80 y 5 "both tools and drawings should be import statements, linking to other online scripts." 
+
+y = y - dist
+
+text -80 y 5 "But manual editions of drawings should be allowed, in which the scripts/functions"
+
+
+y = y - dist
+
+text -80 y 5 "should be updated or added to the script. Mimicking object oriented programming." 
 
 ################################################
 
 y = y - dist
-y = -5
+y = -15
 
 
 text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemented where the scripts" 
