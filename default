@@ -1,7 +1,7 @@
 #draw a line from (-90,130) to (90,130):
 
 line -90 130 90 130
-circle 53 80 10 
+circle 58 80 5 
 
 #draw a text:
 
@@ -17,7 +17,7 @@ for i <- -4 to 3 {
 
 #another loop using bezier curves:
 for i <- -1 to 3 {
-    for j <- -1 to 3 {
+    for j <- -3 to 2 {
         startX = -90
         startY = j * 18
         control1X = 233
