@@ -12,7 +12,7 @@ offsetX  = 10
 offsetY = 40
 
 text -80 120 15 "storage boxes"
-text -80 110 9 "cut out and assemble with zip ties"
+text -80 110 9 "(laser) cut from 2-3mm fiberboard/plywood and assemble with zip ties"
 text -80 100 9 "put wooden sticks (x-section 10 x 10mm) along inside edges "
 text -80 90 9 "and tighten zip ties around them, pulling two elements together"
 
