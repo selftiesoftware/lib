@@ -11,9 +11,16 @@ length = 280
 offsetX  = 10
 offsetY = 40
 
+text -80 120 15 "storage boxes"
+text -80 110 9 "cut out and assemble with zip ties"
+text -80 100 9 "put wooden sticks (x-section 10 x 10mm) along inside edges "
+text -80 90 9 "and tighten zip ties around them, pulling two elements together"
+
 ##################### ENDS #####################
 x = -70 #lower left x
 y = -70 #lower left y
+
+text x y - 20 20 "front"
 
 c1x = x
 c1y = y 
@@ -42,6 +49,8 @@ circle x + width / 2 y + offsetX 2
 #### BOTTOM ####
 y = y - length + 30
 
+text x y - 20 20 "bottom"
+
 c1x = x
 c1y = y 
 c2x = x
@@ -67,6 +76,9 @@ circle x + width / 2 c2y - offsetX 2
 
 #### BACK ####
 y = y - height + 30
+
+text x y - 20 20 "back"
+
 c1x = x
 c1y = y 
 c2x = x
@@ -92,6 +104,9 @@ circle x + width / 2 y + height - offsetX 2
 #### SIDE1 ####
 y = -70  - length + 30
 x = x - width + 30
+
+text x y - 20 20 "side1"
+
 c1x = x
 c1y = y 
 c2x = x
@@ -118,6 +133,9 @@ circle x + width - offsetY y + length - offsetX 2
 #### SIDE2 ####
 y = -70  - length + 30
 x = x + 2 * width + 30
+
+text x y - 20 20 "side2"
+
 c1x = x
 c1y = y 
 c2x = x
