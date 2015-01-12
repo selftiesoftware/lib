@@ -1,10 +1,17 @@
 #storage boxes
 
+#PARAMETERS
+
+#GEOMETRY
 width = 140
 height = 140
-length = 320
+length = 280
 
-#end
+#HOLES
+offsetX  = 10
+offsetY = 40
+
+##################### ENDS #####################
 x = -70 #lower left x
 y = -70 #lower left y
 
@@ -17,6 +24,7 @@ c3y = c2y
 c4x = c3x
 c4y = c1y
 
+#### FRONT ####
 line c1x c1y c2x c2y
 line c2x c2y c3x - 110 c3y #top left
 arc c1x + width / 2 c2y 40 0 3.14 #cutout
@@ -25,12 +33,61 @@ line c3x c3y c4x c4y
 line c4x c4y c1x c1y
 
 #holes 
-offsetX  = 10
-offsetY = 40
 circle x + offsetX y + offsetY 2
 circle x + offsetX c2y - offsetY 2
-
 circle c3x - offsetX y + offsetY 2
 circle c3x - offsetX c2y - offsetY 2
-
 circle x + width / 2 y + offsetX 2
+
+#### BOTTOM ####
+y = y - length + 30
+
+c1x = x
+c1y = y 
+c2x = x
+c2y = y + length
+c3x = x + width
+c3y = c2y
+c4x = c3x
+c4y = c1y
+
+line c1x c1y c2x c2y
+line c2x c2y c3x c3y
+line c3x c3y c4x c4y
+line c4x c4y c1x c1y
+
+#holes 
+offsetYs = 80
+circle x + offsetX y + offsetYs 2
+circle x + offsetX c2y - offsetYs 2
+circle c3x - offsetX y + offsetYs 2
+circle c3x - offsetX c2y - offsetYs 2
+circle x + width / 2 y + offsetX 2
+circle x + width / 2 c2y - offsetX 2
+
+#### BACK ####
+y = y - height + 30
+c1x = x
+c1y = y 
+c2x = x
+c2y = y + height
+c3x = x + width
+c3y = c2y
+c4x = c3x
+c4y = c1y
+
+line c1x c1y c2x c2y
+line c2x c2y c3x c3y
+line c3x c3y c4x c4y
+line c4x c4y c1x c1y
+
+#holes 
+circle x + offsetX y + offsetY 2
+circle x + offsetX c2y - offsetY 2
+circle c3x - offsetX y + offsetY 2
+circle c3x - offsetX c2y - offsetY 2
+circle x + width / 2 y + offsetX 2
+
+
+
+
