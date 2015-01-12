@@ -86,12 +86,12 @@ circle x + offsetX y + offsetY 2
 circle x + offsetX c2y - offsetY 2
 circle c3x - offsetX y + offsetY 2
 circle c3x - offsetX c2y - offsetY 2
-circle x + width / 2 y + offsetX 2
+circle x + width / 2 y + height - offsetX 2
 
 
-#### SIDES ####
-y = y - length + 30
-
+#### SIDE1 ####
+y = -70  - length + 30
+x = x - width + 30
 c1x = x
 c1y = y 
 c2x = x
@@ -110,6 +110,33 @@ line c4x c4y c1x c1y
 offsetYs = 80
 circle c3x - offsetX y + offsetYs 2
 circle c3x - offsetX c2y - offsetYs 2
-circle x + width / 2 y + offsetX 2
-circle x + width / 2 c2y - offsetX 2
+circle x + offsetY y + offsetX 2
+circle x + width - offsetY y + offsetX 2
+circle x + offsetY y + length - offsetX 2
+circle x + width - offsetY y + length - offsetX 2
 
+#### SIDE2 ####
+y = -70  - length + 30
+x = x + 2 * width + 30
+c1x = x
+c1y = y 
+c2x = x
+c2y = y + length
+c3x = x + width
+c3y = c2y
+c4x = c3x
+c4y = c1y
+
+line c1x c1y c2x c2y
+line c2x c2y c3x c3y
+line c3x c3y c4x c4y
+line c4x c4y c1x c1y
+
+#holes 
+offsetYs = 80
+circle x + offsetX y + offsetYs 2
+circle x + offsetX c2y - offsetYs 2
+circle x + offsetY y + offsetX 2
+circle x + width - offsetY y + offsetX 2
+circle x + offsetY y + length - offsetX 2
+circle x + width - offsetY y + length - offsetX 2
