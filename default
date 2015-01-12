@@ -5,7 +5,7 @@ height = 100
 length = 320
 
 #bottom
-line -50 70 50 70
-line -50 70 -50 -70
-line -50 -70 50 -70
-line 50 -70 50 70
+line -1 * width / 2 height / 2 width / 2 height / 2
+line -1 * width / 2 height / 2 -1 * width / 2 -70
+line -1 * width / 2 -70 width / 2 -70
+line width / 2 -70 width / 2 height / 2
