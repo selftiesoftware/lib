@@ -42,3 +42,8 @@ for i <- -8 to -3
     line -40 j * dist 10 i * dist
   }
 }
+
+################### SAVING #####################
+text -90 -90 8 "to save a script, change the url name after the # sign" 
+
+text -90 -100 8 "from 'default' to something else, and click SAVE" 
