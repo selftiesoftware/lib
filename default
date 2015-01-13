@@ -1,5 +1,7 @@
 text -95 130 9.5 "welcome to RepoCad! platform for the Internet of Digital Design"
 
+################## LINE DRAWING ###############
+
 text -90 105 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers)"
 
 x1 = -90
@@ -8,6 +10,8 @@ x2 = 90
 y2 = y1
 line x1 y1 x2 y2 
 
+################## CIRCLES, ARCS, BEZIERS ######
+
 text -90 85 8 "in a similar way you can make circles, arcs, and bezier curves:" 
 
 circle x1 + 50 y1 - 50 20 # <- x,y,radius
@@ -15,3 +19,25 @@ arc x1 + 100 y1 - 50 20 2 4 # <- x,y,radius,start,end (in radians)
 
 bezierCurve 20 32 20 30 40 40 40 65 #start, controlpoint1, controlpoint2, end
 #everything behind a # is not evluated (comments)
+
+################## FOR LOOPS ###################
+
+text -90 0 8 "for loops allow for arrays and matrices:" 
+
+#for-loop going through i from -5 to 0:
+for i <- -5 to 0 
+{
+  dist = 8
+  line -90 i * dist -50 i * dist
+}
+
+################### MATRIX #####################
+#for-loop in a for-loop create a matrix:
+for i <- -5 to 0 
+{
+  for j <- -5 to 0 
+  {
+  dist = 8
+    line -40 j * dist 10 i * dist
+  }
+}
