@@ -13,20 +13,20 @@ line x1 y1 x2 y2
 
 ################## CIRCLES, ARCS, BEZIERS ######
 
-text -90 75 8 "in a similar way you can make circles, arcs, and bezier curves:" 
+text -90 65 8 "in a similar way you can make circles, arcs, and bezier curves:" 
 
-circle x1 + 50 y1 - 50 20 # <- x,y,radius
-arc x1 + 100 y1 - 50 20 2 4 # <- x,y,radius,start,end (in radians)
+circle x1 + 40 y1 - 60 20 # <- x,y,radius
+arc x1 + 100 y1 - 60 20 2 4 # <- x,y,radius,start,end (in radians)
 
-bezierCurve 20 32 20 30 40 40 40 65 #start, controlpoint1, controlpoint2, end
+bezierCurve 20 12 20 30 40 40 60 45 #start, controlpoint1, controlpoint2, end
 #everything behind a # is not evluated (comments)
 
 ################## FOR LOOPS ###################
 
-text -90 0 8 "for loops allow for arrays and matrices:" 
+text -90 -20 8 "for loops allow for arrays and matrices:" 
 
 #for-loop going through i from -5 to 0:
-for i <- -5 to 0 
+for i <- -8 to -3 
 {
   dist = 8
   line -90 i * dist -50 i * dist
@@ -34,9 +34,9 @@ for i <- -5 to 0
 
 ################### MATRIX #####################
 #for-loop in a for-loop create a matrix:
-for i <- -5 to 0 
+for i <- -8 to -3 
 {
-  for j <- -5 to 0 
+  for j <- -8 to -3 
   {
   dist = 8
     line -40 j * dist 10 i * dist
