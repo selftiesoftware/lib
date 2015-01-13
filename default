@@ -1,18 +1,19 @@
-text -95 130 9.5 "welcome to RepoCad! platform for the Internet of Digital Design"
+text -90 130 10 "welcome to RepoCad!" 
+text -90 120 7 "platform for the Internet of Digital Design"
 
 ################## LINE DRAWING ###############
 
-text -90 105 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers)"
+text -90 95 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers)"
 
 x1 = -90
-y1 = 100
+y1 = 90
 x2 = 90
 y2 = y1
 line x1 y1 x2 y2 
 
 ################## CIRCLES, ARCS, BEZIERS ######
 
-text -90 85 8 "in a similar way you can make circles, arcs, and bezier curves:" 
+text -90 75 8 "in a similar way you can make circles, arcs, and bezier curves:" 
 
 circle x1 + 50 y1 - 50 20 # <- x,y,radius
 arc x1 + 100 y1 - 50 20 2 4 # <- x,y,radius,start,end (in radians)
