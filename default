@@ -13,5 +13,5 @@ text -90 85 8 "in a similar way you can make circles, arcs, and bezier curves:"
 circle x1 + 50 y1 - 50 20 # <- x,y,radius
 arc x1 + 100 y1 - 50 20 2 4 # <- x,y,radius,start,end (in radians)
 
-bezierCurve x1 + 100 y1 - 50 20 20 40 40 x1 + 100 y1 - 50 #start, controlpoint1, controlpoint2, end
+bezierCurve 20 32 20 30 40 40 40 65 #start, controlpoint1, controlpoint2, end
 #everything behind a # is not evluated (comments)
