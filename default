@@ -1,4 +1,49 @@
-for i <- 0 to 20 {
-a = i * 7
-arc 60 10 a 1.6 4 
+text -90 130 10 "welcome to RepoCad!" 
+text -90 120 7 "platform for the Internet of Digital Design"
+
+################## LINE DRAWING ###############
+
+text -90 95 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers)"
+
+x1 = -90
+y1 = 90
+x2 = 90
+y2 = y1
+line x1 y1 x2 y2 
+
+################## CIRCLES, ARCS, BEZIERS ######
+
+text -90 65 8 "in a similar way you can make circles, arcs, and bezier curves:" 
+
+circle x1 + 40 y1 - 60 20 # <- x,y,radius
+arc x1 + 100 y1 - 60 20 2 4 # <- x,y,radius,start,end (in radians)
+
+bezierCurve 20 12 20 30 40 40 60 45 #start, controlpoint1, controlpoint2, end
+#everything behind a # is not evluated (comments)
+
+################## FOR LOOPS ###################
+
+text -90 -20 8 "for loops allow for arrays and matrices:" 
+
+#for-loop going through i from -5 to 0:
+for i <- -8 to -3 
+{
+  dist = 8
+  line -90 i * dist -50 i * dist
 }
+
+################### MATRIX #####################
+#for-loop in a for-loop create a matrix:
+for i <- -8 to -3 
+{
+  for j <- -8 to -3 
+  {
+  dist = 8
+    line -40 j * dist 10 i * dist
+  }
+}
+
+################### SAVING #####################
+text -90 -90 8 "to save a script, change the url name after the # sign" 
+
+text -90 -100 8 "from 'default' to something else, and click SAVE" 
