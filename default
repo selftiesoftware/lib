@@ -3,7 +3,7 @@ text -90 120 7 "platform for the Internet of Digital Design"
 
 ################## LINE DRAWING ###############
 
-text -90 95 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers)"
+text -90 95 8 "to draw a line write: line x y x y (where x and y are numbers -start and end)"
 
 x1 = -90
 y1 = 90
