@@ -56,7 +56,7 @@ line -90 20 90 20
 
 y = y - dist
 
-text -85 y 8 "and available to all to push adaptive and resource-saving designs globally."
+text -85 y 8 "and available to all to evolve through global sharing of designs."
 
 y = y - dist
 
