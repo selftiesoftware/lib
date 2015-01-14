@@ -46,13 +46,13 @@ y = y - dist
 text -80 y 6 "• With this concept we can fully utilizes the power of the internet in new architecture and design"
 
 
-y = 40
+y = 30
 dist = 6.5
 text -85 y 8 "Design tools, process, and results must be open source and dynamic,"
-line -90 50 -90 20
-line -90 50 90 50
-line 90 50 90 20
-line -90 20 90 20
+line -90 40 -90 10
+line -90 40 90 40
+line 90 40 90 10
+line -90 10 90 10
 
 y = y - dist
 
@@ -64,7 +64,7 @@ text -85 y 8 "As demonstrated in the 'RepoCad' prototype it could happen like th
 
 #################################################
 
-y = 10
+y = -5
 dist = 4
 
 text -80 y 5 "STEP 1 - CREATION: an online drawing app should be made: RepoCad (earlier: Siigna)" 
@@ -93,7 +93,7 @@ text -80 y 5 "should be updated or added to the script. Mimicking object oriente
 ################################################
 
 y = y - dist
-y = -20
+y = -45
 
 
 text -80 y 5 "STEP 2 - EVOLUTION: a drawing and tools library is implemented where the scripts" 
@@ -117,7 +117,7 @@ text -80 y 5 "merge again at a later stage. We are currently working on these fe
 ################################################
 
 y = y - dist
-y = -44
+y = -80
 
 text -80 y 5 "STEP 3 - EXPANSION: this could include advancing the scope of the design tool and the designs."
 
@@ -130,15 +130,15 @@ y = y - dist
 
 ###################### DIAGRAM ##############
 
-y = -65
+y = -90
 
-line -90 -55 -90 -120
-line -90 -55 90 -55
-line 90 -55 90 -120
-line -90 -120 90 -120
+#line -90 -55 -90 -120
+#line -90 -55 90 -55
+#line 90 -55 90 -120
+#line -90 -120 90 -120
 
 #TODO - write this...
-text -80 y 8 "DIAGRAMMATIC REPRESENTATION OF IOD HERE (TODO):"
+#text -80 y 8 "DIAGRAMMATIC REPRESENTATION OF IOD #HERE (TODO):"
 
 
-y = y - dist
+#y = y - dist
