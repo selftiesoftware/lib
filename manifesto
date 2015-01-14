@@ -64,7 +64,7 @@ text -85 y 8 "As demonstrated in the 'RepoCad' prototype it could happen like th
 
 #################################################
 
-y = 15
+y = 10
 dist = 4
 
 text -80 y 5 "STEP 1 - CREATION: an online drawing app should be made: RepoCad (earlier: Siigna)" 
@@ -93,34 +93,37 @@ text -80 y 5 "should be updated or added to the script. Mimicking object oriente
 ################################################
 
 y = y - dist
-y = -15
+y = -20
 
 
 text -80 y 5 "STEP 2 - EVOLUTION: a drawing and tools library is implemented where the scripts" 
 
 y = y - dist
 
-text -80 y 5 "defining drawings or tools - are added. The contents /functionality of scripts can be called from other scripts."
+text -80 y 5 "defining drawings or tools - are added. The contents /functionality of scripts can be called "
 
 y = y - dist
 
-text -80 y 5 "The scripts are online and versioned. This means nothing is" 
+text -80 y 5 "from other scripts. The scripts are online and versioned. This means nothing is ever lost" 
 
 y = y - dist
 
-text -80 y 5 "ever lost - but far more importantly it means designs can fork in to different"
+text -80 y 5 " - but far more importantly it means designs can fork in to different branches and maybe"
 
 y = y - dist
 
-text -80 y 5 " branches, evolve, maybe merge again at a later stage. We are currently working on these features in RepoCad."
+text -80 y 5 "merge again at a later stage. We are currently working on these features in RepoCad."
 
 ################################################
 
 y = y - dist
-y = -40
+y = -44
 
-#TODO - write this...
-text -80 y 5 "STEP 3 - EXPANSION: 3d is implemented, and post-processors for CAM fabrication" 
+text -80 y 5 "STEP 3 - EXPANSION: this could include advancing the scope of the design tool and the designs."
+
+y = y - dist
+
+text -80 y 5 "Like coupling the design tools with digital fabrication." 
 
 y = y - dist
 
@@ -129,9 +132,9 @@ y = y - dist
 
 y = -65
 
-line -90 -50 -90 -120
-line -90 -50 90 -50
-line 90 -50 90 -120
+line -90 -55 -90 -120
+line -90 -55 90 -55
+line 90 -55 90 -120
 line -90 -120 90 -120
 
 #TODO - write this...
