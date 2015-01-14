@@ -46,17 +46,21 @@ y = y - dist
 text -80 y 6 "• With this concept we can fully utilizes the power of the internet in new architecture and design"
 
 
-y = 45
+y = 40
 dist = 6.5
-text -80 y 8 "Design tools, process, and results must be open source and dynamic,"
+text -85 y 8 "Design tools, process, and results must be open source and dynamic,"
+line -90 50 -90 20
+line -90 50 90 50
+line 90 50 90 20
+line -90 20 90 20
 
 y = y - dist
 
-text -80 y 8 " and available to all to push adaptive and resource-saving designs globally."
+text -85 y 8 "and available to all to push adaptive and resource-saving designs globally."
 
 y = y - dist
 
-text -80 y 8 "As shown in this functional RepoCad' prototype it could happen like this:"
+text -85 y 8 "As demonstrated in the 'RepoCad' prototype it could happen like this:"
 
 #################################################
 
@@ -92,11 +96,15 @@ y = y - dist
 y = -15
 
 
-text -80 y 5 "STEP 2 - EVOLUTION: a drawing library is implemented where the scripts" 
+text -80 y 5 "STEP 2 - EVOLUTION: a drawing and tools library is implemented where the scripts" 
 
 y = y - dist
 
-text -80 y 5 "defining drawings - and tools - are coupled with online versioning. This means nothing is" 
+text -80 y 5 "defining drawings or tools - are added. The contents /functionality of scripts can be called from other scripts."
+
+y = y - dist
+
+text -80 y 5 "The scripts are online and versioned. This means nothing is" 
 
 y = y - dist
 
@@ -104,12 +112,12 @@ text -80 y 5 "ever lost - but far more importantly it means designs can fork in 
 
 y = y - dist
 
-text -80 y 5 " branches, evolve, and maybe merge again at a later stage. "
+text -80 y 5 " branches, evolve, maybe merge again at a later stage. We are currently working on these features in RepoCad."
 
 ################################################
 
 y = y - dist
-y = -35
+y = -40
 
 #TODO - write this...
 text -80 y 5 "STEP 3 - EXPANSION: 3d is implemented, and post-processors for CAM fabrication" 
@@ -131,4 +139,3 @@ text -80 y 8 "DIAGRAMMATIC REPRESENTATION OF IOD HERE (TODO):"
 
 
 y = y - dist
-
