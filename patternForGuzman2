@@ -11,3 +11,9 @@ line b + 20 a + 10 30 b
 line b + 20 a - -10 30 b
   }
 }
+
+#The location of the points is shifted using a "loop" (do this several times, and inmcrement "i" with one each time)
+
+#maybe students from DK and ESP could work together two-and-two developing a graphic pattern? 
+
+
