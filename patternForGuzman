@@ -6,3 +6,5 @@ line 0 0 10 -10
 line 20 -10 10 -10
 line 20 10 30 0
 line 20 -10 30 0
+
+#In the URL http://www.repocad.com/#patternForGuzman2 I have turned the lines start and end points into variables to create something more interesting
