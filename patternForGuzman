@@ -1,3 +1,5 @@
+#Hi Guzman.. here you see the prototype drawing app I am working on... if you change the values below, the canvas should update..
+
 line 0 0 10 10
 line 20 10 10 10
 line 0 0 10 -10
