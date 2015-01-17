@@ -1,7 +1,6 @@
-pos = 20
-neg = -20
-
-line neg neg neg pos
-line neg pos pos pos
-line pos pos pos neg
-line pos neg neg neg
+function rectangle(neg pos) {
+  line neg neg neg pos
+  line neg pos pos pos
+  line pos pos pos neg
+  line pos neg neg neg
+}
