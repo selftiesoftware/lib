@@ -6,7 +6,16 @@ function rectangle(neg pos) {
 }
 
 #example:
-for i <- -5 to 5 {
+for i <- -15 to 50 {
 a = i + 1
+b = i - 1
 rectangle(a * 5 a * 10)
+rectangle(b * -5 a * 10)
 }
+
+text 27 -270 20 "for i <- -15 to 50 {
+a = i + 1
+b = i - 1
+rectangle(a * 5 a * 10)
+rectangle(b * -5 a * 10)
+}"
