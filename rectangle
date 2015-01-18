@@ -13,6 +13,7 @@ rectangle(a * 5 a * 10)
 rectangle(b * -5 a * 10)
 }
 
+#DESCRIPTIVE TEXT 
 text 27 -270 20 "for i <- -15 to 50 {
 a = i + 1
 b = i - 1
