@@ -4,3 +4,9 @@ function rectangle(neg pos) {
   line pos pos pos neg
   line pos neg neg neg
 }
+
+#example:
+for i <- -5 to 5 {
+a = i + 1
+rectangle(a * 5 a * 10)
+}
