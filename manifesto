@@ -1,6 +1,6 @@
-text -90 120 8 "A Manifesto for the Internet of Digital Design"
+text -90 130 9 "A Manifesto for the Internet of Digital Design"
 
-text 0 130 4 "14-JAN 2015 by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture"
+text -15 145 4 "14-JAN 2015 by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture"
 
 y = 110
 dist = 5
@@ -8,16 +8,16 @@ text -90 y 5.5 "The term “Internet of Things” (IOT) is well known."
 
 y = y - dist
 
-text -90 y 5.5 "It refers to the digital link to – and between – physical objects. While IOT would mean that objects become"
+text -90 y 5.5 "It refers to the digital link to – and between – physical objects. While things are increasingly smart,"
 
 
 y = y - dist
 
-text -90 y 5.5 "smarter and able to optimize and share resources intelligently, the information which represents the design"
+text -90 y 5.5 "managing themselves and sharing resources intelligently, the workflow of making the designs"
 
 y = y - dist
 
-text -90 y 5.5 "of these objects is all but intelligent. Design strategies are business secrets and designs are proprietary things."
+text -90 y 5.5 "of these objects needs improvement. Designs are business secrets and CAD drawings kept private"
 
 y = 85
 
@@ -48,19 +48,19 @@ text -80 y 6 "• With this concept we can fully utilizes the power of the inter
 
 y = 30
 dist = 6.5
-text -85 y 8 "Design tools, process, and results must be open source and dynamic,"
-line -90 40 -90 10
-line -90 40 90 40
-line 90 40 90 10
-line -90 10 90 10
+text -85 y 7 "Design tools, process, and results must be open source and dynamic,"
+line -100 40 -100 10
+line -100 40 70 40
+line 70 40 70 10
+line -100 10 70 10
 
 y = y - dist
 
-text -85 y 8 "and available to all to evolve through global sharing of designs."
+text -85 y 7 "and available to all to evolve through global sharing of designs."
 
 y = y - dist
 
-text -85 y 8 "As demonstrated in the 'RepoCad' prototype it could happen like this:"
+text -85 y 7 "As demonstrated in the 'RepoCad' prototype it could happen like this:"
 
 #################################################
 
