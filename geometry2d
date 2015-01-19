@@ -8,5 +8,5 @@ line x1 mid * -1 mid h #left side
 } 
 
 #example
-for i <- 0 to 70
-triangle(i * 2 40)
+#for i <- 0 to 70
+#triangle(i * 2 40)
