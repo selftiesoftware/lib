@@ -1,3 +1,5 @@
-import rectangle
-
-circle 0 0 20
+function triangle(x1 x2){
+line x1 0 x2 0
+line 10 20 x1 x2
+line 20 20 0 0
+} 
