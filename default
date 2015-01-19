@@ -56,4 +56,4 @@ text 10 -75 8 "importet function to draw a triangle"
 ################### SAVING #####################
 text -90 -95 8 "to save a script, change the url name after the # sign" 
 
-text -90 -102 8 "from 'default' to something else, and click SAVE" 
+text -90 -102 8 "from 'default' to something else. refresh the pate, then click SAVE" 
