@@ -1,3 +1,5 @@
+import geometry2d
+
 text -90 130 10 "welcome to RepoCad!" 
 text -90 120 7 "platform for the Internet of Digital Design"
 
@@ -31,6 +33,11 @@ for i <- -8 to -3
   dist = 8
   line -90 i * dist -50 i * dist
 }
+
+#############IMPORT FUNCTIONS ##################
+for i <- 0 to 70 {
+triangle(i * 2 40)
+[
 
 ################### MATRIX #####################
 #for-loop in a for-loop create a matrix:
