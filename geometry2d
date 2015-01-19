@@ -1,9 +1,10 @@
 function triangle(x1 x2){
 dif = x2 - x1
 mid = x1 + dif / 2
-line mid mid x2 mid * -1 #right side
+h = mid / 5
+line mid h x2 mid * -1 #right side
 line x1 mid * -1 x2 mid * -1 #bottom
-line x1 mid * -1 mid mid #left sids
+line x1 mid * -1 mid h #left side
 } 
 
-triangle(20 40)
+triangle(0 40)
