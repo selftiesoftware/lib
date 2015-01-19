@@ -1,5 +1,3 @@
-import geometry2d
-
 text -90 130 10 "welcome to RepoCad!" 
 text -90 120 7 "platform for the Internet of Digital Design"
 
@@ -34,11 +32,6 @@ for i <- -8 to -3
   line -90 i * dist -50 i * dist
 }
 
-#############IMPORT FUNCTIONS ##################
-for i <- 0 to 70 {
-triangle(i * 2 40)
-[
-
 ################### MATRIX #####################
 #for-loop in a for-loop create a matrix:
 for i <- -8 to -3 
@@ -50,7 +43,17 @@ for i <- -8 to -3
   }
 }
 
-################### SAVING #####################
-text -90 -90 8 "to save a script, change the url name after the # sign" 
 
-text -90 -100 8 "from 'default' to something else, and click SAVE" 
+#############IMPORT FUNCTIONS ##################
+import geometry2d
+
+for i <- 10 to 30 {
+triangle(i * 1.7 80)
+}
+text 10 -75 8 "importet function to draw a triangle"
+
+
+################### SAVING #####################
+text -90 -95 8 "to save a script, change the url name after the # sign" 
+
+text -90 -102 8 "from 'default' to something else, and click SAVE" 
