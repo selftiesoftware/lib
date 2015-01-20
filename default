@@ -45,11 +45,11 @@ for i <- -8 to -3
 
 
 #############IMPORT FUNCTIONS ##################
-import geometry2d
+#import geometry2d
 
-for i <- 10 to 30 {
-triangle(i * 1.7 80)
-}
+#for i <- 10 to 30 {
+#triangle(i * 1.7 80)
+#}
 text 10 -75 8 "importet function to draw a triangle"
 
 
