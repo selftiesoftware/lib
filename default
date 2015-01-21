@@ -1,9 +1,13 @@
 text -90 130 10 "welcome to RepoCad!" 
 text -90 120 7 "platform for the Internet of Digital Design"
 
+#in this window you can write code which will generate artwork on the canvas to the right.
+
+#everything behind a #-sign is treated as comments, and not evaluated
+
 ################## LINE DRAWING ###############
 
-text -90 95 8 "to draw a line write: line x y x y (where x and y are numbers -start and end)"
+#to draw a line write: line x1 y1 x2 y2:
 
 x1 = -90
 y1 = 90
@@ -11,15 +15,20 @@ x2 = 90
 y2 = y1
 line x1 y1 x2 y2 
 
+text -90 95 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers -start and end)"
+
 ################## CIRCLES, ARCS, BEZIERS ######
 
 text -90 65 8 "in a similar way you can make circles, arcs, and bezier curves:" 
 
-circle x1 + 40 y1 - 60 20 # <- x,y,radius
-arc x1 + 100 y1 - 60 20 2 4 # <- x,y,radius,start,end (in radians)
+#CIRCLE: x,y,radius
+circle x1 + 40 y1 - 60 20 
 
-bezierCurve 20 12 20 30 40 40 60 45 #start, controlpoint1, controlpoint2, end
-#everything behind a # is not evluated (comments)
+#ARC: x,y,radius,start(radians),end(radians)
+arc x1 + 100 y1 - 60 20 2 4 
+
+#BEZIER CURVE:start, controlpoint1, controlpoint2, end
+bezierCurve 20 12 20 30 40 75 60 12 
 
 ################## FOR LOOPS ###################
 
