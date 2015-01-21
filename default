@@ -66,3 +66,6 @@ for i <- -8 to -3
 text -90 -95 8 "to save a script, change the url name after the # sign" 
 
 text -90 -102 8 "from 'default' to something else. refresh the webpage, then click SAVE" 
+
+################## VERSION ####################
+text 45 140 7 "current version: 0.1.0" 
