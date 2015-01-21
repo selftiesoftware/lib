@@ -4,7 +4,7 @@ col1x2 = -60
 size = 6
 dist = 6
 
-line 0 -130 0 135
+line 0 -140 0 135
 
 text col1x1 y size "XXXIV"
 text col1x2 y size "230V - fatninger"
@@ -138,6 +138,9 @@ text col1x2 y size "loddekolbe"
 text col1x1 y size "XXXI"
 text col1x2 y size "loddetin"
  y = y - dist
+text col1x1 y size "XXXVI"
+text col1x2 y size "metalrester"
+ y = y - dist 
 text col1x1 y size "XXVI"
 text col1x2 y size "modelmaterialer - metal"
  y = y - dist 
@@ -170,6 +173,9 @@ text col1x2 y size "målebånd"
  y = y - dist 
 text col1x1 y size "VII"
 text col1x2 y size "olie"
+ y = y - dist 
+text col1x1 y size "XXXVI"
+text col1x2 y size "opbevaringsbokse"
  y = y - dist 
 text col1x1 y size "XVI"
 text col1x2 y size "opladere"
