@@ -49,10 +49,10 @@ text -80 y 6 "• With this concept we can fully utilizes the power of the inter
 y = 30
 dist = 6.5
 text -85 y 7 "Design tools, process, and results must be open source and dynamic,"
-line -90 40 -90 10
-line -90 40 90 40
+line -100 40 -100 10
+line -100 40 90 40
 line 90 40 90 10
-line -90 10 90 10
+line -100 10 90 10
 
 y = y - dist
 
