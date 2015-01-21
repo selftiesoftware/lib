@@ -38,7 +38,7 @@ bezierCurve 20 12 20 30 40 75 60 12
 
 text -90 -20 8 "for loops allow for arrays and matrices:" 
 
-#for-loop going through i from -5 to 0:
+#ROWS: for-loop going through i from -5 to 0:
 for i <- -8 to -3 
 {
   dist = 8
@@ -46,7 +46,7 @@ for i <- -8 to -3
 }
 
 ################### MATRIX #####################
-#for-loop in a for-loop create a matrix:
+#for-loop inside another for-loop create a matrix:
 for i <- -8 to -3 
 {
   for j <- -8 to -3 
