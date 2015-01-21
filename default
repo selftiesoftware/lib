@@ -50,7 +50,7 @@ for i <- -8 to -3
 #for i <- 10 to 30 {
 #triangle(i * 1.7 80)
 #}
-#text 10 -75 8 "importet function to draw a triangle"
+#text 10 -75 8 "imported function to draw a triangle"
 
 
 ################### SAVING #####################
