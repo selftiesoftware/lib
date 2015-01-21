@@ -1,4 +1,4 @@
-text -90 130 10 "welcome to RepoCad!" 
+text -90 130 17 "welcome to RepoCad!" 
 text -90 120 7 "platform for the Internet of Digital Design"
 
 #in this window you can write code which will generate artwork on the canvas to the right.
