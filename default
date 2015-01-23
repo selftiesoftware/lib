@@ -63,7 +63,7 @@ import geometry2d
 for i <- 10 to 30 {
 triangle(i * 1.7 80)
 }
-#text 10 -75 8 "imported function to draw a triangle"
+text 10 -75 8 "imported function to draw a triangle"
 
 
 ################### SAVING #####################
