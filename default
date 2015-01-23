@@ -36,10 +36,10 @@ bezierCurve 20 12 20 30 40 75 60 12
 
 ################## FOR LOOPS ###################
 
-text -90 -20 8 "for loops allow for arrays and matrices:" 
+text -90 -10 8 "for loops allow for arrays and matrices:" 
 
-#ROWS: for-loop going through i from -5 to 0:
-for i <- -8 to -3 
+#ROWS: for-loop going through i from -7 to -2:
+for i <- -7 to -2 
 {
   dist = 8
   line -90 i * dist -50 i * dist
@@ -47,9 +47,9 @@ for i <- -8 to -3
 
 ################### MATRIX #####################
 #for-loop inside another for-loop create a matrix:
-for i <- -8 to -3 
+for i <- -7 to -2 
 {
-  for j <- -8 to -3 
+  for j <- -7 to -2 
   {
   dist = 8
     line -40 j * dist 10 i * dist
@@ -67,9 +67,18 @@ for i <- -8 to -3
 
 
 ################### SAVING #####################
-text -90 -95 8 "to save a script, change the url name after the # sign" 
+text -90 -80 8 "to save a script, change the url name after the # sign" 
 
-text -90 -102 8 "from 'default' to something else. refresh the webpage, then click SAVE" 
+text -90 -87 8 "from 'default' to something else. refresh the webpage, then click SAVE" 
 
 ################## VERSION ####################
 text 45 140 7 "current version: 0.1.0" 
+
+
+################## GPL #######################
+text -90 -100 6 "Copyright (C) 2015, Selftie S oftware" 
+
+text -90 -107 6 "This program comes with ABSOLUTELY NO WARRANTY" 
+
+text -90 -114 6 "This is free software, and you arewelcome to redistribute it under certain conditions; see  details."
+
