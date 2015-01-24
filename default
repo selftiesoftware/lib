@@ -10,7 +10,7 @@ text -90 120 7 "platform for the Internet of Digital Design"
 #to draw a line write: line x1 y1 x2 y2:
 
 x1 = -90
-y1 = 90
+y1 = 100
 x2 = 90
 y2 = y1
 line x1 y1 x2 y2 
@@ -19,24 +19,24 @@ line x1 y1 x2 y2
 
 #a line of text is done like this:
 
-text -90 95 8 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers -start and end)"
+text -90 92 6 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers -start and end)"
 
 ################## CIRCLES, ARCS, BEZIERS ######
 
-text -90 65 8 "in a similar way you can make circles, arcs, and bezier curves:" 
+text -90 20 6 "in a similar way you can make circles, arcs, and bezier curves" 
 
 #CIRCLE: x,y,radius
-circle x1 + 40 y1 - 60 20 
+circle x1 + 40 y1 - 40 20 
 
 #ARC: x,y,radius,start(radians),end(radians)
-arc x1 + 100 y1 - 60 20 2 4 
+arc x1 + 100 y1 - 40 20 2 4 
 
 #BEZIER CURVE:start, controlpoint1, controlpoint2, end
-bezierCurve 20 12 20 30 40 75 60 12 
+bezierCurve 20 40 20 50 40 95 60 40 
 
 ################## FOR LOOPS ###################
 
-text -90 -10 8 "for loops allow for arrays and matrices:" 
+text -90 -70 6 "for loops allow for arrays and matrices" 
 
 #ROWS: for-loop going through i from -7 to -2:
 for i <- -7 to -2 
@@ -60,16 +60,16 @@ for i <- -7 to -2
 #############IMPORT FUNCTIONS ##################
 import geometry2d
 
-for i <- 10 to 30 {
-triangle(i * 1.7 80)
+for i <- 10 to 20 {
+triangle(i * 1.7 80 4)
 }
-text 10 -75 8 "imported function to draw a triangle"
+text 10 -70 6 "imported function to draw a triangle"
 
 
 ################### SAVING #####################
-text -90 -78 8 "to save a script, change the url name after the # sign" 
+text -90 -88 6 "to save a script, change the url name after the # sign" 
 
-text -90 -84 8 "from 'default' to something else. refresh the webpage, then click SAVE" 
+text -90 -94 6 "from 'default' to something else. refresh the webpage, then click SAVE" 
 
 ################## VERSION ####################
 text 45 140 7 "current version: 0.1.0" 
