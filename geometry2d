@@ -1,3 +1,23 @@
+#a collection of basic geometries for repocad
+#use these in other scripts by typing 
+#"import geometry2d" in the script (without ")
+
+function rectangle (x1 y1 x2 y2){
+line x1 y1 x1 y2
+line x2 y2 x1 y2
+line x2 y1 x2 y2
+line x1 y1 x2 y1
+}
+
+#example
+for i <- -5 to -1 {
+  for j <- -4 to 1 {
+    a = i * 20
+    b = j * 22
+    rectangle(a b a + 10 b + 10)
+  }
+}
+
 function triangle(x1 x2){
 dif = x2 - x1
 mid = x1 + dif / 2
@@ -8,21 +28,5 @@ line x1 mid * -1 mid h #left side
 } 
 
 #example
-#for i <- 0 to 70
-#triangle(i * 2 40)
-
-function rectangle (x1 y1 x2 y2){
-line x1 y1 x1 y2
-line x2 y2 x1 y2
-line x2 y1 x2 y2
-line x1 y1 x2 y1
-}
-
-#example
-for i <- 0 to 4 {
-  for j <- 0 to 4 {
-    a = i * 20
-    b = j * 22
-    rectangle(a b a + 10 b + 10)
-  }
-}
+for i <- 0 to 70
+triangle(i * 2 40)
