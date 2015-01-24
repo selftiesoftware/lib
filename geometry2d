@@ -3,7 +3,7 @@
 #"import geometry2d" in the script (without ")
 
 
-#### TRIANGLE ####
+#### RECTANGLE ####
 
 #PARAMETERS:
 # x1 = corner1 x
