@@ -10,3 +10,19 @@ line x1 mid * -1 mid h #left side
 #example
 #for i <- 0 to 70
 #triangle(i * 2 40)
+
+function rectangle (x1 y1 x2 y2){
+line x1 y1 x1 y2
+line x2 y2 x1 y2
+line x2 y1 x2 y2
+line x1 y1 x2 y1
+}
+
+#example
+for i <- 0 to 4 {
+  for j <- 0 to 4 {
+    a = i * 20
+    b = j * 22
+    rectangle(a b a + 10 b + 10)
+  }
+}
