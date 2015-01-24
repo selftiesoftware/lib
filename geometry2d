@@ -12,10 +12,10 @@
 # y2 = corner1 y
 
 function rectangle (x1 y1 x2 y2){
-line x1 y1 x1 y2
-line x2 y2 x1 y2
-line x2 y1 x2 y2
-line x1 y1 x2 y1
+  line x1 y1 x1 y2
+  line x2 y2 x1 y2
+  line x2 y1 x2 y2
+  line x1 y1 x2 y1
 }
 
 #example
@@ -35,13 +35,13 @@ for i <- -5 to -1 {
 # d = distance to corners
 
 function triangle(x y d){
-p1y = y + d
-p2x = x + d
-p3x = x - d
-offsetY = d / 3
-line x p1y p2x y - offsetY
-line p2x y - offsetY p3x y - offsetY
-line x p1y p3x y - offsetY
+  p1y = y + d
+  p2x = x + d
+  p3x = x - d
+  offsetY = d / 3
+  line x p1y p2x y - offsetY
+  line p2x y - offsetY p3x y - offsetY
+  line x p1y p3x y - offsetY
 } 
 
 #example
