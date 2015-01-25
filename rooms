@@ -2,4 +2,15 @@
 
 import geometry2d
 
+#ROOM F2
 rectangle(0 0 30 30)
+
+#ROOM F3
+rectangle(30 0 50 30)
+
+#ROOM F4
+rectangle(50 0 70 30)
+
+#ROOM F6
+rectangle(0 0 20 -15)
+
