@@ -13,7 +13,7 @@ rectangle(2400 3600 5200 7600)
 rectangle(4500 6900 5100 7500)#sofa
 rectangle(4500 6300 5100 6900)#sofa
 rectangle(4500 6300 5100 5700)#sofa
-rectangle(4000 5700 5200 5600)#sofa
+rectangle(4000 5700 5200 5600)#wall
 
 
 #kitchen and entrance
