@@ -1,0 +1,5 @@
+import geometry2d
+#micro living concept
+
+#sleeping room
+rectangle(0 0 3600 3600)
