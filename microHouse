@@ -13,12 +13,14 @@ text 3250 2500 250 "supply core"
 rectangle(3200 1000 4200 3000)
 
 #living room
-text 2800 5450 300 "living room"
+text 2800 6450 300 "living room"
 rectangle(2400 3600 5200 7600)
 rectangle(4500 6900 5100 7500)#sofa
 rectangle(4500 6300 5100 6900)#sofa
 rectangle(4500 6300 5100 5700)#sofa
 rectangle(4000 5700 5200 5600)#wall
+
+rectangle(3600 4400 5100 5100)#dinner table
 
 #kitchen and entrance
 rectangle(4200 0 5200 3600)
