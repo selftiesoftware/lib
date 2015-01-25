@@ -1,6 +1,8 @@
 import geometry2d
 #micro living concept
 
+
+
 #sleeping room
 rectangle(0 0 3200 3600)
 rectangle(700 100 2500 2100) #bed
