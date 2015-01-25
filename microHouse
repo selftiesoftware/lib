@@ -17,6 +17,11 @@ rectangle(4500 6300 5100 6900)#sofa
 rectangle(4500 6300 5100 5700)#sofa
 rectangle(4000 5700 5200 5600)#wall
 
-
 #kitchen and entrance
 rectangle(4200 0 5200 3600)
+
+#terrasse
+for i <- 19 to 39{
+  a = i * 200
+  line 0 a 2400  a
+}
