@@ -3,14 +3,17 @@ import geometry2d
 
 
 
-#sleeping room
+#bedroom
+text 1000 2500 300 "bedroom"
 rectangle(0 0 3200 3600)
 rectangle(700 100 2500 2100) #bed
 
 #core (water, electricity, heating)
+text 3250 2500 250 "supply core"
 rectangle(3200 1000 4200 3000)
 
 #living room
+text 2800 5450 300 "living room"
 rectangle(2400 3600 5200 7600)
 rectangle(4500 6900 5100 7500)#sofa
 rectangle(4500 6300 5100 6900)#sofa
