@@ -20,7 +20,8 @@ rectangle(4000 5700 5200 5600)#wall
 #kitchen and entrance
 rectangle(4200 0 5200 3600)
 
-#terrasse (conservatory?)
+#conservatory
+text 600 5450 300 "conservatory"
 for i <- 19 to 39{
   a = i * 200
   line 0 a 2400  a
