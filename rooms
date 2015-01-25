@@ -14,3 +14,8 @@ rectangle(50 0 70 30)
 #ROOM F6
 rectangle(0 0 20 -15)
 
+#ROOM F5
+rectangle(0 -15 30 -40)
+
+#ROOM F6
+rectangle(50 -15 70 -40)
