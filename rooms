@@ -1,0 +1,5 @@
+#rooms plan
+
+import geometry2d
+
+rectangle(0 0 30 30)
