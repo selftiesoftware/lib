@@ -16,6 +16,7 @@ rectangle(50 -15 70 -40) #ROOM F6
 rectangle(70 0 85 30) #ROOM P9
 rectangle(85 0 100 30) #ROOM P10
 rectangle(100 0 120 30) #ROOM P11
+rectangle(120 0 150 30) #ROOM P11
 
 rectangle(70 -15 90 -40) #ROOM P8
 rectangle(90 -15 110 -40) #ROOM P7
@@ -25,3 +26,5 @@ rectangle(140 -15 160 -40) #ROOM P4
 rectangle(160 -15 175 -40) #ROOM P3
 rectangle(175 -15 190 -40) #ROOM P2
 rectangle(190 -15 210 -50) #ROOM P1
+
+#### H-WING ####
