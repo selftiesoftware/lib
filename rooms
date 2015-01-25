@@ -2,20 +2,20 @@
 
 import geometry2d
 
-#ROOM F2
-rectangle(0 0 30 30)
+#### F-WING ####
 
-#ROOM F3
-rectangle(30 0 50 30)
+rectangle(0 0 30 30) #ROOM F2
+rectangle(30 0 50 30) #ROOM F3
+rectangle(50 0 70 30) #ROOM F4
+rectangle(0 0 20 -15) #ROOM F6
+rectangle(0 -15 30 -40) #ROOM F5
+rectangle(50 -15 70 -40) #ROOM F6
 
-#ROOM F4
-rectangle(50 0 70 30)
+#### P-WING ####
 
-#ROOM F6
-rectangle(0 0 20 -15)
+rectangle(70 0 85 30) #ROOM P9
+rectangle(85 0 100 30) #ROOM P10
+rectangle(100 0 120 30) #ROOM P11
 
-#ROOM F5
-rectangle(0 -15 30 -40)
-
-#ROOM F6
-rectangle(50 -15 70 -40)
+rectangle(70 -15 90 -40) #ROOM P8
+rectangle(90 -15 110 -40) #ROOM P7
