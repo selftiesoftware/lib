@@ -1,24 +1,21 @@
 # a VFR flight planner with automatic calculations
 
-#import flightplanFunctions
+import flightplanFunctions
 
-#ENTER DATA
+#### INPUT ####
+
+#GENERAL
+
 text -17 112 7 "reg. OY-____" #A/C REGISTRATION
 text -37 96 6 "pilot.: John Doe" #PILOT
 text 18 133 7 "from: EKRD" #FROM
 text 50 133 7 "to: EKVH" #FROM
 
-
-
-
-
-#### INPUT ####
-
-#GENERAL
     numberOfWaypoints = 7 # number of waypoints 
 
     tas =      80    # TAS in knots 
     gph =      3.5   # FUEL in Gallons/hour
+    glide =    8     # glide ratio 1:x
 
 #WP1
     dist1 =    10
@@ -49,6 +46,7 @@ text 50 133 7 "to: EKVH" #FROM
     tt5 =      200
     windDir5 = 10
     windVel5 = 15
+
 
 #### WAYPOINT CALCULATIONS ####
 
