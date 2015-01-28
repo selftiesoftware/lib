@@ -1,7 +1,7 @@
 #functions for VFR flight planner
 #based on http://vfraid.com/05_wind_correction_angle/wind_correction.html
 
-function calcWCA (windVel,windDir,TT) {
+function calcWCA (windVel windDir TT) {
 #calculate N
 
 #calculate WCA
@@ -10,7 +10,7 @@ function calcWCA (windVel,windDir,TT) {
 100
 }
 
-function calcGS (windVel,windDir,TT,WCA) {
+function calcGS (windVel windDir TT WCA) {
 #calculate C1
 
 #calculate C2
