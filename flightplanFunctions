@@ -3,7 +3,7 @@
 
 function calcWCA (windVel windDir TT) {
 #calculate N
-
+n = TT - windDir
 #calculate WCA
 
 #return
