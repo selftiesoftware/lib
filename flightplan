@@ -1,46 +1,76 @@
-#vfr flight plan for pilots
+# a VFR flight planner with automatic calculations
 
-#number of waypoints. range: 0 to 7
-numberOfWaypoints = 7
+#import flightplanFunctions
 
 #ENTER DATA
-tas = 60
 text -17 112 7 "reg. OY-____" #A/C REGISTRATION
 text -37 96 6 "pilot.: John Doe" #PILOT
 text 18 133 7 "from: EKRD" #FROM
 text 50 133 7 "to: EKVH" #FROM
 
-#WAYPOINT DATA
+
+
+
+
+#### INPUT ####
+
+#GENERAL
+    numberOfWaypoints = 7 # number of waypoints 
+
+    tas =      80    # TAS in knots 
+    gph =      3.5   # FUEL in Gallons/hour
+
+#WP1
+    dist1 =    10
+    tt1 =      200
+    windDir1 = 10
+    windVel1 = 15
+
+#WP2
+    dist2 =    10
+    tt2 =      200
+    windDir2 = 10
+    windVel2 = 15
+
+#WP3
+    dist3 =    10
+    tt3 =      200
+    windDir3 = 10
+    windVel3 = 15
+
+#WP4
+    dist4 =    10
+    tt4 =      200
+    windDir4 = 10
+    windVel4 = 15
+
+#WP5
+    dist5 =    10
+    tt5 =      200
+    windDir5 = 10
+    windVel5 = 15
+
+#### WAYPOINT CALCULATIONS ####
 
 #WPT1
-text -30 87 8 "WPT 1" #TITLE OF WPT 1
-TT1 = 40
-dist1 = 50
-windVel1 = 15
-windDir1 = 300
-
-#WPT2
-text -30 58 8 "WPT 2" #WPT 2
-TT2 = 90
-dist2 = 30
-windVel2 = 15
-windDir2 = 300
-
-#WAYPOINT DATA DISPLAY AND CALCULATION
-
-#WPT1
-text -33 75.5 8 TT1
+text -33 75.5 8 tt1
 text 2 75.5 8 dist1
 text 3 91 4 windVel1
 text 9 91 4 windDir1
 
+text -33 66.5 8 "wca"
+
+
 #WCA
 
 #WPT2
-text -33 46.5 8 TT2
+text -33 46.5 8 tt2
 text 2 46.5 8 dist2
 dA = dist1 + dist2
 text 2 37 8 dA
+
+
+#### ARTWORK ####
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
