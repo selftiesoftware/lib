@@ -1,0 +1,5 @@
+#functions for VFR flight planner
+
+function calcWCA(windVel,windDir,TT) {
+100
+}
