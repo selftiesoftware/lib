@@ -32,7 +32,7 @@ circle(x1 + 40 y1 - 40 20 )
 arc(x1 + 100 y1 - 40 20 2 4 )
 
 #BEZIER CURVE:start, controlpoint1, controlpoint2, end
-bezierCurve(20 40 20 50 40 95 60 40 )
+bezierCurve(20 40 40 90 40 10 60 75 )
 
 ################## FOR LOOPS ###################
 
