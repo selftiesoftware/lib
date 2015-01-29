@@ -6,6 +6,8 @@ function addTwo(a b) {
 a + b
 }
 
+text(0 0 20 addTwo)
+
 #### RECTANGLE ####
 
 #PARAMETERS:
