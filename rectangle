@@ -1,8 +1,8 @@
 function square(neg pos) {
-  line neg neg neg pos
-  line neg pos pos pos
-  line pos pos pos neg
-  line pos neg neg neg
+  line(neg neg neg pos)
+  line(neg pos pos pos)
+  line(pos pos pos neg)
+  line(pos neg neg neg)
 }
 
 #example:
@@ -14,7 +14,7 @@ function square(neg pos) {
 #}
 
 #DESCRIPTIVE TEXT 
-#text 27 -270 20 "for i <- -15 to 50 {
+#text(27 -270 20 "for i <- -15 to 50 {)
 #a = i + 1
 #b = i - 1
 #square(a * 5 a * 10)

@@ -4,145 +4,145 @@ col1x2 = -60
 size = 6
 dist = 6
 
-line 0 -140 0 135
+line(0 -140 0 135)
 
-text col1x1 y size "XXXIV"
-text col1x2 y size "230V - fatninger"
+text(col1x1 y size "XXXIV")
+text(col1x2 y size "230V - fatninger")
  y = y - dist 
-text col1x1 y size "XIV"
-text col1x2 y size "230V - pærer"
+text(col1x1 y size "XIV")
+text(col1x2 y size "230V - pærer")
  y = y - dist 
-text col1x1 y size "XXIV"
-text col1x2 y size "230V - stik"
+text(col1x1 y size "XXIV")
+text(col1x2 y size "230V - stik")
  y = y - dist 
-text col1x1 y size "XXV"
-text col1x2 y size "audio - ledninger"
+text(col1x1 y size "XXV")
+text(col1x2 y size "audio - ledninger")
  y = y - dist 
-text col1x1 y size "XXV"
-text col1x2 y size "audio - stik"
+text(col1x1 y size "XXV")
+text(col1x2 y size "audio - stik")
  y = y - dist 
-text col1x1 y size "XXX"
-text col1x2 y size "beslag"
+text(col1x1 y size "XXX")
+text(col1x2 y size "beslag")
  y = y - dist 
-text col1x1 y size "XI"
-text col1x2 y size "bits"
+text(col1x1 y size "XI")
+text(col1x2 y size "bits")
  y = y - dist 
-text col1x1 y size "XVIII"
-text col1x2 y size "blyanter"
+text(col1x1 y size "XVIII")
+text(col1x2 y size "blyanter")
  y = y - dist 
-text col1x1 y size "XXVII"
-text col1x2 y size "blæsere"
+text(col1x1 y size "XXVII")
+text(col1x2 y size "blæsere")
  y = y - dist 
-text col1x1 y size "XII"
-text col1x2 y size "bolte"
+text(col1x1 y size "XII")
+text(col1x2 y size "bolte")
  y = y - dist 
-text col1x1 y size "XI"
-text col1x2 y size "bor"
+text(col1x1 y size "XI")
+text(col1x2 y size "bor")
  y = y - dist 
-text col1x1 y size "XII"
-text col1x2 y size "clips"
+text(col1x1 y size "XII")
+text(col1x2 y size "clips")
  y = y - dist 
-text col1x1 y size "XXXII"
-text col1x2 y size "CNC - ledninger"
+text(col1x1 y size "XXXII")
+text(col1x2 y size "CNC - ledninger")
  y = y - dist 
-text col1x1 y size "VI"
-text col1x2 y size "computer: strømledninger"
+text(col1x1 y size "VI")
+text(col1x2 y size "computer: strømledninger")
  y = y - dist 
-text col1x1 y size "VI"
-text col1x2 y size "computerstik"
+text(col1x1 y size "VI")
+text(col1x2 y size "computerstik")
  y = y - dist 
-text col1x1 y size "I"
-text col1x2 y size "cykelgrej"
+text(col1x1 y size "I")
+text(col1x2 y size "cykelgrej")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "dyvler"
+text(col1x1 y size "XX")
+text(col1x2 y size "dyvler")
  y = y - dist 
-text col1x1 y size "XVII"
-text col1x2 y size "dørstopper"
+text(col1x1 y size "XVII")
+text(col1x2 y size "dørstopper")
  y = y - dist 
-text col1x1 y size "XV"
-text col1x2 y size "elektronik - boards"
+text(col1x1 y size "XV")
+text(col1x2 y size "elektronik - boards")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "elektronik - LED"
+text(col1x1 y size "XX")
+text(col1x2 y size "elektronik - LED")
 y = y - dist 
-text col1x1 y size "XXVII"
-text col1x2 y size "elektronik - ledning"
+text(col1x1 y size "XXVII")
+text(col1x2 y size "elektronik - ledning")
 y = y - dist 
-text col1x1 y size "XV"
-text col1x2 y size "multimeter"
+text(col1x1 y size "XV")
+text(col1x2 y size "multimeter")
  y = y - dist 
-text col1x1 y size "XXVII"
-text col1x2 y size "elmotorer"
+text(col1x1 y size "XXVII")
+text(col1x2 y size "elmotorer")
  y = y - dist 
-text col1x1 y size "XIX"
-text col1x2 y size "engangshandsker"
+text(col1x1 y size "XIX")
+text(col1x2 y size "engangshandsker")
  y = y - dist 
-text col1x1 y size "XIX"
-text col1x2 y size "engangskitler"
+text(col1x1 y size "XIX")
+text(col1x2 y size "engangskitler")
  y = y - dist 
-text col1x1 y size "XXII"
-text col1x2 y size "flisekryds"
+text(col1x1 y size "XXII")
+text(col1x2 y size "flisekryds")
  y = y - dist 
-text col1x1 y size "XII"
-text col1x2 y size "fløjmøtrikker"
+text(col1x1 y size "XII")
+text(col1x2 y size "fløjmøtrikker")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "fræsejern"
+text(col1x1 y size "XX")
+text(col1x2 y size "fræsejern")
  y = y - dist 
-text col1x1 y size "XXIX"
-text col1x2 y size "gevindskærer"
+text(col1x1 y size "XXIX")
+text(col1x2 y size "gevindskærer")
  y = y - dist 
-text col1x1 y size "IX"
-text col1x2 y size "gipsskruer"
+text(col1x1 y size "IX")
+text(col1x2 y size "gipsskruer")
  y = y - dist 
-text col1x1 y size "XXXIV"
-text col1x2 y size "halogenspots" 
+text(col1x1 y size "XXXIV")
+text(col1x2 y size "halogenspots" )
 y = y - dist 
-text col1x1 y size "XXX"
-text col1x2 y size "hængelåse"
+text(col1x1 y size "XXX")
+text(col1x2 y size "hængelåse")
  y = y - dist 
-text col1x1 y size "XXV"
-text col1x2 y size "højttaler"
+text(col1x1 y size "XXV")
+text(col1x2 y size "højttaler")
  y = y - dist 
-text col1x1 y size "XVII"
-text col1x2 y size "isoleringsbånd"
+text(col1x1 y size "XVII")
+text(col1x2 y size "isoleringsbånd")
  y = y - dist 
-text col1x1 y size "XVI"
-text col1x2 y size "kabelclips"
+text(col1x1 y size "XVI")
+text(col1x2 y size "kabelclips")
  y = y - dist 
-text col1x1 y size "XVII"
-text col1x2 y size "kiler"
+text(col1x1 y size "XVII")
+text(col1x2 y size "kiler")
  y = y - dist 
-text col1x1 y size "XVII"
-text col1x2 y size "kit"
+text(col1x1 y size "XVII")
+text(col1x2 y size "kit")
 y = y - dist 
-text col1x1 y size "XXIII"
-text col1x2 y size "klemmer"
+text(col1x1 y size "XXIII")
+text(col1x2 y size "klemmer")
  y = y - dist 
-text col1x1 y size "XXIX"
-text col1x2 y size "klude"
+text(col1x1 y size "XXIX")
+text(col1x2 y size "klude")
  y = y - dist 
-text col1x1 y size "XXVII"
-text col1x2 y size "krympeflex"
+text(col1x1 y size "XXVII")
+text(col1x2 y size "krympeflex")
 y = y - dist 
-text col1x1 y size "III"
-text col1x2 y size "lader til boremaskine"
+text(col1x1 y size "III")
+text(col1x2 y size "lader til boremaskine")
  y = y - dist 
-text col1x1 y size "III"
-text col1x2 y size "lader til hækklipper"
+text(col1x1 y size "III")
+text(col1x2 y size "lader til hækklipper")
  y = y - dist
-text col1x1 y size "XXXI"
-text col1x2 y size "loddekolbe" 
+text(col1x1 y size "XXXI")
+text(col1x2 y size "loddekolbe" )
  y = y - dist 
-text col1x1 y size "XXXI"
-text col1x2 y size "loddetin"
+text(col1x1 y size "XXXI")
+text(col1x2 y size "loddetin")
  y = y - dist
-text col1x1 y size "XXXVI"
-text col1x2 y size "metalrester"
+text(col1x1 y size "XXXVI")
+text(col1x2 y size "metalrester")
  y = y - dist 
-text col1x1 y size "XXVI"
-text col1x2 y size "modelmaterialer - metal"
+text(col1x1 y size "XXVI")
+text(col1x2 y size "modelmaterialer - metal")
  y = y - dist 
 
 #LEFT ########################################
@@ -150,137 +150,137 @@ y = 130
 col1x1 = 10
 col1x2 = 30
 
-text col1x1 y size "XXVI"
-text col1x2 y size "modelmaterialer - plastic"
+text(col1x1 y size "XXVI")
+text(col1x2 y size "modelmaterialer - plastic")
  y = y - dist 
-text col1x1 y size "XXVI"
-text col1x2 y size "modelmaterialer - træ"
+text(col1x1 y size "XXVI")
+text(col1x2 y size "modelmaterialer - træ")
  y = y - dist 
-text col1x1 y size "XXX"
-text col1x2 y size "møbelbeslag"
+text(col1x1 y size "XXX")
+text(col1x2 y size "møbelbeslag")
  y = y - dist 
-text col1x1 y size "II"
-text col1x2 y size "møbelhjul"
+text(col1x1 y size "II")
+text(col1x2 y size "møbelhjul")
  y = y - dist 
-text col1x1 y size "II"
-text col1x2 y size "møbelskruer"
+text(col1x1 y size "II")
+text(col1x2 y size "møbelskruer")
  y = y - dist 
-text col1x1 y size "XII"
-text col1x2 y size "møtrikker"
+text(col1x1 y size "XII")
+text(col1x2 y size "møtrikker")
  y = y - dist 
-text col1x1 y size "XVIII"
-text col1x2 y size "målebånd"
+text(col1x1 y size "XVIII")
+text(col1x2 y size "målebånd")
  y = y - dist 
-text col1x1 y size "VII"
-text col1x2 y size "olie"
+text(col1x1 y size "VII")
+text(col1x2 y size "olie")
  y = y - dist 
-text col1x1 y size "XXXVI"
-text col1x2 y size "opbevaringsbokse"
+text(col1x1 y size "XXXVI")
+text(col1x2 y size "opbevaringsbokse")
  y = y - dist 
-text col1x1 y size "XVI"
-text col1x2 y size "opladere"
+text(col1x1 y size "XVI")
+text(col1x2 y size "opladere")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "pakgarn og salve"
+text(col1x1 y size "XX")
+text(col1x2 y size "pakgarn og salve")
  y = y - dist 
-text col1x1 y size "XXVI"
-text col1x2 y size "plasticposer"
+text(col1x1 y size "XXVI")
+text(col1x2 y size "plasticposer")
  y = y - dist 
-text col1x1 y size "VIII"
-text col1x2 y size "rawplugs"
+text(col1x1 y size "VIII")
+text(col1x2 y size "rawplugs")
  y = y - dist 
-text col1x1 y size "V"
-text col1x2 y size "RC batterier"
+text(col1x1 y size "V")
+text(col1x2 y size "RC batterier")
  y = y - dist 
-text col1x1 y size "V"
-text col1x2 y size "RC ladere"
+text(col1x1 y size "V")
+text(col1x2 y size "RC ladere")
  y = y - dist 
-text col1x1 y size "XVIII"
-text col1x2 y size "reb"
+text(col1x1 y size "XVIII")
+text(col1x2 y size "reb")
  y = y - dist 
-text col1x1 y size "VII"
-text col1x2 y size "rustbeskyttelse"
+text(col1x1 y size "VII")
+text(col1x2 y size "rustbeskyttelse")
  y = y - dist 
-text col1x1 y size "XIII"
-text col1x2 y size "sandpapir"
+text(col1x1 y size "XIII")
+text(col1x2 y size "sandpapir")
  y = y - dist 
-text col1x1 y size "XXII"
-text col1x2 y size "savklinger"
+text(col1x1 y size "XXII")
+text(col1x2 y size "savklinger")
  y = y - dist 
-text col1x1 y size "XVI"
-text col1x2 y size "sikringer"
+text(col1x1 y size "XVI")
+text(col1x2 y size "sikringer")
  y = y - dist
-text col1x1 y size "XXII"
-text col1x2 y size "skraber"
+text(col1x1 y size "XXII")
+text(col1x2 y size "skraber")
  y = y - dist 
-text col1x1 y size "XXIX"
-text col1x2 y size "skruemaskine - tilbehør"
+text(col1x1 y size "XXIX")
+text(col1x2 y size "skruemaskine - tilbehør")
  y = y - dist 
-text col1x1 y size "X"
-text col1x2 y size "SKRUER - 0-50mm"
+text(col1x1 y size "X")
+text(col1x2 y size "SKRUER - 0-50mm")
  y = y - dist 
-text col1x1 y size "IX"
-text col1x2 y size "SKRUER - 50-100 mm"
+text(col1x1 y size "IX")
+text(col1x2 y size "SKRUER - 50-100 mm")
  y = y - dist 
-text col1x1 y size "XXIII"
-text col1x2 y size "skruetvinger"
+text(col1x1 y size "XXIII")
+text(col1x2 y size "skruetvinger")
  y = y - dist 
-text col1x1 y size "XIII"
-text col1x2 y size "slibeklods"
+text(col1x1 y size "XIII")
+text(col1x2 y size "slibeklods")
  y = y - dist 
-text col1x1 y size "XIII"
-text col1x2 y size "sliberondel"
+text(col1x1 y size "XIII")
+text(col1x2 y size "sliberondel")
  y = y - dist 
-text col1x1 y size "XVIII"
-text col1x2 y size "snor"
+text(col1x1 y size "XVIII")
+text(col1x2 y size "snor")
  y = y - dist 
-text col1x1 y size "XXVII"
-text col1x2 y size "spotlys"
+text(col1x1 y size "XXVII")
+text(col1x2 y size "spotlys")
  y = y - dist 
-text col1x1 y size "XII"
-text col1x2 y size "spændeskiver"
+text(col1x1 y size "XII")
+text(col1x2 y size "spændeskiver")
  y = y - dist 
-text col1x1 y size "XVI"
-text col1x2 y size "strips"
+text(col1x1 y size "XVI")
+text(col1x2 y size "strips")
  y = y - dist 
-text col1x1 y size "IV"
-text col1x2 y size "strømforsyninger"
+text(col1x1 y size "IV")
+text(col1x2 y size "strømforsyninger")
  y = y - dist 
-text col1x1 y size "XXVIII"
-text col1x2 y size "støvmasker"
+text(col1x1 y size "XXVIII")
+text(col1x2 y size "støvmasker")
  y = y - dist 
-text col1x1 y size "XIII"
-text col1x2 y size "stålbørste"
+text(col1x1 y size "XIII")
+text(col1x2 y size "stålbørste")
  y = y - dist 
-text col1x1 y size "XXII"
-text col1x2 y size "svamp"
+text(col1x1 y size "XXII")
+text(col1x2 y size "svamp")
  y = y - dist 
-text col1x1 y size "XXI"
-text col1x2 y size "tape"
+text(col1x1 y size "XXI")
+text(col1x2 y size "tape")
  y = y - dist 
-text col1x1 y size "XXIX"
-text col1x2 y size "topnøgler"
+text(col1x1 y size "XXIX")
+text(col1x2 y size "topnøgler")
  y = y - dist 
-text col1x1 y size "VI"
-text col1x2 y size "tv ledninger"
+text(col1x1 y size "VI")
+text(col1x2 y size "tv ledninger")
  y = y - dist 
-text col1x1 y size "VI"
-text col1x2 y size "tv stik"
+text(col1x1 y size "VI")
+text(col1x2 y size "tv stik")
  y = y - dist 
-text col1x1 y size "XXIX"
-text col1x2 y size "twist"
+text(col1x1 y size "XXIX")
+text(col1x2 y size "twist")
  y = y - dist 
-text col1x1 y size "XVII"
-text col1x2 y size "tætningslister"
+text(col1x1 y size "XVII")
+text(col1x2 y size "tætningslister")
  y = y - dist 
-text col1x1 y size "VI"
-text col1x2 y size "USB nøgler"
+text(col1x1 y size "VI")
+text(col1x2 y size "USB nøgler")
  y = y - dist 
-text col1x1 y size "XXXIII"
-text col1x2 y size "USB kabel"
+text(col1x1 y size "XXXIII")
+text(col1x2 y size "USB kabel")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "vandslange-studser"
+text(col1x1 y size "XX")
+text(col1x2 y size "vandslange-studser")
  y = y - dist 
-text col1x1 y size "XX"
-text col1x2 y size "VVS fittings"
+text(col1x1 y size "XX")
+text(col1x2 y size "VVS fittings")

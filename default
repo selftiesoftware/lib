@@ -1,5 +1,5 @@
-text -90 130 17 "welcome to RepoCad!" 
-text -90 120 7 "platform for the Internet of Digital Design"
+text(-90 130 17 "welcome to RepoCad!" )
+text(-90 120 7 "platform for the Internet of Digital Design")
 
 #in this window you can write code which will generate artwork on the canvas to the right.
 
@@ -7,42 +7,42 @@ text -90 120 7 "platform for the Internet of Digital Design"
 
 ################## LINE DRAWING ###############
 
-#to draw a line write: line x1 y1 x2 y2:
+#to draw a line(write: line(x1 y1 x2 y2:))
 
 x1 = -90
 y1 = 100
 x2 = 90
 y2 = y1
-line x1 y1 x2 y2 
+line(x1 y1 x2 y2 )
 
 ##################### TEXT ####################
 
-#a line of text is done like this:
+#a line(of text(is done like this:))
 
-text -90 92 6 "to draw a line write: line x1 y1 x2 y2 (where x and y are numbers -start and end)"
+text(-90 92 6 "to draw a line(write: line(x1 y1 x2 y2 (where x and y are numbers -start and end)")))
 
 ################## CIRCLES, ARCS, BEZIERS ######
 
-text -90 20 6 "in a similar way you can make circles, arcs, and bezier curves" 
+text(-90 20 6 "in a similar way you can make circles, arcs, and bezier curves" )
 
 #CIRCLE: x,y,radius
-circle x1 + 40 y1 - 40 20 
+circle(x1 + 40 y1 - 40 20 )
 
 #ARC: x,y,radius,start(radians),end(radians)
-arc x1 + 100 y1 - 40 20 2 4 
+arc(x1 + 100 y1 - 40 20 2 4 )
 
 #BEZIER CURVE:start, controlpoint1, controlpoint2, end
-bezierCurve 20 40 20 50 40 95 60 40 
+bezierCurve(20 40 20 50 40 95 60 40 )
 
 ################## FOR LOOPS ###################
 
-text -90 -70 6 "for loops allow for arrays and matrices" 
+text(-90 -70 6 "for loops allow for arrays and matrices" )
 
 #ROWS: for-loop going through i from -7 to -2:
 for i <- -7 to -2 
 {
   dist = 8
-  line -90 i * dist -50 i * dist
+  line(-90 i * dist -50 i * dist)
 }
 
 ################### MATRIX #####################
@@ -52,7 +52,7 @@ for i <- -7 to -2
   for j <- -7 to -2 
   {
   dist = 8
-    line -40 j * dist 10 i * dist
+    line(-40 j * dist 10 i * dist)
   }
 }
 
@@ -68,21 +68,21 @@ for i <- 3 to 6 {
   }
 }
 
-text 20 -70 6 "imported function to draw triangles"
+text(20 -70 6 "imported function to draw triangles")
 
 
 ################### SAVING #####################
-text -90 -88 6 "to save a script, change the url name after the # sign" 
+text(-90 -88 6 "to save a script, change the url name after the # sign" )
 
-text -90 -94 6 "from 'default' to something else. refresh the webpage, then click SAVE" 
+text(-90 -94 6 "from 'default' to something else. refresh the webpage, then click SAVE" )
 
 ################## VERSION ####################
-text 45 140 7 "current version: 0.1.0" 
+text(45 140 7 "current version: 0.1.0" )
 
 
 ################## GPL #######################
-text -90 -107 4 "Copyright (C) 2015, Selftie S oftware" 
+text(-90 -107 4 "Copyright (C) 2015, Selftie S oftware" )
 
-text -90 -110 4 "This program comes with ABSOLUTELY NO WARRANTY" 
+text(-90 -110 4 "This program comes with ABSOLUTELY NO WARRANTY" )
 
-text -90 -113 4 "This is free software, and you are welcome to redistribute it under certain conditions; see http://www.gnu.org/copyleft/gpl.html"
+text(-90 -113 4 "This is free software, and you are welcome to redistribute it under certain conditions; see http://www.gnu.org/copyleft/gpl.html")
