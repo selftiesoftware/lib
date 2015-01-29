@@ -7,7 +7,7 @@ text(-90 120 7 "platform for the Internet of Digital Design")
 
 ################## LINE DRAWING ###############
 
-#to draw a line(write: line(x1 y1 x2 y2:))
+#to draw a line write: line(x1 y1 x2 y2:)
 
 x1 = -90
 y1 = 100
@@ -17,9 +17,9 @@ line(x1 y1 x2 y2 )
 
 ##################### TEXT ####################
 
-#a line(of text(is done like this:))
+#a line of text(is done like this:)
 
-text(-90 92 6 "to draw a line(write: line(x1 y1 x2 y2 (where x and y are numbers -start and end)")))
+text(-90 92 6 "to draw a line write: line(x1 y1 x2 y2 (where x and y are numbers -start and end)")
 
 ################## CIRCLES, ARCS, BEZIERS ######
 
