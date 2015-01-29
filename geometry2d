@@ -6,7 +6,7 @@ function addTwo(a b) {
 a + b
 }
 
-text(0 0 20 addTwo(2 3)
+text(0 0 20 addTwo(2 3))
 
 #### RECTANGLE ####
 
