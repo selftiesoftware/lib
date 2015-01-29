@@ -25,7 +25,7 @@ text(-90 y 5.5 "What if, on the contrary, designs were open source, conceived as
 
 y = y - dist
 
-text(-90 y 5.5 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design (IOD).")
+text(-90 y 5.5 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design: IOD")
 
 y = y - dist
 
@@ -67,11 +67,11 @@ text(-80 y 7 "As demonstrated in the 'RepoCad' prototype it could happen like th
 y = -5
 dist = 4
 
-text(-80 y 5 "STEP 1 - CREATION: an online(drawing app should be made: RepoCad (earlier: Siigna)" ))
+text(-80 y 5 "STEP 1 - CREATION: an online(drawing app should be made: RepoCad - earlier: Siigna")
 
 y = y - dist
 
-text(-80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of the design tool" )
+text(-80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of the design tool")
 
 y = y - dist
 
@@ -79,7 +79,7 @@ text(-80 y 5 " should be user-created, user-maintained, and user-perfected. Just
 
 y = y - dist
 
-text(-80 y 5 "both tools and drawings should be import statements, linking to other online(scripts." ))
+text(-80 y 5 "both tools and drawings should be import statements, linking to other online scripts.")
 
 y = y - dist
 
@@ -104,7 +104,7 @@ text(-80 y 5 "defining drawings or tools - are added. The contents /functionalit
 
 y = y - dist
 
-text(-80 y 5 "from other scripts. The scripts are online(and versioned. This means nothing is ever lost" ))
+text(-80 y 5 "from other scripts. The scripts are online(and versioned. This means nothing is ever lost" )
 
 y = y - dist
 
