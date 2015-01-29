@@ -76,9 +76,6 @@ text(-90 -88 6 "to save a script, change the url name after the # sign" )
 
 text(-90 -94 6 "from 'default' to something else. refresh the webpage, then click SAVE" )
 
-################## VERSION ####################
-text(45 140 7 "current version: 0.1.0" )
-
 
 ################## GPL #######################
 text(-90 -107 4 "Copyright (C) 2015, Selftie S oftware" )
