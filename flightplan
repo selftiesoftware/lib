@@ -1,17 +1,9 @@
-# a VFR flight planner with automatic calculations
+text(-17 112 7 "reg. OY-____") #A/C REGISTRATION
+text(-37 96 6 "pilot.: John Doe") #PILOT
+text(18 133 7 "from: EKRD") #FROM
+text(50 133 7 "to: EKVH") #FROM
 
-import flightplanFunctions
-
-#### INPUT ####
-
-#GENERAL
-
-text(-17 112 7 "reg. OY-____" #A/C REGISTRATION)
-text(-37 96 6 "pilot.: John Doe" #PILOT)
-text(18 133 7 "from: EKRD" #FROM)
-text(50 133 7 "to: EKVH" #FROM)
-
-    numberOfWaypoints = 7 # number of waypoints 
+    numberOfWaypoints = 7 #number of waypoints 
 
     tas =      80    # TAS in knots 
     gph =      3.5   # FUEL in Gallons/hour
@@ -56,7 +48,7 @@ text(2 75.5 8 dist1)
 text(3 91 4 windVel1)
 text(9 91 4 windDir1)
 
-text(-33 66.5 8 calcWCA(windVel1 windDir1 tt1))
+#text(-33 66.5 8 calcWCA(windVel1 windDir1 tt1))
 
 
 #WCA
@@ -76,10 +68,10 @@ for i <- 0 to numberOfWaypoints{
   a = i * -29 # wpt entry height
 
   #LINEART
-  line(-40 a + 94 90 a + 94 #main seperators)
-  line(-40 a + 64.7 90 a + 64.7 #main seperators)
-  line(-40 a + 84 50 a + 84 #sub 1)
-  line(-40 a + 74 50 a + 74 #sub 1)
+  line(-40 a + 94 90 a + 94) #main seperators
+  line(-40 a + 64.7 90 a + 64.7) #main seperators
+  line(-40 a + 84 50 a + 84) #sub 1
+  line(-40 a + 74 50 a + 74) #sub 1
  
   #explanations
   text(-40 a + 81 3.5 "TT")
@@ -95,11 +87,11 @@ for i <- 0 to numberOfWaypoints{
   text( 33 a + 81 3.5 "ATA")
   text( 33 a + 71 3.5 "DIFF")
 
-  text( -3 a + 91 3.5 "wind:        /")
+  text( -3 a + 91 3.5 "wind:  /   ")
 
   #grid
-  line(32 a + 94 32 a + 84 #GS / WIND sep lines)
-  line(14 a + 94 14 a + 84 #GS / WIND sep lines)
+  line(32 a + 94 32 a + 84) # GS / WIND sep lines
+  line(14 a + 94 14 a + 84) # GS / WIND sep lines
   for j <- 0 to 4 {
     q = 18 * j
     line(q - 22 a + 84 q - 22 a + 65)
@@ -110,16 +102,16 @@ for i <- 0 to numberOfWaypoints{
   #notes
   text(52 a + 91 4 "shorthand/notes")
 
-  text(-39 a + 86 11 i + 1 #wpt number)
+  text(-39 a + 86 11 i + 1 ) # wpt number
 }
-line(50 94 50 -130 #right line)
+line(50 94 50 -130) # right line
 
 #HDG CALCULATIONS
 
 #HEADER
 text(-18 132 8 "VFR FLIGHT")
 text(-18 125 10 "PLANNER")
-line(14 135 14 94 #vertLine)
+line(14 135 14 94) # vertLine
 
 text(18 125 7 "TAS:")
 text(32 125 7 tas)
