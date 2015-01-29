@@ -58,13 +58,13 @@ for i <- -7 to -2
 
 
 #############IMPORT FUNCTIONS ##################
-#import geometry2d
+import geometry2d
 
 for i <- 3 to 6 {
   for j <- -5 to -2 {
     a = i * 10
     b = j * 10
-    #triangle(a b 3)
+    triangle(a b 3)
   }
 }
 
