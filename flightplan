@@ -53,12 +53,21 @@ text(9 91 4 windVel1)
 text(3 91 4 windDir1)
 
 n1 = sin(radians(tt1 - windDir1))
-wca1 = (windVel1 * n1)
-wca1b = degrees(wca1 / tas * -1)
-th1 = toInt(tt1 + wca1b)
-text(-33 66.5 8 toInt(wca1b)) #WCA
+wca1a = (windVel1 * n1)
+wca1 = degrees(wca1a / tas * -1)
+th1 = toInt(tt1 + wca1)
+c1 = cos(radians(wca1))
+c2 = cos(radians(tt1 - windDir1))
+gs1a = tas * c1
+gs1b = windVel1 * c2
+gs1 = gs1a - gs1b
+
+text(-33 66.5 8 toInt(wca1)) #WCA
 text(-15 75.5 8 th1) #TH
 text(-15 66.5 8 th1 + deviation) #MH
+
+text(18 86.5 8 toInt(gs1)) #GS
+
 
 #WCA
 
