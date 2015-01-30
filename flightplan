@@ -8,6 +8,8 @@
     pilot =     "John Doe"
     tas =       80    # TAS in knots 
     lph =       14   # FUEL in Liters/hour
+    alternate = 5 # fuel to alternate
+    reserve =   10   #reserve fuel, liters
     glide =     8     # glide ratio 1:x
     deviation = 1
 
@@ -208,13 +210,26 @@ text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4 + time5)) #TIME, MIN
 
 timeTotal = time1 + time2 + time3 + time4 + time5
 hrs = timeTotal / 60
+trip = hrs * lph
 line(-4 -110 -4 -140)
-text(-40 -114 4 "fuel consumption")
-text(-38 -120 6 "trip fuel")
+text(-40 -114 4 "fuel consumption / LITERS")
 
-text(-14 -120 6 toInt(hrs * lph))
+text(-38 -120 6 "trip fuel")
+text(-14 -120 6 toInt(trip))
+
+text(-38 -125 6 "alternate")
+text(-14 -125 6 toInt(alternate))
+
+text(-38 -130 6 "reserve")
+text(-14 -130 6 toInt(reserve))
+
+text(-38 -135 6 "total fuel")
+text(-14 -135 6 toInt(trip + alternate + reserve))
+line(-20 -131 -5 -131)
+line(-20 -136 -5 -136)
 
 #### GLIDE ####
+
 
 ############ ARTWORK ##############
 #HEADER
