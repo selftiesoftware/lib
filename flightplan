@@ -6,7 +6,7 @@ text(50 133 7 "to: EKRD") #FROM
     numberOfWaypoints = 7 #number of waypoints 
 
     tas =       80    # TAS in knots 
-    gph =       3.5   # FUEL in Gallons/hour
+    lph =       14   # FUEL in Liters/hour
     glide =     8     # glide ratio 1:x
     deviation = 1
 
@@ -203,6 +203,18 @@ text(18 y + 15.5 8 toInt(time5)) #TIME, MIN
 text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4 + time5)) #TIME, MIN
 
 
+#### FUEL CALCULATION ####
+
+timeTotal = time1 + time2 + time3 + time4 + time5
+hrs = timeTotal / 60
+line(-4 -110 -4 -140)
+text(-40 -114 4 "fuel consumption")
+text(-38 -120 6 "trip fuel")
+
+text(-14 -120 6 toInt(hrs * lph))
+
+#glide
+
 ############ ARTWORK ##############
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
@@ -258,11 +270,6 @@ text(38 125 7 "KTS")
 
 #footer
 line(-40 -110 90 -110)
-
-#fuel calculation
-text(-38 -114 4 "fuel consumption")
-
-#glide
 
 
 ######### LEFT SIDE: frequencies ########## 
