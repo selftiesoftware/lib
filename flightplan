@@ -35,7 +35,7 @@ text(50 133 7 "to: EKRD") #FROM
     title4 =   "EKRD"
     dist4 =    20
     tt4 =      45
-    windDir4 = 10
+    windDir4 = 90
     windVel4 = 15
 
 #WP5
@@ -114,12 +114,12 @@ text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
 
 n3 = sin(radians(tt3 - windDir3))
 wca3a = (windVel3 * n3)
-wca3 = degrees(wca2a / tas * -1)
+wca3 = degrees(wca3a / tas * -1)
 th3 = toInt(tt3 + wca3)
 c3a = cos(radians(wca3))
 c3b = cos(radians(tt3 - windDir3))
 gs3a = tas * c3a
-gs3b = windVel2 * c3b
+gs3b = windVel3 * c3b
 gs3 = gs3a - gs3b
 timeHr3 = dist3 / gs3
 time3 = timeHr3 * 60 
@@ -139,6 +139,69 @@ text(-15 y + 6.5 8 th3 + deviation) #MH
 text(18 y + 26.5 8 toInt(gs3)) #GS
 text(18 y + 15.5 8 toInt(time3)) #TIME, MIN
 text(18 y + 6.5 8 toInt(time1 + time2 + time3)) #TIME, MIN
+
+
+#### WPT4 ####
+
+n4 = sin(radians(tt4 - windDir4))
+wca4a = (windVel4 * n4)
+wca4 = degrees(wca4a / tas * -1)
+th4 = toInt(tt4 + wca4)
+c4a = cos(radians(wca4))
+c4b = cos(radians(tt4 - windDir4))
+gs4a = tas * c4a
+gs4b = windVel4 * c4b
+gs4 = gs4a - gs4b
+timeHr4 = dist4 / gs4
+time4 = timeHr4 * 60 
+
+y = -27 # vertical offset
+
+text(-33 y + 26 8 title4) # TITLE
+text(-33 y + 15.5 8 tt4)
+text(2 y + 15.5 8 dist4)
+text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4) #DIST ACC
+text(9 y + 31 4 windVel4)
+text(3 y + 31 4 windDir4)
+text(-33 y + 6.5 8 toInt(wca4)) #WCA
+text(-15 y + 15.5 8 th4) #TH
+text(-15 y + 6.5 8 th4 + deviation) #MH
+
+text(18 y + 26.5 8 toInt(gs4)) #GS
+text(18 y + 15.5 8 toInt(time4)) #TIME, MIN
+text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
+
+
+#### WPT4 ####
+
+n5 = sin(radians(tt5 - windDir5))
+wca5a = (windVel5 * n5)
+wca5 = degrees(wca5a / tas * -1)
+th5 = toInt(tt5 + wca5)
+c5a = cos(radians(wca5))
+c5b = cos(radians(tt5 - windDir5))
+gs5a = tas * c5a
+gs5b = windVel5 * c5b
+gs5 = gs5a - gs5b
+timeHr5 = dist5 / gs5
+time5 = timeHr5 * 60 
+
+y = -56 # vertical offset
+
+text(-33 y + 26 8 title5) # TITLE
+text(-33 y + 15.5 8 tt5)
+text(2 y + 15.5 8 dist5)
+text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 + dist5) #DIST ACC
+text(9 y + 31 4 windVel5)
+text(3 y + 31 4 windDir5)
+text(-33 y + 6.5 8 toInt(wca5)) #WCA
+text(-15 y + 15.5 8 th5) #TH
+text(-15 y + 6.5 8 th5 + deviation) #MH
+
+text(18 y + 26.5 8 toInt(gs5)) #GS
+text(18 y + 15.5 8 toInt(time5)) #TIME, MIN
+text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4 + time5)) #TIME, MIN
+
 
 ############ ARTWORK ##############
 
