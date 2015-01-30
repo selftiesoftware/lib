@@ -46,7 +46,7 @@ text(50 133 7 "to: EKRD") #FROM
 
 ############ WAYPOINT CALCULATIONS ##############
 
-#WPT1
+#### WPT1 ####
 text(-33 75.5 8 tt1)
 text(2 75.5 8 dist1)
 text(9 91 4 windVel1)
@@ -61,23 +61,17 @@ c2 = cos(radians(tt1 - windDir1))
 gs1a = tas * c1
 gs1b = windVel1 * c2
 gs1 = gs1a - gs1b
+timeHr1 = dist1 * gs1
 
-text(-33 86 8 title1)
-text(-33 66.5 8 toInt(wca1)) #WCA
-text(-15 75.5 8 th1) #TH
-text(-15 66.5 8 th1 + deviation) #MH
+y = 60
 
-text(18 86.5 8 toInt(gs1)) #GS
+text(-33 y + 26 8 title1)
+text(-33 y + 6.5 8 toInt(wca1)) #WCA
+text(-15 y + 15.5 8 th1) #TH
+text(-15 y + 6.5 8 th1 + deviation) #MH
 
-
-#WCA
-
-#WPT2
-text(-33 46.5 8 tt2)
-text(2 46.5 8 dist2)
-dA = dist1 + dist2
-text(2 37 8 dA)
-
+text(18 y + 26.5 8 toInt(gs1)) #GS
+text(18 y + 15.5 8 toInt(timeHr1 / 60)) #TIME, MIN
 
 #### ARTWORK ####
 
