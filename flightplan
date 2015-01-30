@@ -229,7 +229,7 @@ line(-20 -131 -5 -131)
 line(-20 -136 -5 -136)
 
 #### GLIDE ####
-
+text(0 -114 4 "glide distance in NM / feet")
 
 ############ ARTWORK ##############
 #HEADER
