@@ -25,18 +25,21 @@ text(50 133 7 "to: EKRD") #FROM
     windVel2 = 15
 
 #WP3
+    title3 =   "IKAST"
     dist3 =    10
     tt3 =      200
     windDir3 = 10
     windVel3 = 15
 
 #WP4
+    title4 =   "IKAST"
     dist4 =    10
     tt4 =      200
     windDir4 = 10
     windVel4 = 15
 
 #WP5
+    title5 =   "IKAST"    
     dist5 =    10
     tt5 =      200
     windDir5 = 10
@@ -46,7 +49,9 @@ text(50 133 7 "to: EKRD") #FROM
 
 ############ WAYPOINT CALCULATIONS ##############
 
+
 #### WPT1 ####
+
 n1 = sin(radians(tt1 - windDir1))
 wca1a = (windVel1 * n1)
 wca1 = degrees(wca1a / tas * -1)
@@ -73,13 +78,15 @@ text(-15 y + 6.5 8 th1 + deviation) #MH
 text(18 y + 26.5 8 toInt(gs1)) #GS
 text(18 y + 15.5 8 toInt(time1)) #TIME, MIN
 
+
 #### WPT2 ####
-n2 = sin(radians(tt2 - windDir1))
+
+n2 = sin(radians(tt2 - windDir2))
 wca2a = (windVel2 * n2)
 wca2 = degrees(wca2a / tas * -1)
 th2 = toInt(tt2 + wca2)
 c2a = cos(radians(wca2))
-c2b = cos(radians(tt1 - windDir1))
+c2b = cos(radians(tt2 - windDir2))
 gs2a = tas * c2a
 gs2b = windVel2 * c2b
 gs2 = gs2a - gs2b
@@ -87,6 +94,37 @@ timeHr2 = dist2 / gs2
 time2 = timeHr2 * 60 
 
 y = 31 # vertical offset
+
+text(-33 y + 26 8 title2) # TITLE
+text(-33 y + 15.5 8 tt2)
+text(2 y + 15.5 8 dist2)
+text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
+text(9 y + 31 4 windVel2)
+text(3 y + 31 4 windDir2)
+text(-33 y + 6.5 8 toInt(wca2)) #WCA
+text(-15 y + 15.5 8 th2) #TH
+text(-15 y + 6.5 8 th2 + deviation) #MH
+
+text(18 y + 26.5 8 toInt(gs2)) #GS
+text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
+text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
+
+
+#### WPT3 ####
+
+n3 = sin(radians(tt3 - windDir3))
+wca3a = (windVel3 * n3)
+wca3 = degrees(wca2a / tas * -1)
+th3 = toInt(tt3 + wca3)
+c3a = cos(radians(wca3))
+c3b = cos(radians(tt3 - windDir3))
+gs3a = tas * c3a
+gs3b = windVel2 * c3b
+gs3 = gs3a - gs3b
+timeHr3 = dist3 / gs3
+time3 = timeHr3 * 60 
+
+y = 2 # vertical offset
 
 text(-33 y + 26 8 title2) # TITLE
 text(-33 y + 15.5 8 tt2)
