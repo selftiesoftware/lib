@@ -1,16 +1,13 @@
-
-
-    numberOfWaypoints = 7 #number of waypoints 
-
     from =      "EKVJ"
     to =        "EKRD"
     reg =       "OY-ABC"
     pilot =     "John Doe"
-    tas =       80    # TAS in knots 
+
+    tas =       80   # TAS in knots 
     lph =       14   # FUEL in Liters/hour
-    alternate = 5 # fuel to alternate
-    reserve =   10   #reserve fuel, liters
-    glide =     8     # glide ratio 1:x
+    alternate = 5    # fuel to alternate
+    reserve =   10   # reserve fuel, liters
+    glide =     8    # glide ratio 1:x
     deviation = 1
 
 #WP1
@@ -42,16 +39,18 @@
     windVel4 = 15
 
 #WP5
-    title5 =   " "    
+    title5 =   " - - - "    
     dist5 =    0
     tt5 =      0
     windDir5 = 0
     windVel5 = 0
 
-## END USER INPUT do not edit below this point ##
+
+
+## END USER INPUT ##
+## do not edit below this point
 
 ############ WAYPOINT CALCULATIONS ##############
-
 
 #### WPT1 ####
 
@@ -283,9 +282,10 @@ text(18 100 5.5 "GLIDE")
 text(32 100 7 "1 /")
 text(38 100 7 glide) #FUEL
 
+#### DRAW GRAPHICS FOR EACH WAYPOINT ####
 
+numberOfWaypoints = 7 #number of waypoints 
 
-#DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
  
   a = i * -29 # wpt entry height
