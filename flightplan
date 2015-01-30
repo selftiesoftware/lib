@@ -11,14 +11,14 @@ text(50 133 7 "to: EKRD") #FROM
     deviation = 1
 
 #WP1
-    title1 =   "HOBRO"
+    title1 =   "VIDEBAEK"
     dist1 =    10
     tt1 =      90
     windDir1 = 135
     windVel1 = 30
 
 #WP2
-    title1 =   "HOBRO"
+    title2 =   "IKAST"
     dist2 =    10
     tt2 =      200
     windDir2 = 10
