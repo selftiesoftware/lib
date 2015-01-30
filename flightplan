@@ -275,14 +275,14 @@ for i <- 0 to numberOfWaypoints{
 
   text(-40 a + 89 7 i + 1 ) # wpt number
 }
-line(50 94 50 -130) # right line
+line(50 94 50 -140) # right line
 
 #footer
 line(-40 -110 90 -110)
 
 
 ######### LEFT SIDE: frequencies ########## 
-line(-41 126 -41 -130)
+line(-41 126 -41 -140)
 text(-90 120 7 "FREQUENCIES")
 
 for i <- -16 to 19 {
