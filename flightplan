@@ -12,7 +12,7 @@ text(50 133 7 "to: EKRD") #FROM
 
 #WP1
     title1 =   "VIDEBAEK"
-    dist1 =    10
+    dist1 =    20
     tt1 =      90
     windDir1 = 135
     windVel1 = 30
@@ -47,33 +47,62 @@ text(50 133 7 "to: EKRD") #FROM
 ############ WAYPOINT CALCULATIONS ##############
 
 #### WPT1 ####
-text(-33 75.5 8 tt1)
-text(2 75.5 8 dist1)
-text(9 91 4 windVel1)
-text(3 91 4 windDir1)
-
 n1 = sin(radians(tt1 - windDir1))
 wca1a = (windVel1 * n1)
 wca1 = degrees(wca1a / tas * -1)
 th1 = toInt(tt1 + wca1)
-c1 = cos(radians(wca1))
-c2 = cos(radians(tt1 - windDir1))
-gs1a = tas * c1
-gs1b = windVel1 * c2
+c1a = cos(radians(wca1))
+c1b = cos(radians(tt1 - windDir1))
+gs1a = tas * c1a
+gs1b = windVel1 * c1b
 gs1 = gs1a - gs1b
-timeHr1 = dist1 * gs1
+timeHr1 = dist1 / gs1
+time1 = timeHr1 * 60
 
-y = 60
+y = 60 # vertical offset
 
-text(-33 y + 26 8 title1)
+text(-33 y + 26 8 title1) # TITLE
+text(-33 y + 15.5 8 tt1)
+text(2 y + 15.5 8 dist1)
+text(9 y + 31 4 windVel1)
+text(3 y + 31 4 windDir1)
 text(-33 y + 6.5 8 toInt(wca1)) #WCA
 text(-15 y + 15.5 8 th1) #TH
 text(-15 y + 6.5 8 th1 + deviation) #MH
 
 text(18 y + 26.5 8 toInt(gs1)) #GS
-text(18 y + 15.5 8 toInt(timeHr1 / 60)) #TIME, MIN
+text(18 y + 15.5 8 toInt(time1)) #TIME, MIN
 
-#### ARTWORK ####
+#### WPT2 ####
+n2 = sin(radians(tt2 - windDir1))
+wca2a = (windVel2 * n2)
+wca2 = degrees(wca2a / tas * -1)
+th2 = toInt(tt2 + wca2)
+c2a = cos(radians(wca2))
+c2b = cos(radians(tt1 - windDir1))
+gs2a = tas * c2a
+gs2b = windVel2 * c2b
+gs2 = gs2a - gs2b
+timeHr2 = dist2 / gs2
+time2 = timeHr2 * 60 
+
+y = 31 # vertical offset
+
+text(-33 y + 26 8 title2) # TITLE
+text(-33 y + 15.5 8 tt2)
+text(2 y + 15.5 8 dist2)
+text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
+text(9 y + 31 4 windVel2)
+text(3 y + 31 4 windDir2)
+text(-33 y + 6.5 8 toInt(wca2)) #WCA
+text(-15 y + 15.5 8 th2) #TH
+text(-15 y + 6.5 8 th2 + deviation) #MH
+
+text(18 y + 26.5 8 toInt(gs2)) #GS
+text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
+text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
+
+############ ARTWORK ##############
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
@@ -110,16 +139,12 @@ for i <- 0 to numberOfWaypoints{
     line(q - 22 a + 84 q - 22 a + 65)
   }
 
-  #VALUES
-
   #notes
   text(52 a + 91 4 "shorthand/notes")
 
   text(-40 a + 89 7 i + 1 ) # wpt number
 }
 line(50 94 50 -130) # right line
-
-#HDG CALCULATIONS
 
 #HEADER
 text(-18 132 8 "VFR FLIGHT")
@@ -138,7 +163,8 @@ text(-38 -114 4 "fuel consumption")
 
 #glide
 
-#LEFT SIDE: frequencies 
+
+######### LEFT SIDE: frequencies ########## 
 line(-41 136 -41 -130)
 text(-90 133 7 "FREQUENCIES")
 
