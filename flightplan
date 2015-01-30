@@ -51,7 +51,10 @@ text(2 75.5 8 dist1)
 text(3 91 4 windVel1)
 text(9 91 4 windDir1)
 
-#text(-33 66.5 8 calcWCA(windVel1 windDir1 tt1))
+n1 = sin(radians(tt1 - windDir1))
+wca1 = (windVel1 * n1)
+wca1b = degrees(wca1 / tas * -1)
+text(-33 66.5 8 wca1b)
 
 
 #WCA
