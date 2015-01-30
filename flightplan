@@ -8,15 +8,16 @@ text(50 133 7 "to: EKVH") #FROM
 
     numberOfWaypoints = 7 #number of waypoints 
 
-    tas =      80    # TAS in knots 
-    gph =      3.5   # FUEL in Gallons/hour
-    glide =    8     # glide ratio 1:x
+    tas =       90    # TAS in knots 
+    gph =       3.5   # FUEL in Gallons/hour
+    glide =     8     # glide ratio 1:x
+    deviation = 1
 
 #WP1
     dist1 =    10
-    tt1 =      200
-    windDir1 = 10
-    windVel1 = 15
+    tt1 =      90
+    windDir1 = 135
+    windVel1 = 30
 
 #WP2
     dist2 =    10
@@ -48,14 +49,16 @@ text(50 133 7 "to: EKVH") #FROM
 #WPT1
 text(-33 75.5 8 tt1)
 text(2 75.5 8 dist1)
-text(3 91 4 windVel1)
-text(9 91 4 windDir1)
+text(9 91 4 windVel1)
+text(3 91 4 windDir1)
 
 n1 = sin(radians(tt1 - windDir1))
 wca1 = (windVel1 * n1)
 wca1b = degrees(wca1 / tas * -1)
-text(-33 66.5 8 wca1b)
-
+th1 = toInt(tt1 + wca1b)
+text(-33 66.5 8 toInt(wca1b)) #WCA
+text(-15 75.5 8 th1) #TH
+text(-15 66.5 8 th1 + deviation) #MH
 
 #WCA
 
@@ -93,7 +96,7 @@ for i <- 0 to numberOfWaypoints{
   text( 33 a + 81 3.5 "ATA")
   text( 33 a + 71 3.5 "DIFF")
 
-  text( -3 a + 91 3.5 "wind:  /   ")
+  text( -3 a + 91 3.5 "wind:     /   ")
 
   #grid
   line(32 a + 94 32 a + 84) # GS / WIND sep lines
