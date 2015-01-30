@@ -1,6 +1,3 @@
-text(-57 112 17 "WORK IN PROGRESS")
-
-
 text(-17 112 7 "reg. OY-____") #A/C REGISTRATION
 text(-37 96 6 "pilot.: John Doe") #PILOT
 text(18 133 7 "from: EKRD") #FROM
@@ -14,6 +11,7 @@ text(50 133 7 "to: EKVH") #FROM
     deviation = 1
 
 #WP1
+    title1 =   "HOBRO"
     dist1 =    10
     tt1 =      90
     windDir1 = 135
@@ -43,8 +41,9 @@ text(50 133 7 "to: EKVH") #FROM
     windDir5 = 10
     windVel5 = 15
 
+## END USER INPUT do not edit below this point ##
 
-#### WAYPOINT CALCULATIONS ####
+############ WAYPOINT CALCULATIONS ##############
 
 #WPT1
 text(-33 75.5 8 tt1)
@@ -62,6 +61,7 @@ gs1a = tas * c1
 gs1b = windVel1 * c2
 gs1 = gs1a - gs1b
 
+text(-33 86 8 title1)
 text(-33 66.5 8 toInt(wca1)) #WCA
 text(-15 75.5 8 th1) #TH
 text(-15 66.5 8 th1 + deviation) #MH
@@ -120,7 +120,7 @@ for i <- 0 to numberOfWaypoints{
   #notes
   text(52 a + 91 4 "shorthand/notes")
 
-  text(-39 a + 86 11 i + 1 ) # wpt number
+  text(-40 a + 89 7 i + 1 ) # wpt number
 }
 line(50 94 50 -130) # right line
 
