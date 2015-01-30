@@ -247,6 +247,19 @@ text(0 -135 6 "1000")
 a10 = toInt(1000 * a * glide)
 text(12 -135 6 a10 / 10)
 
+text(27 -120 6 "3500")
+a35 = toInt(3500 * a * glide)
+text(40 -120 6 a35 / 10)
+text(27 -125 6 "2500")
+a25 = toInt(2500 * a * glide)
+text(40 -125 6 a25 / 10)
+text(27 -130 6 "1500")
+a15 = toInt(1500 * a * glide)
+text(40 -130 6 a15 / 10)
+text(27 -135 6 "500")
+a5 = toInt(500 * a * glide)
+text(40 -135 6 a5 / 10)
+
 ############ ARTWORK ##############
 #HEADER
 text(-18 122 8 "VFR FLIGHT")
