@@ -214,7 +214,7 @@ text(-38 -120 6 "trip fuel")
 
 text(-14 -120 6 toInt(hrs * lph))
 
-#glide
+#### GLIDE ####
 
 ############ ARTWORK ##############
 #HEADER
