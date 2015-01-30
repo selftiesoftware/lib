@@ -5,45 +5,45 @@ text(50 133 7 "to: EKRD") #FROM
 
     numberOfWaypoints = 7 #number of waypoints 
 
-    tas =       90    # TAS in knots 
+    tas =       80    # TAS in knots 
     gph =       3.5   # FUEL in Gallons/hour
     glide =     8     # glide ratio 1:x
     deviation = 1
 
 #WP1
     title1 =   "VIDEBAEK"
-    dist1 =    20
+    dist1 =    10
     tt1 =      90
     windDir1 = 135
-    windVel1 = 30
+    windVel1 = 10
 
 #WP2
     title2 =   "IKAST"
-    dist2 =    10
-    tt2 =      200
-    windDir2 = 10
-    windVel2 = 15
+    dist2 =    12
+    tt2 =      30
+    windDir2 = 100
+    windVel2 = 10
 
 #WP3
-    title3 =   "IKAST"
-    dist3 =    10
-    tt3 =      200
-    windDir3 = 10
+    title3 =   "KJELLERUP"
+    dist3 =    18
+    tt3 =      40
+    windDir3 = 100
     windVel3 = 15
 
 #WP4
-    title4 =   "IKAST"
-    dist4 =    10
-    tt4 =      200
+    title4 =   "EKRD"
+    dist4 =    20
+    tt4 =      45
     windDir4 = 10
     windVel4 = 15
 
 #WP5
-    title5 =   "IKAST"    
-    dist5 =    10
-    tt5 =      200
-    windDir5 = 10
-    windVel5 = 15
+    title5 =   " "    
+    dist5 =    0
+    tt5 =      0
+    windDir5 = 0
+    windVel5 = 0
 
 ## END USER INPUT do not edit below this point ##
 
@@ -126,19 +126,19 @@ time3 = timeHr3 * 60
 
 y = 2 # vertical offset
 
-text(-33 y + 26 8 title2) # TITLE
-text(-33 y + 15.5 8 tt2)
-text(2 y + 15.5 8 dist2)
-text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
-text(9 y + 31 4 windVel2)
-text(3 y + 31 4 windDir2)
-text(-33 y + 6.5 8 toInt(wca2)) #WCA
-text(-15 y + 15.5 8 th2) #TH
-text(-15 y + 6.5 8 th2 + deviation) #MH
+text(-33 y + 26 8 title3) # TITLE
+text(-33 y + 15.5 8 tt3)
+text(2 y + 15.5 8 dist3)
+text(2 y + 6.5 8 dist1 + dist2 + dist3) #DIST ACC
+text(9 y + 31 4 windVel3)
+text(3 y + 31 4 windDir3)
+text(-33 y + 6.5 8 toInt(wca3)) #WCA
+text(-15 y + 15.5 8 th3) #TH
+text(-15 y + 6.5 8 th3 + deviation) #MH
 
-text(18 y + 26.5 8 toInt(gs2)) #GS
-text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
-text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
+text(18 y + 26.5 8 toInt(gs3)) #GS
+text(18 y + 15.5 8 toInt(time3)) #TIME, MIN
+text(18 y + 6.5 8 toInt(time1 + time2 + time3)) #TIME, MIN
 
 ############ ARTWORK ##############
 
