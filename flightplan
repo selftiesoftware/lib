@@ -261,7 +261,8 @@ a5 = toInt(500 * a * glide)
 text(40 -135 6 a5 / 10)
 
 ############ ARTWORK ##############
-#HEADER
+
+#### HEADER ####
 text(-18 122 8 "VFR FLIGHT")
 text(-18 115 10 "PLANNER")
 line(14 125 14 94) # vertLine
@@ -278,6 +279,11 @@ text(60 122 7 to) #TO
 text(18 108 5.5 "FUEL")
 text(32 108 7 lph) #FUEL
 text(42 108 7 "L/H")
+text(18 100 5.5 "GLIDE")
+text(32 100 7 "1 /")
+text(38 100 7 glide) #FUEL
+
+
 
 #DRAW GRAPHICS FOR EACH WAYPOINT
 for i <- 0 to numberOfWaypoints{
