@@ -1,6 +1,6 @@
 text(-90 130 9 "A Manifesto for the Internet of Digital Design")
 
-text(-15 145 4 "14-JAN 2015 by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture")
+text(-45 145 4 "14-JAN 2015 by Cand. Arch. Ph.d Ole Egholm Pedersen, Aarhus School of Architecture")
 
 y = 110
 dist = 5
