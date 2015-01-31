@@ -2,6 +2,11 @@
 #use these in other scripts by typing 
 #"import geometry2d" in the script (without ")
 
+function addTwo(a b) {
+a + b
+}
+
+text(0 0 20 addTwo(2 3))
 
 #### RECTANGLE ####
 
@@ -12,10 +17,10 @@
 # y2 = corner1 y
 
 function rectangle (x1 y1 x2 y2){
-  line x1 y1 x1 y2
-  line x2 y2 x1 y2
-  line x2 y1 x2 y2
-  line x1 y1 x2 y1
+  line(x1 y1 x1 y2)
+  line(x2 y2 x1 y2)
+  line(x2 y1 x2 y2)
+  line(x1 y1 x2 y1)
 }
 
 #example
@@ -39,9 +44,9 @@ function triangle(x y d){
   p2x = x + d
   p3x = x - d
   offsetY = d / 3
-  line x p1y p2x y - offsetY
-  line p2x y - offsetY p3x y - offsetY
-  line x p1y p3x y - offsetY
+  line(x p1y p2x y - offsetY)
+  line(p2x y - offsetY p3x y - offsetY)
+  line(x p1y p3x y - offsetY)
 } 
 
 #example

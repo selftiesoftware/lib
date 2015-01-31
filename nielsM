@@ -1,3 +1,3 @@
-text 0 0 10 "hej niels"
+text(0 0 10 "hej niels")
 
-bezierCurve -20 -20 0 0 20 -20 30 50
+bezierCurve(-20 -20 0 0 20 -20 30 50)
