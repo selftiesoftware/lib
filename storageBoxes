@@ -14,18 +14,28 @@ widthHole = 75
 offsetX  = 10
 offsetY = 40
 
+#### RECTANGLE TO TEST PARTS NEST ON MATERIAL ####
+import geometry2d
+a = -297
+b = -210
+c = 297
+d = 210
+oX = 150
+oY = -230
+#rectangle(a + oX b + oY c + oX d + oY)
+
 ################ START SCRIPT ##################
 
-text(-240 -80 15 "storage boxes")
-text(-130 -80 8 "cut (coping saw/laser) from 2-3mm fiberboard/ply. Assemble with zip ties")
-text(80 -80 8 "put wooden sticks (x-section 10 x 10mm) along inside edges ")
-text(270 -80 8 "and tighten zip ties around them, pulling two elements together")
+text(-140 -60 15 "storage boxes")
+text(-140 -70 8 "cut (coping saw/laser) from 2-3mm fiberboard/ply. Assemble with zip ties")
+text(-140 -80 8 "put wooden sticks (x-section 10 x 10mm) along inside edges ")
+text(-140 -90 8 "and tighten zip ties around them, pulling two elements together")
 
 #### ENDS ####
-x = -70 #lower left x
+x = 0 #lower left x
 y = -70 #lower left y
 
-c1x = x + 340
+c1x = x + 280
 c1y = y - 170
 c2x = c1x
 c2y = c1y + height
@@ -85,7 +95,7 @@ circle(x + width / 2 c2y - offsetX 2)
 #### BACK ####
 y = y - height - 140
 
-c1x = x + 340
+c1x = x + 280
 c1y = y 
 c2x = c1x
 c2y = c1y + height
@@ -111,7 +121,7 @@ circle(c1x + width / 2 c1y + height - offsetX 2)
 
 #### SIDE1 ####
 y = -70  - length + 30
-x = x - width + 30
+x = x - width
 
 text(x y - 20 20 "side1")
 
@@ -140,7 +150,7 @@ circle(x + width - offsetY y + length - offsetX 2)
 
 #### SIDE2 ####
 y = -70  - length + 30
-x = x + 2 * width + 30
+x = x + 2 * width
 
 text(x y - 20 20 "side2")
 
