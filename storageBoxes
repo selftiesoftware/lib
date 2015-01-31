@@ -34,7 +34,7 @@ c3y = c2y
 c4x = c3x
 c4y = c1y
 
-text(c1x c1y - 20 20 "front")
+text(c1x c1y + 145 20 "front")
 
 #### FRONT ####
 r = widthHole / 2
@@ -83,18 +83,18 @@ circle(x + width / 2 y + offsetX 2)
 circle(x + width / 2 c2y - offsetX 2)
 
 #### BACK ####
-y = y - height + 30
+y = y - height - 140
 
-text(x y - 20 20 "back")
-
-c1x = x
+c1x = x + 340
 c1y = y 
-c2x = x
-c2y = y + height
-c3x = x + width
+c2x = c1x
+c2y = c1y + height
+c3x = c1x + width
 c3y = c2y
 c4x = c3x
 c4y = c1y
+
+text(c1x y - 20 20 "back")
 
 line(c1x c1y c2x c2y)
 line(c2x c2y c3x c3y)
@@ -102,11 +102,11 @@ line(c3x c3y c4x c4y)
 line(c4x c4y c1x c1y)
 
 #holes 
-circle(x + offsetX y + offsetY 2)
-circle(x + offsetX c2y - offsetY 2)
-circle(c3x - offsetX y + offsetY 2)
+circle(c1x + offsetX c1y + offsetY 2)
+circle(c1x + offsetX c2y - offsetY 2)
+circle(c3x - offsetX c1y + offsetY 2)
 circle(c3x - offsetX c2y - offsetY 2)
-circle(x + width / 2 y + height - offsetX 2)
+circle(c1x + width / 2 c1y + height - offsetX 2)
 
 
 #### SIDE1 ####
