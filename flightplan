@@ -12,8 +12,8 @@
 
 #WP1
     title1 =   "VIDEBAEK"
-    dist1 =    10
-    tt1 =      90
+    dist1 =    16
+    tt1 =      86
     windDir1 = 135
     windVel1 = 10
 
@@ -25,16 +25,16 @@
     windVel2 = 10
 
 #WP3
-    title3 =   "KJELLERUP"
-    dist3 =    18
-    tt3 =      40
+    title3 =   "BJERRINGBRO"
+    dist3 =    24
+    tt3 =      48
     windDir3 = 100
     windVel3 = 15
 
 #WP4
     title4 =   "EKRD"
-    dist4 =    20
-    tt4 =      45
+    dist4 =    15
+    tt4 =      58
     windDir4 = 90
     windVel4 = 15
 
