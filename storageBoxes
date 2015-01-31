@@ -41,9 +41,9 @@ r = widthHole / 2
 holeSide = width - widthHole
 hDivided = holeSide / 2 
 line(c1x c1y c2x c2y)
-line(x c2y x + hDivided c3y #top left)
-arc(c1x + width / 2 c2y r 0 3.14 #cutout)
-line(x + hDivided + widthHole c2y c3x c3y #top right)
+line(x c2y x + hDivided c3y) #top left
+arc(c1x + width / 2 c2y r 0 3.14 )#cutout
+line(x + hDivided + widthHole c2y c3x c3y )#top right
 line(c3x c3y c4x c4y)
 line(c4x c4y c1x c1y)
 
