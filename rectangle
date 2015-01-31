@@ -6,12 +6,12 @@ function square(neg pos) {
 }
 
 #example:
-#for i <- -15 to 50 {
-#a = i + 1
-#b = i - 1
-#square(a * 5 a * 10)
-#square(b * -5 a * 10)
-#}
+for i <- -15 to 50 {
+a = i + 1
+b = i - 1
+square(a * 5 a * 10)
+square(b * -5 a * 10)
+}
 
 #DESCRIPTIVE TEXT 
 #text(27 -270 20 "for i <- -15 to 50 {)
