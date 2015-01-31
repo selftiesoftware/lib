@@ -371,7 +371,7 @@ text(-80 offset + step * -2 5 "EKVB: 123.500")
 
 #AFIS
 text(-90 offset + step * -5 5 "afis")
-text(-80 offset + step * -6 5 "EKVJ: 115.350")
+text(-80 offset + step * -6 5 "EKVJ: 121.400")
 text(-80 offset + step * -7 5 "EKEB: 120.150")
 text(-80 offset + step * -8 5 "EKSB: 126.400")
 
