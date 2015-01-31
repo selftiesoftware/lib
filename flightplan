@@ -3,7 +3,7 @@
     reg =       "OY-ABC"
     pilot =     "John Doe"
 
-    tas =       62   # TAS in knots 
+    tas =       80   # TAS in knots 
     lph =       14   # FUEL in Liters/hour
     alternate = 5    # fuel to alternate
     reserve =   10   # reserve fuel, liters
@@ -12,8 +12,8 @@
 
 #WP1
     title1 =   "VIDEBAEK"
-    dist1 =    16
-    tt1 =      86
+    dist1 =    10
+    tt1 =      90
     windDir1 = 135
     windVel1 = 10
 
@@ -25,16 +25,16 @@
     windVel2 = 10
 
 #WP3
-    title3 =   "BJERRINGBRO"
-    dist3 =    24
-    tt3 =      48
+    title3 =   "KJELLERUP"
+    dist3 =    18
+    tt3 =      40
     windDir3 = 100
     windVel3 = 15
 
 #WP4
     title4 =   "EKRD"
-    dist4 =    15
-    tt4 =      58
+    dist4 =    20
+    tt4 =      45
     windDir4 = 90
     windVel4 = 15
 
@@ -233,29 +233,29 @@ line(23 -116 23 -136)
 a = 0.001645
 
 text(0 -114 4 "glide distance in NM / feet")
-
+#4000 = 5.2 v 1/8
 text(0 -120 6 "4000")
 a40 = toInt(4000 * a * glide)
 text(12 -120 6 a40 / 10)
-text(0 -125 6 "3500")
-a35 = toInt(3500 * a * glide)
-text(12 -125 6 a35 / 10)
-text(0 -130 6 "3000")
+text(0 -125 6 "3000")
 a30 = toInt(3000 * a * glide)
-text(12 -130 6 a30 / 10)
-text(0 -135 6 "2500")
-a25 = toInt(2500 * a * glide)
-text(12 -135 6 a25 / 10)
-
-text(27 -120 6 "2000")
+text(12 -125 6 a30 / 10)
+text(0 -130 6 "2000")
 a20 = toInt(2000 * a * glide)
-text(40 -120 6 a20 / 10)
-text(27 -125 6 "1500")
-a15 = toInt(1500 * a * glide)
-text(40 -125 6 a15 / 10)
-text(27 -130 6 "1000")
+text(12 -130 6 a20 / 10)
+text(0 -135 6 "1000")
 a10 = toInt(1000 * a * glide)
-text(40 -130 6 a10 / 10)
+text(12 -135 6 a10 / 10)
+
+text(27 -120 6 "3500")
+a35 = toInt(3500 * a * glide)
+text(40 -120 6 a35 / 10)
+text(27 -125 6 "2500")
+a25 = toInt(2500 * a * glide)
+text(40 -125 6 a25 / 10)
+text(27 -130 6 "1500")
+a15 = toInt(1500 * a * glide)
+text(40 -130 6 a15 / 10)
 text(27 -135 6 "500")
 a5 = toInt(500 * a * glide)
 text(40 -135 6 a5 / 10)
