@@ -55,15 +55,15 @@ for i <- speedMin to speedMax {
     line(s1l * j y1 s2l * j y2)
   }
 
-  line(-80 y1 80 y1 #speed lines)
-  text(-90 y1 textSize i #show knots)
+  line(-80 y1 80 y1)#speed lines
+  text(-90 y1 textSize i) #show knots
   yStart = yStart - distance
 }
 
-line(-80 yStart 80 yStart #last speed line)
-text(-90 -120 textSize speedMax #last speed text)
-text(-89 120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" #show the minute paper scale)
-text(14 120 7 scale #show the minute paper scale)
+line(-80 yStart 80 yStart)#last speed line
+text(-90 -120 textSize speedMax)#last speed text
+text(-89 120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+text(14 120 7 scale)#show the minute paper scale
 text(-80 -125 5 "disable fit to page when printing!")
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
@@ -77,4 +77,4 @@ text(81 -116 5 "print")
 text(81 -120 5 "scale ")
 text(81 -124 5 "check")
 
-text(0 -125 5 "generated at www.siigna.com")
+text(0 -125 5 "generated at www.repocad.com")
