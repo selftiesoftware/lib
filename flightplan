@@ -3,8 +3,8 @@
     reg =       "OY-ABC"
     pilot =     "John Doe"
 
-    tas =       80   # TAS in knots 
-    lph =       14   # FUEL in Liters/hour
+    tas =      95   # TAS in knots 
+    lph =      12  # FUEL in Liters/hour
     alternate = 5    # fuel to alternate
     reserve =   10   # reserve fuel, liters
     glide =     8    # glide ratio 1:x
