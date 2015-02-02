@@ -1,0 +1,7 @@
+function a(x y){
+ 
+  circle(x y 2)
+}
+
+
+a(0 0)
