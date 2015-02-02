@@ -45,6 +45,19 @@
     windDir5 = 0
     windVel5 = 0
 
+#WP6
+    title6 =   " - - - "    
+    dist6 =    0
+    tt6 =      0
+    windDir6 = 0
+    windVel6 = 0
+
+#WP7
+    title7 =   " - - - "    
+    dist7 =    0
+    tt7 =      0
+    windDir7 = 0
+    windVel7 = 0
 
 
 ## END USER INPUT ##
@@ -68,18 +81,19 @@ time1 = timeHr1 * 60
 
 y = 60 # vertical offset
 
-text(-33 y + 26 8 title1) # TITLE
-text(-33 y + 15.5 8 tt1)
-text(2 y + 15.5 8 dist1)
-text(9 y + 31 4 windVel1)
-text(3 y + 31 4 windDir1)
-text(-33 y + 6.5 8 toInt(wca1)) #WCA
-text(-15 y + 15.5 8 th1) #TH
-text(-15 y + 6.5 8 th1 + deviation) #MH
+if (dist1 > 0) {
+  text(-33 y + 26 8 title1) # TITLE
+  text(-33 y + 15.5 8 tt1)
+  text(2 y + 15.5 8 dist1)
+  text(9 y + 31 4 windVel1)
+  text(3 y + 31 4 windDir1)
+  text(-33 y + 6.5 8 toInt(wca1)) #WCA
+  text(-15 y + 15.5 8 th1) #TH
+  text(-15 y + 6.5 8 th1 + deviation) #MH
 
-text(18 y + 26.5 8 toInt(gs1)) #GS
-text(18 y + 15.5 8 toInt(time1)) #TIME, MIN
-
+  text(18 y + 26.5 8 toInt(gs1)) #GS
+  text(18 y + 15.5 8 toInt(time1)) #TIME, MIN
+}
 
 #### WPT2 ####
 
@@ -97,20 +111,21 @@ time2 = timeHr2 * 60
 
 y = 31 # vertical offset
 
-text(-33 y + 26 8 title2) # TITLE
-text(-33 y + 15.5 8 tt2)
-text(2 y + 15.5 8 dist2)
-text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
-text(9 y + 31 4 windVel2)
-text(3 y + 31 4 windDir2)
-text(-33 y + 6.5 8 toInt(wca2)) #WCA
-text(-15 y + 15.5 8 th2) #TH
-text(-15 y + 6.5 8 th2 + deviation) #MH
+if (dist2 > 0) {
+  text(-33 y + 26 8 title2) # TITLE
+  text(-33 y + 15.5 8 tt2)
+  text(2 y + 15.5 8 dist2)
+  text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
+  text(9 y + 31 4 windVel2)
+  text(3 y + 31 4 windDir2)
+  text(-33 y + 6.5 8 toInt(wca2)) #WCA
+  text(-15 y + 15.5 8 th2) #TH
+  text(-15 y + 6.5 8 th2 + deviation) #MH
 
-text(18 y + 26.5 8 toInt(gs2)) #GS
-text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
-text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
-
+  text(18 y + 26.5 8 toInt(gs2)) #GS
+  text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
+}
 
 #### WPT3 ####
 
@@ -127,21 +142,21 @@ timeHr3 = dist3 / gs3
 time3 = timeHr3 * 60 
 
 y = 2 # vertical offset
+if (dist3 > 0) {
+  text(-33 y + 26 8 title3) # TITLE
+  text(-33 y + 15.5 8 tt3)
+  text(2 y + 15.5 8 dist3)
+  text(2 y + 6.5 8 dist1 + dist2 + dist3) #DIST  ACC
+  text(9 y + 31 4 windVel3)
+  text(3 y + 31 4 windDir3)
+  text(-33 y + 6.5 8 toInt(wca3)) #WCA
+  text(-15 y + 15.5 8 th3) #TH
+  text(-15 y + 6.5 8 th3 + deviation) #MH
 
-text(-33 y + 26 8 title3) # TITLE
-text(-33 y + 15.5 8 tt3)
-text(2 y + 15.5 8 dist3)
-text(2 y + 6.5 8 dist1 + dist2 + dist3) #DIST ACC
-text(9 y + 31 4 windVel3)
-text(3 y + 31 4 windDir3)
-text(-33 y + 6.5 8 toInt(wca3)) #WCA
-text(-15 y + 15.5 8 th3) #TH
-text(-15 y + 6.5 8 th3 + deviation) #MH
-
-text(18 y + 26.5 8 toInt(gs3)) #GS
-text(18 y + 15.5 8 toInt(time3)) #TIME, MIN
-text(18 y + 6.5 8 toInt(time1 + time2 + time3)) #TIME, MIN
-
+  text(18 y + 26.5 8 toInt(gs3)) #GS
+  text(18 y + 15.5 8 toInt(time3)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2 + time3)) #TIME, MIN
+}
 
 #### WPT4 ####
 
@@ -159,22 +174,24 @@ time4 = timeHr4 * 60
 
 y = -27 # vertical offset
 
-text(-33 y + 26 8 title4) # TITLE
-text(-33 y + 15.5 8 tt4)
-text(2 y + 15.5 8 dist4)
-text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4) #DIST ACC
-text(9 y + 31 4 windVel4)
-text(3 y + 31 4 windDir4)
-text(-33 y + 6.5 8 toInt(wca4)) #WCA
-text(-15 y + 15.5 8 th4) #TH
-text(-15 y + 6.5 8 th4 + deviation) #MH
+if (dist4 > 0) {
+  text(-33 y + 26 8 title4) # TITLE
+  text(-33 y + 15.5 8 tt4)
+  text(2 y + 15.5 8 dist4)
+  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4) #DIST ACC
+  text(9 y + 31 4 windVel4)
+  text(3 y + 31 4 windDir4)
+  text(-33 y + 6.5 8 toInt(wca4)) #WCA
+  text(-15 y + 15.5 8 th4) #TH
+  text(-15 y + 6.5 8 th4 + deviation) #MH
 
-text(18 y + 26.5 8 toInt(gs4)) #GS
-text(18 y + 15.5 8 toInt(time4)) #TIME, MIN
-text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
+  text(18 y + 26.5 8 toInt(gs4)) #GS
+  text(18 y + 15.5 8 toInt(time4)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
 
+}
 
-#### WPT4 ####
+#### WPT5 ####
 
 n5 = sin(radians(tt5 - windDir5))
 wca5a = (windVel5 * n5)
@@ -190,20 +207,86 @@ time5 = timeHr5 * 60
 
 y = -56 # vertical offset
 
-text(-33 y + 26 8 title5) # TITLE
-text(-33 y + 15.5 8 tt5)
-text(2 y + 15.5 8 dist5)
-text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 + dist5) #DIST ACC
-text(9 y + 31 4 windVel5)
-text(3 y + 31 4 windDir5)
-text(-33 y + 6.5 8 toInt(wca5)) #WCA
-text(-15 y + 15.5 8 th5) #TH
-text(-15 y + 6.5 8 th5 + deviation) #MH
+if (dist5 > 0) {
+  text(-33 y + 26 8 title5) # TITLE
+  text(-33 y + 15.5 8 tt5)
+  text(2 y + 15.5 8 dist5)
+  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5) #DIST ACC
+  text(9 y + 31 4 windVel5)
+  text(3 y + 31 4 windDir5)
+  text(-33 y + 6.5 8 toInt(wca5)) #WCA
+  text(-15 y + 15.5 8 th5) #TH
+  text(-15 y + 6.5 8 th5 + deviation) #MH
 
-text(18 y + 26.5 8 toInt(gs5)) #GS
-text(18 y + 15.5 8 toInt(time5)) #TIME, MIN
-text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4 + time5)) #TIME, MIN
+  text(18 y + 26.5 8 toInt(gs5)) #GS
+  text(18 y + 15.5 8 toInt(time5)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
+}
 
+
+#### WPT6 ####
+
+n6 = sin(radians(tt6 - windDir6))
+wca6a = (windVel6 * n6)
+wca6 = degrees(wca6a / tas * -1)
+th6 = toInt(tt6 + wca6)
+c6a = cos(radians(wca6))
+c6b = cos(radians(tt6 - windDir6))
+gs6a = tas * c6a
+gs6b = windVel6 * c6b
+gs6 = gs6a - gs6b
+timeHr6 = dist6 / gs6
+time6 = timeHr6 * 60 
+
+y = -85 # vertical offset
+
+if (dist6 > 0) {
+  text(-33 y + 26 8 title6) # TITLE
+  text(-33 y + 15.5 8 tt6)
+  text(2 y + 15.5 8 dist6)
+  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6) #DIST ACC
+  text(9 y + 31 4 windVel6)
+  text(3 y + 31 4 windDir6)
+  text(-33 y + 6.5 8 toInt(wca6)) #WCA
+  text(-15 y + 15.5 8 th6) #TH
+  text(-15 y + 6.5 8 th6 + deviation) #MH
+
+  text(18 y + 26.5 8 toInt(gs6)) #GS
+  text(18 y + 15.5 8 toInt(time6)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
+}
+
+#### WPT7 ####
+
+n7 = sin(radians(tt7 - windDir7))
+wca7a = (windVel7 * n7)
+wca7 = degrees(wca7a / tas * -1)
+th7 = toInt(tt7 + wca7)
+c7a = cos(radians(wca7))
+c7b = cos(radians(tt7 - windDir7))
+gs7a = tas * c7a
+gs7b = windVel7 * c7b
+gs7 = gs7a - gs7b
+timeHr7 = dist7 / gs7
+time7 = timeHr7 * 60 
+
+y = -114 # vertical offset
+
+if (dist7 > 0) {
+  text(-33 y + 26 8 title7) # TITLE
+  text(-33 y + 15.5 8 tt7)
+  text(2 y + 15.5 8 dist7)
+  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6 + dist7) #DIST ACC
+  text(9 y + 31 4 windVel7)
+  text(3 y + 31 4 windDir7)
+  text(-33 y + 6.5 8 toInt(wca7)) #WCA
+  text(-15 y + 15.5 8 th7) #TH
+  text(-15 y + 6.5 8 th7 + deviation) #MH
+
+  text(18 y + 26.5 8 toInt(gs7)) #GS
+  text(18 y + 15.5 8 toInt(time7)) #TIME, MIN
+  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
+}
 
 #### FUEL CALCULATION ####
 
