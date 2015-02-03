@@ -399,7 +399,7 @@ for i <- 0 to numberOfWaypoints{
   text( 33 a + 81 3.5 "ATA")
   text( 33 a + 71 3.5 "DIFF")
 
-  text( -3 a + 91 3.5 "wind:     /   ")
+  text( -3 a + 91 3.5 "wind: ____/___ ")
 
   #grid
   line(32 a + 94 32 a + 84) # GS / WIND sep lines
