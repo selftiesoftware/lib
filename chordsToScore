@@ -19,12 +19,13 @@ function score(x y) {
 
 function a() {
   xG = xG + 20
-  text(xG - 10 yG + 15 8 "A")
+  text(xG - 9 yG + 17 8 "A")
   if (xG > 100) yG = yG + 20
   score(xG yG)
   circle(xG - 3 yG + 3 1.2)
   circle(xG yG + 3 1.2)
   circle(xG + 3 yG + 3 1.2)
+  bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1 yG + 16 xG + 6 yG + 13)
 }
 
 function b() {
