@@ -83,16 +83,16 @@ y = 60 # vertical offset
 
 if (dist1 > 0) {
   text(-33 y + 26 8 title1) # TITLE
-  text(-33 y + 15.5 8 tt1)
-  text(2 y + 15.5 8 dist1)
+  text(-33 y + 15.5 6 tt1)
+  text(2 y + 15.5 6 dist1)
   text(9 y + 31 4 windVel1)
   text(3 y + 31 4 windDir1)
-  text(-33 y + 6.5 8 toInt(wca1)) #WCA
-  text(-15 y + 15.5 8 th1) #TH
-  text(-15 y + 6.5 8 th1 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca1)) #WCA
+  text(-15 y + 15.5 6 th1) #TH
+  text(-15 y + 6.5 9 th1 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs1)) #GS
-  text(18 y + 15.5 8 toInt(time1)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs1)) #GS
+  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
 }
 
 #### WPT2 ####
@@ -113,18 +113,18 @@ y = 31 # vertical offset
 
 if (dist2 > 0) {
   text(-33 y + 26 8 title2) # TITLE
-  text(-33 y + 15.5 8 tt2)
-  text(2 y + 15.5 8 dist2)
-  text(2 y + 6.5 8 dist1 + dist2) #DIST ACC
+  text(-33 y + 15.5 6 tt2)
+  text(2 y + 15.5 6 dist2)
+  text(2 y + 6.5 6 dist1 + dist2) #DIST ACC
   text(9 y + 31 4 windVel2)
   text(3 y + 31 4 windDir2)
-  text(-33 y + 6.5 8 toInt(wca2)) #WCA
-  text(-15 y + 15.5 8 th2) #TH
-  text(-15 y + 6.5 8 th2 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca2)) #WCA
+  text(-15 y + 15.5 6 th2) #TH
+  text(-15 y + 6.5 9 th2 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs2)) #GS
-  text(18 y + 15.5 8 toInt(time2)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs2)) #GS
+  text(18 y + 15.5 9 toInt(time2)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2)) #TIME, MIN
 }
 
 #### WPT3 ####
@@ -144,18 +144,18 @@ time3 = timeHr3 * 60
 y = 2 # vertical offset
 if (dist3 > 0) {
   text(-33 y + 26 8 title3) # TITLE
-  text(-33 y + 15.5 8 tt3)
-  text(2 y + 15.5 8 dist3)
-  text(2 y + 6.5 8 dist1 + dist2 + dist3) #DIST  ACC
+  text(-33 y + 15.5 6 tt3)
+  text(2 y + 15.5 6 dist3)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3) #DIST  ACC
   text(9 y + 31 4 windVel3)
   text(3 y + 31 4 windDir3)
-  text(-33 y + 6.5 8 toInt(wca3)) #WCA
-  text(-15 y + 15.5 8 th3) #TH
-  text(-15 y + 6.5 8 th3 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca3)) #WCA
+  text(-15 y + 15.5 6 th3) #TH
+  text(-15 y + 6.5 9 th3 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs3)) #GS
-  text(18 y + 15.5 8 toInt(time3)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2 + time3)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs3)) #GS
+  text(18 y + 15.5 9 toInt(time3)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3)) #TIME, MIN
 }
 
 #### WPT4 ####
@@ -176,18 +176,18 @@ y = -27 # vertical offset
 
 if (dist4 > 0) {
   text(-33 y + 26 8 title4) # TITLE
-  text(-33 y + 15.5 8 tt4)
-  text(2 y + 15.5 8 dist4)
-  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4) #DIST ACC
+  text(-33 y + 15.5 6 tt4)
+  text(2 y + 15.5 6 dist4)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4) #DIST ACC
   text(9 y + 31 4 windVel4)
   text(3 y + 31 4 windDir4)
-  text(-33 y + 6.5 8 toInt(wca4)) #WCA
-  text(-15 y + 15.5 8 th4) #TH
-  text(-15 y + 6.5 8 th4 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca4)) #WCA
+  text(-15 y + 15.5 6 th4) #TH
+  text(-15 y + 6.5 9 th4 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs4)) #GS
-  text(18 y + 15.5 8 toInt(time4)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs4)) #GS
+  text(18 y + 15.5 9 toInt(time4)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
 
 }
 
@@ -209,18 +209,18 @@ y = -56 # vertical offset
 
 if (dist5 > 0) {
   text(-33 y + 26 8 title5) # TITLE
-  text(-33 y + 15.5 8 tt5)
-  text(2 y + 15.5 8 dist5)
-  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5) #DIST ACC
+  text(-33 y + 15.5 6 tt5)
+  text(2 y + 15.5 6 dist5)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5) #DIST ACC
   text(9 y + 31 4 windVel5)
   text(3 y + 31 4 windDir5)
-  text(-33 y + 6.5 8 toInt(wca5)) #WCA
-  text(-15 y + 15.5 8 th5) #TH
-  text(-15 y + 6.5 8 th5 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca5)) #WCA
+  text(-15 y + 15.5 6 th5) #TH
+  text(-15 y + 6.5 9 th5 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs5)) #GS
-  text(18 y + 15.5 8 toInt(time5)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
+  text(18 y + 26.5 6 toInt(gs5)) #GS
+  text(18 y + 15.5 9 toInt(time5)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
 }
 
 
@@ -242,18 +242,18 @@ y = -85 # vertical offset
 
 if (dist6 > 0) {
   text(-33 y + 26 8 title6) # TITLE
-  text(-33 y + 15.5 8 tt6)
-  text(2 y + 15.5 8 dist6)
-  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6) #DIST ACC
+  text(-33 y + 15.5 6 tt6)
+  text(2 y + 15.5 6 dist6)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6) #DIST ACC
   text(9 y + 31 4 windVel6)
   text(3 y + 31 4 windDir6)
-  text(-33 y + 6.5 8 toInt(wca6)) #WCA
-  text(-15 y + 15.5 8 th6) #TH
-  text(-15 y + 6.5 8 th6 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca6)) #WCA
+  text(-15 y + 15.5 6 th6) #TH
+  text(-15 y + 6.5 9 th6 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs6)) #GS
-  text(18 y + 15.5 8 toInt(time6)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
+  text(18 y + 26.5 6 toInt(gs6)) #GS
+  text(18 y + 15.5 9 toInt(time6)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
 }
 
 #### WPT7 ####
@@ -274,18 +274,18 @@ y = -114 # vertical offset
 
 if (dist7 > 0) {
   text(-33 y + 26 8 title7) # TITLE
-  text(-33 y + 15.5 8 tt7)
-  text(2 y + 15.5 8 dist7)
-  text(2 y + 6.5 8 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6 + dist7) #DIST ACC
+  text(-33 y + 15.5 6 tt7)
+  text(2 y + 15.5 6 dist7)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6 + dist7) #DIST ACC
   text(9 y + 31 4 windVel7)
   text(3 y + 31 4 windDir7)
-  text(-33 y + 6.5 8 toInt(wca7)) #WCA
-  text(-15 y + 15.5 8 th7) #TH
-  text(-15 y + 6.5 8 th7 + deviation) #MH
+  text(-33 y + 6.5 6 toInt(wca7)) #WCA
+  text(-15 y + 15.5 6 th7) #TH
+  text(-15 y + 6.5 9 th7 + deviation) #MH
 
-  text(18 y + 26.5 8 toInt(gs7)) #GS
-  text(18 y + 15.5 8 toInt(time7)) #TIME, MIN
-  text(18 y + 6.5 8 toInt(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
+  text(18 y + 26.5 6 toInt(gs7)) #GS
+  text(18 y + 15.5 9 toInt(time7)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
 }
 
 #### FUEL CALCULATION ####
