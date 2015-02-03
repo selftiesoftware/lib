@@ -1,10 +1,13 @@
+xG = -100
+yG = 100
+
 function score(x y) {
  
   xMin = x - 6
   xMax = x + 6
   yMin = y - 16
   yMax = y + 12
-  line(xMin y + 6.5 xMax y + 6.5) 
+  line(xMin y + 12.5 xMax y + 12.5) 
  
   for i <- -2 to 3 {
      y2 = y + i * 6
@@ -15,7 +18,9 @@ function score(x y) {
 }
 
 function a(x y){
-  score(x y)
+  xG = xG + 20
+  if (xG > 100) yG = yG + 20
+  score(xG yG)
   circle(x y 2)
 }
 
