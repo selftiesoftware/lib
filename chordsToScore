@@ -17,7 +17,7 @@ function score(x y) {
   xG = xG + 20
 }
 
-function a() {
+function A() {
 
   text(xG - 9 yG + 17 8 "A")
   if (xG > 100) yG = yG + 20
@@ -28,7 +28,7 @@ function a() {
   #bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1     yG + 16 xG + 6 yG + 13)
 }
 
-function b() {
+function B() {
   xG = xG + 20
   text(xG - 9 yG + 17 8 "B/H")
   if (xG > 100) yG = yG + 20
@@ -40,5 +40,5 @@ function b() {
   bezierCurve(xG - 9 yG + 1.5 xG - 4 yG + 4.5 xG + 1     yG + 4.5 xG + 6 yG + 1.5)
 }
 
-a()
-b()
+A()
+B()
