@@ -17,9 +17,9 @@ function score(x y) {
   }
 }
 
-function a(x y){
-  text(xG + 11 yG + 15 8 "A")
+function a() {
   xG = xG + 20
+  text(xG + 11 yG + 15 8 "A")
   if (xG > 100) yG = yG + 20
   score(xG yG)
   circle(xG - 3 yG + 3 1.2)
@@ -28,4 +28,5 @@ function a(x y){
 }
 
 
-a(0 0)
+a()
+a()
