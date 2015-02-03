@@ -14,11 +14,10 @@ function score(x y) {
       line(xMin y2 xMax y2)
       line(x2 yMin x2 yMax)
   }
-  xG = xG + 20
 }
 
 function A() {
-
+  xG = xG + 20
   text(xG - 9 yG + 17 8 "A")
   if (xG > 100) yG = yG + 20
   score(xG yG)
@@ -42,3 +41,4 @@ function B() {
 
 A()
 B()
+A()
