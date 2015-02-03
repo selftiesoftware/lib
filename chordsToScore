@@ -2,7 +2,6 @@ xG = -100
 yG = 100
 
 function score(x y) {
- 
   xMin = x - 9
   xMax = x + 6
   yMin = y - 20
@@ -15,28 +14,31 @@ function score(x y) {
       line(xMin y2 xMax y2)
       line(x2 yMin x2 yMax)
   }
+  xG = xG + 20
 }
 
 function a() {
-  xG = xG + 20
+
   text(xG - 9 yG + 17 8 "A")
   if (xG > 100) yG = yG + 20
   score(xG yG)
   circle(xG - 3 yG + 3 1.2)
   circle(xG yG + 3 1.2)
   circle(xG + 3 yG + 3 1.2)
-  bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1 yG + 16 xG + 6 yG + 13)
+  #bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1     yG + 16 xG + 6 yG + 13)
 }
 
 function b() {
   xG = xG + 20
-  text(xG - 10 yG + 15 8 "B")
+  text(xG - 9 yG + 17 8 "B/H")
   if (xG > 100) yG = yG + 20
   score(xG yG)
-  circle(xG - 3 yG + 3 1.2)
-  circle(xG yG + 3 1.2)
-  circle(xG + 3 yG + 3 1.2)
+  circle(xG - 3 yG - 9 1.2)
+  circle(xG yG - 9 1.2)
+  circle(xG + 3 yG - 9 1.2)
+  bezierCurve(xG - 9 yG + 1 xG - 4 yG + 4 xG + 1     yG + 4 xG + 6 yG + 1)
+  bezierCurve(xG - 9 yG + 1.5 xG - 4 yG + 4.5 xG + 1     yG + 4.5 xG + 6 yG + 1.5)
 }
 
 a()
-#b()
+b()
