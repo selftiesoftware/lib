@@ -3,13 +3,13 @@ yG = 100
 
 function score(x y) {
  
-  xMin = x - 6
+  xMin = x - 9
   xMax = x + 6
-  yMin = y - 16
+  yMin = y - 20
   yMax = y + 12
   line(xMin y + 12.5 xMax y + 12.5) 
  
-  for i <- -2 to 3 {
+  for i <- -3 to 3 {
      y2 = y + i * 6
      x2 = x + i * 3 
       line(xMin y2 xMax y2)
@@ -18,10 +18,13 @@ function score(x y) {
 }
 
 function a(x y){
+  text(xG + 11 yG + 15 8 "A")
   xG = xG + 20
   if (xG > 100) yG = yG + 20
   score(xG yG)
-  circle(x y 2)
+  circle(xG - 3 yG + 3 1.2)
+  circle(xG yG + 3 1.2)
+  circle(xG + 3 yG + 3 1.2)
 }
 
 
