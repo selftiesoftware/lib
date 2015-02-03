@@ -1,7 +1,7 @@
     from =      "EKVJ"
     to =        "EKRD"
     reg =       "OY-ABC"
-    pilot =     "John Doe"
+    pilot =     "Pilot name here"
 
     tas =      95   # TAS in knots 
     lph =      12  # FUEL in Liters/hour
