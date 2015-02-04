@@ -514,6 +514,10 @@ for i <- speedMin to speedMax {
   }
   #s1l = s1 * -1
   #s2l = s2 * -1
+
+  line(x1 -140 x2 125)#speed lines
+  #text(x1 10 textSize i) #show knots
+
   xStart = xStart - distance
 }
 
