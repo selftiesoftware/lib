@@ -422,7 +422,7 @@ line(-40 -110 90 -110)
 
 ######### LEFT SIDE: frequencies ########## 
 line(-41 126 -41 -140)
-text(-90 120 7 "FREQUENCIES")
+text(-83 120 7 "FREQUENCIES")
 
 for i <- -16 to 19 {
   line(-80 i * -7 -43 i * -7)
@@ -432,12 +432,12 @@ step = 7
 offset  = -13
 
 #INFORMATION
-text(-90 offset + step * 18 5 "information")
+text(-83 offset + step * 18 5 "information")
 text(-80 offset + step * 17 5 "COIF EAST: 127.075")
 text(-80 offset + step * 16 5 "COIF WEST: 129.475")
 
 #APPROACH
-text(-90 offset + step * 14 5 "approach")
+text(-83 offset + step * 14 5 "approach")
 text(-80 offset + step * 13 5 "EKAH APP: 119.275")
 text(-80 offset + step * 12 5 "EKKA APP: 120.425")
 text(-80 offset + step * 11 5 "EKYT APP: 123.975")
@@ -445,7 +445,7 @@ text(-80 offset + step * 10 5 "EKBI APP: 127.575")
 text(-80 offset + step * 9 5 "EKRK APP: 125.525")
 
 #TOWER
-text(-90 offset + step * 7 5 "tower")
+text(-83 offset + step * 7 5 "tower")
 text(-80 offset + step * 6 5 "EKAH TWR: 127.075")
 text(-80 offset + step * 5 5 "EKKA TWR: 119.575")
 text(-80 offset + step * 4 5 "EKYT TWR: 118.300")
@@ -453,24 +453,24 @@ text(-80 offset + step * 3 5 "EKBI TWR: 119.000")
 text(-80 offset + step * 2 5 "EKRK TWR: 118.900")
 
 #RADIO
-text(-90 offset + step * 0 5 "radio")
+text(-83 offset + step * 0 5 "radio")
 text(-80 offset + step * -1 5 "EKRD: 122.075")
 text(-80 offset + step * -2 5 "EKVB: 123.500")
 
 #AFIS
-text(-90 offset + step * -5 5 "afis")
+text(-83 offset + step * -5 5 "afis")
 text(-80 offset + step * -6 5 "EKVJ: 121.400")
 text(-80 offset + step * -7 5 "EKEB: 120.150")
 text(-80 offset + step * -8 5 "EKSB: 126.400")
 
 #ATIS
-text(-90 offset + step * -10 5 "atis")
+text(-83 offset + step * -10 5 "atis")
 text(-80 offset + step * -11 5 "EKBI: 118.775")
 text(-80 offset + step * -12 5 "EKYT: 120.475")
 text(-80 offset + step * -13 5 "EKRK: 123.800")
 
 #EMERGENCY
-text(-90 offset + step * -15 5 "emergency")
+text(-83 offset + step * -15 5 "emergency")
 text(-80 offset + step * -16 5 "Emergency freq: 121.5")
 
 text(52 -114 4 "www.repocad.com/flightplan")
