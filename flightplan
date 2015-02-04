@@ -478,8 +478,8 @@ text(-80 offset + step * -16 5 "Emergency freq: 121.5")
 
 ###### MINUTE MARKS ######
 
-speedMin = 70
-speedMax = 90
+speedMin = 70 / 5
+speedMax = 90 / 5
 
 xStart = -85
 
@@ -492,20 +492,20 @@ for i <- speedMin to speedMax {
   x2 = xStart - distance
 
   speed1 = i * 1852
-  speed1div = speed1
+  speed1div = speed1 * 5
   speed1min = speed1div / 6
-  speed1mm = speed1min * 100
+  speed1mm = speed1min * 100 
 
   plusOne = i + 1
   speed2 = plusOne * 1852
-  speed2div = speed2
+  speed2div = speed2 * 5
   speed2min = speed2div / 6
   speed2mm = speed2min * 100
 
   # scale down to the paper scale
   s1 = speed1mm / scale 
   s2 = speed2mm / scale 
-  a = scale / 250
+  a = scale / 1300
   extend = a / i
   
   #minute lines - right side
@@ -520,12 +520,13 @@ for i <- speedMin to speedMax {
     line(x1 s1l * j x2 s2l * j)
   }
 
-  line(x1 -125 x2 125)#speed lines
+  line(x1 -125 x1 125)#speed lines
   #text(x1 10 textSize i) #show knots
 
   xStart = xStart - distance
 }
   line(-95 0 -85 0)
+  line(-95 -125 -95 125)
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
