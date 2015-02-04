@@ -3,7 +3,7 @@
     reg =       "OY-ABC"
     pilot =     "Pilot name here"
 
-    tas =      95   # TAS in knots 
+    tas =      60   # TAS in knots 
     lph =      12  # FUEL in Liters/hour
     alternate = 5    # fuel to alternate
     reserve =   10   # reserve fuel, liters
@@ -12,6 +12,8 @@
 
     #CHART SCALE FOR MINUTE MARKS
     scale = 250000
+    speedMin = 80 #min GS (for minute lines)
+    speedMax = 90 #max GS (for minute lines)
 
 #WP1
     title1 =   "VIDEBAEK"
@@ -478,8 +480,8 @@ text(-80 offset + step * -16 5 "Emergency freq: 121.5")
 
 ###### MINUTE MARKS ######
 
-speedMin = 70 / 5
-speedMax = 90 / 5
+speedMin = speedMin / 5
+speedMax = speedMax / 5
 
 xStart = -85
 
