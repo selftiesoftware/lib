@@ -11,7 +11,7 @@
     deviation = 1
 
     #CHART SCALE FOR MINUTE MARKS
-    scale = 500000
+    scale = 250000
 
 #WP1
     title1 =   "VIDEBAEK"
@@ -481,10 +481,10 @@ text(-80 offset + step * -16 5 "Emergency freq: 121.5")
 speedMin = 70
 speedMax = 90
 
-xStart = -90
+xStart = -85
 
 dist = speedMax - speedMin
-distance = 230 / dist
+distance = 100 / dist
 
 for i <- speedMin to speedMax {
   x1 = xStart
@@ -512,6 +512,8 @@ for i <- speedMin to speedMax {
   for j <- 1 to extend {
     line(x1 s1 * j x2 s2 * j)
   }
+  #s1l = s1 * -1
+  #s2l = s2 * -1
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
