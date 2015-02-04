@@ -540,4 +540,4 @@ for i <- speedMin to speedMax {
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
-text(58 -130 5 "rev. 1.0 JAN15")
+text(58 -130 5 "rev. 1.1 FEB15")
