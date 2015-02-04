@@ -484,7 +484,7 @@ speedMax = 90
 xStart = -85
 
 dist = speedMax - speedMin
-distance = 100 / dist
+distance = 10 / dist
 
 for i <- speedMin to speedMax {
   x1 = xStart
@@ -504,7 +504,7 @@ for i <- speedMin to speedMax {
   # scale down to the paper scale
   s1 = speed1mm / scale 
   s2 = speed2mm / scale 
-  a = scale / 400
+  a = scale / 250
   extend = a / i
   
   #minute lines - right side
@@ -514,6 +514,8 @@ for i <- speedMin to speedMax {
   }
   #s1l = s1 * -1
   #s2l = s2 * -1
+  xStart = xStart - distance
+}
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
