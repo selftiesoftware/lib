@@ -512,14 +512,19 @@ for i <- speedMin to speedMax {
   for j <- 1 to extend {
     line(x1 s1 * j x2 s2 * j)
   }
-  #s1l = s1 * -1
-  #s2l = s2 * -1
+  s1l = s1 * -1
+  s2l = s2 * -1
 
-  line(x1 -140 x2 125)#speed lines
+    for j <- 1 to extend {
+    line(x1 s1l * j x2 s2l * j)
+  }
+
+  line(x1 -125 x2 125)#speed lines
   #text(x1 10 textSize i) #show knots
 
   xStart = xStart - distance
 }
+  line(-95 0 -85 0)
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
