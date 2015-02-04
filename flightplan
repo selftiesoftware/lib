@@ -1,42 +1,42 @@
-    from =      "EKVB"
-    to =        "EKYT"
-    reg =       "OY-TFN"
-    pilot =     "Torben Frits Nielsen"
+    from =      "EKVJ"
+    to =        "EKRD"
+    reg =       "OY-ABC"
+    pilot =     "Pilot name here"
 
-    tas =      115   # TAS in knots 
-    lph =     34  # FUEL in Liters/hour
+    tas =      95   # TAS in knots 
+    lph =      12  # FUEL in Liters/hour
     alternate = 5    # fuel to alternate
     reserve =   10   # reserve fuel, liters
     glide =     8    # glide ratio 1:x
     deviation = 1
 
 #WP1
-    title1 =   "Svendstrup
-    dist1 =    36
-    tt1 =      024
+    title1 =   "VIDEBAEK"
+    dist1 =    10
+    tt1 =      90
     windDir1 = 135
     windVel1 = 10
 
 #WP2
-    title2 =   ""
-    dist2 =    0
-    tt2 =      0
-    windDir2 = 0
-    windVel2 = 0
+    title2 =   "IKAST"
+    dist2 =    12
+    tt2 =      30
+    windDir2 = 100
+    windVel2 = 10
 
 #WP3
-    title3 =   ""
-    dist3 =    0
-    tt3 =      0
-    windDir3 = 0
-    windVel3 = 0
+    title3 =   "KJELLERUP"
+    dist3 =    18
+    tt3 =      40
+    windDir3 = 100
+    windVel3 = 15
 
 #WP4
-    title4 =   ""
-    dist4 =    0
-    tt4 =      0
-    windDir4 = 0
-    windVel4 = 00
+    title4 =   "EKRD"
+    dist4 =    20
+    tt4 =      45
+    windDir4 = 90
+    windVel4 = 15
 
 #WP5
     title5 =   " - - - "    
