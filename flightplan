@@ -10,6 +10,9 @@
     glide =     8    # glide ratio 1:x
     deviation = 1
 
+    #CHART SCALE FOR MINUTE MARKS
+    scale = 500000
+
 #WP1
     title1 =   "VIDEBAEK"
     dist1 =    10
@@ -472,6 +475,43 @@ text(-80 offset + step * -13 5 "EKRK: 123.800")
 #EMERGENCY
 text(-83 offset + step * -15 5 "emergency")
 text(-80 offset + step * -16 5 "Emergency freq: 121.5")
+
+###### MINUTE MARKS ######
+
+speedMin = 70
+speedMax = 90
+
+xStart = -90
+
+dist = speedMax - speedMin
+distance = 230 / dist
+
+for i <- speedMin to speedMax {
+  x1 = xStart
+  x2 = xStart - distance
+
+  speed1 = i * 1852
+  speed1div = speed1
+  speed1min = speed1div / 6
+  speed1mm = speed1min * 100
+
+  plusOne = i + 1
+  speed2 = plusOne * 1852
+  speed2div = speed2
+  speed2min = speed2div / 6
+  speed2mm = speed2min * 100
+
+  # scale down to the paper scale
+  s1 = speed1mm / scale 
+  s2 = speed2mm / scale 
+  a = scale / 400
+  extend = a / i
+  
+  #minute lines - right side
+  
+  for j <- 1 to extend {
+    line(x1 s1 * j x2 s2 * j)
+  }
 
 text(52 -114 4 "www.repocad.com/flightplan")
 text(52 -118 4 "by selftie software")
