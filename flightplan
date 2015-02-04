@@ -487,6 +487,7 @@ dist = speedMax - speedMin
 distance = 10 / dist
 
 for i <- speedMin to speedMax {
+  
   x1 = xStart
   x2 = xStart - distance
 
