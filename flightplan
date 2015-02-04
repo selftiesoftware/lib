@@ -12,8 +12,8 @@
 
     #CHART SCALE FOR MINUTE MARKS
     scale = 250000
-    speedMin = 80 #min GS (for minute lines)
-    speedMax = 90 #max GS (for minute lines)
+    speedMin = 50 #min GS (for minute lines)
+    speedMax = 70 #max GS (for minute lines)
 
 #WP1
     title1 =   "VIDEBAEK"
