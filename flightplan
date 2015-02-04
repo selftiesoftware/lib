@@ -528,8 +528,8 @@ for i <- speedMin to speedMax {
   xStart = xStart - distance
 }
 
-  text(-97 -130 5 speedMin * 5)
-  text(-87 -130 5 speedMax * 5)
+  text(-97 -130 5 speedMax * 5)
+  text(-87 -130 5 speedMin * 5)
   line(-95 0 -85 0)
   line(-95 -125 -95 125)
 
