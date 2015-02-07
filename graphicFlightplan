@@ -22,8 +22,8 @@
     title1 =   "VIDEBAEK"
     dist1 =    10
     tt1 =      70
-    windDir1 = 135
-    windVel1 = 10
+    windDir1 = 335
+    windVel1 = 20
 
 #WP2
     title2 =   "IKAST"
@@ -105,19 +105,14 @@ time1 = timeHr1 * 60
 y = 60 # vertical offset
 
 if (dist1 > 0) {
-  1a = cos(radians(tt1 - 90))
-  1b = sin(radians(tt1 - 90))
-
-  x1 = 1a * dist1 * routeScale
-  y1 = 1b * dist1 * routeScale * -1
-
+  x1 = cosPoint(tt1)
+  y1 = sinPoint(tt1)
   line(xDep yDep x1 y1)
-  triangle(x1 y1 3)
+  line(xDep yDep cosPoint(tt1 - wca1) sinPoint(tt1 - wca1))
+  triangle(cosPoint(tt1) y1 3)
 
   text(x1 y1 + 4 6 title1) # TITLE
 }
-
-
 
 ###### WPT 2 ########
 
