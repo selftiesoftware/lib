@@ -81,11 +81,13 @@ text(xDep yDep + 4 6 from) # TITLE
 
 function cosPoint(angle dist) {
   a = cos(radians(tt1 - 90))
-  a * dist1 * routeScale
+  x = a * dist * routeScale
+  x
 }
  function sinPoint(angle dist) {
   a = sin(radians(tt1 - 90))
-  a * dist * routeScale * -1
+  y = a * dist * routeScale * -1
+  y
 }
 
 #### WPT1 ####
@@ -108,8 +110,10 @@ if (dist1 > 0) {
   x1 = cosPoint(tt1 dist1)
   y1 = sinPoint(tt1 dist1)
   line(xDep yDep x1 y1)
-  line(xDep yDep cosPoint((tt1 - wca1) dist1) sinPoint(tt1 - wca1 dist1))
-  triangle(cosPoint(tt1 dist1) y1 3)
+  wc1 = tt1 - wca1
+  wcy1 = 
+  line(xDep yDep cosPoint(wc1 dist1) sinPoint(wc1 dist1))
+  triangle(x1 y1 3)
 
   text(x1 y1 + 4 6 title1) # TITLE
 }
