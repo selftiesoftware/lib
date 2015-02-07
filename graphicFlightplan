@@ -73,7 +73,7 @@
 
 ############ WAYPOINT CALCULATIONS ##############
 import geometry2d
-routeScale = 5
+routeScale = 4
 xDep = 0
 yDep = 0
 triangle(xDep yDep 3)
@@ -165,4 +165,34 @@ if (dist3 > 0) {
   triangle(x3 y3 3)
 
   text(x3 y3 + 4 6 title3) # TITLE
+}
+
+
+#### WPT4 ####
+
+n4 = sin(radians(tt4 - windDir4))
+wca4a = (windVel4 * n4)
+wca4 = degrees(wca4a / tas * -1)
+th4 = toInt(tt4 + wca4)
+c4a = cos(radians(wca4))
+c4b = cos(radians(tt4 - windDir4))
+gs4a = tas * c4a
+gs4b = windVel4 * c4b
+gs4 = gs4a - gs4b
+timeHr4 = dist4 / gs4
+time4 = timeHr4 * 60 
+
+y = -27 # vertical offset
+
+if (dist4 > 0) {
+ 4a = cos(radians(tt4 - 90))
+  4b = sin(radians(tt4 - 90))
+
+  x4 = x3 + 4a * dist4 * routeScale
+  y4 = y3 + 4b * dist4 * routeScale * -1
+
+  line(x3 y3 x4 y4)
+  triangle(x4 y4 3)
+
+  text(x4 y4 + 4 6 title4) # TITLE
 }
