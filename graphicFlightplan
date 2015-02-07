@@ -109,7 +109,8 @@ if (dist1 > 0) {
 }
 
 
-###### WAYPOINT 2 ########
+
+###### WPT 2 ########
 
 n2 = sin(radians(tt2 - windDir2))
 wca2a = (windVel2 * n2)
@@ -137,4 +138,31 @@ if (dist2 > 0) {
 
   text(x2 y2 + 4 6 title2) # TITLE
 
+}
+
+#### WPT3 ####
+
+n3 = sin(radians(tt3 - windDir3))
+wca3a = (windVel3 * n3)
+wca3 = degrees(wca3a / tas * -1)
+th3 = toInt(tt3 + wca3)
+c3a = cos(radians(wca3))
+c3b = cos(radians(tt3 - windDir3))
+gs3a = tas * c3a
+gs3b = windVel3 * c3b
+gs3 = gs3a - gs3b
+timeHr3 = dist3 / gs3
+time3 = timeHr3 * 60 
+
+if (dist3 > 0) {
+     3a = cos(radians(tt3 - 90))
+  3b = sin(radians(tt3 - 90))
+
+  x3 = x2 + 3a * dist3 * routeScale
+  y3 = y2 + 3b * dist3 * routeScale * -1
+
+  line(x2 y2 x3 y3)
+  triangle(x3 y3 3)
+
+  text(x3 y3 + 4 6 title3) # TITLE
 }
