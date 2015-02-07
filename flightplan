@@ -548,13 +548,21 @@ y2 = y * 14
 line(70 -126 70 + x2 -126 - y2)
 line(70 -126 70 - x2 -126 + y2)
 function deg(angle) {
-   x1 = cos(angle) * 10
-   y1 = sin(angle) * 10
-   x2 = cos(angle) * 13
-   y2 = sin(angle) * 13
-   line(90 0 70 -126)
+   x1 = cos(angle)
+   y1 = sin(angle)
+   x2 = cos(angle)
+   y2 = sin(angle)
+   mx1 = x1 * 11
+   my1 = y1 * 11
+   mx2 = x2 * 14
+   my2 = y2 * 14
+
+line(70 + mx1 -126 + my1 70 + mx2 -126 + my2)
 }
-deg(10)
+deg(0)
+deg(1.57)
+deg(3.14)
+deg(4.71)
 
 circle(70 -126 12)
 circle(70 -126 9)
