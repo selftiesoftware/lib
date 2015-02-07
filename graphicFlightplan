@@ -97,25 +97,14 @@ y = 60 # vertical offset
 
 
 if (dist1 > 0) {
+  1a = cos(radians(tt1 - 90))
+  1b = sin(radians(tt1 - 90))
 
-1a = cos(radians(tt1 - 90))
-1b = sin(radians(tt1 - 90))
+  x1 = 1a * dist1 * routeScale
+  y1 = 1b * dist1 * routeScale * -1
 
-x1 = 1a * dist1 * routeScale
-y1 = 1b * dist1 * routeScale * -1
-
-line(xDep yDep x1 y1)
-triangle(x1 y1 3)
+  line(xDep yDep x1 y1)
+  triangle(x1 y1 3)
 
   text(x1 y1 + 4 6 title1) # TITLE
-  text(xDep yDep + 15.5 6 tt1)
-  text(xDep yDep + 10.5 6 dist1)
-  text(9 y + 31 4 windVel1)
-  text(3 y + 31 4 windDir1)
-  text(-33 y + 6.5 6 toInt(wca1)) #WCA
-  text(-15 y + 15.5 6 th1) #TH
-  text(-15 y + 6.5 9 th1 + deviation) #MH
-
-  text(18 y + 26.5 6 toInt(gs1)) #GS
-  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
 }
