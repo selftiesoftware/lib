@@ -94,8 +94,6 @@ time1 = timeHr1 * 60
 
 y = 60 # vertical offset
 
-
-
 if (dist1 > 0) {
   1a = cos(radians(tt1 - 90))
   1b = sin(radians(tt1 - 90))
