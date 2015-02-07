@@ -106,3 +106,34 @@ if (dist1 > 0) {
 
   text(x1 y1 + 4 6 title1) # TITLE
 }
+
+
+###### WAYPOINT 2 ########
+
+n2 = sin(radians(tt2 - windDir2))
+wca2a = (windVel2 * n2)
+wca2 = degrees(wca2a / tas * -1)
+th2 = toInt(tt2 + wca2)
+c2a = cos(radians(wca2))
+c2b = cos(radians(tt2 - windDir2))
+gs2a = tas * c2a
+gs2b = windVel2 * c2b
+gs2 = gs2a - gs2b
+timeHr2 = dist2 / gs2
+time2 = timeHr2 * 60 
+
+y = 31 # vertical offset
+
+if (dist2 > 0) {
+   2a = cos(radians(tt2 - 90))
+  2b = sin(radians(tt2 - 90))
+
+  x2 = 2a * dist2 * routeScale
+  y2 = 2b * dist2 * routeScale * -1
+
+  line(x1 y1 x2 y2)
+  triangle(x2 y2 3)
+
+  text(x2 y2 + 4 6 title2) # TITLE
+
+}
