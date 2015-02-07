@@ -128,8 +128,8 @@ if (dist2 > 0) {
    2a = cos(radians(tt2 - 90))
   2b = sin(radians(tt2 - 90))
 
-  x2 = 2a * dist2 * routeScale
-  y2 = 2b * dist2 * routeScale * -1
+  x2 = x1 + 2a * dist2 * routeScale
+  y2 = y1 + 2b * dist2 * routeScale * -1
 
   line(x1 y1 x2 y2)
   triangle(x2 y2 3)
