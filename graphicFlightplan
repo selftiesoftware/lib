@@ -72,6 +72,11 @@
 ## do not edit below this point
 
 ############ WAYPOINT CALCULATIONS ##############
+import geometry2d
+routeScale = 5
+xDep = 0
+yDep = 0
+triangle(xDep yDep 3)
 
 #### WPT1 ####
 
@@ -89,20 +94,20 @@ time1 = timeHr1 * 60
 
 y = 60 # vertical offset
 
-xDep = 0
-yDep = 0
+
 
 if (dist1 > 0) {
 
 1a = cos(radians(tt1 - 90))
 1b = sin(radians(tt1 - 90))
 
-x1 = 1a * dist1 * 2
-y1 = 1b * dist1 * -2
+x1 = 1a * dist1 * routeScale
+y1 = 1b * dist1 * routeScale * -1
 
 line(xDep yDep x1 y1)
+triangle(x1 y1 3)
 
-  text(xDep yDep + 26 8 title1) # TITLE
+  text(x1 y1 + 4 6 title1) # TITLE
   text(xDep yDep + 15.5 6 tt1)
   text(xDep yDep + 10.5 6 dist1)
   text(9 y + 31 4 windVel1)
