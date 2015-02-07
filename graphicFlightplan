@@ -81,10 +81,10 @@ text(xDep yDep + 4 6 from) # TITLE
 
 function cosPoint(angle) {
   a = cos(radians(tt1 - 90))
-  a * dist1 * routeScale * -1
+  a * dist1 * routeScale
 }
  function sinPoint(angle) {
-  a = cos(radians(tt1 - 90))
+  a = sin(radians(tt1 - 90))
   a * dist1 * routeScale * -1
 }
 
