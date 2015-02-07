@@ -79,13 +79,13 @@ yDep = 0
 triangle(xDep yDep 3)
 text(xDep yDep + 4 6 from) # TITLE
 
-function cosPoint(angle dist) {
-  a = cos(radians(tt1 - 90))
-  x = a * dist * routeScale
+function cosPoint(angle dst) {
+  a = cos(radians(angle - 90))
+  x = a * dst * routeScale
   x
 }
  function sinPoint(angle dist) {
-  a = sin(radians(tt1 - 90))
+  a = sin(radians(angle - 90))
   y = a * dist * routeScale * -1
   y
 }
@@ -111,10 +111,12 @@ if (dist1 > 0) {
   y1 = sinPoint(tt1 dist1)
   line(xDep yDep x1 y1)
   wc1 = tt1 - wca1
-  wcy1 = 
-  line(xDep yDep cosPoint(wc1 dist1) sinPoint(wc1 dist1))
+  wcx1 = cosPoint(wc1 dist1 / 2) 
+  wcy1 = sinPoint(wc1 dist1 / 2)
+  line(xDep yDep wcx1 wcy1)
   triangle(x1 y1 3)
 
+  text(wcx1 + 1 wcy1 - 1.5  6 th1 + deviation) # TITLE
   text(x1 y1 + 4 6 title1) # TITLE
 }
 
