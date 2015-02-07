@@ -1,0 +1,116 @@
+ from =      "EKRK"
+    to =        "EKAH"
+    reg =       "OY-ABC"
+    pilot =     "Pilot name here"
+
+    tas =      95   # TAS in knots 
+    lph =      12  # FUEL in Liters/hour
+    alternate = 5    # fuel to alternate
+    reserve =   10   # reserve fuel, liters
+    glide =     8    # glide ratio 1:x
+    deviation = 1
+
+    #CHART SCALE FOR MINUTE MARKS
+    scale = 500000
+    speedMin = 80 #min GS (for minute lines)
+    speedMax = 90 #max GS (for minute lines)
+
+   #destinagion runway heading (shown on wind rose)
+   landingRwyHdg = 250
+
+#WP1
+    title1 =   "VIDEBAEK"
+    dist1 =    10
+    tt1 =      90
+    windDir1 = 135
+    windVel1 = 10
+
+#WP2
+    title2 =   "IKAST"
+    dist2 =    12
+    tt2 =      30
+    windDir2 = 100
+    windVel2 = 10
+
+#WP3
+    title3 =   "KJELLERUP"
+    dist3 =    18
+    tt3 =      40
+    windDir3 = 100
+    windVel3 = 15
+
+#WP4
+    title4 =   "EKRD"
+    dist4 =    20
+    tt4 =      45
+    windDir4 = 90
+    windVel4 = 15
+
+#WP5
+    title5 =   " - - - "    
+    dist5 =    0
+    tt5 =      0
+    windDir5 = 0
+    windVel5 = 0
+
+#WP6
+    title6 =   " - - - "    
+    dist6 =    0
+    tt6 =      0
+    windDir6 = 0
+    windVel6 = 0
+
+#WP7
+    title7 =   " - - - "    
+    dist7 =    0
+    tt7 =      0
+    windDir7 = 0
+    windVel7 = 0
+
+
+## END USER INPUT ##
+## do not edit below this point
+
+############ WAYPOINT CALCULATIONS ##############
+
+#### WPT1 ####
+
+n1 = sin(radians(tt1 - windDir1))
+wca1a = (windVel1 * n1)
+wca1 = degrees(wca1a / tas * -1)
+th1 = toInt(tt1 + wca1)
+c1a = cos(radians(wca1))
+c1b = cos(radians(tt1 - windDir1))
+gs1a = tas * c1a
+gs1b = windVel1 * c1b
+gs1 = gs1a - gs1b
+timeHr1 = dist1 / gs1
+time1 = timeHr1 * 60
+
+y = 60 # vertical offset
+
+xDep = 0
+yDep = 0
+
+if (dist1 > 0) {
+
+1a = cos(radians(tt1 - 90))
+1b = sin(radians(tt1 - 90))
+
+x1 = 1a * dist1 * 2
+y1 = 1b * dist1 * -2
+
+line(xDep yDep x1 y1)
+
+  text(xDep yDep + 26 8 title1) # TITLE
+  text(xDep yDep + 15.5 6 tt1)
+  text(xDep yDep + 10.5 6 dist1)
+  text(9 y + 31 4 windVel1)
+  text(3 y + 31 4 windDir1)
+  text(-33 y + 6.5 6 toInt(wca1)) #WCA
+  text(-15 y + 15.5 6 th1) #TH
+  text(-15 y + 6.5 9 th1 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs1)) #GS
+  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
+}
