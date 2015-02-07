@@ -1,5 +1,5 @@
- from =      "EKRK"
-    to =        "EKAH"
+ from =      "EKVJ"
+    to =        "EKRD"
     reg =       "OY-ABC"
     pilot =     "Pilot name here"
 
@@ -77,6 +77,7 @@ routeScale = 5
 xDep = 0
 yDep = 0
 triangle(xDep yDep 3)
+text(xDep yDep + 4 6 from) # TITLE
 
 #### WPT1 ####
 
