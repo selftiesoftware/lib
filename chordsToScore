@@ -29,7 +29,7 @@ function A() {
 
 function B() {
   xG = xG + 20
-  text(xG - 9 yG + 17 8 "B/H")
+  text(xG - 9 yG + 17 8 "B")
   if (xG > 100) yG = yG + 20
   score(xG yG)
   circle(xG - 3 yG - 9 1.2)
