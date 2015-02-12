@@ -552,8 +552,8 @@ line(70 -126 70 - x2 -126 + y2)
 #PERPENDICULAR TO RWY LINE
 x3 = cos(radians(landingRwyHdg ))
 y3 = sin(radians(landingRwyHdg ))
-x4 = x3 * 14
-y4 = y3 * 14
+x4 = x3 * 9
+y4 = y3 * 9
 line(70 -126 70 + x4 -126 - y4)
 line(70 -126 70 - x4 -126 + y4)
 
