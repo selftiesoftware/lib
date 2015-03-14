@@ -1,15 +1,16 @@
 #a paper ruler in CM
 
 for i <- -100 to 100 {
-    line(0 i 4 i)
+    line(0 i -4 i)
 }
 
 for i <- -20 to 20 {
     a = i * 5
-    line(0 a 6 a)
+    line(0 a -6 a)
 }
 
 for i <- -10 to 10 {
     a = i * 10
-    line(0 a 8 a)
+    line(0 a -8 a)
+    text(2 a 5 a + 100)
 }
