@@ -1,3 +1,5 @@
+import geometry2d
+
 #a paper ruler in CM
 
 for i <- -100 to 100 {
@@ -11,6 +13,9 @@ for i <- -20 to 21 {
 
 for i <- -10 to 11 {
     a = i * 10
+    cm = a / 10
     line(0 a 8 a)
-    text(9 a - 1 5 a + 100)
+    text(9 a - 1 5 cm + 10)
 }
+
+rectangle(0 -105 20 105)
