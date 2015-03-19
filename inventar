@@ -2,7 +2,7 @@ y = 130
 col1x1 = -80
 col1x2 = -60
 size = 6
-dist = 6
+dist = 5
 
 line(0 -140 0 135)
 
@@ -37,8 +37,11 @@ text(col1x1 y size "XII")
 text(col1x2 y size "bolte")
  y = y - dist 
 text(col1x1 y size "XI")
-text(col1x2 y size "bor")
+text(col1x2 y size "bor: store/special")
  y = y - dist 
+text(col1x1 y size "XXXVI")
+text(col1x2 y size "CD/DVD")
+y = y - dist 
 text(col1x1 y size "XII")
 text(col1x2 y size "clips")
  y = y - dist 
@@ -69,9 +72,6 @@ y = y - dist
 text(col1x1 y size "XXVII")
 text(col1x2 y size "elektronik - ledning")
 y = y - dist 
-text(col1x1 y size "XV")
-text(col1x2 y size "multimeter")
- y = y - dist 
 text(col1x1 y size "XXVII")
 text(col1x2 y size "elmotorer")
  y = y - dist 
@@ -84,7 +84,7 @@ text(col1x2 y size "engangskitler")
 text(col1x1 y size "XXII")
 text(col1x2 y size "flisekryds")
  y = y - dist 
-text(col1x1 y size "XII")
+text(col1x1 y size "SD")
 text(col1x2 y size "fløjmøtrikker")
  y = y - dist 
 text(col1x1 y size "XX")
@@ -155,6 +155,9 @@ text(col1x2 y size "modelmaterialer - plastic")
  y = y - dist 
 text(col1x1 y size "XXVI")
 text(col1x2 y size "modelmaterialer - træ")
+ y = y - dist 
+text(col1x1 y size "XV")
+text(col1x2 y size "multimeter")
  y = y - dist 
 text(col1x1 y size "XXX")
 text(col1x2 y size "møbelbeslag")
@@ -237,8 +240,8 @@ text(col1x2 y size "snor")
 text(col1x1 y size "XXVII")
 text(col1x2 y size "spotlys")
  y = y - dist 
-text(col1x1 y size "XII")
-text(col1x2 y size "spændeskiver")
+text(col1x1 y size "SD")
+text(col1x2 y size "ass. spændeskiver")
  y = y - dist 
 text(col1x1 y size "XVI")
 text(col1x2 y size "strips")
@@ -261,17 +264,20 @@ text(col1x2 y size "tape")
 text(col1x1 y size "XXIX")
 text(col1x2 y size "topnøgler")
  y = y - dist 
-text(col1x1 y size "VI")
-text(col1x2 y size "tv ledninger")
+text(col1x1 y size "III")
+text(col1x2 y size "tragte")
  y = y - dist 
 text(col1x1 y size "VI")
-text(col1x2 y size "tv stik")
+text(col1x2 y size "dreml")
  y = y - dist 
 text(col1x1 y size "XXIX")
 text(col1x2 y size "twist")
  y = y - dist 
 text(col1x1 y size "XVII")
 text(col1x2 y size "tætningslister")
+ y = y - dist 
+text(col1x1 y size "VII")
+text(col1x2 y size "udstødningspasta")
  y = y - dist 
 text(col1x1 y size "VI")
 text(col1x2 y size "USB nøgler")
