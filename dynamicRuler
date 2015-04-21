@@ -1,0 +1,32 @@
+#a paper ruler in CM
+                                   #1 MM MARKS:
+
+unit = 2.54 # inches
+
+for i <- -100 to 100 {
+    line(0 i * unit 4 i * unit)
+}
+
+                                   #5 MM MARKS
+
+for i <- -20 to 21 {
+    a = i * 5
+    line(0 a * unit 6 a * unit)
+}
+
+                                  #10 MM MARKS
+
+for i <- -10 to 11 {
+    a = i * 10
+    cm1 = a / 10
+    cm = cm1 * unit
+    line(0 a * unit 8 a * unit)
+    t = a - 1
+    text(9 t * unit 5 cm1 + 10)   # NUMBERS
+}
+
+                                    #BORDER
+line (0 -105 * unit 0 105 * unit)
+line (0 105 * unit 20 105 * unit)
+line (0 -105 * unit 20 -105 * unit)
+line (20 -105 * unit 20 105 * unit)
