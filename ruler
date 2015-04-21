@@ -1,13 +1,18 @@
 #a paper ruler in CM
+                                   #1 MM MARKS:
 
 for i <- -100 to 100 {
     line(0 i 4 i)
 }
 
+                                   #5 MM MARKS
+
 for i <- -20 to 21 {
     a = i * 5
     line(0 a 6 a)
 }
+
+                                  #10 MM MARKS
 
 for i <- -10 to 11 {
     a = i * 10
@@ -16,7 +21,7 @@ for i <- -10 to 11 {
     text(9 a - 1 5 cm + 10)
 }
 
-#border
+                                    #BORDER
 line (0 -105 0 105)
 line (0 105 20 105)
 line (0 -105 20 -105)
