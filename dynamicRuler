@@ -2,31 +2,33 @@
                                    #1 MM MARKS:
 
 unit = 2.54 # inches
+#unit = 1 # mm
 
-for i <- -100 to 100 {
+for i <- -100 / unit to 100 / unit {
     line(0 i * unit 4 i * unit)
 }
 
                                    #5 MM MARKS
 
-for i <- -20 to 21 {
+for i <- -20 / unit to 21 / unit {
     a = i * 5
     line(0 a * unit 6 a * unit)
 }
 
                                   #10 MM MARKS
 
-for i <- -10 to 11 {
+for i <- -10 / unit to 11 / unit {
     a = i * 10
     cm1 = a / 10
     cm = cm1 * unit
     line(0 a * unit 8 a * unit)
     t = a - 1
-    text(9 t * unit 5 cm1 + 10)   # NUMBERS
+    t2 = cm + 10
+    text(9 t * unit 5 t2 / unit)   # NUMBERS
 }
 
                                     #BORDER
-line (0 -105 * unit 0 105 * unit)
-line (0 105 * unit 20 105 * unit)
-line (0 -105 * unit 20 -105 * unit)
-line (20 -105 * unit 20 105 * unit)
+line (0 -105 0 105)
+line (0 105 20 105)
+line (0 -105 20 -105)
+line (20 -105 20 105)
