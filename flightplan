@@ -1,3 +1,5 @@
+   import flightplanFunctions
+
     from =      "EKSp"
     to =        "EKod"
     reg =       "OY-ABC"
@@ -540,52 +542,3 @@ for i <- speedMin to speedMax {
   text(-87 -130 5 speedMin * 5)
   line(-95 0 -85 0)
   line(-95 -125 -95 125)
-
-#RWY LINE
-x = cos(radians(landingRwyHdg - 90))
-y = sin(radians(landingRwyHdg - 90))
-x2 = x * 14
-y2 = y * 14
-line(70 -126 70 + x2 -126 - y2)
-line(70 -126 70 - x2 -126 + y2)
-
-#PERPENDICULAR TO RWY LINE
-x3 = cos(radians(landingRwyHdg ))
-y3 = sin(radians(landingRwyHdg ))
-x4 = x3 * 9
-y4 = y3 * 9
-line(70 -126 70 + x4 -126 - y4)
-line(70 -126 70 - x4 -126 + y4)
-
-#COMPASS ROSE TICKS
-function deg(angle extend) {
-   x1 = cos(angle)
-   y1 = sin(angle)
-   x2 = cos(angle)
-   y2 = sin(angle)
-   mx1 = x1 * 11
-   my1 = y1 * 11
-   mx2 = x2 * extend
-   my2 = y2 * extend
-
-line(70 + mx1 -126 + my1 70 + mx2 -126 + my2)
-}
-deg(0 14)
-deg(1.57 14)
-deg(3.14 14)
-deg(4.71 14)
-
-deg(0.523 12)
-deg(1.046 12)
-deg(2.09 12)
-deg(2.61 12)
-deg(3.66 12)
-deg(4.18 12)
-deg(5.23 12)
-deg(5.7 12)
-
-
-circle(70 -126 12)
-circle(70 -126 9)
-circle(70 -126 6)
-circle(70 -126 3)
