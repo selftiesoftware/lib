@@ -542,3 +542,6 @@ for i <- speedMin to speedMax {
   text(-88 -130 5 speedMin * 5)
   line(-95 0 -85 0)
   line(-95 -125 -95 125)
+
+#call wind rose function from flightplanFunctions
+crossWindRose(landingRwyHdg)
