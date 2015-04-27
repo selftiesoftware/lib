@@ -7,6 +7,12 @@
 
 function human (x y h s) {
   #leg
+  function leg(x y seed) {
+   line(x - 100 y x + 100 y + 600) 
+    line(x - 100 y x - 200 y + 600) 
+}
+ leg(0 0 1)
+ leg(300 0 1)
 
   #torso
 
