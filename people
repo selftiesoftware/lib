@@ -23,7 +23,7 @@ b = b1 + x
    line(a + 190 y a y + 800) 
 
   #torso
-#line(x + 200 y + 600 a 1300) #right side
+line(a + 200 y + 800 a + 250 1300)#right side
 line(a - 200 y + 600 a - 250 1300) #left side
 
  #left arm
