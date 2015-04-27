@@ -6,5 +6,12 @@
 # s: seed (between 1 and 10) change to get different outlines)
 
 function human (x y h s) {
+  #leg
+
+  #torso
+
+ #arms
+
+ #head  
 
 }
