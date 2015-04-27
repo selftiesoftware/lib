@@ -10,15 +10,17 @@ function human (x y h s) {
 #variable points based on seed nr
 a1 = 50 * s
 b1 = -50 * s
-
 a = a1 + x
 b = b1 + y
-  #legs
 
-   line(a y b y + 600) 
-   line( a y x  y + 600) 
-   line(a y x + 200 y + 600) 
-   line(a y x y + 600) 
+  #legs
+   #left
+   line(a - 50 y a y + 600) 
+   line( a - 50 y a  - 200 y + 600) 
+   
+  #right
+   line(a + 60 y a + 200 y + 600) 
+   line(a + 60 y a y + 600) 
 
   #torso
 line(x + 200 y + 600 a + x 1300)
