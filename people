@@ -19,12 +19,20 @@ b = -220 * s
 
   #torso
 line(x + 200 y + 600 a 1300)
-
 line(x + b y + 600 b 1300)
- #arms
+
+ #left arm
+line(x + b 1300 -500 1000)
+line(x + b 1500 -500 1000)
+
+ #right arm
+line(x + a 1300 500 1000)
+line(x + a 1500 500 1000)
 
  #head  
 circle(x y + h 150)
 }
 
+#test:
 human(0 0 1800 1)
+human(800 0 1800 1)
