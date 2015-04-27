@@ -24,7 +24,7 @@ b = b1 + x
 
   #torso
 #line(x + 200 y + 600 a 1300) #right side
-line(a - 50 y + 600 a 1300) #left side
+line(a - 200 y + 600 a - 250 1300) #left side
 
  #left arm
 #line(b 1300 -500 + x  1000)
