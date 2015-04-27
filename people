@@ -27,7 +27,7 @@ x3 = x - 150
    line(x1 y1 x + 100 y) 
 
   #torso
-#line(a + 200 y + 800 a + 250 1300)#right side
+line(x3 y1 x3 y2)#right side
 #line(a - 200 y + 600 a - 250 1300) #left side
 
  #left arm
