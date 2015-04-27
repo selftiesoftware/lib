@@ -1,4 +1,4 @@
-#some simple outlines of people for adding scale to drawings
+#a function to draw a simple outline of a human
 
 # x: position 
 # y: position
@@ -9,7 +9,7 @@ function human (x y h s) {
   
 #variable points based on seed nr
 a = 110 * s
-b = -220 * s
+b = -120 * s
 
   #legs
    line(x - a y x + b y + 600) 
