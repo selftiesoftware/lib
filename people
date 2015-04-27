@@ -1,1 +1,10 @@
 #some simple outlines of people for adding scale to drawings
+
+# x: position 
+# y: position
+# h: height of the person
+# s: seed (between 1 and 10) change to get different outlines)
+
+function human (x y h s) {
+
+}
