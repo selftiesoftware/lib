@@ -18,8 +18,9 @@ b = -220 * s
    line(x + a y x y + 600) 
 
   #torso
+line(x + 200 y + 600 a 1300)
 
-
+line(x + b y + 600 b 1300)
  #arms
 
  #head  
