@@ -3,18 +3,22 @@
 # x: position 
 # y: position
 # h: height of the person
-# s: seed (between 1 and 10) change to get different outlines)
+# s: seed change to get different outlines)
 
 function human (x y h s) {
-  #leg
-  function leg(x y seed) {
-   line(x - 100 y x + 100 y + 600) 
-    line(x - 100 y x - 200 y + 600) 
-}
- leg(0 0 1)
- leg(300 0 1)
+  
+#variable points based on seed nr
+a = 110 * s
+b = -220 * s
+
+  #legs
+   line(x - a y x + b y + 600) 
+   line(x - a y x  y + 600) 
+   line(x + a y x + 200 y + 600) 
+   line(x + a y x y + 600) 
 
   #torso
+
 
  #arms
 
