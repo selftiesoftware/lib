@@ -40,10 +40,20 @@ line(x1 y2 x2 y1)#down side
 line(x1 + 120 y2 + 150 x2 y1)#up side
 
  #head  
-circle(x y + h 150)
+#circle(x y + h 150)
 line(x3 - 120 y2 + 150 x y2 + 240)#left shoulder
 line(x1 + 120 y2 + 150 x y2 + 240)#right shoulder
+
+line(x3 + 40 y2 + 370 x y2 + 240)#left side b
+line(x1 - 100 y2 + 350 x y2 + 240)#right side b 
+
+line(x3 + 40 y2 + 370 x3 + 80 y2 + 490)#left side t
+line(x1 - 100 y2 + 350 x1 - 120 y2 + 460)#right side t
+
+line(x1 - 120 y2 + 460 x3 + 80 y2 + 490)
 }
+
+
 
 #test:
 human(0 0 1800 1)
