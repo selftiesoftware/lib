@@ -8,23 +8,27 @@
 function human (x y h s) {
   
 #variable points based on seed nr
-a1 = 50 * s
-b1 = -50 * s
-a = a1 + x
-b = b1 + x
+ya = h / 2
+y1 = ya + y
+yb = h - 200
+y2 = yb + y
+
+x1 = x + 200
+x2 = x + 600
+x3 = x - 150
 
   #legs
    #left
-   line(a - 50 y a y + 600 + a1) 
-   line( a - 50 y a  - 200 y + 600) 
+   line(x y1 x + 100 y) 
+   line(x3 y1 x - 100 y) 
    
   #right
-   line(a + 190 y a + 200 y + 800) 
-   line(a + 190 y a y + 600 + a1) 
+   line(x y1 x - 100 y) 
+   line(x1 y1 x + 100 y) 
 
   #torso
-line(a + 200 y + 800 a + 250 1300)#right side
-line(a - 200 y + 600 a - 250 1300) #left side
+#line(a + 200 y + 800 a + 250 1300)#right side
+#line(a - 200 y + 600 a - 250 1300) #left side
 
  #left arm
 #line(b 1300 -500 + x  1000)
@@ -41,4 +45,4 @@ circle(x y + h 150)
 #test:
 human(0 0 1800 1)
 human(1200 0 1600 2)
-human(2100 -600 1200 3)
+#human(2100 -600 1200 3)
