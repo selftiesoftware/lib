@@ -35,4 +35,5 @@ circle(x y + h 150)
 
 #test:
 human(0 0 1800 1)
-human(800 0 1800 1)
+human(1200 0 1800 2)
+human(2400 0 1800 3)
