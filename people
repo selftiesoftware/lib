@@ -13,5 +13,7 @@ function human (x y h s) {
  #arms
 
  #head  
-
+circle(x y + h 150)
 }
+
+human(0 0 1800 1)
