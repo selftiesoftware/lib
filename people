@@ -41,6 +41,8 @@ line(x1 + 120 y2 + 150 x2 y1)#up side
 
  #head  
 circle(x y + h 150)
+line(x3 - 120 y2 + 150 x y2 + 170)#left shoulder
+line(x1 + 120 y2 + 150 x y2 + 170)#right shoulder
 }
 
 #test:
