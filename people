@@ -13,13 +13,17 @@ yb = h - 400
 
 w = 2000 / h #variable width as a factor of height
 
-text(0 0 30 w)
 y1 = ya + y
 y2 = yb + y
-x1 = x + 200
-x2 = x + 400
-x3 = x - 150
-x4 = x - 250
+xa = 200 / w
+xb = 400 / w
+xc = -150 / w
+xd = -250 / w
+
+x1 = xa + x 
+x2 = xb + x
+x3 = xc + x
+x4 = xd + x
 
   #legs
    #left
@@ -60,5 +64,5 @@ line(x1 - 120 y2 + 460 x3 + 80 y2 + 490)
 
 #test:
 human(0 0 1800 1)
-#human(700 0 1600 2)
-#human(1300 -600 1200 3)
+human(700 0 1600 2)
+human(1300 -600 1200 3)
