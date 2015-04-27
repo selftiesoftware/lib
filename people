@@ -15,12 +15,12 @@ b = b1 + x
 
   #legs
    #left
-   line(a - 50 y a y + 600) 
+   line(a - 50 y a y + 800) 
    line( a - 50 y a  - 200 y + 600) 
    
   #right
-   line(a + 60 y a + 200 y + 600) 
-   line(a + 60 y a y + 600) 
+   line(a + 190 y a + 200 y + 800) 
+   line(a + 190 y a y + 800) 
 
   #torso
 #line(x + 200 y + 600 a 1300) #right side
