@@ -15,12 +15,12 @@ b = b1 + x
 
   #legs
    #left
-   line(a - 50 y a y + 800) 
+   line(a - 50 y a y + 600 + a1) 
    line( a - 50 y a  - 200 y + 600) 
    
   #right
    line(a + 190 y a + 200 y + 800) 
-   line(a + 190 y a y + 800) 
+   line(a + 190 y a y + 600 + a1) 
 
   #torso
 line(a + 200 y + 800 a + 250 1300)#right side
@@ -41,4 +41,4 @@ circle(x y + h 150)
 #test:
 human(0 0 1800 1)
 human(1200 0 1600 2)
-human(2100 0 1200 3)
+human(2100 -600 1200 3)
