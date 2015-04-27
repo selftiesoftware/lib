@@ -8,9 +8,9 @@
 function human (x y h s) {
   
 #variable points based on seed nr
-ya = h / 2
+ya = h / 2.3
 y1 = ya + y
-yb = h - 200
+yb = h - 400
 y2 = yb + y
 
 x1 = x + 200
