@@ -14,8 +14,9 @@ yb = h - 400
 y2 = yb + y
 
 x1 = x + 200
-x2 = x + 600
+x2 = x + 400
 x3 = x - 150
+x4 = x - 250
 
   #legs
    #left
@@ -31,12 +32,12 @@ line(x3 y1 x3 y2)#left side
 line(x1 y1 x1 y2)#right side
 
  #left arm
-#line(b 1300 -500 + x  1000)
-#line(b 1500 -500 + x 1000)
+line(x3 y2 x4 y1)#down side
+line(x3 - 120 y2 + 150 x4 y1)#up side
 
  #right arm
-#line(a 1300 500 + x 1000)
-#line(a 1500 500 + x 1000)
+line(x1 y2 x2 y1)#down side
+line(x1 + 120 y2 + 150 x2 y1)#up side
 
  #head  
 circle(x y + h 150)
