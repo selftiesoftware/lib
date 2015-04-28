@@ -6,7 +6,7 @@ function addTwo(a b) {
 a + b
 }
 
-text(0 40 20 addTwo(2 3))
+text(0 0 20 addTwo(2 3))
 
 #### RECTANGLE ####
 
@@ -48,6 +48,14 @@ function triangle(x y d){
   line(p2x y - offsetY p3x y - offsetY)
   line(x p1y p3x y - offsetY)
 } 
+
+#### SQUARE ####
+function square(neg pos) {
+  line(neg neg neg pos)
+  line(neg pos pos pos)
+  line(pos pos pos neg)
+  line(pos neg neg neg)
+}
 
 #example
 for i <- 0 to 4 {
