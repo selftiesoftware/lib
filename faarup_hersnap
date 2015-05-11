@@ -1,6 +1,6 @@
    import flightplanFunctions
 
-    from =      "Faarup"
+    from =      "Fårup"
     to =        "Hersnap"
     reg =       "UL-9262"
     pilot =     "Ole Egholm"
