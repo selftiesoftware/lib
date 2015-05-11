@@ -18,40 +18,40 @@
     speedMax = 70 #max GS (for minute lines)
 
    #destination runway heading (shown on wind rose)
-   landingRwyHdg = 250
+   landingRwyHdg = 170
 
 #WP1
     title1 =   "SLETTERHAGE"
-    dist1 =    10
-    tt1 =      90
+    dist1 =    35
+    tt1 =      139
     windDir1 = 135
     windVel1 = 10
 
 #WP2
     title2 =   "ISSEHOVED"
-    dist2 =    12
-    tt2 =      30
+    dist2 =    6
+    tt2 =      162
     windDir2 = 100
     windVel2 = 10
 
 #WP3
     title3 =   "LUSHAGE"
-    dist3 =    18
-    tt3 =      40
+    dist3 =    15
+    tt3 =      169
     windDir3 = 100
     windVel3 = 15
 
 #WP4
     title4 =   "FYNSHOVED"
-    dist4 =    20
-    tt4 =      45
+    dist4 =    8
+    tt4 =      180
     windDir4 = 90
     windVel4 = 15
 
 #WP5
     title5 =   " HERSNAP"    
-    dist5 =    0
-    tt5 =      0
+    dist5 =    13
+    tt5 =      167
     windDir5 = 0
     windVel5 = 0
 
