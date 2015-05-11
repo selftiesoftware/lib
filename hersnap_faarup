@@ -18,33 +18,33 @@
     speedMax = 70 #max GS (for minute lines)
 
    #destination runway heading (shown on wind rose)
-   landingRwyHdg = 170
+   landingRwyHdg = 260
 
 #WP1
     title1 =   "ÆBELØ"
-    dist1 =    35
-    tt1 =      139
+    dist1 =    20
+    tt1 =      290
     windDir1 = 15
     windVel1 = 10
 
 #WP2
     title2 =   "ALRØ"
-    dist2 =    6
-    tt2 =      162
+    dist2 =    13
+    tt2 =      344
     windDir2 = 10
     windVel2 = 10
 
 #WP3
     title3 =   "SKANDERBORG"
-    dist3 =    15
-    tt3 =      169
+    dist3 =    12
+    tt3 =      332
     windDir3 = 10
     windVel3 = 15
 
 #WP4
     title4 =   "FÅRUP"
-    dist4 =    8
-    tt4 =      180
+    dist4 =    21
+    tt4 =      354
     windDir4 = 10
     windVel4 = 15
 
