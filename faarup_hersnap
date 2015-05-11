@@ -24,36 +24,36 @@
     title1 =   "SLETTERHAGE"
     dist1 =    35
     tt1 =      139
-    windDir1 = 135
+    windDir1 = 15
     windVel1 = 10
 
 #WP2
     title2 =   "ISSEHOVED"
     dist2 =    6
     tt2 =      162
-    windDir2 = 100
+    windDir2 = 10
     windVel2 = 10
 
 #WP3
     title3 =   "LUSHAGE"
     dist3 =    15
     tt3 =      169
-    windDir3 = 100
+    windDir3 = 10
     windVel3 = 15
 
 #WP4
     title4 =   "FYNSHOVED"
     dist4 =    8
     tt4 =      180
-    windDir4 = 90
+    windDir4 = 10
     windVel4 = 15
 
 #WP5
     title5 =   " HERSNAP"    
     dist5 =    13
     tt5 =      167
-    windDir5 = 0
-    windVel5 = 0
+    windDir5 = 10
+    windVel5 = 20
 
 #WP6
     title6 =   " - - - "    
