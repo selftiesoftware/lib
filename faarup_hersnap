@@ -1,0 +1,547 @@
+   import flightplanFunctions
+
+    from =      "Faarup"
+    to =        "Hersnap"
+    reg =       "UL-9262"
+    pilot =     "Ole Egholm"
+
+    tas =      62   # TAS in knots 
+    lph =      13  # FUEL in Liters/hour
+    alternate = 5    # fuel to alternate
+    reserve =   10   # reserve fuel, liters
+    glide =     8    # glide ratio 1:x
+    deviation = 1
+
+    #CHART SCALE FOR MINUTE MARKS
+    scale = 500000
+    speedMin = 50 #min GS (for minute lines)
+    speedMax = 70 #max GS (for minute lines)
+
+   #destination runway heading (shown on wind rose)
+   landingRwyHdg = 250
+
+#WP1
+    title1 =   "SLETTERHAGE"
+    dist1 =    10
+    tt1 =      90
+    windDir1 = 135
+    windVel1 = 10
+
+#WP2
+    title2 =   "ISSEHOVED"
+    dist2 =    12
+    tt2 =      30
+    windDir2 = 100
+    windVel2 = 10
+
+#WP3
+    title3 =   "LUSHAGE"
+    dist3 =    18
+    tt3 =      40
+    windDir3 = 100
+    windVel3 = 15
+
+#WP4
+    title4 =   "FYNSHOVED"
+    dist4 =    20
+    tt4 =      45
+    windDir4 = 90
+    windVel4 = 15
+
+#WP5
+    title5 =   " HERSNAP"    
+    dist5 =    0
+    tt5 =      0
+    windDir5 = 0
+    windVel5 = 0
+
+#WP6
+    title6 =   " - - - "    
+    dist6 =    0
+    tt6 =      0
+    windDir6 = 0
+    windVel6 = 0
+
+#WP7
+    title7 =   " - - - "    
+    dist7 =    0
+    tt7 =      0
+    windDir7 = 0
+    windVel7 = 0
+
+
+## END USER INPUT ##
+## do not edit below this point
+
+############ WAYPOINT CALCULATIONS ##############
+
+#### WPT1 ####
+
+n1 = sin(radians(tt1 - windDir1))
+wca1a = (windVel1 * n1)
+wca1 = degrees(wca1a / tas * -1)
+th1 = toInt(tt1 + wca1)
+c1a = cos(radians(wca1))
+c1b = cos(radians(tt1 - windDir1))
+gs1a = tas * c1a
+gs1b = windVel1 * c1b
+gs1 = gs1a - gs1b
+timeHr1 = dist1 / gs1
+time1 = timeHr1 * 60
+
+y = 60 # vertical offset
+
+if (dist1 > 0) {
+  text(-33 y + 26 8 title1) # TITLE
+  text(-33 y + 15.5 6 tt1)
+  text(2 y + 15.5 6 dist1)
+  text(9 y + 31 4 windVel1)
+  text(3 y + 31 4 windDir1)
+  text(-33 y + 6.5 6 toInt(wca1)) #WCA
+  text(-15 y + 15.5 6 th1) #TH
+  text(-15 y + 6.5 9 th1 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs1)) #GS
+  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
+}
+
+#### WPT2 ####
+
+n2 = sin(radians(tt2 - windDir2))
+wca2a = (windVel2 * n2)
+wca2 = degrees(wca2a / tas * -1)
+th2 = toInt(tt2 + wca2)
+c2a = cos(radians(wca2))
+c2b = cos(radians(tt2 - windDir2))
+gs2a = tas * c2a
+gs2b = windVel2 * c2b
+gs2 = gs2a - gs2b
+timeHr2 = dist2 / gs2
+time2 = timeHr2 * 60 
+
+y = 31 # vertical offset
+
+if (dist2 > 0) {
+  text(-33 y + 26 8 title2) # TITLE
+  text(-33 y + 15.5 6 tt2)
+  text(2 y + 15.5 6 dist2)
+  text(2 y + 6.5 6 dist1 + dist2) #DIST ACC
+  text(9 y + 31 4 windVel2)
+  text(3 y + 31 4 windDir2)
+  text(-33 y + 6.5 6 toInt(wca2)) #WCA
+  text(-15 y + 15.5 6 th2) #TH
+  text(-15 y + 6.5 9 th2 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs2)) #GS
+  text(18 y + 15.5 9 toInt(time2)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2)) #TIME, MIN
+}
+
+#### WPT3 ####
+
+n3 = sin(radians(tt3 - windDir3))
+wca3a = (windVel3 * n3)
+wca3 = degrees(wca3a / tas * -1)
+th3 = toInt(tt3 + wca3)
+c3a = cos(radians(wca3))
+c3b = cos(radians(tt3 - windDir3))
+gs3a = tas * c3a
+gs3b = windVel3 * c3b
+gs3 = gs3a - gs3b
+timeHr3 = dist3 / gs3
+time3 = timeHr3 * 60 
+
+y = 2 # vertical offset
+if (dist3 > 0) {
+  text(-33 y + 26 8 title3) # TITLE
+  text(-33 y + 15.5 6 tt3)
+  text(2 y + 15.5 6 dist3)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3) #DIST  ACC
+  text(9 y + 31 4 windVel3)
+  text(3 y + 31 4 windDir3)
+  text(-33 y + 6.5 6 toInt(wca3)) #WCA
+  text(-15 y + 15.5 6 th3) #TH
+  text(-15 y + 6.5 9 th3 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs3)) #GS
+  text(18 y + 15.5 9 toInt(time3)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3)) #TIME, MIN
+}
+
+#### WPT4 ####
+
+n4 = sin(radians(tt4 - windDir4))
+wca4a = (windVel4 * n4)
+wca4 = degrees(wca4a / tas * -1)
+th4 = toInt(tt4 + wca4)
+c4a = cos(radians(wca4))
+c4b = cos(radians(tt4 - windDir4))
+gs4a = tas * c4a
+gs4b = windVel4 * c4b
+gs4 = gs4a - gs4b
+timeHr4 = dist4 / gs4
+time4 = timeHr4 * 60 
+
+y = -27 # vertical offset
+
+if (dist4 > 0) {
+  text(-33 y + 26 8 title4) # TITLE
+  text(-33 y + 15.5 6 tt4)
+  text(2 y + 15.5 6 dist4)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4) #DIST ACC
+  text(9 y + 31 4 windVel4)
+  text(3 y + 31 4 windDir4)
+  text(-33 y + 6.5 6 toInt(wca4)) #WCA
+  text(-15 y + 15.5 6 th4) #TH
+  text(-15 y + 6.5 9 th4 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs4)) #GS
+  text(18 y + 15.5 9 toInt(time4)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
+
+}
+
+#### WPT5 ####
+
+n5 = sin(radians(tt5 - windDir5))
+wca5a = (windVel5 * n5)
+wca5 = degrees(wca5a / tas * -1)
+th5 = toInt(tt5 + wca5)
+c5a = cos(radians(wca5))
+c5b = cos(radians(tt5 - windDir5))
+gs5a = tas * c5a
+gs5b = windVel5 * c5b
+gs5 = gs5a - gs5b
+timeHr5 = dist5 / gs5
+time5 = timeHr5 * 60 
+
+y = -56 # vertical offset
+
+if (dist5 > 0) {
+  text(-33 y + 26 8 title5) # TITLE
+  text(-33 y + 15.5 6 tt5)
+  text(2 y + 15.5 6 dist5)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5) #DIST ACC
+  text(9 y + 31 4 windVel5)
+  text(3 y + 31 4 windDir5)
+  text(-33 y + 6.5 6 toInt(wca5)) #WCA
+  text(-15 y + 15.5 6 th5) #TH
+  text(-15 y + 6.5 9 th5 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs5)) #GS
+  text(18 y + 15.5 9 toInt(time5)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
+}
+
+
+#### WPT6 ####
+
+n6 = sin(radians(tt6 - windDir6))
+wca6a = (windVel6 * n6)
+wca6 = degrees(wca6a / tas * -1)
+th6 = toInt(tt6 + wca6)
+c6a = cos(radians(wca6))
+c6b = cos(radians(tt6 - windDir6))
+gs6a = tas * c6a
+gs6b = windVel6 * c6b
+gs6 = gs6a - gs6b
+timeHr6 = dist6 / gs6
+time6 = timeHr6 * 60 
+
+y = -85 # vertical offset
+
+if (dist6 > 0) {
+  text(-33 y + 26 8 title6) # TITLE
+  text(-33 y + 15.5 6 tt6)
+  text(2 y + 15.5 6 dist6)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6) #DIST ACC
+  text(9 y + 31 4 windVel6)
+  text(3 y + 31 4 windDir6)
+  text(-33 y + 6.5 6 toInt(wca6)) #WCA
+  text(-15 y + 15.5 6 th6) #TH
+  text(-15 y + 6.5 9 th6 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs6)) #GS
+  text(18 y + 15.5 9 toInt(time6)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
+}
+
+#### WPT7 ####
+
+n7 = sin(radians(tt7 - windDir7))
+wca7a = (windVel7 * n7)
+wca7 = degrees(wca7a / tas * -1)
+th7 = toInt(tt7 + wca7)
+c7a = cos(radians(wca7))
+c7b = cos(radians(tt7 - windDir7))
+gs7a = tas * c7a
+gs7b = windVel7 * c7b
+gs7 = gs7a - gs7b
+timeHr7 = dist7 / gs7
+time7 = timeHr7 * 60 
+
+y = -114 # vertical offset
+
+if (dist7 > 0) {
+  text(-33 y + 26 8 title7) # TITLE
+  text(-33 y + 15.5 6 tt7)
+  text(2 y + 15.5 6 dist7)
+  text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6 + dist7) #DIST ACC
+  text(9 y + 31 4 windVel7)
+  text(3 y + 31 4 windDir7)
+  text(-33 y + 6.5 6 toInt(wca7)) #WCA
+  text(-15 y + 15.5 6 th7) #TH
+  text(-15 y + 6.5 9 th7 + deviation) #MH
+
+  text(18 y + 26.5 6 toInt(gs7)) #GS
+  text(18 y + 15.5 9 toInt(time7)) #TIME, MIN
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
+}
+
+#### FUEL CALCULATION ####
+
+timeTotal = time1 + time2 + time3 + time4 + time5
+hrs = timeTotal / 60
+trip = hrs * lph * 1.055
+line(-4 -110 -4 -140)
+text(-40 -114 4 "fuel consumption / LITERS")
+
+text(-38 -120 6 "trip fuel*")
+text(-14 -120 6 toInt(trip))
+text(-38 -140 4 "* 5% added for T/O and climb")
+
+text(-38 -125 6 "alternate")
+text(-14 -125 6 toInt(alternate))
+
+text(-38 -130 6 "reserve")
+text(-14 -130 6 toInt(reserve))
+
+text(-38 -135 6 "total fuel")
+text(-14 -135 6 toInt(trip + alternate + reserve))
+line(-20 -131 -5 -131)
+line(-20 -136 -5 -136)
+
+#### GLIDE ####
+line(23 -116 23 -136)
+a = 0.001645
+
+text(0 -114 4 "glide distance in NM / feet")
+#4000 = 5.2 v 1/8
+text(0 -120 6 "4000")
+a40 = toInt(4000 * a * glide)
+text(12 -120 6 a40 / 10)
+text(0 -125 6 "3000")
+a30 = toInt(3000 * a * glide)
+text(12 -125 6 a30 / 10)
+text(0 -130 6 "2000")
+a20 = toInt(2000 * a * glide)
+text(12 -130 6 a20 / 10)
+text(0 -135 6 "1000")
+a10 = toInt(1000 * a * glide)
+text(12 -135 6 a10 / 10)
+
+text(27 -120 6 "3500")
+a35 = toInt(3500 * a * glide)
+text(40 -120 6 a35 / 10)
+text(27 -125 6 "2500")
+a25 = toInt(2500 * a * glide)
+text(40 -125 6 a25 / 10)
+text(27 -130 6 "1500")
+a15 = toInt(1500 * a * glide)
+text(40 -130 6 a15 / 10)
+text(27 -135 6 "500")
+a5 = toInt(500 * a * glide)
+text(40 -135 6 a5 / 10)
+
+############ ARTWORK ##############
+
+#### HEADER ####
+text(-18 122 8 "VFR FLIGHT")
+text(-18 115 10 "PLANNER")
+line(14 125 14 94) # vertLine
+
+text(-37 96 6 pilot) #PILOT
+text(18 123 5.5 "FROM:")
+text(32 122 7 from) #FROM
+text(48 123 5.5 "TO:")
+text(60 122 7 to) #TO
+text(18 116 5.5 "TAS:")
+text(32 116 7 tas)
+text(42 116 5.5 "KTS")
+text(18 111 5.5 "FUEL")
+text(32 111 7 lph) #FUEL
+text(42 111 5.5 "L/H")
+text(18 106 5.5 "GLIDE")
+text(32 106 7 "1 /")
+text(42 106 7 glide) #GLIDE RATIO
+
+text(51 118 4 "tacho prior:")
+text(51 110 4 "tacho after:")
+line(50 112.5 90 112.5)
+
+text(55 97 7 reg) #A/C REGISTRATION
+text(33 101 4 "AIRBORNE") #AIRBORNE
+
+line(32 104 90 104)
+line(32 94 32 104)
+line(50 94 50 120)
+
+#### DRAW GRAPHICS FOR EACH WAYPOINT ####
+
+numberOfWaypoints = 7 #number of waypoints 
+
+for i <- 0 to numberOfWaypoints{
+ 
+  a = i * -29 # wpt entry height
+
+  #LINEART
+  line(-40 a + 94 90 a + 94) #main seperators
+  line(-40 a + 64.7 90 a + 64.7) #main seperators
+  line(-40 a + 84 50 a + 84) #sub 1
+  line(-40 a + 74 50 a + 74) #sub 1
+ 
+  #explanations
+  text(-40 a + 81 3.5 "TT")
+  text(-21 a + 81 3.5 "TH")
+  text(-40 a + 71 3.5 "WCA")
+  text(-21 a + 71 4.5 "MH")
+  text( -3 a + 81 3.5 "DIST,INT")
+  text( -3 a + 71 3.5 "DIST,ACC")
+  text( 15 a + 91 3.5 "GS")
+  text( 15 a + 81 3.5 "TIME,INT")
+  text( 15 a + 71 3.5 "TIME,ACC")
+  text( 33 a + 91 3.5 "ETA")
+  text( 33 a + 81 3.5 "ATA")
+  text( 33 a + 71 3.5 "DIFF")
+
+  text( -3 a + 91 3.5 "wind: ____/___ ")
+
+  #grid
+  line(32 a + 94 32 a + 84) # GS / WIND sep lines
+  line(14 a + 94 14 a + 84) # GS / WIND sep lines
+  for j <- 0 to 4 {
+    q = 18 * j
+    line(q - 22 a + 84 q - 22 a + 65)
+  }
+
+  #notes
+  text(52 a + 91 4 "shorthand/notes")
+
+  text(-40 a + 89 7 i + 1 ) # wpt number
+}
+line(50 94 50 -140) # right line
+
+#footer
+line(-40 -110 90 -110)
+
+
+######### LEFT SIDE: frequencies ########## 
+line(-41 126 -41 -140)
+text(-83 120 7 "FREQUENCIES")
+
+for i <- -16 to 19 {
+  line(-80 i * -7 -43 i * -7)
+}
+
+step = 7
+offset  = -13
+
+#INFORMATION
+text(-83 offset + step * 18 5 "information")
+text(-80 offset + step * 17 5 "COIF EAST: 127.075")
+text(-80 offset + step * 16 5 "COIF WEST: 129.475")
+
+#APPROACH
+text(-83 offset + step * 14 5 "approach")
+text(-80 offset + step * 13 5 "EKAH APP: 119.275")
+text(-80 offset + step * 12 5 "EKKA APP: 120.425")
+text(-80 offset + step * 11 5 "EKYT APP: 123.975")
+text(-80 offset + step * 10 5 "EKBI APP: 127.575")
+text(-80 offset + step * 9 5 "EKRK APP: 125.525")
+
+#TOWER
+text(-83 offset + step * 7 5 "tower")
+text(-80 offset + step * 6 5 "EKAH TWR: 127.075")
+text(-80 offset + step * 5 5 "EKKA TWR: 119.575")
+text(-80 offset + step * 4 5 "EKYT TWR: 118.300")
+text(-80 offset + step * 3 5 "EKBI TWR: 119.000")
+text(-80 offset + step * 2 5 "EKRK TWR: 118.900")
+
+#RADIO
+text(-83 offset + step * 0 5 "radio")
+text(-80 offset + step * -1 5 "EKRD: 122.075")
+text(-80 offset + step * -2 5 "EKVB: 123.500")
+
+#AFIS
+text(-83 offset + step * -5 5 "afis")
+text(-80 offset + step * -6 5 "EKVJ: 121.400")
+text(-80 offset + step * -7 5 "EKEB: 120.150")
+text(-80 offset + step * -8 5 "EKSB: 126.400")
+
+#ATIS
+text(-83 offset + step * -10 5 "atis")
+text(-80 offset + step * -11 5 "EKBI: 118.775")
+text(-80 offset + step * -12 5 "EKYT: 120.475")
+text(-80 offset + step * -13 5 "EKRK: 123.800")
+
+#EMERGENCY
+text(-83 offset + step * -15 5 "emergency")
+text(-80 offset + step * -16 5 "Emergency freq: 121.5")
+
+###### MINUTE MARKS ######
+
+speedMin = speedMin / 5
+speedMax = speedMax / 5
+
+xStart = -85
+
+dist = speedMax - speedMin
+distance = 10 / dist
+
+for i <- speedMin to speedMax {
+  
+  x1 = xStart
+  x2 = xStart - distance
+
+  speed1 = i * 1852
+  speed1div = speed1 * 5
+  speed1min = speed1div / 6
+  speed1mm = speed1min * 100 
+
+  plusOne = i + 1
+  speed2 = plusOne * 1852
+  speed2div = speed2 * 5
+  speed2min = speed2div / 6
+  speed2mm = speed2min * 100
+
+  # scale down to the paper scale
+  s1 = speed1mm / scale 
+  s2 = speed2mm / scale 
+  a = scale / 1300
+  extend = a / i
+  
+  #minute lines - right side
+  
+  for j <- 1 to extend {
+    line(x1 s1 * j x2 s2 * j)
+  }
+  s1l = s1 * -1
+  s2l = s2 * -1
+
+    for j <- 1 to extend {
+    line(x1 s1l * j x2 s2l * j)
+  }
+
+  line(x1 -125 x1 125)#speed lines
+  #text(x1 10 textSize i) #show knots
+
+  xStart = xStart - distance
+}
+
+  text(-95 -130 5 speedMax * 5)
+  text(-88 -130 5 speedMin * 5)
+  line(-95 0 -85 0)
+  line(-95 -125 -95 125)
+
+#call wind rose function from flightplanFunctions
+crossWindRose(landingRwyHdg)
