@@ -15,7 +15,7 @@
     #CHART SCALE FOR MINUTE MARKS
     scale = 500000
     speedMin = 50 #min GS (for minute lines)
-    speedMax = 70 #max GS (for minute lines)
+    speedMax = 60 #max GS (for minute lines)
 
    #destination runway heading (shown on wind rose)
    landingRwyHdg = 260
