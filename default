@@ -1,85 +1,11 @@
-text(-90 130 17 "welcome to RepoCad!" )
-text(-90 120 7 "platform for the Internet of Digital Design")
-
-#in this window you can write code which will generate artwork on the canvas to the right.
-
-#everything behind a #-sign is treated as comments, and not evaluated
-
-################## LINE DRAWING ###############
-
-#to draw a line write: line(x1 y1 x2 y2:)
-
-x1 = -90
-y1 = 100
-x2 = 90
-y2 = y1
-line(x1 y1 x2 y2 )
-
-##################### TEXT ####################
-
-#a line of text is done like this:
-
-text(-90 92 6 "to draw a line write: line(x1 y1 x2 y2 (where x and y are numbers -start and end)")
-
-################## CIRCLES, ARCS, BEZIERS ######
-
-text(-90 20 6 "in a similar way you can make circles, arcs, and bezier curves" )
-
-#CIRCLE: x,y,radius
-circle(x1 + 40 y1 - 40 20 )
-
-#ARC: x,y,radius,start(radians),end(radians)
-arc(x1 + 100 y1 - 40 20 2 4 )
-
-#BEZIER CURVE:start, controlpoint1, controlpoint2, end
-bezierCurve(20 40 40 90 40 10 60 75 )
-
-################## FOR LOOPS ###################
-
-text(-90 -70 6 "for loops allow for arrays and matrices" )
-
-#ROWS: for-loop going through i from -7 to -2:
-for i <- -7 to -2 
-{
-  dist = 8
-  line(-90 i * dist -50 i * dist)
-}
-
-################### MATRIX #####################
-#for-loop inside another for-loop create a matrix:
-for i <- -7 to -2 
-{
-  for j <- -7 to -2 
-  {
-  dist = 8
-    line(-40 j * dist 10 i * dist)
-  }
-}
-
-
-#############IMPORT FUNCTIONS ##################
-import geometry2d
-
-for i <- 3 to 6 {
-  for j <- -5 to -2 {
-    a = i * 10
-    b = j * 10
-    triangle(a b 3)
-  }
-}
-
-text(20 -70 6 "imported function to draw triangles")
-
-
-################### SAVING #####################
-text(-90 -88 6 "to save a script, change the url name after the # sign" )
-
-text(-90 -94 6 "from 'default' to something else. refresh the webpage, then click SAVE" )
-
-
-################## GPL #######################
-text(-90 -107 4 "Copyright (C) 2015, Selftie S oftware" )
-
-text(-90 -110 4 "This program comes with ABSOLUTELY NO WARRANTY" )
-
-text(-90 -113 4 "This is free software, and you are welcome to redistribute it under certain conditions; see http://www.gnu.org/copyleft/gpl.html")
+line (50 100 60 100)
+line(50 120 60 120)
+line(50 140 60 140)
+line(50 150 50 90)
+line(60 150 60 90)
+line(60 150 55 155)
+line(50 150 55 155) 
+line (60 90 55 85)
+line(50 90 55 85)
+line(55 85 55 65)
+circle(55 65 5)
