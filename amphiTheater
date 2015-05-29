@@ -1,11 +1,6 @@
 #IMPORT STATEMENTS
 import geometry2d
 
-
-#GLOBAL VALUES
-pi = 3.14
-halfPi = pi / 2
-
 # centerX, centerY, rowSize, radial
 arcArray(0 0 20 50)
 arcArray(0 0 20 90)
