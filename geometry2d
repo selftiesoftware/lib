@@ -65,3 +65,13 @@ for i <- 0 to 4 {
     triangle(a b 5)
   }
 }
+
+#ARC TOOLS
+function arcArray (cX cY rowSize radial) {
+  for i <- 3 to 22 {
+    multiplied = i * rowSize
+    startAngle = radians(radial - 15)
+    endAngle = radians(radial + 15)  
+    arc(cX cY multiplied startAngle endAngle )
+  }
+}
