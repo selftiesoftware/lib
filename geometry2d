@@ -71,7 +71,7 @@ function arcArray (cX cY rowSize radial) {
   for i <- 3 to 22 {
     multiplied = i * rowSize
     startAngle = radians(radial - 105)
-    endAngle = radians(radial + 75)  
+    endAngle = radians(radial - 75)  
     arc(cX cY multiplied startAngle endAngle )
   }
 }
