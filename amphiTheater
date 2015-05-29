@@ -1,6 +1,14 @@
 import geometry2d
 
-# centerX, centerY, rowSize, radial
-arcArray(0 0 20 50)
-arcArray(0 0 15 90)
-arcArray(0 0 30 130)
+function theater(spokes gap rotation){
+ for i <- 0 to spokes{
+    angleIncrement = i * gap
+    angle = rotation * angleIncrement
+    # the arcArray function is called with; 
+    # centerX, centerY, rowSize, radial
+    arcArray(0 0 20 radians(angle))
+  }
+}
+
+#calling the function theater:
+theater(3 12 190)
