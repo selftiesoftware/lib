@@ -2,5 +2,5 @@ import geometry2d
 
 for (i <- 0 to 100) {
 rectangle(0 0 i 100)
-
+line ( 0 0 10 i )
 }
