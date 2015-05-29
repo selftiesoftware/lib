@@ -2,14 +2,14 @@
 pi = 3.14
 halfPi = pi / 2
 
-function seats(cX cY rowSize ) {
+function amphiTheater (cX cY rowSize radial) {
   for i <- 3 to 22 {
     multiplied = i * rowSize
-    startAngle = 2
-    endAngle = 3   
+    startAngle = radians(radial - 15)
+    endAngle = radians(radial + 15)  
     arc(cX cY multiplied startAngle endAngle )
   }
 }
 
 # centerX, centerY, rowSize, radial
-seats(0 0 20 90)
+amphiTheater(0 0 20 180)
