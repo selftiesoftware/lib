@@ -7,6 +7,6 @@ pi = 3.14
 halfPi = pi / 2
 
 # centerX, centerY, rowSize, radial
-arcArray(0 0 20 180)
-arcArray(0 0 20 140)
-arcArray(0 0 20 220)
+arcArray(0 0 20 50)
+arcArray(0 0 20 90)
+arcArray(0 0 20 130)
