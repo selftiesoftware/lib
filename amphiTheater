@@ -1,4 +1,3 @@
-#IMPORT STATEMENTS
 import geometry2d
 
 # centerX, centerY, rowSize, radial
