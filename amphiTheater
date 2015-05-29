@@ -2,5 +2,5 @@ import geometry2d
 
 # centerX, centerY, rowSize, radial
 arcArray(0 0 20 50)
-arcArray(0 0 20 90)
-arcArray(0 0 20 130)
+arcArray(0 0 15 90)
+arcArray(0 0 30 130)
