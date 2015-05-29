@@ -13,3 +13,5 @@ function amphiTheater (cX cY rowSize radial) {
 
 # centerX, centerY, rowSize, radial
 amphiTheater(0 0 20 180)
+amphiTheater(0 0 20 140)
+amphiTheater(0 0 20 220)
