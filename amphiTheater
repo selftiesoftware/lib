@@ -1,17 +1,12 @@
+#IMPORT STATEMENTS
+import geometry2d
+
+
 #GLOBAL VALUES
 pi = 3.14
 halfPi = pi / 2
 
-function amphiTheater (cX cY rowSize radial) {
-  for i <- 3 to 22 {
-    multiplied = i * rowSize
-    startAngle = radians(radial - 15)
-    endAngle = radians(radial + 15)  
-    arc(cX cY multiplied startAngle endAngle )
-  }
-}
-
 # centerX, centerY, rowSize, radial
-amphiTheater(0 0 20 180)
-amphiTheater(0 0 20 140)
-amphiTheater(0 0 20 220)
+arcArray(0 0 20 180)
+arcArray(0 0 20 140)
+arcArray(0 0 20 220)
