@@ -50,7 +50,7 @@ def triangle(x y d) {
 } 
 
 #### SQUARE ####
-def (neg pos) {
+def square(neg pos) {
   line(neg neg neg pos)
   line(neg pos pos pos)
   line(pos pos pos neg)
