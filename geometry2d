@@ -2,7 +2,7 @@
 #use these in other scripts by typing 
 #"import geometry2d" in the script (without ")
 
-function addTwo(a b) {
+def addTwo(a b) {
 a + b
 }
 
@@ -16,7 +16,7 @@ text(0 0 20 addTwo(2 3))
 # x2 = corner1 x
 # y2 = corner1 y
 
-function rectangle (x1 y1 x2 y2){
+def rectangle (x1 y1 x2 y2){
   line(x1 y1 x1 y2)
   line(x2 y2 x1 y2)
   line(x2 y1 x2 y2)
@@ -24,8 +24,8 @@ function rectangle (x1 y1 x2 y2){
 }
 
 #example
-for i <- -5 to -1 {
-  for j <- -4 to 1 {
+repeat -5 to -1 def i {
+  repeat -4 to 1 def j {
     a = i * 20
     b = j * 22
     rectangle(a b a + 5 b + 5)
@@ -39,7 +39,7 @@ for i <- -5 to -1 {
 # y = center y
 # d = distance to corners
 
-function triangle(x y d){
+def triangle(x y d){
   p1y = y + d
   p2x = x + d
   p3x = x - d
@@ -50,7 +50,7 @@ function triangle(x y d){
 } 
 
 #### SQUARE ####
-function square(neg pos) {
+def (neg pos) {
   line(neg neg neg pos)
   line(neg pos pos pos)
   line(pos pos pos neg)
@@ -58,8 +58,8 @@ function square(neg pos) {
 }
 
 #example
-for i <- 0 to 4 {
-  for j <- -4 to 1 {
+repeat 0 to 4 def i {
+  repeat -4 to 1 def j {
     a = i * 20
     b = j * 22
     triangle(a b 5)
@@ -67,8 +67,8 @@ for i <- 0 to 4 {
 }
 
 #ARC TOOLS
-function arcArray (cX cY rowSize radial) {
-  for i <- 3 to 22 {
+def arcArray (cX cY rowSize radial) {
+  repeat 3 to 22 def i {
     multiplied = i * rowSize
     startAngle = radians(radial - 105)
     endAngle = radians(radial - 75)  
