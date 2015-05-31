@@ -1,7 +1,7 @@
-for i <- -5 to 5 {
-  for j <- -4 to 4 {
-  a = i * 10
-  b = j * 20
+repeat -5 to 5 def i {
+  repeat -4 to 4 def j {
+  def a = i * 10
+  def b = j * 20
 
 line(b a b + 10 b + 10)
 line(b + 20 a + 10 10 b + 10)
