@@ -1,9 +1,9 @@
 import geometry2d
 
 #example:
-for i <- -15 to 50 {
-a = i + 1
-b = i - 1
+repeat -15 to 50 def i {
+def a = i + 1
+def b = i - 1
 square(a * 1 a * 2)
 square(b * -1 a * 2)
 }
