@@ -1,134 +1,134 @@
 text(-90 130 9 "A Manifesto for the Internet of Digital Design")
 
-y = 110
-dist = 5
+def y = 110
+def dist = 5
 text(-90 y 5.5 "The term “Internet of Things” (IOT) is well known." )
 
-y = y - dist
+def y = y - dist
 
 text(-90 y 5.5 "It refers to the digital link to – and between – physical objects. While things are increasingly smart,")
 
 
-y = y - dist
+def y = y - dist
 
 text(-90 y 5.5 "managing themselves and sharing resources intelligently, the workflow of making the designs")
 
-y = y - dist
+def y = y - dist
 
 text(-90 y 5.5 "of these objects needs improvement. Designs are business secrets and CAD drawings kept private")
 
-y = 85
+def y = 85
 
 text(-90 y 5.5 "What if, on the contrary, designs were open source, conceived as an open, web-based process?" )
 
-y = y - dist
+def y = y - dist
 
 text(-90 y 5.5 "A process taking place on an equally open, web-based platform: On the Internet of Digital Design: IOD")
 
-y = y - dist
+def y = y - dist
 
-y = 70
+def y = 70
 
 text(-80 y 6 "• Two available means need to merge to enable IOD: web-based and versioned drawing and -library ")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 6 "• Hence the name 'RepoCad' as 'Repository' is used describe open storage of the bits and bytes")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 6 "which make up the software - and the designs")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 6 "• With this concept we can fully utilizes the power of the internet in new architecture and design")
 
 
-y = 30
-dist = 6.5
+def y = 30
+def dist = 6.5
 text(-80 y 7 "Design tools, process, and results must be open source and dynamic,")
 line(-90 40 -90 16)
 line(-90 40 85 40)
 line(85 40 85 16)
 line(-90 16 85 16)
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 7 "and available to all to evolve through global sharing of designs.")
 
-y = 5
+def y = 5
 
 text(-80 y 7 "As demonstrated in the 'RepoCad' prototype it could happen like this:")
 
 #################################################
 
-y = -8
-dist = 4
+def y = -8
+def dist = 4
 
 text(-80 y 5 "STEP 1 - CREATION: an online(drawing app should be made: RepoCad - earlier: Siigna")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "The design tool itself should be open source, free and run in a browser. Every function of the design tool")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 " should be user-created, user-maintained, and user-perfected. Just like the articles of Wikipedia")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "both tools and drawings should be import statements, linking to other online scripts.")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "But manual editions of drawings should be allowed, in which the scripts/functions")
 
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "should be updated or added to the script. Mimicking object oriented programming." )
 
 ################################################
 
-y = y - dist
-y = -45
+def y = y - dist
+def y = -45
 
 
 text(-80 y 5 "STEP 2 - EVOLUTION: a drawing and tools library is implemented where the scripts" )
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "defining drawings or tools - are added. The contents /functionality of scripts can be called ")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "from other scripts. The scripts are online(and versioned. This means nothing is ever lost" )
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 " - but far more importantly it means designs can fork in to different branches and maybe")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "merge again at a later stage. We are currently working on these features in RepoCad.")
 
 ################################################
 
-y = y - dist
-y = -77
+def y = y - dist
+def y = -77
 
 text(-80 y 5 "STEP 3 - EXPANSION: this could include advancing the scope of the design tool and the designs.")
 
-y = y - dist
+def y = y - dist
 
 text(-80 y 5 "Like coupling the design tools with digital fabrication." )
 
-y = y - dist
+def y = y - dist
 
 
 ###################### DIAGRAM ##############
 
-y = -90
+def y = -90
 
 #line(-90 -55 -90 -120)
 #line(-90 -55 90 -55)
