@@ -1,0 +1,6 @@
+def spacing = 10
+
+repeat -11 to 13 def i {
+    def verticalPosition = i * spacing
+    line(-80 verticalPosition 80 verticalPosition)
+}
