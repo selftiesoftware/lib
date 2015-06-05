@@ -1,7 +1,7 @@
 #line distance in millimeter:
 def spacing = 10
 
-repeat -11 to 13 def i {
+repeat -11 to 14 def i {
     def verticalPosition = i * spacing
     
     #draw the lines:
