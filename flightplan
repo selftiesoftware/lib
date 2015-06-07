@@ -440,7 +440,7 @@ line(-40 -110 90 -110)
 line(-41 126 -41 -140)
 text(-83 120 7 "FREQUENCIES")
 
-repeat -16 to 19 def {
+repeat -16 to 19 def i {
   line(-80 i * -7 -43 i * -7)
 }
 
