@@ -388,9 +388,8 @@ line(50 94 50 120)
 
 #### DRAW GRAPHICS FOR EACH WAYPOINT ####
 
-numberOfWaypoints = 7 #number of waypoints 
 
-repeat 0 to numberOfWaypoints def i{
+repeat 0 to 7 def i {
  
   def a = i * -29 # wpt entry height
 
@@ -419,10 +418,11 @@ repeat 0 to numberOfWaypoints def i{
   #grid
   line(32 a + 94 32 a + 84) # GS / WIND sep lines
   line(14 a + 94 14 a + 84) # GS / WIND sep lines
-  repart  0 to 4 def j {
-    def q = 18 * j
-    line(q - 22 a + 84 q - 22 a + 65)
-  }
+ 
+ #repart  0 to 4 def j {
+  #  def q = 18 * j
+  #  line(q - 22 a + 84 q - 22 a + 65)
+  #}
 
   #notes
   text(52 a + 91 4 "shorthand/notes")
