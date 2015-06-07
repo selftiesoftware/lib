@@ -151,9 +151,9 @@ def gs3 = gs3a - gs3b
 def timeHr3 = dist3 / gs3
 def time3 = timeHr3 * 60 
 
-y = 2 # vertical offset
+def y = 2
 if (dist3 > 0) {
-  text(-33 y + 26 8 title3) # TITLE
+  text(-33 y + 26 8 title3)
   text(-33 y + 15.5 6 tt3)
   text(2 y + 15.5 6 dist3)
   text(2 y + 6.5 6 dist1 + dist2 + dist3) #DIST  ACC
@@ -163,9 +163,9 @@ if (dist3 > 0) {
   text(-15 y + 15.5 6 th3) #TH
   text(-15 y + 6.5 9 th3 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs3)) #GS
-  text(18 y + 15.5 9 toInt(time3)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs3))
+  text(18 y + 15.5 9 toInt(time3))
+  text(18 y + 6.5 6 toInt(time1 + time2 + time3))
 }
 
 #### WPT4 ####
