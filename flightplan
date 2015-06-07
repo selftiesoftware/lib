@@ -101,8 +101,8 @@ if (dist1 > 0) {
   text(-15 y + 15.5 6 th1) #TH
   text(-15 y + 6.5 9 th1 + deviation) #MH
 
-  def text(18 y + 26.5 6 toInt(gs1)) #GS
-  def text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
+  text(18 y + 26.5 6 toInt(gs1)) #GS
+  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
 }
 
 #### WPT2 ####
