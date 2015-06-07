@@ -1,22 +1,22 @@
 
 #DRAW A CROSSWIND CALC COMPASS ROSE
-def crossWindRose(landingRwyHdg){
+def crossWindRose(landingRwyHdg cX cY){
 
   #RWY LINE
  def x = cos(radians(landingRwyHdg - 90))
  def y = sin(radians(landingRwyHdg - 90))
  def x2 = x * 14
  def y2 = y * 14
-  line(70 -126 70 + x2 -126 - y2)
-  line(70 -126 70 - x2 -126 + y2)
+  line(cX cY cX + x2 cY - y2)
+  line(cX cY cX - x2 cY + y2)
 
   #PERPENDICULAR TO RWY LINE
   def x3 = cos(radians(landingRwyHdg ))
   def y3 = sin(radians(landingRwyHdg ))
   def x4 = x3 * 9
   def y4 = y3 * 9
-  line(70 -126 70 + x4 -126 - y4)
-  line(70 -126 70 - x4 -126 + y4)
+  line(cX cY cX + x4 cY - y4)
+  line(cX cY cX - x4 cY + y4)
 
   #COMPASS ROSE TICKS
   def deg(angle extend) {
@@ -29,7 +29,7 @@ def crossWindRose(landingRwyHdg){
     mx2 = x2 * extend
     my2 = y2 * extend
 
-  line(70 + mx1 -126 + my1 70 + mx2 -126 + my2)
+  line(cX + mx1 cY + my1 cX + mx2 cY + my2)
   }
   deg(0 14)
   deg(1.57 14)
@@ -46,10 +46,10 @@ def crossWindRose(landingRwyHdg){
   deg(5.7 12)
 
 
-  circle(70 -126 12)
-  circle(70 -126 9)
-  circle(70 -126 6)
-  circle(70 -126 3)
+  circle(cX cY 12)
+  circle(cX cY 9)
+  circle(cX cY 6)
+  circle(cX cY 3)
 }
 
-crossWindRose(40)
+crossWindRose(40 0 0)
