@@ -426,9 +426,10 @@ repeat 0 to numberOfWaypoints def i{
 
   #notes
   text(52 a + 91 4 "shorthand/notes")
-
   text(-40 a + 89 7 i + 1 ) # wpt number
 }
+
+
 line(50 94 50 -140) # right line
 
 #footer
