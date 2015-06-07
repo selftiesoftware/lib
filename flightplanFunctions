@@ -3,10 +3,10 @@
 def crossWindRose(landingRwyHdg){
 
   #RWY LINE
-  def x = cos(radians(landingRwyHdg - 90))
-  def y = sin(radians(landingRwyHdg - 90))
-  def x2 = x * 14
-  def y2 = y * 14
+ def x = cos(radians(landingRwyHdg - 90))
+ def y = sin(radians(landingRwyHdg - 90))
+ def x2 = x * 14
+ def y2 = y * 14
   line(70 -126 70 + x2 -126 - y2)
   line(70 -126 70 - x2 -126 + y2)
 
@@ -52,5 +52,4 @@ def crossWindRose(landingRwyHdg){
   circle(70 -126 3)
 }
 
-#TEST:
 crossWindRose(40)
