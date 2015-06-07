@@ -1,4 +1,4 @@
-  import flightplanFunctions
+  #import flightplanFunctions
 
     def  from =      "EKSp"
     def to =        "EKod"
@@ -545,4 +545,4 @@ repeat speedMin to speedMax def i {
   line(-95 -125 -95 125)
 
 #call wind rose function from flightplanFunctions
-crossWindRose(landingRwyHdg)
+#crossWindRose(landingRwyHdg 70 -126)
