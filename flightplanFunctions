@@ -1,4 +1,3 @@
-
 #DRAW A CROSSWIND CALC COMPASS ROSE
 def crossWindRose(landingRwyHdg cX cY){
 
