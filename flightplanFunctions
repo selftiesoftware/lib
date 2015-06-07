@@ -1,25 +1,25 @@
 
 #DRAW A CROSSWIND CALC COMPASS ROSE
-function crossWindRose(landingRwyHdg){
+def crossWindRose(landingRwyHdg){
 
   #RWY LINE
-  x = cos(radians(landingRwyHdg - 90))
-  y = sin(radians(landingRwyHdg - 90))
-  x2 = x * 14
-  y2 = y * 14
+  def x = cos(radians(landingRwyHdg - 90))
+  def y = sin(radians(landingRwyHdg - 90))
+  def x2 = x * 14
+  def y2 = y * 14
   line(70 -126 70 + x2 -126 - y2)
   line(70 -126 70 - x2 -126 + y2)
 
   #PERPENDICULAR TO RWY LINE
-  x3 = cos(radians(landingRwyHdg ))
-  y3 = sin(radians(landingRwyHdg ))
-  x4 = x3 * 9
-  y4 = y3 * 9
+  def x3 = cos(radians(landingRwyHdg ))
+  def y3 = sin(radians(landingRwyHdg ))
+  def x4 = x3 * 9
+  def y4 = y3 * 9
   line(70 -126 70 + x4 -126 - y4)
   line(70 -126 70 - x4 -126 + y4)
 
   #COMPASS ROSE TICKS
-  function deg(angle extend) {
+  def deg(angle extend) {
     x1 = cos(angle)
     y1 = sin(angle)
     x2 = cos(angle)
@@ -52,4 +52,5 @@ function crossWindRose(landingRwyHdg){
   circle(70 -126 3)
 }
 
+#TEST:
 crossWindRose(40)
