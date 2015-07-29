@@ -1,8 +1,8 @@
 #ULMAG
-http://www.ulmag.fr/pa/lire_pa_typ.php?ty=0&ssd=1&p=0
+text(-90 110 11 "http://www.ulmag.fr/pa/lire_pa_typ.php?ty=0&ssd=1&p=0")
 
 #ulmoccation
-http://www.ulmoccasion.com/
+text(-90 90 11 "http://www.ulmoccasion.com/")
 
 #pilotak
-http://www.pilotak.cz/letecky-bazar/ultralehka-letadla-ul/letadla/
+text(-90 70 11 "http://www.pilotak.cz/letecky-bazar/ultralehka-letadla-ul/letadla/")
