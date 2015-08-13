@@ -1,0 +1,5 @@
+def plate(width as Int height as Int x as Int y as Int) {
+  line(x y width height)
+}
+
+plate(140 140 0 0)
