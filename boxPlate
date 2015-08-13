@@ -1,5 +1,5 @@
-def plate(width as Int height as Int x as Int y as Int) =  {
-  
+def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
+ 
   #boundary
   line(x y x y + height)
   line(x y x + width y)
@@ -7,8 +7,9 @@ def plate(width as Int height as Int x as Int y as Int) =  {
   line(x y + height x + width y + height)
 
  #bottom holes
- 
+ circle(x y radius)
  
 }
 
-plate(140 140 10 10)
+#call the function plate with
+plate(140 140 10 10 6)
