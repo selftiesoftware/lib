@@ -1,8 +1,14 @@
 def plate(width as Int height as Int x as Int y as Int) =  {
+  
+  #boundary
   line(x y x y + height)
   line(x y x + width y)
   line(x + width y x + width y + height)
   line(x y + height x + width y + height)
+
+ #bottom holes
+ 
+ 
 }
 
 plate(140 140 10 10)
