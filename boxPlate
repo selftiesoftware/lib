@@ -9,7 +9,7 @@ def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
  #bottom holes
  def offset = 40
  circle(x + offset y + 10 radius)
- circle(x y + 10 radius) 
+ circle(x  y + 10 radius) 
 
 }
 
