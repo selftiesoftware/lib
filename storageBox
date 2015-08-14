@@ -1,6 +1,6 @@
 import boxPlate
 
-def makeBox(width as Int height as Int depth as Int) = {
+def makeBox(width as Number height as Number depth as Number) = {
   def partSpacing = 30
 
 #FRONT
