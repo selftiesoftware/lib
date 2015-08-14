@@ -6,12 +6,18 @@ def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
   line(x + width y x + width y + height)
   line(x y + height x + width y + height)
 
- #bottom holes
- def offset = 40
- circle(x + offset y + 10 radius)
- circle(x  y + 10 radius) 
+ #bottom and top holes
+ def bottomTop(offset as Int width as Int) = {
+  def offset = 40
+  circle(x + offset y + 10 radius)
+  def rightSide = x + width 
+  circle(rightSide - offset  y + 10 radius) 
+  }
+  #bottom holes
+  bottomTop(40 
+  #top holes  
 
 }
 
-#call the function plate with
+#call the function plate
 plate(140 140 10 10 3)
