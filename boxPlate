@@ -1,4 +1,4 @@
-def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
+def plate(width as Number height as Number x as Number y as Number radius as Number) =  {
  
   #boundary
   line(x y x y + height)
@@ -7,30 +7,30 @@ def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
   line(x y + height x + width y + height)
 
   #bottom and top holes
-  def bottomTopHoles(offset as Int width as Int vert as Int) = {
-    circle(x + offset vert radius)
+  def bottomTopHoles(offset as Number) = {
+    def yMargin as Number = 10
+   def yTop as Number = y - yMargin
+
+    #LEFT SIDE HOLES
+    circle(x + offset yTop + height radius)
+    circle(x + offset y + yMargin radius)
+    
+    #RIGHT SIDE HOLES
     def rightSide = x + width 
-    circle(rightSide - offset vert radius) 
+    circle(rightSide - offset yTop + height radius)
+    circle(rightSide - offset y + yMargin radius)
+    
+
     if (width > 160) {
        def center = width / 2
-        circle(center + x vert radius) 
+        circle(center + x 0 radius) 
      }
   }
-  def sideHoles(offset as Int height as Int horiz as Int) = {
-    circle(horiz y + offset radius)
-    def rightSide = x + height 
-    circle(horiz rightSide - offset  radius) 
-    if (height > 160) {
-       def center = height / 2
-        circle(center + x horiz radius) 
-     }
-  }
-  bottomTopHoles(30 width 20)
-  bottomTopHoles(30 width 140)
 
- sideHoles(30 height x)
- sideHoles(30 height width)
+  bottomTopHoles(30)
+
+ #sideHoles(30)
 }
 
 #call the function plate
-#plate(160 140 10 10 3)
+plate(160 140 10 30 3)
