@@ -28,9 +28,9 @@ def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
   bottomTopHoles(30 width 20)
   bottomTopHoles(30 width 140)
 
- sideHoles(30 height x)
+ sideHoles(30 height)
  sideHoles(30 height width)
 }
 
 #call the function plate
-plate(160 180 10 10 3)
+plate(160 140 10 10 3)
