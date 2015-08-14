@@ -7,7 +7,7 @@ def makeBox(width as Number height as Number depth as Number) = {
 plate(width height 0 0 3)
 
 #BACK
-plate(width height 0 550 3)
+plate(width height 6 0 3)
 
 #BOTTOM
 plate(width depth 0 200 3)
