@@ -43,16 +43,16 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
     circle(x + xMargin topEnd - offset radius)
     
    # CENTER HOLES
-    if (width > 200) {
-       def center = width / 2
-        #circle(center + x yTop + height radius)
-        #circle(center + x y + yMargin radius) 
+    if (width > 180) {
+       def center = height / 2
+        circle(xTop + width center + y radius)
+        circle(x + xMargin center + y  radius) 
      }
   }
 
- bottomTopHoles(30)
+ #bottomTopHoles(30)
  sideHoles(30)
 }
 
 #call the function plate
-plate(160 140 10 30 3)
+plate(160 150 10 30 3)
