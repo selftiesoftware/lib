@@ -1,2 +1,16 @@
 import boxPlate
 
+#FRONT
+plate(160 140 0 0 3)
+
+#BACK
+plate(160 140 0 550 3)
+
+#BOTTOM
+plate(160 300 0 200 3)
+
+#SIDE 1 
+plate(160 300 -200 200 3)
+
+#SIDE 2
+plate(160 300 200 200 3)
