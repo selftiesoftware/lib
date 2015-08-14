@@ -33,4 +33,4 @@ def plate(width as Int height as Int x as Int y as Int radius as Int) =  {
 }
 
 #call the function plate
-plate(160 140 10 10 3)
+#plate(160 140 10 10 3)
