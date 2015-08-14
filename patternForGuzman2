@@ -1,5 +1,5 @@
-repeat -5 to 5 def i {
-  repeat -4 to 4 def j {
+repeat -5 to 5 using i {
+  repeat -4 to 4 using j {
   
   def a = i * 10
   def b = j * 20
