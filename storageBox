@@ -2,22 +2,25 @@ import boxPlate
 
 def makeBox(width as Number height as Number depth as Number) = {
   def partSpacing = 30
-
-#FRONT
-plate(width height 0 0 3)
-
-#BACK
-plate(width height 6 0 3)
+  def holeRadius = 3
 
 #BOTTOM
-plate(width depth 0 200 3)
+plate(width depth 0 0 holeRadius)
+
+#FRONT
+plate(width height 0 depth + partSpacing holeRadius)
+
+#BACK
+plate(width height 0 (0 - height) - partSpacing 3)
 
 #SIDE 1 
-plate(height depth -200 200 3)
+plate(height depth partSpacing + width 0 holeRadius)
 
 #SIDE 2
-plate(height depth 200 200 3)
+def xOffset = 0 - height
+plate(height depth xOffset - partSpacing 0 holeRadius)
 
 }
 
+#RUN -, SPECIFYING BOX Height;Width;Depth
 makeBox(160 140 300)
