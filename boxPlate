@@ -6,7 +6,7 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
   line(x + width y x + width y + height)
   line(x y + height x + width y + height)
 
-  #bottom and top holes
+  #BOTTOM AND TOP HOLES
   def bottomTopHoles(offset as Number) = {
     def yMargin as Number = 10
    def yTop as Number = y - yMargin
@@ -28,9 +28,30 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
      }
   }
 
-  bottomTopHoles(30)
+  #LEFT AND RIGHT HOLES
+  def sideHoles(offset as Number) = {
+    def xMargin as Number = 10
+   def xTop as Number = x - xMargin
 
- #sideHoles(30)
+    #BOTTOM END HOLES
+    circle(xTop + width y + offset radius)
+    circle(x + xMargin y + offset radius)
+    
+    #TOP END HOLES
+    def topEnd = y + height 
+    circle(xTop + width topEnd - offset radius)
+    circle(x + xMargin topEnd - offset radius)
+    
+   # CENTER HOLES
+    if (width > 200) {
+       def center = width / 2
+        #circle(center + x yTop + height radius)
+        #circle(center + x y + yMargin radius) 
+     }
+  }
+
+ bottomTopHoles(30)
+ sideHoles(30)
 }
 
 #call the function plate
