@@ -20,10 +20,11 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
     circle(rightSide - offset yTop + height radius)
     circle(rightSide - offset y + yMargin radius)
     
-
-    if (width > 160) {
+   # CENTER HOLES
+    if (width > 200) {
        def center = width / 2
-        circle(center + x 0 radius) 
+        circle(center + x yTop + height radius)
+        circle(center + x y + yMargin radius) 
      }
   }
 
