@@ -23,4 +23,4 @@ plate(height depth xOffset - partSpacing 0 holeRadius)
 }
 
 #RUN -, SPECIFYING BOX Height;Width;Depth
-makeBox(160 140 300)
+makeBox(140 140 300)
