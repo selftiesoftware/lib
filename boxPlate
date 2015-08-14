@@ -1,7 +1,7 @@
 def plate(width as Number height as Number x as Number y as Number radius as Number) =  {
  
   #boundary
-  line(x y x y + height)
+  line(4 y x y + height)
   line(x y x + width y)
   line(x + width y x + width y + height)
   line(x y + height x + width y + height)
