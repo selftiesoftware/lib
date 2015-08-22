@@ -2,12 +2,6 @@
 #use these in other scripts by typing 
 #"import geometry2d" in the script (without ")
 
-def addTwo(a b) {
-a + b
-}
-
-text(0 0 20 addTwo(2 3))
-
 #### RECTANGLE ####
 
 #PARAMETERS:
@@ -16,7 +10,8 @@ text(0 0 20 addTwo(2 3))
 # x2 = corner1 x
 # y2 = corner1 y
 
-def rectangle (x1 y1 x2 y2) {
+def rectangle (x1 as Number y1 as Number 
+				x2 as Number y2 as Number) = {
   line(x1 y1 x1 y2)
   line(x2 y2 x1 y2)
   line(x2 y1 x2 y2)
@@ -24,13 +19,14 @@ def rectangle (x1 y1 x2 y2) {
 }
 
 #example
-repeat -5 to -1 def i {
-  repeat -4 to 1 def j {
+repeat -5 to -1 using i {
+  repeat -4 to 1 using j {
     def a = i * 20
     def b = j * 22
     rectangle(a b a + 5 b + 5)
   }
 }
+
 
 #### TRIANGLE ####
 
@@ -39,7 +35,7 @@ repeat -5 to -1 def i {
 # y = center y
 # d = distance to corners
 
-def triangle(x y d) {
+def triangle(x as Number y as Number d as Number) = {
   def p1y = y + d
   def p2x = x + d
   def p3x = x - d
@@ -50,7 +46,7 @@ def triangle(x y d) {
 } 
 
 #### SQUARE ####
-def square(neg pos) {
+def square(neg as Number pos as Number) = {
   line(neg neg neg pos)
   line(neg pos pos pos)
   line(pos pos pos neg)
@@ -58,8 +54,8 @@ def square(neg pos) {
 }
 
 #example
-repeat 0 to 4 def i {
-  repeat -4 to 1 def j {
+repeat 0 to 4 using i {
+  repeat -4 to 1 using j {
     def a = i * 20
     def b = j * 22
     triangle(a b 5)
@@ -67,8 +63,9 @@ repeat 0 to 4 def i {
 }
 
 #ARC TOOLS
-def arcArray (cX cY rowSize radial) {
-  repeat 3 to 22 def i {
+def arcArray (cX as Number cY as Number
+				rowSize as Number radial as Number) = {
+  repeat 3 to 22 using i {
     def multiplied = i * rowSize
     def startAngle = radians(radial - 105)
     def endAngle = radians(radial - 75)  
