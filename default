@@ -1,8 +1,14 @@
 # Import the geometry2d script
 import geometry2d
 
-rectangle(0 0 2064 40)
+def topY = 1368
+def bottomY = 0
 
-rectangle(0 40 12 1368)
+rectangle(0 bottomY 2064 bottomY + 40)
+rectangle(0 topY 2064 topY + 40)
 
-rectangle(354 40 366 1368)
+rectangle(0 bottomY + 40 12 topY)
+rectangle(454 bottomY + 40 466 topY)
+
+rectangle(1600 bottomY + 40 1612 topY)
+rectangle(2052 bottomY + 40 2064 topY)
