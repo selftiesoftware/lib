@@ -1,8 +1,8 @@
   #import flightplanFunctions
 
-    def  from =      "EKSp"
-    def to =        "EKod"
-    def reg =       "OY-ABC"
+    def  from =      "EKRK"
+    def to =        "EKSN"
+    def reg =       "OY-CDT"
     def pilot =     "Pilot name here"
 
     def tas =      95   # TAS in knots 
