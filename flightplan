@@ -3,7 +3,7 @@
     def  from =      "EKRK"
     def to =        "EKSN"
     def reg =       "OY-CDT"
-    def pilot =     "Pilot name here"
+    def pilot =     "test test"
 
     def tas =      95   # TAS in knots 
     def lph =      12  # FUEL in Liters/hour
