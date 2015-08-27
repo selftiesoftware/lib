@@ -21,14 +21,14 @@
    def landingRwyHdg = 250
 
 #WP1
-    def title1 =   "VIDEBAEK"
+    def title1 =   "EKRK"
     def dist1 =    10
     def tt1 =      90
     def windDir1 = 135
     def windVel1 = 10
 
 #WP2
-    def title2 =   "IKAST"
+    def title2 =   "EKSN"
     def dist2 =    12
     def tt2 =      30
     def windDir2 = 100
