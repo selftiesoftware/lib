@@ -9,8 +9,8 @@ def jens(x as Number y as Number) = {
     line(x + 7 y + 10 x + 7 y - 10)
 }
 def kristin(x as Number y as Number) = {
-    line(x - 10 y + 10 x + 10 y - 10)
-    line(x + 10 y - 10 x - 10 y + 10)
+    text(x - 5 y - 5 18 "K")
+    line(x + 7 y + 10 x + 7 y - 10)
 }
 
 
@@ -19,6 +19,9 @@ text(-150 y 12 "LAUNDRY")
 #JENS LAUNDRY
 jens(-82 95)
 text(-150 y - 20 12 "DISHES")
+#KRISTEN
+jens(-82 95)
+
 text(-150 y - 40 12 "VACUUM")
 text(-150 y - 60 12 "DUST")
 text(-150 y - 80 12 "TOILET")
