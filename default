@@ -2,11 +2,22 @@
 import geometry2d
 
 rectangle(-90 -55 120 105)
-
 def y = 90
+#RESPONSIBLE
+def jens(x as Number y as Number) = {
+    text(x - 5 y - 5 18 "J")
+    line(x + 7 y + 10 x + 7 y - 10)
+}
+def kristin(x as Number y as Number) = {
+    line(x - 10 y + 10 x + 10 y - 10)
+    line(x + 10 y - 10 x - 10 y + 10)
+}
 
-#LAUNDRY
+
+#TASKS
 text(-150 y 12 "LAUNDRY")
+#JENS LAUNDRY
+jens(-82 95)
 text(-150 y - 20 12 "DISHES")
 text(-150 y - 40 12 "VACUUM")
 text(-150 y - 60 12 "DUST")
@@ -14,6 +25,8 @@ text(-150 y - 80 12 "TOILET")
 text(-150 y - 100 12 "SHOPPING")
 text(-150 y - 120 12 "DINNER")
 text(-150 y - 140 12 "TIDYING")
+
+
 
 
 text(-80 110 12 "MON")
