@@ -1,14 +1,25 @@
 # Import the geometry2d script
 import geometry2d
 
-def topY = 1368
-def bottomY = 0
+rectangle(-100 -55 150 105)
 
-rectangle(0 bottomY 2064 bottomY + 40)
-rectangle(0 topY 2064 topY + 40)
+def y = 90
 
-rectangle(0 bottomY + 40 12 topY)
-rectangle(454 bottomY + 40 466 topY)
+#LAUNDRY
+text(-150 y 12 "LAUNDRY")
+text(-150 y - 20 12 "DISHES")
+text(-150 y - 40 12 "VACUUM")
+text(-150 y - 60 12 "DUST")
+text(-150 y - 80 12 "TOILET")
+text(-150 y - 100 12 "SHOPPING")
+text(-150 y - 120 12 "DINNER")
+text(-150 y - 140 12 "TIDYING")
 
-rectangle(1600 bottomY + 40 1612 topY)
-rectangle(2052 bottomY + 40 2064 topY)
+
+line(-100 y - 5 150 y - 5)
+line(-100 y - 25 150 y - 25)
+line(-100 y - 45 150 y - 45)
+line(-100 y - 65 150 y - 65)
+line(-100 y - 85 150 y - 85)
+line(-100 y - 105 150 y - 105)
+line(-100 y - 125 150 y - 125)
