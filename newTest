@@ -1,13 +1,14 @@
 import geometry2d
 
-rectangle(-80 0 80 13)
+rectangle(-80 0 80 14)
 
 def scale = 500000
 def glideRatio = 9
 
 #draw glide distance for the given altitude
 def glide(ratio as Number) = {
-  line(0 2 0 13)
+  line(0 12.5 0 14)
+  line(0 10 0 2)
   
   #N.B ! CHANGE THE "repeat to" value to adjust extent
   repeat 1 to 14 using i {
@@ -22,20 +23,22 @@ def glide(ratio as Number) = {
     #right side
     line(xValue1 decrease1 + 10 xValue2 decrease2 + 10)
     line(xValue2 decrease2 + 10 xValue2 10)
-    line(xValue2 11.5 xValue2 13)
+    line(xValue2 12.5 xValue2 14)
     #500 tic
     def ctrX as Number = ((xValue2 - xValue1) / 2) + xValue1
-    line(ctrX 12 ctrX 13)
+    line(ctrX 13 ctrX 14)
     
     #left side
     line(xValue1 * -1 decrease1 + 10 xValue2 * -1 decrease2 + 10)
     line(xValue2 * -1 decrease2 + 10 xValue2 * -1 10)
-    line(xValue2 * -1 11.5 xValue2 * -1 13)
+    line(xValue2 * -1 12.5 xValue2 * -1 14)
     #500 tic
     def ctrX as Number = ((xValue2 - xValue1) / 2) + xValue1
-    line(ctrX * -1 12 ctrX * -1 13)
+    line(ctrX * -1 13 ctrX * -1 14)
 
   }
 }
 #run!
 glide(glideRatio)
+
+text(-0.5 10.6 2.5 "0")
