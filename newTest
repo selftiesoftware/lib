@@ -3,15 +3,14 @@ import geometry2d
 rectangle(-90 0 90 12)
 
 def scale = 500000
-
-def feetToMm(feet as Number) = {
-   feet * 304.8
-}
+def altScaled as Number = 1000 * 305
 
 #draw glide distance for the given altitude
 def glide(ratio as Number alt as Number) = {
   def xValue = ratio * alt
-  line(0 0 alt alt)
+  line(0 0 xValue alt)
 }
 
-#glide(10 (feetToMm(1000) / scale))
+
+
+glide(10 altScaled / scale)
