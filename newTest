@@ -2,9 +2,17 @@ import geometry2d
 
 rectangle(-90 0 90 12)
 
-#
-def glide(ration as Number alt as Number) = {
-  line(0 0 100 100)
+def scale = 500000
+
+def feetToMm(feet as Number) = {
+   feet * 304.8
 }
 
-glide(10 1000)
+#
+def glide(ratio as Number alt as Number) = {
+  def xValue = ratio * alt
+  line(0 10 xValue alt)
+
+}
+
+#glide((feetToMm(10) / scale) (feetToMm(1000) / scale))
