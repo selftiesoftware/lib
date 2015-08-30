@@ -3,7 +3,7 @@ import geometry2d
 rectangle(-80 0 80 12)
 
 def scale = 500000
-def glideRatio = 10
+def glideRatio = 9
 
 #draw glide distance for the given altitude
 def glide(ratio as Number) = {
@@ -16,9 +16,19 @@ def glide(ratio as Number) = {
     line(xValue decrease + 10 xValue 12)
     line(xValue * -1 decrease + 10 xValue * -1 12)
     line(0 10 0 12)
+    
+    line(xValue decrease + 10 3 * i decrease + 10)
+
+    
   }
 }
 
-
+text (0 8.8 1.5 "0")
+text (2 8.3 1.5 "1000")
+text (5 7.8 1.5 "2000")
+text (8 7.3 1.5 "3000")
+text (11 6.5 1.5 "4000")
+text (14 6 1.5 "5000")
+text (17 5.3 1.5 "6000")
 
 glide(glideRatio)
