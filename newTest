@@ -73,4 +73,4 @@ text(-70 - 5 10.6 2.5 "13000")
 text(2 2 3 "GLIDE DISTANCE PER 1000 FT")
 text(2 4 3 "RATIO: 1:9")
 
-text(-30 2 3 "1:500.000")
+text(-30 2 3 "CHART SCALE: 1:500.000")
