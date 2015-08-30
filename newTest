@@ -8,7 +8,11 @@ def altScaled as Number = 1000 * 305
 #draw glide distance for the given altitude
 def glide(ratio as Number alt as Number) = {
   def xValue = ratio * alt
-  line(0 0 xValue alt)
+  def decrease = alt * -1
+  line(0 10 xValue decrease + 10)
+  line(0 10 xValue * -1 decrease + 10)
+  line(xValue decrease + 10 xValue 12)
+  line(xValue * -1 decrease + 10 xValue * -1 12)
 }
 
 
