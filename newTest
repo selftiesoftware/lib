@@ -1,1 +1,3 @@
-text(0 0 10 "texting making a new drawing")
+import geometry2d
+
+rectangle(-100 0 100 12)
