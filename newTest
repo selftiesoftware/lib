@@ -8,11 +8,10 @@ def feetToMm(feet as Number) = {
    feet * 304.8
 }
 
-#
+#draw glide distance for the given altitude
 def glide(ratio as Number alt as Number) = {
   def xValue = ratio * alt
-  line(0 10 xValue alt)
-
+  line(0 0 alt alt)
 }
 
-#glide((feetToMm(10) / scale) (feetToMm(1000) / scale))
+#glide(10 (feetToMm(1000) / scale))
