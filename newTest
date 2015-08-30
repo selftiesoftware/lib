@@ -1,3 +1,10 @@
 import geometry2d
 
 rectangle(-90 0 90 12)
+
+#
+def glide(ration as Number alt as Number) = {
+  line(0 0 100 100)
+}
+
+glide(10 1000)
