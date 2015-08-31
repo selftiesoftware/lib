@@ -6,12 +6,12 @@ def scale = 500000
 def glideRatio = 9
 
 #draw glide distance for the given altitude
-def glide(ratio as Number airspeed as Number) = {
+def glide(ratio as Number airspeed as Number headwind as Number) = {
   line(0 12.5 0 14)
   line(0 10 0 2)
   
   #distance decay per knot of headwind at given speed
-  def decay = airspeed / 60
+  def decay = (airspeed / 60) * (1 + headwind)
   
   #N.B! CHANGE THE "repeat to" value to adjust extent
   repeat 1 to 14 using i {
@@ -21,20 +21,19 @@ def glide(ratio as Number airspeed as Number) = {
     def decrease1 = alt * -1 * i - 1
     def decrease2 = alt * -1 * i
   
-    
-
+    line(-80 decrease1 + 10 80 decrease1 + 10)
+   
     #right side
-    line(xValue1 decrease1 + 10 xValue2 decrease2 + 10)
-    line(xValue2 decrease2 + 10 xValue2 14)
+    line(xValue1 * decay decrease1 + 10 xValue2 * decay decrease2 + 10)
+    #line(xValue2 * decay decrease2 + 10 xValue2 * decay 14)
 
 
 
   }
 }
 #run!
-glide(glideRatio 60)
+glide(glideRatio 60 0)
+glide(glideRatio 60 -0.2)
+glide(glideRatio 60 -0.4)
 
-text(2 2 3 "GLIDE DISTANCE PER 1000 FT")
-text(2 4 3 "RATIO: 1:9")
 
-text(-30 2 3 "CHART SCALE: 1:500.000")
