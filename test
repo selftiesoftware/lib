@@ -1,6 +1,37 @@
 import geometry2d
 
-for (i <- 0 to 100) {
-rectangle(0 0 i 100)
-line ( 0 0 10 i )
+rectangle(-80 0 80 14)
+
+def scale = 500000
+def glideRatio = 9
+
+#draw glide distance for the given altitude
+def glide(ratio as Number) = {
+  line(0 12.5 0 14)
+  line(0 10 0 2)
+  
+  #N.B ! CHANGE THE "repeat to" value to adjust extent
+  repeat 1 to 14 using i {
+    def alt as Number = 1000 * 305 / scale
+    def xValue1 = ratio * alt * i - 1
+    def xValue2 = ratio * alt * i
+    def decrease1 = alt * -1 * i - 1
+    def decrease2 = alt * -1 * i
+  
+    
+
+    #right side
+    line(xValue1 decrease1 + 10 xValue2 decrease2 + 10)
+    line(xValue2 decrease2 + 10 xValue2 10)
+
+
+
+  }
 }
+#run!
+glide(glideRatio)
+
+text(2 2 3 "GLIDE DISTANCE PER 1000 FT")
+text(2 4 3 "RATIO: 1:9")
+
+text(-30 2 3 "CHART SCALE: 1:500.000")
