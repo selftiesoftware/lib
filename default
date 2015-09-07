@@ -1,54 +1,15 @@
-# Import the geometry2d script
 import geometry2d
 
-rectangle(-90 -55 120 105)
-def y = 90
-#RESPONSIBLE
-def jens(x as Number y as Number) = {
-    text(x - 5 y - 5 18 "J")
-    line(x + 7 y + 10 x + 7 y - 10)
+def x1 = 0
+def y1 = 0
+def x2 = 50
+def y2 = 50
+
+#line(x1 y1 x2 y2)
+
+circle((x2 - x1) / 2 (y2 - y1) / 2 10)
+
+repeat 0 to 20 using counter{
+def spacing = counter * 5
+rectangle(x1 - counter y1 - spacing x2 + counter y2 + counter)
 }
-def kristin(x as Number y as Number) = {
-    text(x - 5 y - 5 18 "K")
-    line(x + 7 y + 10 x + 7 y - 10)
-}
-
-
-#TASKS
-text(-150 y 12 "LAUNDRY")
-jens(-82 95)
-text(-150 y - 20 12 "DISHES")
-kristin(-82 75)
-
-text(-150 y - 40 12 "VACUUM")
-text(-150 y - 60 12 "DUST")
-text(-150 y - 80 12 "TOILET")
-text(-150 y - 100 12 "SHOPPING")
-text(-150 y - 120 12 "DINNER")
-text(-150 y - 140 12 "TIDYING")
-
-
-
-
-text(-80 110 12 "MON")
-text(-50 110 12 "TUE")
-text(-20 110 12 "WED")
-text( 10 110 12 "THU")
-text( 40 110 12 "FRI")
-text( 70 110 12 "SAT")
-text( 100 110 12 "SUN")
-
-line(-90 y - 5 120 y - 5)
-line(-90 y - 25 120 y - 25)
-line(-90 y - 45 120 y - 45)
-line(-90 y - 65 120 y - 65)
-line(-90 y - 85 120 y - 85)
-line(-90 y - 105 120 y - 105)
-line(-90 y - 125 120 y - 125)
-
-line( -60 105 -60 -55)
-line( -30 105 -30 -55)
-line(   0 105   0 -55)
-line(  30 105  30 -55)
-line(  60 105  60 -55)
-line(  90 105  90 -55)
