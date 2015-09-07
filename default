@@ -1,15 +1,1 @@
-import geometry2d
-
-def x1 = 0
-def y1 = 0
-def x2 = 50
-def y2 = 50
-
-#line(x1 y1 x2 y2)
-
-circle((x2 - x1) / 2 (y2 - y1) / 2 10)
-
-repeat 0 to 20 using counter{
-def spacing = counter * 5
-rectangle(x1 - counter y1 - spacing x2 + counter y2 + counter)
-}
+line(0 0 20 20)
