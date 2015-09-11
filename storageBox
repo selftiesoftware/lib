@@ -8,7 +8,7 @@ def makeBox(width as Number height as Number depth as Number) = {
 plate(width depth 0 0 holeRadius 0)
 
 #FRONT
-plate(width height 0 depth + partSpacing holeRadius 0)
+plate(width height 0 depth + partSpacing holeRadius 1)
 
 #BACK
 plate(width height 0 (0 - height) - partSpacing 3 0)
