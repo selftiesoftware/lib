@@ -4,8 +4,13 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
   line(x y x y + height)
   line(x y x + width y)
   line(x + width y x + width y + height)
-  line(x y + height x + width y + height)
-
+  if(isFront < 1){ #this line is not on front plates
+    line(x y + height x + width y + height)
+  }
+  
+  #alternative front plate top
+  
+  
   #BOTTOM AND TOP HOLES
   def bottomTopHoles(offset as Number) = {
     def yMargin as Number = 10
