@@ -1,29 +1,39 @@
 import boxPlate
 
-def columnDistance = 900
-def rowDistance = 300
+def columnDistance = 700
+def rowDistance = 180
 
 def boxesPerColumn = 3
-
+def verticalMargin = 50
 def columns = 4
-def rows = 8
+def rows = 12
 
+ #LOOP THROUGH EACH COLUMN
 repeat 0 to columns using i {
   def startPositionX = columnDistance * i
   def test = i
 
+    #CREATE MULTIPLE BOXES BETWEEN EACH COLUMN
     repeat 0 to boxesPerColumn using j {
-      if (test < columns - 1) { #delete boxes after last column
-        def spacingX = columnDistance / boxesPerColumn
-        def x = startPositionX + spacingX * j
-        plate(spacingX - 48 rowDistance x + 24 0 3)
+              
+        #LOOP THROUGH ROWS
+        repeat 0 to rows using k {
+          if (test < columns - 1) { #delete boxes after last column
+            def spacingX = columnDistance / boxesPerColumn
+            def x = startPositionX + spacingX * j
+            
+            def vertPlacement = k * rowDistance + verticalMargin
+            plate(spacingX - 48 rowDistance x + 24 vertPlacement 3)
+        }
       }
    } 
   
-  line(startPositionX + 17 0 startPositionX + 17 2000)
-  line(startPositionX + 4 0 startPositionX + 4 2000)  
+  def height = (rowDistance + verticalMargin )* rows 
   
-  line(startPositionX - 4 0 startPositionX - 4 2000)
-  line(startPositionX - 17 0 startPositionX - 17 2000)  
+  line(startPositionX + 17 0 startPositionX + 17 height + 200)
+  line(startPositionX + 4 0 startPositionX + 4 height + 200)  
+  
+  line(startPositionX - 4 0 startPositionX - 4 height + 200)
+  line(startPositionX - 17 0 startPositionX - 17 height + 200)  
  
 }
