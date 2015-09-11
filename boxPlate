@@ -10,7 +10,7 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
   
   #alternative front plate top
   if(isFront > 0){ #this line is not on front plates
-    def factor = width / 6
+    def factor = width / 4
     line(x y + height x + factor y + height)
     line(x + width - factor y + height x + width y + height)
   }
