@@ -1,30 +1,33 @@
 #a paper ruler in CM
                                    #1 MM MARKS:
 
-unit = 2.54 # inches
-#unit = 1 # mm
+#def unit = 2.54 # inches
+def unit = 1 # mm
 
-for i <- -100 / unit to 100 / unit {
-    line(0 i * unit 4 i * unit)
+repeat -100 to 100 using i {
+    def j = i / unit 
+    line(0 j * unit 4 j * unit)
 }
 
                                    #5 MM MARKS
 
-for i <- -20 / unit to 21 / unit {
-    a = i * 5
+repeat -20 to 20 using i {
+    def j = i / unit 
+    def a = j * 5
     line(0 a * unit 6 a * unit)
 }
 
                                   #10 MM MARKS
 
-for i <- -10 / unit to 11 / unit {
-    a = i * 10
-    cm1 = a / 10
-    cm = cm1 * unit
+repeat -10 to 10 using i {
+    def j = i / unit 
+    def a = j * 10
+    def cm1 = a / 10
+    def cm = cm1 * unit
     line(0 a * unit 8 a * unit)
-    t = a - 1
-    t2 = cm + 10
-    text(9 t * unit 5 t2 / unit)   # NUMBERS
+    def t = a - 1
+    def t2 = cm + 10
+    #text(9 t * unit 5 t2 / unit)   # NUMBERS
 }
 
                                     #BORDER
