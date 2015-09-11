@@ -1,10 +1,11 @@
-for i <- -3 to 9 {
-  for j <- -4 to -2
+repeat -3 to 9 using i {
+  repeat -4 to -2 using j {
     line( -30 i * -6 j * 18 -50)
-  for k <- 0 to 4
+  repeat 0 to 4 using k {
     line( -30 i * -6 k * 30 -50)
+    }
+  }
 }
-
 
 line(-29 20 -29 -70)
 line(-31 20 -31 -70)
