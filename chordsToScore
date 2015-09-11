@@ -39,11 +39,11 @@ def B() = {
   circle(xG - 3 yG - 9 1.2)
   circle(xG yG - 9 1.2)
   circle(xG + 3 yG - 9 1.2)
-  #bezierCurve(xG - 9 yG + 1 xG - 4 yG + 4 xG + 1     yG + 4 xG + 6 yG + 1)
-  #bezierCurve(xG - 9 yG + 1.5 xG - 4 yG + 4.5 xG + 1     yG + 4.5 xG + 6 yG + 1.5)
+  arc(xG - 2 yG - 19 22 4.4 5.05)
+  arc(xG - 2 yG - 18 22 4.4 5.05)
 }
 
 #test
-A()
+#A()
 B()
-A()
+#A()
