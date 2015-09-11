@@ -23,7 +23,7 @@ repeat 0 to columns using i {
             def spacingX = columnDistance / boxesPerColumn
             def x = startPositionX + spacingX * j
             
-            
+            #DRAW ALL BOXES
             plate(spacingX - 48 rowDistance x + 24 vertPlacement 3)
         }
       }
