@@ -1,25 +1,27 @@
-xG = -100
-yG = 100
+def xG = -100
+def yG = 100
 
-function score(x y) {
-  xMin = x - 9
-  xMax = x + 6
-  yMin = y - 20
-  yMax = y + 12
+def score(x as Number y as Number) = {
+  def xMin = x - 9
+  def xMax = x + 6
+  def yMin = y - 20
+  def yMax = y + 12
   line(xMin y + 12.5 xMax y + 12.5) 
  
-  for i <- -3 to 3 {
-     y2 = y + i * 6
-     x2 = x + i * 3 
+  repeat -3 to 3 using i {
+     def y2 = y + i * 6
+     def x2 = x + i * 3 
       line(xMin y2 xMax y2)
       line(x2 yMin x2 yMax)
   }
 }
 
-function A() {
-  xG = xG + 20
+def A() = {
+  def xG = xG + 20
   text(xG - 9 yG + 17 8 "A")
-  if (xG > 100) yG = yG + 20
+  if (xG > 100) {
+   def yG = yG + 20
+  }
   score(xG yG)
   circle(xG - 3 yG + 3 1.2)
   circle(xG yG + 3 1.2)
@@ -27,18 +29,21 @@ function A() {
   #bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1     yG + 16 xG + 6 yG + 13)
 }
 
-function B() {
-  xG = xG + 20
+def B() = {
+  def xG = xG + 20
   text(xG - 9 yG + 17 8 "B")
-  if (xG > 100) yG = yG + 20
+  if (xG > 100) {
+    def yG = yG + 20
+  }
   score(xG yG)
   circle(xG - 3 yG - 9 1.2)
   circle(xG yG - 9 1.2)
   circle(xG + 3 yG - 9 1.2)
-  bezierCurve(xG - 9 yG + 1 xG - 4 yG + 4 xG + 1     yG + 4 xG + 6 yG + 1)
-  bezierCurve(xG - 9 yG + 1.5 xG - 4 yG + 4.5 xG + 1     yG + 4.5 xG + 6 yG + 1.5)
+  #bezierCurve(xG - 9 yG + 1 xG - 4 yG + 4 xG + 1     yG + 4 xG + 6 yG + 1)
+  #bezierCurve(xG - 9 yG + 1.5 xG - 4 yG + 4.5 xG + 1     yG + 4.5 xG + 6 yG + 1.5)
 }
 
+#test
 A()
 B()
 A()
