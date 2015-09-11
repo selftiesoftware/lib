@@ -1,12 +1,12 @@
 import boxPlate
 
-def columnDistance = 700
-def rowDistance = 180
+def columnDistance = 600
+def rowDistance = 150
 
 def boxesPerColumn = 3
 def verticalMargin = 50
-def columns = 4
-def rows = 12
+def columns = 5
+def rows = 9
 
  #LOOP THROUGH EACH COLUMN
 repeat 0 to columns using i {
