@@ -1,4 +1,4 @@
-def plate(width as Number height as Number x as Number y as Number radius as Number) =  {
+def plate(width as Number height as Number x as Number y as Number radius as Number isFront as Number) =  {
  
   #boundary
   line(x y x y + height)
@@ -57,4 +57,4 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
 
 #TEST
 #call the function plate
-plate(160 250 10 30 3)
+plate(160 250 10 30 3 0)
