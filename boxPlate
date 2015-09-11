@@ -12,14 +12,16 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
     def yTop as Number = y - yMargin
 
     #LEFT SIDE HOLES
-    if(isFront < 1){
+    if(isFront < 1){ #this hole is not on front plates
       circle(x + offset yTop + height radius)
     }
     circle(x + offset y + yMargin radius)
     
     #RIGHT SIDE HOLES
     def rightSide = x + width 
-    circle(rightSide - offset yTop + height radius)
+    if(isFront < 1){#this hole is not on front plates
+      circle(rightSide - offset yTop + height radius)
+    }
     circle(rightSide - offset y + yMargin radius)
     
    # CENTER HOLES
