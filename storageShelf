@@ -40,10 +40,14 @@ repeat 0 to columns using i {
 }
 
 #SHELVES
+def width = columnDistance * columns - 1
 repeat 0 to rows using h {
   def vertPlacement = h * rowDistance + verticalMargin 
-  def width = columnDistance * columns - 1
+
   line(0 vertPlacement width vertPlacement)
   line(0 vertPlacement - 12 width vertPlacement - 12)
   
 }
+
+#BOTTOM LINE
+  line(0 - columnDistance 0 - verticalMargin width + columnDistance 0 - verticalMargin)
