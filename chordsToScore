@@ -26,7 +26,6 @@ def A() = {
   circle(xG - 3 yG + 3 1.2)
   circle(xG yG + 3 1.2)
   circle(xG + 3 yG + 3 1.2)
-  #bezierCurve(xG - 9 yG + 13 xG - 4 yG + 16 xG + 1     yG + 16 xG + 6 yG + 13)
 }
 
 def B() = {
@@ -44,6 +43,6 @@ def B() = {
 }
 
 #test
-#A()
+A()
 B()
 #A()
