@@ -5,20 +5,20 @@ def makeBox(width as Number height as Number depth as Number) = {
   def holeRadius = 3
 
 #BOTTOM
-plate(width depth 0 0 holeRadius)
+plate(width depth 0 0 holeRadius 0)
 
 #FRONT
-plate(width height 0 depth + partSpacing holeRadius)
+plate(width height 0 depth + partSpacing holeRadius 0)
 
 #BACK
-plate(width height 0 (0 - height) - partSpacing 3)
+plate(width height 0 (0 - height) - partSpacing 3 0)
 
 #SIDE 1 
-plate(height depth partSpacing + width 0 holeRadius)
+plate(height depth partSpacing + width 0 holeRadius 0)
 
 #SIDE 2
 def xOffset = 0 - height
-plate(height depth xOffset - partSpacing 0 holeRadius)
+plate(height depth xOffset - partSpacing 0 holeRadius 0)
 
 }
 
