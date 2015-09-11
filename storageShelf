@@ -1,0 +1,16 @@
+import boxPlate
+
+def moduleX = 180
+def moduleY = 180
+
+def boxesX = 8
+def boxesY = 8
+
+repeat -4 to 4 using i {
+  def spacingX = i * moduleX
+
+  repeat -4 to 4 using j {
+    def spacingY = j * moduleY
+    plate(140 140 spacingX spacingY 3)
+  }
+}
