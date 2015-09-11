@@ -31,11 +31,11 @@ repeat 0 to columns using i {
   
   def height = (rowDistance + verticalMargin )* rows 
   
-  line(startPositionX + 17 0 startPositionX + 17 height + 200)
-  line(startPositionX + 4 0 startPositionX + 4 height + 200)  
+  line(startPositionX + 17 0 - verticalMargin startPositionX + 17 height + 200)
+  line(startPositionX + 4 0 - verticalMargin startPositionX + 4 height + 200)  
   
-  line(startPositionX - 4 0 startPositionX - 4 height + 200)
-  line(startPositionX - 17 0 startPositionX - 17 height + 200)  
+  line(startPositionX - 4 0 - verticalMargin startPositionX - 4 height + 200)
+  line(startPositionX - 17 0 - verticalMargin startPositionX - 17 height + 200)  
  
 }
 
