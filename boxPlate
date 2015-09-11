@@ -37,7 +37,9 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
    # CENTER HOLES
     if (width > 200) {
        def center = width / 2
-        circle(center + x yTop + height radius)
+        if(isFront < 1){#this hole is not on front plates
+          circle(center + x yTop + height radius)
+        }  
         circle(center + x y + yMargin radius) 
      }
   }
@@ -72,4 +74,4 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
 #TEST
 #call the function plate
 #the last parameter determines if it is a front plate (1) or not (0)
-plate(160 140 10 30 3 1)
+plate(280 140 10 30 3 1)
