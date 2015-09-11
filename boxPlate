@@ -1,6 +1,6 @@
 def plate(width as Number height as Number x as Number y as Number radius as Number isFront as Number) =  {
  
-  #boundary
+  #BOUNDARY
   line(x y x y + height)
   line(x y x + width y)
   line(x + width y x + width y + height)
@@ -8,11 +8,12 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
     line(x y + height x + width y + height)
   }
   
-  #alternative front plate top
+  #ALTERNATIVE FRONT PLATE TOP
   if(isFront > 0){ #this line is not on front plates
     def factor = width / 4
     line(x y + height x + factor y + height)
     line(x + width - factor y + height x + width y + height)
+    arc(x + (width / 2) y + height factor 0 3.14)
   }
   
   #BOTTOM AND TOP HOLES
@@ -71,4 +72,4 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
 #TEST
 #call the function plate
 #the last parameter determines if it is a front plate (1) or not (0)
-plate(160 250 10 30 3 1)
+plate(160 140 10 30 3 1)
