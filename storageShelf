@@ -1,16 +1,24 @@
 import boxPlate
 
-def moduleX = 180
-def moduleY = 180
+def columnDistance = 900
+def rowDistance = 180
 
-def boxesX = 8
-def boxesY = 8
+def boxesPerColumn = 3
 
-repeat -4 to 4 using i {
-  def spacingX = i * moduleX
+def columns = 3
+def rows = 8
 
-  repeat -4 to 4 using j {
-    def spacingY = j * moduleY
-    plate(140 140 spacingX spacingY 3)
+repeat 0 to columns using i {
+  def startPositionX = columnDistance * i
+  repeat 0 to boxesPerColumn using j {
+    def spacingX = columnDistance / boxesPerColumn
+    def x = startPositionX + spacingX * j
+    plate(spacingX 140 x 0 3)
   }
+  
+  line(startPositionX 0 startPositionX 2000)
+  line(startPositionX - 14 0 startPositionX - 14 2000)  
+  
+  line(startPositionX - 20 0 startPositionX - 20 2000)
+  line(startPositionX - 34 0 startPositionX - 34 2000)  
 }
