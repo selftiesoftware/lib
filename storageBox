@@ -1,26 +1,30 @@
 import boxPlate
 
+# FUNCTION MAKEBOX:
+# a function to draw five plates to make up a storage box
+# which is ready to print and laser cut
+
+
 def makeBox(width as Number height as Number depth as Number) = {
-  def partSpacing = 30
-  def holeRadius = 3
+  def partSpacing = 10
+  def holeRadius = 1.5
 
-  #BOTTOM
-  plate(width depth 0 0 holeRadius 0)
+#BOTTOM
+plate(width depth 0 0 holeRadius 0)
 
-  #FRONT
-  plate(width height 0 depth + partSpacing holeRadius 1)
+#FRONT
+plate(width height 0 depth + partSpacing holeRadius 1)
 
-  #BACK
-  plate(width height 0 (0 - height) - partSpacing 3 0)
+#BACK
+plate(width height 0 (0 - height) - partSpacing holeRadius 0)
 
-  #SIDE 1 
-  plate(height depth partSpacing + width 0 holeRadius 0)
+#SIDE 1 
+plate(height depth partSpacing + width 0 holeRadius 0)
 
-  #SIDE 2
-  def xOffset = 0 - height
-  plate(height depth xOffset - partSpacing 0 holeRadius 0)
-
+#SIDE 2
+def xOffset = 0 - height
+plate(height depth xOffset - partSpacing 0 holeRadius 0)
 }
 
 #RUN -, SPECIFYING BOX Height;Width;Depth
-makeBox(140 140 300)
+makeBox(110 110 180)
