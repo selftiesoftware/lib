@@ -40,3 +40,5 @@ text(-100 29 4.5 "to draw: line(x1 y1 x2 y2)   circle, arc and text also availab
 
 text(-100 22 4.5 "a function: def name(p1 as Type) = {...} where 'Type' = 'Number' or 'String'")
 text(-100 17 4.5 "a loop: repeat 0 to end using i {...} where 'end' is a number and 'i' is the current counter value")
+
+text(30 34 4.5 "to import a script: import nameofscript")
