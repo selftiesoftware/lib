@@ -1,1 +1,9 @@
-line(0 0 20 20)
+# Draw a line from (0 0) to (-50 -50)
+line(0 0 -50 -50)
+
+# Import the geometry2d script
+import geometry2d
+
+# Use the rectangle function from geometry2d
+# to draw a rectangle from (0 0 ) to (50 50 )
+rectangle(0 0 50 50)
