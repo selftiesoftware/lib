@@ -1,28 +1,37 @@
 #a paper ruler in CM
+import geometry2d
                                    #1 MM MARKS:
 
-for i <- -100 to 100 {
-    line(0 i 4 i)
+#def unit = 2.54 # inches
+def unit = 1 # mm
+
+repeat -100 to 100 using i {
+    if(unit < 2) {
+    def j = i / unit 
+    line(j 0 j 4)
+    }
 }
 
                                    #5 MM MARKS
 
-for i <- -20 to 21 {
-    a = i * 5
-    line(0 a 6 a)
+repeat -20 to 21 using i {
+    def j = i / unit 
+    def a = j * 5
+    line(a 0 a 6)
 }
 
                                   #10 MM MARKS
 
-for i <- -10 to 11 {
-    a = i * 10
-    cm = a / 10
-    line(0 a 8 a)
-    text(9 a - 1 5 cm + 10)
+repeat -10 to 11 using i {
+    def j = i / unit 
+    def a = j * 10
+    def cm1 = a / 10
+    def cm = cm1 * unit
+    line(a * unit 6 a * unit 8)
+    def t = a - 1
+    def t2 = cm + 10
+    text(t * unit 9 5 t2 / unit)   # NUMBERS
 }
 
                                     #BORDER
-line (0 -105 0 105)
-line (0 105 20 105)
-line (0 -105 20 -105)
-line (20 -105 20 105)
+rectangle(-110 0 110 30)
