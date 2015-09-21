@@ -9,7 +9,7 @@ import geometry2d
 rectangle(0 0 -60 -60)
 
 #loop five times, offsetting a line each time:
-repeat 0 to 5 using i {
+repeat 1 to 6 using i {
   def offset = i * 10
   line(0 offset -60 offset)
 }
