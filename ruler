@@ -22,7 +22,7 @@ repeat -20 to 21 using i {
 
                                   #10 MM MARKS
 
-repeat -10 to 11 using i {
+repeat -9 to 10 using i {
     def j = i / unit 
     def a = j * 10
     def cm1 = a / 10
@@ -34,7 +34,7 @@ repeat -10 to 11 using i {
 }
 
                                     #BORDER
-rectangle(-110 0 110 40)
+rectangle(-105 0 100 40)
 text(-100 34 4.5 "scripts are stored at github.com/repocad/lib")
 text(-100 29 4.5 "to draw: line(x1 y1 x2 y2)   circle, arc and text also available")
 
