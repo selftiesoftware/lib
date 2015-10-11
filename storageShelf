@@ -4,7 +4,7 @@ def columnDistance = 600
 def rowDistance = 150
 
 def boxesPerColumn = 3
-def verticalMargin = 50
+def verticalMargin = 30
 def columns = 5
 def rows = 9
 
