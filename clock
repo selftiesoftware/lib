@@ -1,6 +1,9 @@
 #CLOCK DIAMETER
-
 def d = 57
+
+#SIZE OF THE DIGITS
+def textSize = 5
+
 
 circle(0 0 d / 2)
 (circle(0 0 1)
@@ -15,7 +18,7 @@ def x = -1 * cos(radians(scalar))
 def y = sin(radians(scalar))
 def tX = -1
 def tY = -1
-text(tX - x * inner - 2 tY - y * inner - 2 5 i + 3)
+text(tX - x * inner - 2 tY - y * inner - 2 textSize i + 3)
 line(x * inner y * inner x * outer y * outer)
 }
 
