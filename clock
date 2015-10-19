@@ -1,17 +1,19 @@
 circle(0 0 57 / 2)
+(circle(0 0 1)
+
+def outer = 28
 
 #FIVE MINUTE MARKS
-repeat 0 to 12 using i {
-def outer = 28
+repeat 1 to 13 using i {
 def inner = 23
 def x = cos(radians(i * 30))
 def y = sin(radians(i * 30))
+text(x * inner y * inner 5 i)
 line(x * inner y * inner x * outer y * outer)
 }
 
 #ONE MINUTE MARKS
 repeat 0 to 60 using i {
-def outer = 28
 def inner = 26
 def x = cos(radians(i * 6))
 def y = sin(radians(i * 6))
