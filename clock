@@ -9,8 +9,8 @@ def oneSie = 4
 
 #SIZE OF THE DIGITS
 def textSize = 11
-#PLACEMENT OF DIGITS
-def innerText = (d / 2) - 9
+#INWARDS OFFSET OF DIGITS
+def innerText = 10
 
 #ADJUSTMENT OF TEXT
 def textOffsetX = 2
@@ -27,9 +27,8 @@ def x = -1 * cos(radians(i * 30))
 def y = sin(radians(i * 30))
 
 #TEXT
-
-def textX = (-1 - x * innerText) - textOffsetX
-def textY = (-1 - y * innerText) - textOffsetY
+def textX = (-1 - x * (d / 2) - innerText) - textOffsetX
+def textY = (-1 - y * (d / 2) - innerText) - textOffsetY
 text(textX textY textSize i + 3)
 line(x * innerFive y * innerFive x * outer y * outer)
 }
