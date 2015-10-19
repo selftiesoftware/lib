@@ -1,10 +1,22 @@
 #CLOCK DIAMETER
-def d = 57
+def d = 157
+
+#FIVE MIN MARKS SIZE
+def fiveSize = 8
+
+#ONE MINUTE MARKS SIZE
+def oneSie = 4
 
 #SIZE OF THE DIGITS
-def textSize = 5
+def textSize = 11
+#PLACEMENT OF DIGITS
+def innerText = (d / 2) - 9
 
-#MARGIN BETWEEN PERIPHEPY AND MARKS
+#ADJUSTMENT OF TEXT
+def textOffsetX = 2
+def textOffsetY = 2.5
+
+#MARGIN BETWEEN PERIPHERY AND MARKS
 def outer = (d / 2) - 1
 def innerFive = (d / 2) - 5
 def innerOne = (d / 2) - 3
@@ -15,8 +27,9 @@ def x = -1 * cos(radians(i * 30))
 def y = sin(radians(i * 30))
 
 #TEXT
-def textX = -1 - x * innerFive - 2
-def textY = -1 - y * innerFive - 2.5
+
+def textX = (-1 - x * innerText) - textOffsetX
+def textY = (-1 - y * innerText) - textOffsetY
 text(textX textY textSize i + 3)
 line(x * innerFive y * innerFive x * outer y * outer)
 }
