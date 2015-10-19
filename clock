@@ -4,10 +4,6 @@ def d = 57
 #SIZE OF THE DIGITS
 def textSize = 5
 
-
-circle(0 0 d / 2)
-circle(0 0 1)
-
 #MARGIN BETWEEN PERIPHEPY AND MARKS
 def outer = (d / 2) - 1
 def innerFive = (d / 2) - 5
@@ -30,3 +26,7 @@ def x = cos(radians(i * 6))
 def y = sin(radians(i * 6))
 line(x * innerOne y * innerOne x * outer y * outer)
 }
+
+#OUTER AND CENTER CIRCLE
+circle(0 0 d / 2)
+circle(0 0 1)
