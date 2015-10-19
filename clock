@@ -1,11 +1,15 @@
-circle(0 0 57 / 2)
+#CLOCK DIAMETER
+
+def d = 57
+
+circle(0 0 d / 2)
 (circle(0 0 1)
 
-def outer = 28
+def outer = (d / 2) - 1
 
 #FIVE MINUTE MARKS
 repeat -2 to 10 using i {
-def inner = 23
+def inner = (d / 2) - 5
 def scalar = (i * 30)
 def x = -1 * cos(radians(scalar))
 def y = sin(radians(scalar))
@@ -17,7 +21,7 @@ line(x * inner y * inner x * outer y * outer)
 
 #ONE MINUTE MARKS
 repeat 0 to 60 using i {
-def inner = 26
+def inner = (d / 2) - 3
 def x = cos(radians(i * 6))
 def y = sin(radians(i * 6))
 line(x * inner y * inner x * outer y * outer)
