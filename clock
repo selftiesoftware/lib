@@ -1,10 +1,10 @@
 def d = 157 #CLOCK DIAMETER
 def fiveSize = 8 #FIVE MINUTE MARKS SIZE
 def oneSize = 4 #ONE MINUTE MARKS SIZE
-def textSize = 11 #SIZE OF THE DIGITS
+def textSize = 8 #SIZE OF THE DIGITS
 def innerText = 13 #INWARDS OFFSET OF DIGITS
-def textOffsetX = 2 #ADJUSTMENT OF TEXT X
-def textOffsetY = 2.5 #ADJUSTMENT OF TEXT Y
+def textOffsetX = 1 #ADJUSTMENT OF TEXT X
+def textOffsetY = 1 #ADJUSTMENT OF TEXT Y
 
 ### END PARAMETERS ###
 
