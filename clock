@@ -4,11 +4,14 @@ circle(0 0 57 / 2)
 def outer = 28
 
 #FIVE MINUTE MARKS
-repeat 1 to 13 using i {
+repeat -2 to 10 using i {
 def inner = 23
-def x = cos(radians(i * 30))
-def y = sin(radians(i * 30))
-text(x * inner y * inner 5 i)
+def scalar = (i * 30)
+def x = cos(radians(scalar))
+def y = sin(radians(scalar))
+def tX = -1
+def tY = -1
+text(tX - x * inner - 2 tY - y * inner - 2 5 i + 3)
 line(x * inner y * inner x * outer y * outer)
 }
 
