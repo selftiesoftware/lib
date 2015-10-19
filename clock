@@ -7,7 +7,7 @@ def outer = 28
 repeat -2 to 10 using i {
 def inner = 23
 def scalar = (i * 30)
-def x = cos(radians(scalar))
+def x = -1 * cos(radians(scalar))
 def y = sin(radians(scalar))
 def tX = -1
 def tY = -1
