@@ -1,12 +1,15 @@
 import font
 
 def d = 157 #CLOCK DIAMETER
-def fiveSize = 8 #FIVE MINUTE MARKS SIZE
-def oneSize = 4 #ONE MINUTE MARKS SIZE
-def textSize = 8 #SIZE OF THE DIGITS
-def innerText = 16 #INWARDS OFFSET OF DIGITS
-def textOffsetX = 0 #ADJUSTMENT OF TEXT X
-def textOffsetY = 2.5 #ADJUSTMENT OF TEXT Y
+
+def s = d / 100 #scale factor
+
+def fiveSize = 5 * s #FIVE MINUTE MARKS SIZE
+def oneSize = 2.5 * s #ONE MINUTE MARKS SIZE
+def textSize = 5 * s #SIZE OF THE DIGITS
+def innerText = 10 * s #INWARDS OFFSET OF DIGITS
+def textOffsetX = 0 * s #ADJUSTMENT OF TEXT X
+def textOffsetY = 1.5 * s #ADJUSTMENT OF TEXT Y
 
 ### END PARAMETERS ###
 
@@ -57,3 +60,15 @@ repeat 0 to 60 using i {
 #OUTER AND CENTER CIRCLE
 circle(0 0 d / 2)
 circle(0 0 1)
+
+def s = d / 100
+
+R(-16 * s 5 * s 5 * s)
+E(-12 * s 5 * s 5 * s)
+P(-8 * s 5 * s 5 * s)
+O(-4 * s 5 * s 5 * s)
+C(0 * s 5 * s 5 * s)
+L(4 * s 5 * s 5 * s)
+O(8 * s 5 * s 5 * s)
+C(12 * s 5 * s 5 * s)
+K(16 * s 5 * s 5 * s)
