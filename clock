@@ -1,15 +1,36 @@
+import font
+
 def d = 157 #CLOCK DIAMETER
 def fiveSize = 8 #FIVE MINUTE MARKS SIZE
 def oneSize = 4 #ONE MINUTE MARKS SIZE
 def textSize = 8 #SIZE OF THE DIGITS
-def innerText = 13 #INWARDS OFFSET OF DIGITS
-def textOffsetX = 1 #ADJUSTMENT OF TEXT X
-def textOffsetY = 1 #ADJUSTMENT OF TEXT Y
+def innerText = 16 #INWARDS OFFSET OF DIGITS
+def textOffsetX = 0 #ADJUSTMENT OF TEXT X
+def textOffsetY = 2 #ADJUSTMENT OF TEXT Y
 
 ### END PARAMETERS ###
 
-
 ### START SCRIPT ###
+
+#calculate which digit to write
+def setChar(x as Number y as Number id as Number ) = {
+  if(id < -1) {if(id > -3) {one(x y textSize)}}
+  if(id < 0) {if(id > -2) {two(x y textSize)}}
+  if(id < 1) {if(id > -1) {three(x y textSize)}}
+  if(id < 2) {if(id > 0) {four(x y textSize)}}
+  if(id < 3) {if(id > 1) {five(x y textSize)}}
+  if(id < 4) {if(id > 2) {six(x y textSize)}}
+  if(id < 5) {if(id > 3) {seven(x y textSize)}}
+  if(id < 6) {if(id > 4) {eight(x y textSize)}}
+  if(id < 7) {if(id > 5) {nine(x y textSize)}}
+  if(id < 8) {if(id > 6) {one(x - (textSize / 2) y textSize)
+  zero(x + (textSize / 2) y textSize)}}
+  if(id < 9) {if(id > 7) {one(x - (textSize / 2) y textSize)
+  one(x + (textSize / 2) y textSize)}}
+  if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
+  two(x + (textSize / 2) y textSize)}}
+}
+
 
 def outer = (d / 2) - 1
 def innerFive = (d / 2) - fiveSize
@@ -22,7 +43,8 @@ line(x * innerFive y * innerFive x * outer y * outer)
 #TEXT
 def textX = (-1 - x * (d / 2) - innerText) - textOffsetX
 def textY = (-1 - y * (d / 2) - innerText) - textOffsetY
-text(textX textY textSize i + 3)
+setChar(textX textY i)
+#text(textX textY textSize i + 3)
 }
 #ONE MINUTE MARKS
 repeat 0 to 60 using i {
