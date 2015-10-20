@@ -5,8 +5,8 @@ def A(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
 def mh2 = 1.5 * h
-line(x 0 + y 0 + x + h 3 * h + y)
-line((2 * h) + x 0 + y h + x 3 * h + y)
+line(x 0 + y 0 + x + h hgt + y)
+line((2 * h) + x 0 + y h + x hgt + y)
 line(mh + x h / 0.7 + y mh2 + x h / 0.7 + y)
 }
 
@@ -15,9 +15,10 @@ def B(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
 def mh2 = 1.5 * h
-line(x 0 + y 0 + x + h 3 * h + y)
-line((2 * h) + x 0 + y h + x 3 * h + y)
-line(mh + x h / 0.7 + y mh2 + x h / 0.7 + y)
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y h + x hgt + y)
+line(x h / 0.7 + y h + x h / 0.7 + y)
+line(x y h + x y)
 }
 
 #test
