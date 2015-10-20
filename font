@@ -31,7 +31,20 @@ arc(h + x h / 0.5 + y h -3.14 -1.3)
 arc(h + x h + y h 1.3 3.14)
 }
 
+#D
+def D(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y mh + x hgt + y)
+line(x y mh + x y)
+line(mh + x + h hgt * 0.35 + y mh + x + h hgt * 0.65 + y)
+arc(mh + x h / 0.5 + y h -1.55 0)
+arc(mh + x h + y h 0 1.55)
+}
+
 #test
 A(2 0 8)
 B(10 0 8)
 C(16 0 8)
+D(22 0 8)
