@@ -207,6 +207,13 @@ line((x) hgt + (y)  h + x y)
 line((h + x) hgt + (y) x y)
 }
 
+def Y(x as Number y as Number hgt as Number) = {
+def h = hgt / 2
+line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
+line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
+line(((h / 2) + x) (y) ((h / 2) + x)(hgt / 2) + y)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -232,3 +239,4 @@ U(128 7 8)
 V(135 7 8)
 W(141 7 8)
 X(148 7 8)
+Y(154 7 8)
