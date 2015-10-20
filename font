@@ -1,8 +1,14 @@
 #REPOCAD single stroke font
 
-def char (x as Number y as Number char as String) = {
- 
+def char (x as Number y as Number height as Number char as String) = {
+def h = height / 3 
  #A
-line(0 0 20 0)
+line(-1 * h 0 0 3 * h)
+line(1 * h 0 0 3 * h)
+line(-0.5 * h h / 0.7 0.5 * h h / 0.7)
+
+
+#B
 
 }
+char(0 0 8 "test")
