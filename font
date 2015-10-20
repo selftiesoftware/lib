@@ -1,12 +1,5 @@
 #REPOCAD single stroke font
 
-def A(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) (y) ((h / 2) + x) hgt + y)
-line((h + x) (y) ((h / 2) + x) hgt + y)
-line(((h / 1.3) + x) ((hgt / 2) + y) ((h / 4) + x) (hgt / 2) + y)
-}
-
 def B(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -17,200 +10,6 @@ line(x mh2 + y mh + x mh2 + y)
 line(x y mh + x y)
 arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 1.55)
 arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
-}
-
-def C(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line((x) ((hgt * 0.35) + y) (x) (hgt * 0.65) + y)
-arc((h + x) (h / 0.5) + y h -3.14 -1.3)
-arc(h + x h + y h 1.3 3.14)
-}
-
-def D(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x y mh + x y)
-line((mh + x + h) ((hgt * 0.35) + y) (mh + x + h) (hgt * 0.65) + y)
-arc((mh + x) (h / 0.5) + y h -1.55 0)
-arc(mh + x h + y h 0 1.55)
-}
-
-def E(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x hgt + y h + x hgt + y)
-line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
-line(x y h + x y)
-}
-
-def F(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y h + x hgt + y)
-line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
-}
-
-def G(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) ((hgt / 1.4) + y) (x) r + y)
-arc((r + x) (hgt / 1.4) + y r -3.14 -0.4)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 2) + y) (x + r * 2) r + y)
-line((x + r * 2) ((hgt / 2) + y) (r + x) (hgt / 2) + y)
-}
-
-def H(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) (hgt / 2) + (y) (h + x) (hgt / 2) + y)
-}
-
-def I(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-}
-
-def J(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) (hgt + y) (x + r * 2) r + y)
-}
-
-def K(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line((x) (hgt / 2) + (y) (h + x) hgt + y)
-line((x) (hgt / 2) + (y) (h + x) y)
-}
-
-def L(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x y h + x y)
-}
-
-def M(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-}
-
-def N(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) hgt + (y) (h + x) y)
-}
-
-def O(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-line((x) ((hgt / 1.3) + y) (x) r + y)
-arc((r + x) (hgt / 1.28) + y r -3.14 0)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.3) + y) (x + r * 2) r + y)
-}
-
-def P(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x mh2 + y mh + x mh2 + y)
-arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
-}
-
-def Q(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) ((hgt / 1.4) + y) (x) r + y)
-arc((r + x) (hgt / 1.4) + y r -3.14 0)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
-line((h + x) ((h / 1.2) + y) ((h * 1.4) + x) y) 
-}
-
-
-def R(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x mh2 + y mh + x mh2 + y)
-line((mh + x) (mh2 + y) ((h * 1.2) + x) y)
-arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
-}
-
-def S(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-arc((r + x) (hgt / 1.3) + y r -3.94 0)
-arc(r + x r + y r -1 3.4)
-line(((h / 4.5) + x) ((h * 1.8) + y) ((h * 1.1) + x) ((h * 1.3) + y))
-}
-
-def T(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 1.4 * h
-line(((mh / 2) + x) (y) (mh / 2) + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-}
-
-def U(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) (hgt + y) (x) r + y)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) (hgt + y) (x + r * 2) r + y)
-}
-
-def V(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y) ((h / 2) + x) y)
-line((h + x) hgt + (y) ((h / 2) + x) y)
-}
-def W(x as Number y as Number hgt as Number) = {
-def left = hgt / 6
-def mid = hgt / 3
-def right = hgt / 2
-line(x hgt + y left + x y)
-line(mid + x  hgt + y left + x y)
-line(mid + x hgt + y right + x y)
-line((hgt / 1.5) + x hgt + y right + x y)
-}
-
-def X(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y)  h + x y)
-line((h + x) hgt + (y) x y)
-}
-
-def Y(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line(((h / 2) + x) (y) ((h / 2) + x)(hgt / 2) + y)
-}
-
-def Z(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x + h hgt + y)
-line(x hgt + y h + x hgt + y)
-line(x y h + x y)
 }
 
 def one(x as Number y as Number hgt as Number) = {
@@ -237,47 +36,42 @@ arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 2.35)
 arc((mh + x) (h / 0.44) + y h / 1.4 -2.35 1.55)
 }
 
-#test
-A(3 7 8)
-B(10 7 8)
-C(16 7 8)
-D(22 7 8)
-E(29 7 8)
-F(35 7 8)
-G(40 7 8)
-H(47 7 8)
-I(54 7 8)
-J(56 7 8)
-K(63 7 8)
-L(70 7 8)
-M(75 7 8)
-N(82 7 8)
-O(89 7 8)
-P(96 7 8)
-Q(102 7 8)
-R(110 7 8)
-S(116 7 8)
-T(122 7 8)
-U(128 7 8)
-V(135 7 8)
-W(141 7 8)
-X(148 7 8)
-Y(154 7 8)
-Z(160 7 8)
+def four(x as Number y as Number hgt as Number) = {
+def h = hgt / 2
+line((h + x) (y) h + x hgt + y)
+line((h + x) hgt + (y) ((h / 5) + x) h + y)
+line(((h / 4) + x) (h + y) h + x h + y)
+}
+
+def five(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+def mh2 = h / 0.65
+arc((mh + x) (h / 1.3) + y h / 1.3 -1.57 1.57)
+line(x y mh + x y)
+line(x mh2 + y mh + x mh2 + y)
+line(x hgt + y h + x hgt + y)
+line((x) (hgt + y) (x) (hgt / 2) + y)
+}
+
+def six(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def r = h * 0.7
+line((x) ((hgt / 1.3) + y) (x) r + y)
+arc((r + x) (hgt / 1.28) + y r -3.14 0)
+arc(r + x r + y r 1.57 3.14)
+arc(((h * 0.7) + x) (h / 1.3) + y h / 1.3 -2.3 1.57)
+}
+
+B(0 30 7)
 
 one(2 -5 8)
 two(8 -5 8)
 three(15 -5 8)
-
-R(3 50 15)
-E(13 50 15)
-P(23 50 15)
-O(33 50 15)
-C(43 50 15)
-A(53 50 15)
-D(63 50 15)
-
-F(80 50 15)
-O(90 50 15)
-N(100 50 15)
-T(110 50 15)
+four(20 -5 8)
+five(27 -5 8)
+six(33 -5 8)
+four(39 -5 8)
+four(45 -5 8)
+four(52 -5 8)
+four(59 -5 8)
