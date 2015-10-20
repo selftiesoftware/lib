@@ -1,7 +1,7 @@
 #REPOCAD single stroke font
 
 def char (x as Number y as Number height as Number char as String) = {
-def h = height / 3 
+def h = height / 3
  #A
 line(-1 * h 0 0 3 * h)
 line(1 * h 0 0 3 * h)
