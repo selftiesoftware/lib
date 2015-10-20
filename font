@@ -141,6 +141,16 @@ line(x mh2 + y mh + x mh2 + y)
 arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
 }
 
+def Q(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def r = h * 0.8
+line((x) ((hgt / 1.4) + y) (x) r + y)
+arc((r + x) (hgt / 1.4) + y r -3.14 0)
+arc(r + x r + y r 0 3.14)
+line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
+line((h + x) ((h / 1.2) + y) ((h * 1.4) + x) y) 
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -158,3 +168,4 @@ M(75 7 8)
 N(82 7 8)
 O(89 7 8)
 P(96 7 8)
+Q(102 7 8)
