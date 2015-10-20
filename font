@@ -131,6 +131,16 @@ arc(r + x r + y r 0 3.14)
 line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
 }
 
+def P(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+def mh2 = h / 0.65
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y mh + x hgt + y)
+line(x mh2 + y mh + x mh2 + y)
+arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -147,3 +157,4 @@ L(70 7 8)
 M(75 7 8)
 N(82 7 8)
 O(89 7 8)
+P(96 7 8)
