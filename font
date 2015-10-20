@@ -186,6 +186,12 @@ arc(r + x r + y r 0 3.14)
 line((x + r * 2) (hgt + y) (x + r * 2) r + y)
 }
 
+def V(x as Number y as Number hgt as Number) = {
+def h = hgt / 2
+line((x) hgt + (y) ((h / 2) + x) y)
+line((h + x) hgt + (y) ((h / 2) + x) y)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -208,3 +214,4 @@ R(110 7 8)
 S(116 7 8)
 T(122 7 8)
 U(128 7 8)
+V(135 7 8)
