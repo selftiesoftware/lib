@@ -100,6 +100,12 @@ line((x) (hgt / 2) + (y) (h + x) hgt + y)
 line((x) (hgt / 2) + (y) (h + x) y)
 }
 
+def L(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x y x hgt + y)
+line(x y h + x y)
+}
 
 #test
 A(2 7 8)
@@ -113,3 +119,4 @@ H(46 7 8)
 I(53 7 8)
 J(56 7 8)
 K(63 7 8)
+L(70 7 8)
