@@ -67,10 +67,10 @@ line((x) (h / 0.65) + (y) (mh + x) (h / 0.65) + y)
 def G(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.63 * hgt
-line(x hgt * 0.35 + y 0 + x hgt * 0.65 + y)
-arc(h + x h / 0.5 + y h -3.14 -0.4)
+line((x) ((hgt * 0.35) + y) (x) (hgt * 0.65) + y)
+arc((h + x) (h / 0.5) + y h -3.14 -0.4)
 arc(h + x h + y h 0 3.14)
-line(h + x h / 0.65 + y mh + x h / 0.65 + y)
+line((h + x) ((h / 0.65) + y) (mh + x) (h / 0.65) + y)
 }
 
 #test
@@ -80,4 +80,4 @@ C(16 3 8)
 D(22 4 8)
 E(28 5 8)
 F(34 6 8)
-#G(38 7 8)
+G(38 7 8)
