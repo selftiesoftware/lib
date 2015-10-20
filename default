@@ -1,8 +1,10 @@
-line(0 210 100 210)
+import font
 
-text(0 215 7 "hello world!")
+line(0 180 100 180)
+
+text(0 185 7 "hello world!")
 def myValue = 10
         
-repeat 0 to 20 using i {
-  line(0 i * myValue 180 i * myValue) 
+repeat 0 to 17 using i {
+  line(0 i * myValue 170 i * myValue) 
 }
