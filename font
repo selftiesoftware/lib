@@ -115,6 +115,13 @@ line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
 line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
 }
 
+def N(x as Number y as Number hgt as Number) = {
+def h = hgt / 2
+line(x y x hgt + y)
+line(h + x y h + x hgt + y)
+line((x) hgt + (y) (h + x) y)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -129,3 +136,4 @@ J(56 7 8)
 K(63 7 8)
 L(70 7 8)
 M(75 7 8)
+N(82 7 8)
