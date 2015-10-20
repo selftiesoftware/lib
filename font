@@ -115,11 +115,11 @@ line((x) hgt + (y) (h + x) y)
 
 def O(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
-def r = h * 0.8
-line((x) ((hgt / 1.4) + y) (x) r + y)
-arc((r + x) (hgt / 1.4) + y r -3.14 0)
+def r = h * 0.7
+line((x) ((hgt / 1.3) + y) (x) r + y)
+arc((r + x) (hgt / 1.28) + y r -3.14 0)
 arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
+line((x + r * 2) ((hgt / 1.3) + y) (x + r * 2) r + y)
 }
 
 def P(x as Number y as Number hgt as Number) = {
