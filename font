@@ -151,6 +151,18 @@ line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
 line((h + x) ((h / 1.2) + y) ((h * 1.4) + x) y) 
 }
 
+
+def R(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+def mh2 = h / 0.65
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y mh + x hgt + y)
+line(x mh2 + y mh + x mh2 + y)
+line((mh + x) (mh2 + y) ((h * 1.2) + x) y)
+arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -169,3 +181,4 @@ N(82 7 8)
 O(89 7 8)
 P(96 7 8)
 Q(102 7 8)
+R(110 7 8)
