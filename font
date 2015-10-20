@@ -3,25 +3,23 @@
 #A
 def A(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
-def hh = -1 * h
-def mh = -0.5 * h
-def mh2 = 0.5 * h
-line(hh + x 0 + y 0 + x 3 * h + y)
-line(h + x 0 + y 0 + x 3 * h + y)
+def mh = 0.5 * h
+def mh2 = 1.5 * h
+line(x 0 + y 0 + x + h 3 * h + y)
+line((2 * h) + x 0 + y h + x 3 * h + y)
 line(mh + x h / 0.7 + y mh2 + x h / 0.7 + y)
 }
 
 #B
 def B(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
-def hh = -1 * h
-def mh = -0.5 * h
-def mh2 = 0.5 * h
-line(hh + x 0 + y 0 + x 3 * h + y)
-line(h + x 0 + y 0 + x 3 * h + y)
+def mh = 0.5 * h
+def mh2 = 1.5 * h
+line(x 0 + y 0 + x + h 3 * h + y)
+line((2 * h) + x 0 + y h + x 3 * h + y)
 line(mh + x h / 0.7 + y mh2 + x h / 0.7 + y)
 }
 
 #test
-A(0 0 8)
+A(2 0 8)
 B(10 0 8)
