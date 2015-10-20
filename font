@@ -22,6 +22,16 @@ arc(mh + x h / 1.3 + y h / 1.3 -1.55 1.55)
 arc(mh + x h / 0.44 + y h / 1.4 -1.55 1.55)
 }
 
+#C
+def C(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x hgt * 0.35 + y 0 + x hgt * 0.65 + y)
+arc(h + x h / 0.5 + y h -3.14 -1.3)
+arc(h + x h + y h 1.3 3.14)
+}
+
 #test
 A(2 0 8)
 B(10 0 8)
+C(16 0 8)
