@@ -268,8 +268,8 @@ def seven(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 1.4 * h
 line(x hgt + y mh + x hgt + y)
-arc((4.9 * h) + x y 12 3.14 3.78)
-arc(((mh / 2) + x) y + hgt 1.8 0 0.5)
+arc((4.9 * h) + x y 4.5 * h 3.14 3.78)
+arc(((mh / 2) + x) y + hgt 0.224 * hgt 0 0.5)
 }
 
 def eight(x as Number y as Number hgt as Number) = {
