@@ -1,12 +1,10 @@
 #REPOCAD single stroke font
 
 def A(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = 1.5 * h
-line(x 0 + y 0 + x + h hgt + y)
-line((2 * h) + x 0 + y h + x hgt + y)
-line((mh + x) ((h / 0.65) + y) (mh2 + x) (h / 0.65) + y)
+def h = hgt / 2
+line((x) (y) ((h / 2) + x) hgt + y)
+line((h + x) (y) ((h / 2) + x) hgt + y)
+line(((h / 1.3) + x) ((hgt / 2) + y) ((h / 4) + x) (hgt / 2) + y)
 }
 
 def B(x as Number y as Number hgt as Number) = {
@@ -231,8 +229,16 @@ arc(r + x y r 3.14 3.8)
 line(x y x + r * 2 y)
 }
 
+def three(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+def mh2 = h / 0.65
+arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 2.35)
+arc((mh + x) (h / 0.44) + y h / 1.4 -2.35 1.55)
+}
+
 #test
-A(2 7 8)
+A(3 7 8)
 B(10 7 8)
 C(16 7 8)
 D(22 7 8)
@@ -261,3 +267,17 @@ Z(160 7 8)
 
 one(2 -5 8)
 two(8 -5 8)
+three(15 -5 8)
+
+R(3 50 15)
+E(13 50 15)
+P(23 50 15)
+O(33 50 15)
+C(43 50 15)
+A(53 50 15)
+D(63 50 15)
+
+F(80 50 15)
+O(90 50 15)
+N(100 50 15)
+T(110 50 15)
