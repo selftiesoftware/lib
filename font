@@ -7,7 +7,7 @@ def mh = 0.5 * h
 def mh2 = 1.5 * h
 line(x 0 + y 0 + x + h hgt + y)
 line((2 * h) + x 0 + y h + x hgt + y)
-line(mh + x h / 0.65 + y mh2 + x h / 0.65 + y)
+line((mh + x) ((h / 0.65) + y) (mh2 + x) (h / 0.65) + y)
 }
 
 #B
@@ -65,20 +65,18 @@ line(x h / 0.65 + y mh + x h / 0.65 + y)
 #G
 def G(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
-def mh = 0.5 * h
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x y mh + x y)
-line(mh + x + h hgt * 0.35 + y mh + x + h hgt * 0.65 + y)
-arc(mh + x h / 0.5 + y h -1.55 0)
-arc(mh + x h + y h 0 1.55)
+def mh = 0.63 * hgt
+line(x hgt * 0.35 + y 0 + x hgt * 0.65 + y)
+arc(h + x h / 0.5 + y h -3.14 -0.4)
+arc(h + x h + y h 0 3.14)
+line(h + x h / 0.65 + y mh + x h / 0.65 + y)
 }
 
 #test
-A(2 0 8)
-B(10 0 8)
-C(16 0 8)
-D(22 0 8)
-E(28 0 8)
-F(34 0 8)
-G(40 0 8)
+A(2 -10 8)
+B(10 10 8)
+#C(16 20 8)
+#D(22 30 8)
+#E(28 40 8)
+#F(34 50 8)
+#G(38 60 8)
