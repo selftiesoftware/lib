@@ -6,7 +6,7 @@ def oneSize = 4 #ONE MINUTE MARKS SIZE
 def textSize = 8 #SIZE OF THE DIGITS
 def innerText = 16 #INWARDS OFFSET OF DIGITS
 def textOffsetX = 0 #ADJUSTMENT OF TEXT X
-def textOffsetY = 2 #ADJUSTMENT OF TEXT Y
+def textOffsetY = 2.5 #ADJUSTMENT OF TEXT Y
 
 ### END PARAMETERS ###
 
