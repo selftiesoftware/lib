@@ -48,9 +48,9 @@ arc(mh + x h + y h 0 1.55)
 def E(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
-line(x 0 + y 0 + x hgt + y)
+line(x y x hgt + y)
 line(x hgt + y h + x hgt + y)
-line((x) (h / 0.65) + (y) (mh + x) (h / 0.65) + y)
+line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
 line(x y h + x y)
 }
 
@@ -60,7 +60,7 @@ def h = hgt / 3
 def mh = 0.5 * h
 line(x 0 + y 0 + x hgt + y)
 line(x hgt + y h + x hgt + y)
-line((x) (h / 0.65) + (y) (mh + x) (h / 0.65) + y)
+line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
 }
 
 #G
@@ -74,6 +74,13 @@ line((x + r * 2) ((hgt / 2) + y) (x + r * 2) r + y)
 line((x + r * 2) ((hgt / 2) + y) (r + x) (hgt / 2) + y)
 }
 
+def H(x as Number y as Number hgt as Number) = {
+def h = hgt / 2
+line(x y x hgt + y)
+line(h + x y h + x hgt + y)
+line((x) (hgt / 2) + (y) (h + x) (hgt / 2) + y)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -82,3 +89,4 @@ D(22 7 8)
 E(28 7 8)
 F(34 7 8)
 G(39 7 8)
+H(46 7 8)
