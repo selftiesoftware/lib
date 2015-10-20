@@ -1,6 +1,5 @@
 #REPOCAD single stroke font
 
-#A
 def A(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -10,7 +9,6 @@ line((2 * h) + x 0 + y h + x hgt + y)
 line((mh + x) ((h / 0.65) + y) (mh2 + x) (h / 0.65) + y)
 }
 
-#B
 def B(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -23,7 +21,6 @@ arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 1.55)
 arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
 }
 
-#C
 def C(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -32,7 +29,6 @@ arc((h + x) (h / 0.5) + y h -3.14 -1.3)
 arc(h + x h + y h 1.3 3.14)
 }
 
-#D
 def D(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -44,7 +40,6 @@ arc((mh + x) (h / 0.5) + y h -1.55 0)
 arc(mh + x h + y h 0 1.55)
 }
 
-#E
 def E(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -54,7 +49,6 @@ line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
 line(x y h + x y)
 }
 
-#F
 def F(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def mh = 0.5 * h
@@ -63,7 +57,6 @@ line(x hgt + y h + x hgt + y)
 line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
 }
 
-#G
 def G(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def r = h * 0.8
@@ -214,6 +207,14 @@ line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
 line(((h / 2) + x) (y) ((h / 2) + x)(hgt / 2) + y)
 }
 
+def Z(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x y x + h hgt + y)
+line(x hgt + y h + x hgt + y)
+line(x y h + x y)
+}
+
 #test
 A(2 7 8)
 B(10 7 8)
@@ -240,3 +241,4 @@ V(135 7 8)
 W(141 7 8)
 X(148 7 8)
 Y(154 7 8)
+Z(160 7 8)
