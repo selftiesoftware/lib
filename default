@@ -9,6 +9,10 @@ repeat 0 to 17 using i {
   line(0 i * myValue 170 i * myValue) 
 }
 
+#these letters are written 
+#by calling functions in the "font" script
+#which is imported in line one
+
 W(0 162 5)
 E(5 162 5)
 L(10 162 5)
@@ -16,6 +20,7 @@ C(15 162 5)
 O(20 162 5)
 M(25 162 5)
 E(30 162 5)
+
 T(40 162 5)
 O(45 162 5)
 
