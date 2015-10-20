@@ -43,8 +43,42 @@ arc(mh + x h / 0.5 + y h -1.55 0)
 arc(mh + x h + y h 0 1.55)
 }
 
+#E
+def E(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y h + x hgt + y)
+line(x h / 0.65 + y mh + x h / 0.65 + y)
+line(x y h + x y)
+}
+
+#F
+def F(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y h + x hgt + y)
+line(x h / 0.65 + y mh + x h / 0.65 + y)
+}
+
+#G
+def G(x as Number y as Number hgt as Number) = {
+def h = hgt / 3
+def mh = 0.5 * h
+line(x 0 + y 0 + x hgt + y)
+line(x hgt + y mh + x hgt + y)
+line(x y mh + x y)
+line(mh + x + h hgt * 0.35 + y mh + x + h hgt * 0.65 + y)
+arc(mh + x h / 0.5 + y h -1.55 0)
+arc(mh + x h + y h 0 1.55)
+}
+
 #test
 A(2 0 8)
 B(10 0 8)
 C(16 0 8)
 D(22 0 8)
+E(28 0 8)
+F(34 0 8)
+G(40 0 8)
