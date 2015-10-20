@@ -3,7 +3,7 @@
 #A
 def A(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
-line(-1 * h + x 0 + y 0 + x 3 * h + y)
+line(-1 * h 0 0 3 * h)
 line(1 * h 0 0 3 * h)
 line(-0.5 * h h / 0.7 0.5 * h h / 0.7)
 }
@@ -17,5 +17,5 @@ line(-0.5 * h h / 0.7 0.5 * h h / 0.7)
 }
 
 #test
-A(0 0 8)
+A(5 0 8)
 #A(10 0 8)
