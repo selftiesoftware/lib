@@ -1,0 +1,8 @@
+#REPOCAD single stroke font
+
+def char (x as Number y as Number char as String) = {
+ 
+ #A
+line(0 0 20 0)
+
+}
