@@ -284,7 +284,7 @@ def nine(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def r = h * 0.7
 line(((hgt / 2.15) + x) ((hgt / 1.3) + y) ((hgt / 2.15) + x) r + y)
-arc((r + x) (hgt / 1.28) + y r 2.7 6.28)
+arc((r + x) (hgt / 1.28) + y r -2.7 6.28)
 arc(r + x r + y r 0 3.14)
 }
 
