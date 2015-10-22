@@ -17,8 +17,8 @@ def textOffsetY = 1.5 * s #ADJUSTMENT OF TEXT Y
 
 #calculate which digit to write
 def setChar(x as Number y as Number id as Number ) = {
-  if(id < -1) {if(id > -3) {one(x y textSize)}}
-  if(id < 0) {if(id > -2) {two(x y textSize)}}
+  if(id < -1) {if(id > -3) {one(x y textSize) five(x + 5 y + 8 2)}}
+  if(id < 0) {if(id > -2) {two(x y textSize) one(x + 7 y + 5 2) zero(x + 9 y + 5 2)}}
   if(id < 1) {if(id > -1) {three(x y textSize)}}
   if(id < 2) {if(id > 0) {four(x y textSize)}}
   if(id < 3) {if(id > 1) {five(x y textSize)}}
@@ -47,7 +47,9 @@ repeat -2 to 10 using i {
   #TEXT
   def textX = (-1 - x * (d / 2) - innerText) - textOffsetX
   def textY = (-1 - y * (d / 2) - innerText) - textOffsetY
+  
   setChar(textX textY i)
+  
 }
 
 #ONE MINUTE MARKS
@@ -59,6 +61,7 @@ repeat 0 to 60 using i {
 
 #OUTER AND CENTER CIRCLE
 circle(0 0 d / 2)
+circle(0 0 (d / 2) + 4)
 circle(0 0 1)
 
 def s = d / 100
