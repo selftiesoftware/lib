@@ -224,7 +224,7 @@ line(((h / 4) + x) (y) (h / 1.3) + x y)
 def two(x as Number y as Number hgt as Number) = {
 def h = hgt / 3
 def r = h * 0.7
-arc((r + x) (hgt / 1.3) + y r -3.2 0.95)
+arc((r + x) (hgt / 1.3) + y r -3.2 0.90)
 line(((h * 1.27) + x) ((h * 1.9) + y) ((h / 8) + x) ((h * 0.4) + y))
 arc(r + x y r 3.14 3.8)
 line(x y x + r * 2 y)
