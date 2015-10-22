@@ -1,0 +1,105 @@
+import font
+
+def h = 2.5
+def s = 2.5
+
+def y = 0
+def rH = -5
+
+#SWITCHES PANEL
+def x = 0
+
+B(x y h) O(x y + rH h)  def x = x + s
+A(x y h) F(x y + rH h) def x = x + s 
+T(x y h) F(x y + rH h) def x = x + s
+T(x y h) def x = x + s
+
+def x = x + 10
+
+S(x y h) def x = x + s 
+T(x y h) O(x y + rH h) def x = x + s
+R(x y h) F(x y + rH h) def x = x + s
+O(x y h) F(x y + rH h) def x = x + s
+B(x y h) def x = x + s
+E(x y h) def x = x + s
+
+def x = x + 10
+
+P(x y h) def x = x + s 
+O(x y h) O(x y + rH h) def x = x + s
+S(x y h) F(x y + rH h) def x = x + s F(x y + rH h) def x = x + s
+L(x y h)  def x = x + s
+G(x y h) def x = x + s
+T(x y h) def x = x + s
+
+def x = x + 10
+
+def x = 0
+def y = 40
+
+def h = 4
+def s = 3.4
+
+E(x y h) def x = x + s 
+M(x y h) def x = x + s
+P(x y h) def x = x + s
+T(x y h) def x = x + s
+Y(x y h) def x = x + s
+
+def x = x + 2
+
+W(x y h) def x = x + s
+E(x y h) def x = x + s 
+I(x y h) def x = x + s
+G(x y h) def x = x + s
+H(x y h) def x = x + s
+T(x y h) def x = x + s
+
+def x = x + 6
+
+two(x y h) def x = x + s
+four(x y h) def x = x + s 
+zero(x y h) def x = x + s
+K(x y h) def x = x + s
+G(x y h) def x = x + s
+
+def x = 0
+def y = 32
+
+U(x y h) def x = x + s 
+S(x y h) def x = x + s
+E(x y h) def x = x + s
+F(x y h) def x = x + s
+U(x y h) def x = x + s
+L(x y h) def x = x + s
+
+def x = x + 2
+
+L(x y h) def x = x + s
+O(x y h) def x = x + s 
+A(x y h) def x = x + s
+D(x y h) def x = x + s
+
+def x = x + 9.5
+
+two(x y h) def x = x + s
+one(x y h) def x = x + s 
+zero(x y h) def x = x + s
+K(x y h) def x = x + s
+G(x y h) def x = x + s
+
+def x = 0
+def y = 24
+
+M(x y h) def x = x + s 
+T(x y h) def x = x + s
+O(x y h) def x = x + s
+W(x y h) def x = x + s
+
+def x = x + 32
+
+four(x y h) def x = x + s
+five(x y h) def x = x + s 
+zero(x y h) def x = x + s
+K(x y h) def x = x + s
+G(x y h) def x = x + s
