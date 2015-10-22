@@ -22,7 +22,7 @@ def setChar(x as Number y as Number id as Number ) = {
   if(id < 1) {if(id > -1) {three(x y textSize) one(x + 8 y + 1 2) five(x + 10 y + 1 2)}}
   if(id < 2) {if(id > 0) {four(x y textSize) two(x + 7 y - 3 2) zero(x + 9 y - 3 2)}}
   if(id < 3) {if(id > 1) {five(x y textSize) two(x + 5 y - 6 2) five(x + 7 y - 6 2)}}
-  if(id < 4) {if(id > 2) {six(x y textSize) three(x y - 8 2) zero(x + 2 y - 8 2)}}
+  if(id < 4) {if(id > 2) {six(x y textSize) three(x - 0.5 y - 8 2) zero(x + 1.5 y - 8 2)}}
   if(id < 5) {if(id > 3) {seven(x y textSize) three(x - 4 y - 7 2) five(x - 2 y - 7 2)}}
   if(id < 6) {if(id > 4) {eight(x y textSize) four(x - 8 y - 4 2) zero(x - 6 y - 4 2)}}
   if(id < 7) {if(id > 5) {nine(x y textSize) four(x - 9 y + 1 2) five(x - 7 y + 1 2)}}
@@ -32,7 +32,7 @@ def setChar(x as Number y as Number id as Number ) = {
   five(x - 4 y + 8 2) five(x - 2 y + 8 2)
   one(x + (textSize / 2) y textSize)}}
   if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
-  six(x - 1 y + 9 2) zero(x + 1 y + 9 2)
+  six(x - 0.5 y + 9 2) zero(x + 1.5 y + 9 2)
   two(x + (textSize / 2) y textSize)}}
 }
 
