@@ -1,0 +1,7 @@
+line(0 180 180 180)
+text(0 185 6 "HELLO WORLD")
+
+repeat 0 to 15 using i {
+  def spacing = 10 * i
+  line(0 spacing 180 spacing)
+}
