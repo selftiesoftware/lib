@@ -1,6 +1,6 @@
 import font
 
-def d = 64 #CLOCK DIAMETER
+def d = 44 #CLOCK DIAMETER
 
 def s = d / 100 #scale factor
 
@@ -12,18 +12,18 @@ def textOffsetX = -0.4 * s #ADJUSTMENT OF TEXT X
 def textOffsetY = 1.8 * s #ADJUSTMENT OF TEXT Y
 
 #SIZES FOR 2 1/4 INSTRUMENT CUTOUTS
-#def r = 57.15 / 2
-#def a = 60.325 / 2
-#def b = 66.675 / 2
-#def h = 4.318 / 2
-#def c = 23.6
+def r = 57.15 / 2
+def a = 60.325 / 2
+def b = 66.675 / 2
+def h = 4.318 / 2
+def c = 23.6
 
 #SIZES FOR 3 1/8 INSTRUMENT CUTOUTS
-def r = 79.375 / 2
-def a = 82.75 / 2
-def b = 88.9 / 2
-def h = 4.318 / 2
-def c = 31.4
+#def r = 79.375 / 2
+#def a = 82.75 / 2
+#def b = 88.9 / 2
+#def h = 4.318 / 2
+#def c = 31.4
 
 #helping lines for hole cutouts
 #circle(0 0 b)
