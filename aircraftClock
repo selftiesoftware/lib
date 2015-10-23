@@ -11,10 +11,6 @@ def innerText = 15 * s #INWARDS OFFSET OF DIGITS
 def textOffsetX = -0.4 * s #ADJUSTMENT OF TEXT X
 def textOffsetY = 1.8 * s #ADJUSTMENT OF TEXT Y
 
-### END PARAMETERS ###
-
-### START SCRIPT ###
-
 #SIZES FOR 2 1/4 INSTRUMENT CUTOUTS
 #def r = 57.15 / 2
 #def a = 60.325 / 2
@@ -29,14 +25,21 @@ def b = 88.9 / 2
 def h = 4.318 / 2
 def c = 31.4
 
+#helping lines for hole cutouts
+#circle(0 0 b)
+#line(-1 * a a a -1 * a) # diagonal
+
+
+### END PARAMETERS ###
+
+
+
+### START SCRIPT ###
+
 line(-1 * a -1 * a -1 * a a)
 line(a -1 * a a a)
 line(-1 * a a a a)
 line(-1 * a -1 * a  a -1 * a)
-
-#helping lines for hole cutouts
-#circle(0 0 b)
-#line(-1 * a a a -1 * a) # diagonal
 
 #HOLES
 circle(-1 * c c h)
@@ -60,14 +63,14 @@ def setChar(x as Number y as Number id as Number ) = {
   if(id < 4) {if(id > 2) {six(x y textSize) three(x - (0.01 * d) y - (0.14 * d) 2) zero(x + 1.5 y - (0.14 * d) 2)}}
   if(id < 5) {if(id > 3) {seven(x y textSize) three(x - (0.1 * d) y - (0.12 * d) 2) five(x - (0.07 * d) y - (0.12 * d) 2)}}
   if(id < 6) {if(id > 4) {eight(x y textSize) four(x - (0.16 * d) y - (0.06 * d) 2) zero(x - (0.13 * d) y - (0.06 * d) 2)}}
-  if(id < 7) {if(id > 5) {nine(x y textSize) four(x - (0.1 * d) y + (0.1 * d) 2) five(x - (0.1 * d) y + (0.1 * d) 2)}}
+  if(id < 7) {if(id > 5) {nine(x y textSize) four(x - (0.18 * d) y + (0.02 * d) 2) five(x - (0.15 * d) y + (0.02 * d) 2)}}
   if(id < 8) {if(id > 6) {one(x - (textSize / 2) y textSize)
-  zero(x + (textSize / 2) y textSize) five(x - (0.1 * d) y + (0.1 * d) 2) zero(x - 6 y + 5 2) }}
+  zero(x + (textSize / 2) y textSize) five(x - (0.16 * d) y + (0.1 * d) 2) zero(x - (0.13 * d) y + (0.1 * d) 2) }}
   if(id < 9) {if(id > 7) {one(x - (textSize / 2) y textSize)
-  five(x - (0.1 * d) y + (0.1 * d) 2) five(x - (0.1 * d) y + (0.1 * d) 2)
+  five(x - (0.1 * d) y + (0.16 * d) 2) five(x - (0.07 * d) y + (0.16 * d) 2)
   one(x + (textSize / 2) y textSize)}}
   if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
-  six(x - (0.1 * d) y + (0.1 * d) 2) zero(x + (0.1 * d) y + (0.1 * d) 2)
+  six(x - (0.015 * d) y + (0.18 * d) 2) zero(x + (0.02 * d) y + (0.18 * d) 2)
   two(x + (textSize / 2) y textSize)}}
 }
 
@@ -104,17 +107,19 @@ O(0 * s 12 * s 5 * s)
 C(4 * s 12 * s 5 * s)
 K(8 * s 12 * s 5 * s)
 
+def s2 = s * 2.25
+
 #hour hand
-line(-3 0.5 10 1.6)
-line(-3 -0.5 10 -1.6)
-line(10 1.6 13 0)
-line(10 -1.6 13 0)
+line(-3 * s2 0.5 * s2 10 * s2 1.6 * s2 )
+line(-3 * s2 -0.5 * s2 10 * s2 -1.6 * s2 )
+line(10 * s2 1.6 * s2 13 * s2 0)
+line(10 * s2 -1.6 * s2 13 * s2 0)
 #minute hand
-line(0.5 0.5 -9 10.7)
-line(-0.5 -0.5 -10.5 9.5)
-line(-9 10.7 -14 14)
-line(-10.5 9.5 -14 14)
+line(0.5 * s2 0.5 * s2 -9 * s2 10.7 * s2)
+line(-0.5 * s2 -0.5  * s2 -10.5  * s2 9.5  * s2)
+line(-9 * s2 10.7  * s2 -14  * s2 14  * s2)
+line(-10.5 * s2 9.5  * s2 -14  * s2 14  * s2)
 #second hand
-line(-2.5 -3 15 14)
-line(-3 -2.5 14.5 14.7)
-line(-2.5 -3 -3 -2.5)
+line(-2.5 * s2 -3 * s2 15 * s2 14 * s2 )
+line(-3 * s2 -2.5 * s2 14.5 * s2 14.7* s2 )
+line(-2.5 * s2 -3 * s2 -3 * s2 -2.5 * s2)
