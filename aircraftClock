@@ -1,6 +1,6 @@
 import font
 
-def d = 44 #CLOCK DIAMETER
+def d = 47 #CLOCK DIAMETER
 
 def s = d / 100 #scale factor
 
@@ -26,8 +26,8 @@ def c = 23.6
 #def c = 31.4
 
 #helping lines for hole cutouts
-#circle(0 0 b)
-#line(-1 * a a a -1 * a) # diagonal
+circle(0 0 b)
+line(-1 * a a a -1 * a) # diagonal
 
 
 ### END PARAMETERS ###
