@@ -1,6 +1,6 @@
 import font
 
-def d = 48 #CLOCK DIAMETER
+def d = 44 #CLOCK DIAMETER
 
 def s = d / 100 #scale factor
 
@@ -14,6 +14,31 @@ def textOffsetY = 1.8 * s #ADJUSTMENT OF TEXT Y
 ### END PARAMETERS ###
 
 ### START SCRIPT ###
+def r = 57.15 / 2
+def a = 60.325 / 2
+def b = 66.675 / 2
+def h = 4.318 / 2
+
+line(-1 * a -1 * a -1 * a a)
+line(a -1 * a a a)
+line(-1 * a a a a)
+line(-1 * a -1 * a  a -1 * a)
+
+#helping lines for hole cutouts
+#circle(0 0 b)
+#line(-1 * a a a -1 * a) diagonal
+
+#HOLES
+circle(-23.6 23.6 h)
+circle(23.6 23.6 h)
+circle(-23.6 -23.6 h)
+circle(23.6 -23.6 h)
+
+#OUTER AND CENTER CIRCLE
+circle(0 0 r)
+circle(0 0 r - 2) #BEZEL
+circle(0 0 1)
+
 
 #calculate which digit to write
 def setChar(x as Number y as Number id as Number ) = {
@@ -60,11 +85,6 @@ repeat 0 to 60 using i {
   def y = sin(radians(i * 6))
   line(x * innerOne y * innerOne x * outer y * outer)
 }
-
-#OUTER AND CENTER CIRCLE
-circle(0 0 57 / 2)
-#circle(0 0 (d / 2) + 4.5)
-circle(0 0 1)
 
 def s = d / 100
 
