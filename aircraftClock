@@ -35,8 +35,8 @@ line(-1 * a a a a)
 line(-1 * a -1 * a  a -1 * a)
 
 #helping lines for hole cutouts
-circle(0 0 b)
-line(-1 * a a a -1 * a) # diagonal
+#circle(0 0 b)
+#line(-1 * a a a -1 * a) # diagonal
 
 #HOLES
 circle(-1 * c c h)
@@ -56,18 +56,18 @@ def setChar(x as Number y as Number id as Number ) = {
   if(id < 0) {if(id > -2) {two(x y textSize) one(x + (0.14 * d) y + (0.1 * d) 2) zero(x + (0.17 * d) y + (0.1 * d) 2)}}
   if(id < 1) {if(id > -1) {three(x y textSize) one(x + (0.16 * d) y + (0.01 * d) 2) five(x + (0.19 * d) y + (0.01 * d) 2)}}
   if(id < 2) {if(id > 0) {four(x y textSize) two(x + (0.14 * d) y - (0.07 * d) 2) zero(x + (0.17 * d) y - (0.07 * d) 2)}}
-  if(id < 3) {if(id > 1) {five(x y textSize) two(x + 5 y - 6 2) five(x + 7 y - 6 2)}}
-  if(id < 4) {if(id > 2) {six(x y textSize) three(x - 0.5 y - 8 2) zero(x + 1.5 y - 8 2)}}
-  if(id < 5) {if(id > 3) {seven(x y textSize) three(x - 4 y - 7 2) five(x - 2 y - 7 2)}}
-  if(id < 6) {if(id > 4) {eight(x y textSize) four(x - 8 y - 4 2) zero(x - 6 y - 4 2)}}
-  if(id < 7) {if(id > 5) {nine(x y textSize) four(x - 9 y + 1 2) five(x - 7 y + 1 2)}}
+  if(id < 3) {if(id > 1) {five(x y textSize) two(x + (0.08 * d) y - (0.12 * d) 2) five(x + (0.11 * d) y - (0.12 * d) 2)}}
+  if(id < 4) {if(id > 2) {six(x y textSize) three(x - (0.01 * d) y - (0.14 * d) 2) zero(x + 1.5 y - (0.14 * d) 2)}}
+  if(id < 5) {if(id > 3) {seven(x y textSize) three(x - (0.1 * d) y - (0.12 * d) 2) five(x - (0.07 * d) y - (0.12 * d) 2)}}
+  if(id < 6) {if(id > 4) {eight(x y textSize) four(x - (0.16 * d) y - (0.06 * d) 2) zero(x - (0.13 * d) y - (0.06 * d) 2)}}
+  if(id < 7) {if(id > 5) {nine(x y textSize) four(x - (0.1 * d) y + (0.1 * d) 2) five(x - (0.1 * d) y + (0.1 * d) 2)}}
   if(id < 8) {if(id > 6) {one(x - (textSize / 2) y textSize)
-  zero(x + (textSize / 2) y textSize) five(x - 8 y + 5 2) zero(x - 6 y + 5 2) }}
+  zero(x + (textSize / 2) y textSize) five(x - (0.1 * d) y + (0.1 * d) 2) zero(x - 6 y + 5 2) }}
   if(id < 9) {if(id > 7) {one(x - (textSize / 2) y textSize)
-  five(x - 4 y + 8 2) five(x - 2 y + 8 2)
+  five(x - (0.1 * d) y + (0.1 * d) 2) five(x - (0.1 * d) y + (0.1 * d) 2)
   one(x + (textSize / 2) y textSize)}}
   if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
-  six(x - 0.5 y + 9 2) zero(x + 1.5 y + 9 2)
+  six(x - (0.1 * d) y + (0.1 * d) 2) zero(x + (0.1 * d) y + (0.1 * d) 2)
   two(x + (textSize / 2) y textSize)}}
 }
 
