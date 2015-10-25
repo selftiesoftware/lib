@@ -1,5 +1,5 @@
 import geometry2d
-repeat 0 to 30 using i {
+repeat 0 to 21 using i {
   repeat 0 to 10 using j {
     def a = i * i
     def b = j * i
