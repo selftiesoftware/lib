@@ -1,5 +1,5 @@
-def xG = -100
-def yG = 100
+def xG = 0
+def yG = 0
 
 def score(x as Number y as Number) = {
   def xMin = x - 9
@@ -17,7 +17,6 @@ def score(x as Number y as Number) = {
 }
 
 def A() = {
-  def xG = xG + 20
   text(xG - 9 yG + 17 8 "A")
   if (xG > 100) {
    def yG = yG + 20
@@ -29,7 +28,6 @@ def A() = {
 }
 
 def B() = {
-  def xG = xG + 20
   text(xG - 9 yG + 17 8 "B")
   if (xG > 100) {
     def yG = yG + 20
@@ -45,4 +43,3 @@ def B() = {
 #test
 A()
 B()
-#A()
