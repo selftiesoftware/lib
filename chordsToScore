@@ -28,6 +28,7 @@ def A() = {
 }
 
 def B() = {
+  def xG = xG + 20
   text(xG - 9 yG + 17 8 "B")
   if (xG > 100) {
     def yG = yG + 20
