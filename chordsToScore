@@ -5,13 +5,16 @@ def accordsPerLine = 10
 def getX(step as Number) = accordDistanceX * step
 def getY(step as Number) = 0 #accordDistanceY * step
 
-def score(x as Number y as Number) = {
+#DRAW THE GUITAR DIAGRAM
+def score(x as Number y as Number key as String) = {
   def xMin = x - 9
   def xMax = x + 6
   def yMin = y - 20
   def yMax = y + 12
-  line(xMin y + 12.5 xMax y + 12.5) 
+  line(xMin y + 12.5 xMax y + 12.5) #END LINE 
+  text(x - 9 y + 17 8 key) #KEY
  
+  #STRINGS
   repeat -3 to 3 using i {
      def y2 = y + i * 6
      def x2 = x + i * 3 
@@ -19,31 +22,43 @@ def score(x as Number y as Number) = {
       line(x2 yMin x2 yMax)
   }
 }
-
+#draw a finger position
+def setFinger(x as Number y as Number string as Number fret as Number) = {
+   def offsetX = (string * 3) - 12
+   def offsetY = (fret * 6) - 15
+   circle(x + offsetX y - offsetY 1.2)
+}
+#A CHORD
 def A(step as Number) = {
-  def x = getX(step)
-  def y = getY(step)
-  # tegn med nyt x og y
-  text(x - 9 y + 17 8 "A")
-  score(x y)
-  circle(x - 3 y + 3 1.2)
-  circle(x y + 3 1.2)
-  circle(x + 3 y + 3 1.2)
+  def x = getX(step) def y = getY(step)
+  score(x y "A")
+  setFinger(x y 3 2)
+  setFinger(x y 4 2)
+  setFinger(x y 5 2)
 }
 
+#Am CHORD
+def Am(step as Number) = {
+  def x = getX(step) def y = getY(step)
+  score(x y "A")
+  setFinger(x y 3 2)
+  setFinger(x y 4 2)
+  setFinger(x y 5 1)
+}
+
+#B CHORD
 def B(step as Number) = {
-  def x = getX(step)
-  def y = getY(step)
-  text(x - 9 y + 17 8 "B")
-  score(x y)
-  circle(x - 3 y - 9 1.2)
-  circle(x y - 9 1.2)
-  circle(x + 3 y - 9 1.2)
+  def x = getX(step) def y = getY(step)
+  score(x y "B")
+  setFinger(x y 3 4)
+  setFinger(x y 4 4)
+  setFinger(x y 5 4)
   arc(x - 2 y - 19 22 4.4 5.05)
   arc(x - 2 y - 18 22 4.4 5.05)
 }
 
 #test
 A(1)
-B(2)
-A(3)
+Am(2)
+B(3)
+A(4)
