@@ -40,7 +40,7 @@ def A(step as Number) = {
 #Am CHORD
 def Am(step as Number) = {
   def x = getX(step) def y = getY(step)
-  score(x y "A")
+  score(x y "Am")
   setFinger(x y 3 2)
   setFinger(x y 4 2)
   setFinger(x y 5 1)
@@ -57,8 +57,19 @@ def B(step as Number) = {
   arc(x - 2 y - 18 22 4.4 5.05)
 }
 
+#Bm CHORD
+def Bm(step as Number) = {
+  def x = getX(step) def y = getY(step)
+  score(x y "Bm")
+  setFinger(x y 3 4)
+  setFinger(x y 4 4)
+  setFinger(x y 5 3)
+  arc(x - 2 y - 19 22 4.4 5.05)
+  arc(x - 2 y - 18 22 4.4 5.05)
+}
+
 #test
 A(1)
 Am(2)
 B(3)
-A(4)
+Bm(4)
