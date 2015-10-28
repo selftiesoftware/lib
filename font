@@ -1,5 +1,5 @@
 #REPOCAD single stroke font
-#for ause case search fot the script called "clock"
+#for a use case search fot the script called "clock"
 
 def A(x as Number y as Number hgt as Number) = {
 def h = hgt / 2
