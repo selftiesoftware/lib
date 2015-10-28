@@ -1,0 +1,31 @@
+import chordsToScore
+
+G(1)
+D(2)
+Am(3)
+
+def x = 15
+def y = -40
+def size = 6
+
+def dist = 12
+
+text(x y size "Mama take this badge from me")
+def y = y - dist
+text(x y size "I can't use it anymore")
+def y = y - dist
+text(x y size "It's getting dark too dark to see")
+def y = y - dist
+text(x y size "Feels like I'm knockin' on heaven's door")
+def y = y - dist
+text(x y size "Knock-knock-knockin' on heaven's door")
+def y = y - dist
+text(x y size "Mama put my guns in the ground")
+def y = y - dist
+text(x y size "I can't shoot them anymore")
+def y = y - dist
+text(x y size "That cold black cloud is comin' down")
+def y = y - dist
+text(x y size "Feels like I'm knockin' on heaven's door")
+def y = y - dist
+text(x y size "Knock-knock-knockin' on heaven's door")
