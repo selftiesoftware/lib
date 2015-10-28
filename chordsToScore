@@ -1,5 +1,9 @@
-def xG = 0
-def yG = 0
+def accordDistanceX = 20
+def accordDistanceY = 100 
+def accordsPerLine = 10
+
+def getX(step as Number) = accordDistanceX * step
+def getY(step as Number) = 0 #accordDistanceY * step
 
 def score(x as Number y as Number) = {
   def xMin = x - 9
@@ -16,31 +20,30 @@ def score(x as Number y as Number) = {
   }
 }
 
-def A() = {
-  text(xG - 9 yG + 17 8 "A")
-  if (xG > 100) {
-   def yG = yG + 20
-  }
-  score(xG yG)
-  circle(xG - 3 yG + 3 1.2)
-  circle(xG yG + 3 1.2)
-  circle(xG + 3 yG + 3 1.2)
+def A(step as Number) = {
+  def x = getX(step)
+  def y = getY(step)
+  # tegn med nyt x og y
+  text(x - 9 y + 17 8 "A")
+  score(x y)
+  circle(x - 3 y + 3 1.2)
+  circle(x y + 3 1.2)
+  circle(x + 3 y + 3 1.2)
 }
 
-def B() = {
-  def xG = xG + 20
-  text(xG - 9 yG + 17 8 "B")
-  if (xG > 100) {
-    def yG = yG + 20
-  }
-  score(xG yG)
-  circle(xG - 3 yG - 9 1.2)
-  circle(xG yG - 9 1.2)
-  circle(xG + 3 yG - 9 1.2)
-  arc(xG - 2 yG - 19 22 4.4 5.05)
-  arc(xG - 2 yG - 18 22 4.4 5.05)
+def B(step as Number) = {
+  def x = getX(step)
+  def y = getY(step)
+  text(x - 9 y + 17 8 "B")
+  score(x y)
+  circle(x - 3 y - 9 1.2)
+  circle(x y - 9 1.2)
+  circle(x + 3 y - 9 1.2)
+  arc(x - 2 y - 19 22 4.4 5.05)
+  arc(x - 2 y - 18 22 4.4 5.05)
 }
 
 #test
-A()
-B()
+A(1)
+B(2)
+A(3)
