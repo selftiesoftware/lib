@@ -1,4 +1,4 @@
-def accordDistanceX = 30
+def accordDistanceX = 25
 def accordDistanceY = 100 
 def accordsPerLine = 10
 
@@ -85,6 +85,14 @@ def Fm(step as Number) = {
   def x = getX(step) def y = getY(step) score(x y "Fm")
   dot(x y 2 3) dot(x y 3 3) fret(x y 1)
 }
+def G(step as Number) = {
+  def x = getX(step) def y = getY(step) score(x y "G")
+  dot(x y 1 3) dot(x y 2 2) dot(x y 6 3)
+}
+def Gm(step as Number) = {
+  def x = getX(step) def y = getY(step) score(x y "Gm")
+  dot(x y 2 5) dot(x y 3 5) fret(x y 3)
+}
 
 #TEST
 A(1)
@@ -99,3 +107,5 @@ E(9)
 Em(10)
 F(11)
 Fm(12)
+G(13)
+Gm(14)
