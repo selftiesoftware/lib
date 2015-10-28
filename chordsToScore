@@ -1,4 +1,4 @@
-def accordDistanceX = 20
+def accordDistanceX = 30
 def accordDistanceY = 100 
 def accordsPerLine = 10
 
