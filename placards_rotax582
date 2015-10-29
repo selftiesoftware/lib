@@ -1,0 +1,98 @@
+import font
+
+line(0 0 70 0)
+
+def x = 0
+def y = 40
+
+def h = 4
+def s = 3.4
+
+M(x y h) def x = x + s 
+A(x y h) def x = x + s
+X(x y h) def x = x + s
+
+def x = x + 2
+
+C(x y h) def x = x + s
+O(x y h) def x = x + s 
+N(x y h) def x = x + s
+T(x y h) def x = x + 2
+I(x y h) def x = x + s
+N(x y h) def x = x + s
+O(x y h) def x = x + s
+U(x y h) def x = x + s
+S(x y h) def x = x + s
+
+def x = x + 2
+
+R(x y h) def x = x + s
+P(x y h) def x = x + s 
+M(x y h) def x = x + s
+
+def x = x + 6
+
+five(x y h) def x = x + s
+two(x y h) def x = x + s 
+zero(x y h) def x = x + s
+zero(x y h) def x = x + s
+
+def x = 0
+def y = 24
+
+M(x y h) def x = x + s 
+I(x y h) def x = x + s
+N(x y h) def x = x + s
+
+def x = x + 2
+
+W(x y h) def x = x + s
+A(x y h) def x = x + s 
+T(x y h) def x = x + s
+E(x y h) def x = x + s
+R(x y h) def x = x + s
+
+def x = x + 2
+
+T(x y h) def x = x + s
+E(x y h) def x = x + s 
+M(x y h) def x = x + s
+P(x y h) def x = x + s
+
+def x = x + 16
+
+six(x y h) def x = x + s
+five(x y h) def x = x + s 
+O(x - 0.5 y + 2.5 2)
+def x = x + 2
+C(x y h) def x = x + s
+
+def x = 0
+def y = 16
+
+M(x y h) def x = x + s 
+A(x y h) def x = x + s
+X(x y h) def x = x + s
+
+def x = x + 2
+
+W(x y h) def x = x + s
+A(x y h) def x = x + s 
+T(x y h) def x = x + s
+E(x y h) def x = x + s
+R(x y h) def x = x + s
+
+def x = x + 2
+
+T(x y h) def x = x + s
+E(x y h) def x = x + s 
+M(x y h) def x = x + s
+P(x y h) def x = x + s
+
+def x = x + 16
+
+eight(x y h) def x = x + s
+zero(x y h) def x = x + s 
+O(x - 0.5 y + 2.5 2)
+def x = x + 2
+C(x y h) def x = x + s
