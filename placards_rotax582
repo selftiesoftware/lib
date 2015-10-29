@@ -121,16 +121,20 @@ S(x y h) def x = x + s
 E(x y h) def x = x + s 
 
 
-def x = x + 16
+def x = x + 10.5
 
-six(x y h) def x = x + s
+one(x y h) def x = x + s
+one(x y h) def x = x + s 
 five(x y h) def x = x + s 
+zero(x y h) def x = x + s 
 O(x - 0.5 y + 2.5 2)
 def x = x + 2
-C(x y h) def x = x + s
+F(x y h) def x = x + s
 
 def x = 0
 def y = 3
+
+def s = 2.5
 
 M(x y h) def x = x + s 
 A(x y h) def x = x + s
@@ -157,11 +161,14 @@ W(x y h) def x = x + s
 E(x y h) def x = x + s
 R(x y h) def x = x + s
 
-def x = x + 5
+def x = x + 7
 
+def s = 3
 
-eight(x y h) def x = x + s
+one(x y h) def x = x + s
+two(x y h) def x = x + s 
+zero(x y h) def x = x + s 
 zero(x y h) def x = x + s 
 O(x - 0.5 y + 2.5 2)
 def x = x + 2
-C(x y h) def x = x + s
+F(x y h) def x = x + s
