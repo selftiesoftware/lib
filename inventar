@@ -197,10 +197,10 @@ text(col1x1 y size "VIII")
 text(col1x2 y size "rawplugs")
  def y = y - dist 
 text(col1x1 y size "V")
-text(col1x2 y size "RC batterier")
+text(col1x2 y size "RC batterier, ladere, motorer")
  def y = y - dist 
-text(col1x1 y size "V")
-text(col1x2 y size "RC ladere")
+ text(col1x1 y size "X")
+text(col1x2 y size "RC diverse")
  def y = y - dist 
 text(col1x1 y size "XVIII")
 text(col1x2 y size "reb")
@@ -223,11 +223,8 @@ text(col1x2 y size "skraber")
 text(col1x1 y size "XXIX")
 text(col1x2 y size "skruemaskine - tilbehør")
  def y = y - dist 
-text(col1x1 y size "X")
-text(col1x2 y size "SKRUER - 0-50mm")
- def y = y - dist 
 text(col1x1 y size "IX")
-text(col1x2 y size "SKRUER - 50-100 mm")
+text(col1x2 y size "SKRUER - 0-100 mm")
  def y = y - dist 
 text(col1x1 y size "XXIII")
 text(col1x2 y size "skruetvinger")
@@ -270,6 +267,9 @@ text(col1x2 y size "topnøgler")
  def y = y - dist 
 text(col1x1 y size "III")
 text(col1x2 y size "tragte")
+ def y = y - dist 
+ text(col1x1 y size "IV")
+text(col1x2 y size "transformatorer")
  def y = y - dist 
 text(col1x1 y size "VI")
 text(col1x2 y size "dreml")
