@@ -2,7 +2,7 @@ def y = 130
 def col1x1 = -80
 def col1x2 = -60
 def size = 6
-def dist = 5
+def dist = 4
 
 text(col1x1 y size "XXXIV")
 text(col1x2 y size "230V - fatninger")
