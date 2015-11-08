@@ -1,8 +1,8 @@
 def y = 130
 def col1x1 = -80
 def col1x2 = -60
-def size = 6
-def dist = 4
+def size = 5
+def dist = 3.8
 
 text(col1x1 y size "XXXIV")
 text(col1x2 y size "230V - fatninger")
@@ -19,11 +19,14 @@ text(col1x2 y size "audio - ledninger")
 text(col1x1 y size "XXV")
 text(col1x2 y size "audio - stik")
  def y = y - dist 
+text(col1x1 y size "III")
+text(col1x2 y size "batteri, hækklipper")
+ def y = y - dist 
 text(col1x1 y size "XXX")
 text(col1x2 y size "beslag")
  def y = y - dist 
-text(col1x1 y size "XI")
-text(col1x2 y size "bits")
+ text(col1x1 y size "XI")
+text(col1x2 y size "bitholder 90 grader")
  def y = y - dist 
 text(col1x1 y size "XVIII")
 text(col1x2 y size "blyanter")
@@ -37,11 +40,20 @@ text(col1x2 y size "bolte")
 text(col1x1 y size "XI")
 text(col1x2 y size "bor: store/special")
  def y = y - dist 
+ text(col1x1 y size "XXXI")
+text(col1x2 y size "brænder")
+ def y = y - dist 
 text(col1x1 y size "XXXVI")
 text(col1x2 y size "CD/DVD")
-def y = y - dist 
+ def y = y - dist 
+text(col1x1 y size "I")
+text(col1x2 y size "clecos + tang")
+ def y = y - dist 
 text(col1x1 y size "XII")
 text(col1x2 y size "clips")
+ def y = y - dist 
+text(col1x1 y size "XI")
+text(col1x2 y size "clips - kuvert")
  def y = y - dist 
 text(col1x1 y size "XXXII")
 text(col1x2 y size "CNC - ledninger")
@@ -52,9 +64,6 @@ text(col1x2 y size "computer: strømledninger")
 text(col1x1 y size "VI")
 text(col1x2 y size "computerstik")
  def y = y - dist 
-text(col1x1 y size "I")
-text(col1x2 y size "cykelgrej")
- def y = y - dist 
 text(col1x1 y size "XX")
 text(col1x2 y size "dyvler")
  def y = y - dist 
@@ -64,9 +73,6 @@ text(col1x2 y size "dørstopper")
 text(col1x1 y size "XV")
 text(col1x2 y size "elektronik - boards")
  def y = y - dist 
-text(col1x1 y size "XX")
-text(col1x2 y size "elektronik - LED")
-def y = y - dist 
 text(col1x1 y size "XXVII")
 text(col1x2 y size "elektronik - ledning")
 def y = y - dist 
@@ -109,6 +115,9 @@ text(col1x2 y size "isoleringsbånd")
 text(col1x1 y size "XVI")
 text(col1x2 y size "kabelclips")
  def y = y - dist 
+text(col1x1 y size "XXXVI")
+text(col1x2 y size "kamera")
+ def y = y - dist 
 text(col1x1 y size "XVII")
 text(col1x2 y size "kiler")
  def y = y - dist 
@@ -127,9 +136,6 @@ def y = y - dist
 text(col1x1 y size "III")
 text(col1x2 y size "lader til boremaskine")
  def y = y - dist 
-text(col1x1 y size "III")
-text(col1x2 y size "lader til hækklipper")
- def y = y - dist
 text(col1x1 y size "XXXI")
 text(col1x2 y size "loddekolbe" )
  def y = y - dist 
