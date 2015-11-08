@@ -20,6 +20,9 @@ def outer = (d / 2) - 1
 def innerFive = (d / 1.9) - fiveSize
 def innerOne = (d / 2) - oneSize
 
+#TEST ICON
+line(-1 * (d / 3) 0 d / 3 0)
+line(0 -1 * (d / 3) 0 d / 2)
 
 #calculate which digit to write
 def setChar(x as Number y as Number id as Number ) = {
