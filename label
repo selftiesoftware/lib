@@ -4,6 +4,9 @@ import geometry2d
 
 def size = 7 #LABEL WIDTH IN CM
 
+#PRIORITY?
+#text(-3.5 * size 1.7 * size size * 3 "P")
+
 #TO INFORMATION - REPLACE TEXT IN ""
 text(-4.5 * size -0.7 * size size "NAME")
 text(-4.5 * size -1.5 * size size "ADDRESS LINE # 1 ")
