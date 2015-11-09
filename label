@@ -1,0 +1,11 @@
+import geometry2d
+
+def size = 7 #LABEL WIDTH IN CM
+
+text(-4.5 * size 0 * size size "NAME")
+text(-4.5 * size -1 * size size "ADDRESS LINE # 1 ")
+text(-4.5 * size -2 * size size "ADDRESS LINE # 2 ")
+text(-4.5 * size -3 * size size "POST CODE")
+text(-4.5 * size -4 * size size "COUNTRY")
+
+rectangle(-5 * size -5 * size 5 * size 1.3 * size)
