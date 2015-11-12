@@ -1,4 +1,5 @@
-#a scaleable lamp that can be produced from this sheet metal, plastic or wood
+#a scaleable lamp 
+#that can be cut from thin sheet metal, plastic or wood
 
 #width and length in mm
 def size = 468
