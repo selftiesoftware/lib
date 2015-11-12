@@ -3,10 +3,9 @@
 #width and length in mm
 def size = 468
 
-circle(0 0 44)
-
+circle(0 0 44) #bulb cutout
 line(0 0 size / 2 size / 2) #diagonal
-
 line(size / -3.5 size / 3.5 size / 3.5 size / 3.5) #top fold line
-
 line(size / -2 ((size / 2) * 1.5) size / 2 ((size / 2) * 1.5)) #edge
+
+
