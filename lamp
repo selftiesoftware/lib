@@ -4,8 +4,9 @@
 def size = 468
 
 circle(0 0 44)
-line(0 0 size / 2 size / 2)
 
-line(size / -3.5 size / 3.5 size / 3.5 size / 3.5)
+line(0 0 size / 2 size / 2) #diagonal
 
-line(size / -2 ((size / 2) * 1.5) size / 2 ((size / 2) * 1.5))
+line(size / -3.5 size / 3.5 size / 3.5 size / 3.5) #top fold line
+
+line(size / -2 ((size / 2) * 1.5) size / 2 ((size / 2) * 1.5)) #edge
