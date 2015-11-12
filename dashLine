@@ -1,3 +1,14 @@
 def dashLine(x1 as Number y1 as Number x2 as Number y2 as Number s as Number d as Number) = {
   def length = (x2 - x1) + (y2 - y1) 
+  text(0 0 20 length)
+  line(x1 y1 x2 y2)
+  def dashAndSpace = d + s
+  def dashes = length / dashAndSpace
+  text(20 -20 20 dashes)
+  
+  repeat 0 to 20 using i {
+     line(0 0 10 10)
+  }
 }
+
+dashLine(0 0 200 0 5 10)
