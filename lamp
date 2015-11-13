@@ -1,7 +1,9 @@
 import dashed
 
-#a scaleable lamp 
-#that can be cut from thin sheet metal, plastic or wood
+#DESIGN: A SCALEABLE LAMP 
+#cut from thin sheet metal, plastic or wood
+#bend dashed lines
+#assemble with blind rivets
 
 #width and length in mm
 def size = 200
