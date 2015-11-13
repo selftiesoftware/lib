@@ -5,25 +5,26 @@
 # h: height of the person
 # s: seed change to get different outlines)
 
-function human (x y h s) {
+def human (x as Number y as Number h as Number s as Number) = 
+{
   
 #proportion points
-ya = h / 2.3
-yb = h - 400
+def ya = h / 2.3
+def yb = h - 400
 
-w = 2000 / h #variable width as a factor of height
+def w = 2000 / h #variable width as a factor of height
 
-y1 = ya + y
-y2 = yb + y
-xa = 200 / w
-xb = 400 / w
-xc = -150 / w
-xd = -250 / w
+def y1 = ya + y
+def y2 = yb + y
+def xa = 200 / w
+def xb = 400 / w
+def xc = -150 / w
+def xd = -250 / w
 
-x1 = xa + x 
-x2 = xb + x
-x3 = xc + x
-x4 = xd + x
+def x1 = xa + x 
+def x2 = xb + x
+def x3 = xc + x
+def x4 = xd + x
 
   #legs
    #left
@@ -35,12 +36,12 @@ x4 = xd + x
    line(x1 y1 x + 100 y) 
 
   #torso
-line(x3 y1 x3 y2)#left side
+line(x3 y1 x3 y2 - 50)#left side
 line(x1 y1 x1 y2)#right side
 
  #left arm
-line(x3 y2 x4 y1)#down side
-line(x3 - 120 y2 + 150 x4 y1)#up side
+line(x3 y2 - 160 x4 y1)#down side
+line(x3 - 120 y2 + 60 x4 y1)#up side
 
  #right arm
 line(x1 y2 x2 y1)#down side
@@ -48,7 +49,7 @@ line(x1 + 120 y2 + 150 x2 y1)#up side
 
  #head  
 #circle(x y + h 150)
-line(x3 - 120 y2 + 150 x y2 + 240)#left shoulder
+line(x3 - 120 y2 + 60 x y2 + 240)#left shoulder
 line(x1 + 120 y2 + 150 x y2 + 240)#right shoulder
 
 line(x3 + 40 y2 + 370 x y2 + 240)#left side b
