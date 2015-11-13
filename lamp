@@ -7,7 +7,7 @@ import dashed
 #4: install bulb and chord
 
 #width and length in mm
-def size = 200
+def size = 470
 
 # --- START SCRIPT --- #
 
@@ -46,19 +46,19 @@ line (-1.18 * h -0.82 * h -1.22 * h -0.74 * h)
 #top right
 line(0.465 * h 0.34 * h 0.423 * h 0.416 * h) #corner1
 line(0.34 * h 0.465 * h 0.416 * h 0.423 * h) #corner2
-arc(0.42 * h 0.42 * h 9.2 1.06 3.65) #corner cutout
+arc(0.42 * h 0.42 * h 0.09 * h 1.06 3.65) #corner cutout
 
 #top left
 line(-0.465 * h 0.34 * h -0.423 * h 0.416 * h) #corner1
 line(-0.34 * h 0.465 * h -0.416 * h 0.423 * h) #corner2
-arc(-0.42 * h 0.42 * h 9.2 5.8 2.05) #corner cutout
+arc(-0.42 * h 0.42 * h 0.09 * h 5.8 2.05) #corner cutout
 
 #bottom right
 line(0.465 * h -0.34 * h 0.423 * h -0.416 * h) #corner1
 line(0.34 * h -0.465 * h 0.416 * h -0.423 * h) #corner2
-arc(0.42 * h -0.42 * h 9.2 2.6 5.2) #corner cutout
+arc(0.42 * h -0.42 * h 0.09 * h 2.6 5.2) #corner cutout
 
 #bottom left
 line(-0.465 * h -0.34 * h -0.423 * h -0.416 * h) #corner1
 line(-0.34 * h -0.465 * h -0.416 * h -0.423 * h) #corner2
-arc(-0.42 * h -0.42 * h 9.2 4.2 6.7) #corner cutout
+arc(-0.42 * h -0.42 * h 0.09 * h 4.2 6.7) #corner cutout
