@@ -10,7 +10,7 @@ def h = size / 2
 circle(0 0 44) #bulb cutout
 
 #TOP FOLD
-dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h 3) #DASHED top fold line
+dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h 0.22) #DASHED top fold line
 line(0.465 * h 0.34 * h 0.423 * h 0.416 * h) #corner1
 line(0.34 * h 0.465 * h 0.416 * h 0.423 * h) #corner2
 arc(0.42 * h 0.42 * h 9.2 1.06 3.65) #corner cutout
