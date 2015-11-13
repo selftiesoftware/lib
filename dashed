@@ -3,6 +3,6 @@ def dashed(x1 as Number y1 as Number x2 as Number y2 as Number d as Number) = {
   def y = y2 - y1
   repeat 1 to 5 using i {
 
-     line(sX sY eX eY)
+     #line(sX sY eX eY)
   }
 }
