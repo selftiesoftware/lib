@@ -9,14 +9,34 @@ def h = size / 2
 
 circle(0 0 44) #bulb cutout
 
-#TOP FOLD
-dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h 0.22) #DASHED top fold line
+#DASHED FOLD LINES
+dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h 0.22) 
+dashed(-0.34 * h -0.465 * h 0.34 * h -0.465 * h 0.22) 
+
+dashed(-0.465 * h -0.34 * h -0.465 * h 0.34 * h 0.22) 
+dashed(0.465 * h -0.34 * h 0.465 * h 0.34 * h 0.22)
+
 line(0.465 * h 0.34 * h 0.423 * h 0.416 * h) #corner1
 line(0.34 * h 0.465 * h 0.416 * h 0.423 * h) #corner2
 arc(0.42 * h 0.42 * h 9.2 1.06 3.65) #corner cutout
 
 #PERIMETER
-line (0.74 * h 1.22 * h -0.74 * h 1.22 * h)#top 
-
-line (1.18 * h 0.82 * h 1.22 * h 0.74 * h)
+#TOP
+line (0.74 * h 1.22 * h -0.74 * h 1.22 * h)#long 
 line (0.82 * h 1.18 * h 0.74 * h 1.22 * h)
+line (-0.82 * h 1.18 * h -0.74 * h 1.22 * h)
+
+#RIGHT
+line (1.22 * h 0.74 * h 1.22 * h -0.74 * h)#long 
+line (1.18 * h 0.82 * h 1.22 * h 0.74 * h)
+line (1.18 * h -0.82 * h 1.22 * h -0.74 * h)
+
+#BOTTOM
+line (0.74 * h -1.22 * h -0.74 * h -1.22 * h)#long 
+line (0.82 * h -1.18 * h 0.74 * h -1.22 * h)
+line (-0.82 * h -1.18 * h -0.74 * h -1.22 * h)
+
+#LEFT
+line (-1.22 * h 0.74 * h -1.22 * h -0.74 * h)#long 
+line (-1.18 * h 0.82 * h -1.22 * h 0.74 * h)
+line (-1.18 * h -0.82 * h -1.22 * h -0.74 * h)
