@@ -1,9 +1,10 @@
 import dashed
 
 #DESIGN: A SCALEABLE LAMP 
-#cut from thin sheet metal, plastic or wood
-#bend dashed lines
-#assemble with blind rivets
+#1: cut from thin sheet metal, plastic or wood
+#2: bend dashed lines
+#3: assemble with blind rivets
+#4: install bulb and chord
 
 #width and length in mm
 def size = 200
