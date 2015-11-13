@@ -51,17 +51,17 @@ arc(0.42 * h 0.42 * h 0.09 * h 1.06 3.65) #corner cutout
 #top left
 line(-0.465 * h 0.34 * h -0.423 * h 0.416 * h) #corner1
 line(-0.34 * h 0.465 * h -0.416 * h 0.423 * h) #corner2
-arc(-0.42 * h 0.42 * h 0.09 * h 5.8 2.05) #corner cutout
+arc(-0.42 * h 0.42 * h 0.09 * h -0.55 2.05) #corner cutout
 
 #bottom right
 line(0.465 * h -0.34 * h 0.423 * h -0.416 * h) #corner1
 line(0.34 * h -0.465 * h 0.416 * h -0.423 * h) #corner2
-arc(0.42 * h -0.42 * h 0.09 * h 2.6 5.2) #corner cutout
+#arc(0.42 * h -0.42 * h 0.09 * h 2.6 5.2) #corner cutout
 
 #bottom left
 line(-0.465 * h -0.34 * h -0.423 * h -0.416 * h) #corner1
 line(-0.34 * h -0.465 * h -0.416 * h -0.423 * h) #corner2
-arc(-0.42 * h -0.42 * h 0.09 * h 4.2 6.7) #corner cutout
+arc(-0.42 * h -0.42 * h 0.09 * h -2.10 0.5) #corner cutout
 
 #SEAMS
 arc(0.495 * h 0.40 * h 0.07 * h 3.3 4.7)
