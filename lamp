@@ -8,8 +8,10 @@ import dashed
 
 #width and length in mm
 def size = 200
-def h = size / 2
 
+# --- START SCRIPT --- #
+
+def h = size / 2
 circle(0 0 44) #bulb cutout
 
 #DASHED FOLD LINES
