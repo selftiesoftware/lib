@@ -3,7 +3,8 @@
 # x: position 
 # y: position
 # h: height of the person
-# s: seed change to get different outlines)
+# s: seed change to get different outlines) 
+#NOTE: S is not yet implemented
 
 def human (x as Number y as Number h as Number s as Number) = 
 {
