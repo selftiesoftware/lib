@@ -12,13 +12,14 @@ def size = 200
 # --- START SCRIPT --- #
 
 def h = size / 2
+def gap = 0.35
 circle(0 0 44) #bulb cutout
 
 #DASHED FOLD LINES
-dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h 0.22) 
-dashed(-0.34 * h -0.465 * h 0.34 * h -0.465 * h 0.22) 
-dashed(-0.465 * h -0.34 * h -0.465 * h 0.34 * h 0.22) 
-dashed(0.465 * h -0.34 * h 0.465 * h 0.34 * h 0.22)
+dashed(-0.34 * h 0.465 * h 0.34 * h 0.465 * h gap) 
+dashed(-0.34 * h -0.465 * h 0.34 * h -0.465 * h gap) 
+dashed(-0.465 * h -0.34 * h -0.465 * h 0.34 * h gap) 
+dashed(0.465 * h -0.34 * h 0.465 * h 0.34 * h gap)
 
 #PERIMETER
 #TOP
