@@ -1,11 +1,16 @@
 def dashed(x1 as Number y1 as Number x2 as Number y2 as Number d as Number) = {
   def x = x2 - x1
   def y = y2 - y1
-  repeat 1 to 5 using i {
-
-     line(x1 y1 x y)
+  def gap = 0.2
+  def dashes = 5
+  repeat 0 to dashes using i {
+     def sX = (x / dashes) * i + gap
+     def sY = (y / dashes) * i + gap
+     def eX = (y / dashes) * (i + 1) - gap
+     def eY = (y / dashes) * (i + 1) - gap
+     line(sX + x1 sY + y1 eX + x1 eY + y1)
   }
 }
 
 #test
-dashed(0 0 10 10 2)
+dashed(20 20 30 30 2)
