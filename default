@@ -1,5 +1,3 @@
-import font
-
 line(0 180 100 180)
 
 text(0 185 7 "hello world!")
@@ -15,22 +13,3 @@ repeat 0 to 17 using i {
 #which is imported in line one:
 
 def textHeight = 3.5
-
-W(0 162 textHeight)
-E(5 162 textHeight)
-L(10 162 textHeight)
-C(15 162 textHeight)
-O(20 162 textHeight)
-M(25 162 textHeight)
-E(30 162 textHeight)
-
-T(40 162 textHeight)
-O(45 162 textHeight)
-
-R(0 152 textHeight)
-E(5 152 textHeight)
-P(10 152 textHeight)
-O(15 152 textHeight)
-C(20 152 textHeight)
-A(25 152 textHeight)
-D(30 152 textHeight)
