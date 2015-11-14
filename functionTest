@@ -1,5 +1,0 @@
-function test2(a b){
-line(a b b a )
-}
-
-test2(20 40)

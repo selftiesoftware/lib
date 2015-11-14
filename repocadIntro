@@ -1,9 +1,0 @@
-line(0 180 180 180)
-text(0 182 5 "HELLO WORLD")
-
-repeat 0 to 15 using i {
-
-def spacing = i * 10
-line(0 spacing 180 spacing)
-
-}
