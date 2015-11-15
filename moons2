@@ -1,9 +1,9 @@
-for i <- -7 to 10 {
-for j <- -6 to 6 {
+repeat -7 to 5 using i {
+repeat -6 to 5 using j {
  
-x = i * 10
-y = j * 13
-bezierCurve(-14 + x 14 + y  21 + x 114 + y 2 + x -4 + y -4 + x -41 + y)
-bezierCurve(-4 + x 4 + y -12 + x 12 + y -40 + x -10 + y -4 + x -41 + y)
+def x = i * 40
+def y = j * 43
+bezier(-14 + x 14 + y  21 + x 114 + y 2 + x -4 + y -4 + x -41 + y)
+bezier(-4 + x 4 + y -12 + x 12 + y -40 + x -10 + y -4 + x -41 + y)
 }
 }
