@@ -7,18 +7,27 @@ def curvedHeight = 100
 # --- START SCRIPT --- #
 
 def centerX = width / 2
-
+def v = verticalHeight
 line(0 0 width 0)
-line(0 0 0 verticalHeight)
-line(width 0 width verticalHeight)
+line(0 0 0 v)
+line(width 0 width v)
 
 #top curve
 
-def o = verticalHeight + curvedHeight
+def o = v + curvedHeight
 def endX = centerX - 100
 line(centerX - 100 o centerX + 100 o)
 
 def stepX = endX / 10
-def stepY = o / 10
+def stepY = curvedHeight / 10
 #leftCurve
-#line(verticalHeight 0 
+line(0 v 1 * stepX v + (3 * stepY))
+line((1 * stepX) ((3 * stepY) + v) (2 * stepX)  ((5 * stepY) + v))
+line((2 * stepX) ((5 * stepY) + v) (3 * stepX)  ((6.5 * stepY) + v))
+line((3 * stepX) ((6.5 * stepY) + v) (4 * stepX)  ((7.5 * stepY) + v))
+line((4 * stepX) ((7.5 * stepY) + v) (5 * stepX)  ((8.2 * stepY) + v))
+line((5 * stepX) ((8.2 * stepY) + v) (6 * stepX)  ((8.8 * stepY) + v))
+line((6 * stepX) ((8.8 * stepY) + v) (7 * stepX)  ((9.3 * stepY) + v))
+line((7 * stepX) ((9.3 * stepY) + v) (8 * stepX)  ((9.7 * stepY) + v))
+line((8 * stepX) ((9.7 * stepY) + v) (9 * stepX)  ((9.9 * stepY) + v))
+line((9 * stepX) ((9.9 * stepY) + v) (10 * stepX) ((10 * stepY) + v))
