@@ -491,58 +491,58 @@ text(-80 offset + step * -16 5 "Emergency freq: 121.5")
 
 ###### MINUTE MARKS ######
 
-def speedMin = speedMin / 5
-def speedMax = speedMax / 5
+#def speedMin = speedMin / 5
+#def speedMax = speedMax / 5
 
-def xStart = -85
+#def xStart = -85
 
-def dist = speedMax - speedMin
-def distance = 10 / dist
+#def dist = speedMax - speedMin
+#def distance = 10 / dist
 
-repeat speedMin to speedMax using i {
+#repeat speedMin to speedMax using i {
   
-  def x1 = xStart
-  def x2 = xStart - distance
+ # def x1 = xStart
+  #def x2 = xStart - distance
 
-  def speed1 = i * 1852
-  def speed1div = speed1 * 5
-  def speed1min = speed1div / 6
-  def speed1mm = speed1min * 100 
+  #def speed1 = i * 1852
+  #def speed1div = speed1 * 5
+  #def speed1min = speed1div / 6
+  #def speed1mm = speed1min * 100 
 
-  def plusOne = i + 1
-  def speed2 = plusOne * 1852
-  def speed2div = speed2 * 5
-  def speed2min = speed2div / 6
-  def speed2mm = speed2min * 100
+  #def plusOne = i + 1
+  #def speed2 = plusOne * 1852
+  #def speed2div = speed2 * 5
+  #def speed2min = speed2div / 6
+  #def speed2mm = speed2min * 100
 
   # scale down to the paper scale
-  def s1 = speed1mm / scale 
-  def s2 = speed2mm / scale 
-  def a = scale / 1300
-  def extend = a / i
+  #def s1 = speed1mm / scale 
+  #def s2 = speed2mm / scale 
+  #def a = scale / 1300
+  #def extend = a / i
   
   #minute lines - right side
   
-  repeat 1 to extend using j {
-    line(x1 s1 * j x2 s2 * j)
-  }
-  def s1l = s1 * -1
-  def s2l = s2 * -1
+  #repeat 1 to extend using j {
+  #  line(x1 s1 * j x2 s2 * j)
+  #}
+  #def s1l = s1 * -1
+  #def s2l = s2 * -1
 
-    repeat 1 to extend using j {
-    line(x1 s1l * j x2 s2l * j)
-  }
+  #  repeat 1 to extend using j {
+  #  line(x1 s1l * j x2 s2l * j)
+  #}
 
-  line(x1 -125 x1 125)#speed lines
+  #line(x1 -125 x1 125)#speed lines
   #text(x1 10 textSize i) #show knots
 
-  def xStart = xStart - distance
-}
+  #def xStart = xStart - distance
+#}
 
-  text(-95 -130 5 speedMax * 5)
-  text(-88 -130 5 speedMin * 5)
-  line(-95 0 -85 0)
-  line(-95 -125 -95 125)
+  #text(-95 -130 5 speedMax * 5)
+  #text(-88 -130 5 speedMin * 5)
+  #line(-95 0 -85 0)
+  #line(-95 -125 -95 125)
 
 #call wind rose function from flightplanFunctions
 #crossWindRose(landingRwyHdg 70 -126)
