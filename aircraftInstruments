@@ -1,4 +1,5 @@
 #STANDARD 3 1/8 inch gauge cutout
+import geometry2d
 
 def threeInchGauge(x as Number y as Number) = {
 def r = 80.26 / 2
@@ -22,6 +23,9 @@ circle((c + x) (-1 * c) + y h)
 circle(x y r) # cutout
 }
 
+def oldTransponder(x as Number y as Number) = {rectangle(x - 159.3 / 2 y - (41.3 / 2) x + 159.3 / 2 y + (41.3 / 2))}
+
 #TEST
 threeInchGauge(50 20)
 twoInchGauge(-50 20)
+oldTransponder(0 -70)
