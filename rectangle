@@ -1,4 +1,4 @@
-function square(neg pos) {
+def square(neg as Number pos as Number) = {
   line(neg neg neg pos)
   line(neg pos pos pos)
   line(pos pos pos neg)
@@ -6,11 +6,11 @@ function square(neg pos) {
 }
 
 #example:
-for i <- -15 to 50 {
-a = i + 1
-b = i - 1
-square(a * 5 a * 10)
-square(b * -5 a * 10)
+repeat -15 to 50 using i {
+  def a = i + 1
+  def b = i - 1
+  square(a * 5 a * 10)
+  square(a * -5 a * 10)
 }
 
 #DESCRIPTIVE TEXT 
