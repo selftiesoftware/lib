@@ -389,7 +389,7 @@ line(50 94 50 120)
 #### DRAW GRAPHICS FOR EACH WAYPOINT ####
 
 
-repeat 0 to 6 def i {
+repeat 0 to 6 using i {
  
   def a = i * -29 # wpt entry height
 
@@ -419,7 +419,7 @@ repeat 0 to 6 def i {
   line(32 a + 94 32 a + 84) # GS / WIND sep lines
   line(14 a + 94 14 a + 84) # GS / WIND sep lines
  
- repeat  0 to 4 def j {
+ repeat  0 to 4 using j {
     def q = 18 * j
     line(q - 22 a + 84 q - 22 a + 65)
   }
@@ -440,7 +440,7 @@ line(-40 -110 90 -110)
 line(-41 126 -41 -140)
 text(-83 120 7 "FREQUENCIES")
 
-repeat -16 to 19 def i {
+repeat -16 to 19 using i {
   line(-80 i * -7 -43 i * -7)
 }
 
@@ -499,7 +499,7 @@ def xStart = -85
 def dist = speedMax - speedMin
 def distance = 10 / dist
 
-repeat speedMin to speedMax def i {
+repeat speedMin to speedMax using i {
   
   def x1 = xStart
   def x2 = xStart - distance
@@ -523,13 +523,13 @@ repeat speedMin to speedMax def i {
   
   #minute lines - right side
   
-  repeat 1 to extend def j {
+  repeat 1 to extend using j {
     line(x1 s1 * j x2 s2 * j)
   }
   def s1l = s1 * -1
   def s2l = s2 * -1
 
-    repeat 1 to extend def j {
+    repeat 1 to extend using j {
     line(x1 s1l * j x2 s2l * j)
   }
 
