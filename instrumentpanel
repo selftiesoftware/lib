@@ -1,0 +1,24 @@
+#design your own instrument panel for your aircraft!
+
+def width = 1005
+def verticalHeight = 150
+def curvedHeight = 100
+
+# --- START SCRIPT --- #
+
+def centerX = width / 2
+
+line(0 0 width 0)
+line(0 0 0 verticalHeight)
+line(width 0 width verticalHeight)
+
+#top curve
+
+def o = verticalHeight + curvedHeight
+def endX = centerX - 100
+line(centerX - 100 o centerX + 100 o)
+
+def stepX = endX / 10
+def stepY = o / 10
+#leftCurve
+#line(verticalHeight 0 
