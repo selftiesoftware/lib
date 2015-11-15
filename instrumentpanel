@@ -17,6 +17,7 @@ line(w 0 w v)
 def endX = w - 100
 def stepX = endX / 10
 def stepY = curvedHeight / 10
+
 #leftCurve
 line(((0 * stepX) - w) ((0 * stepY) + v) ((1 * stepX) - w)  ((3 * stepY) + v))
 line(((1 * stepX) - w) ((3 * stepY) + v) ((2 * stepX) - w)  ((5 * stepY) + v))
@@ -29,5 +30,17 @@ line(((7 * stepX) - w) ((9.3 * stepY) + v) ((8 * stepX) - w) ((9.7 * stepY) + v)
 line(((8 * stepX) - w) ((9.7 * stepY) + v) ((9 * stepX) - w) ((9.9 * stepY) + v))
 line(((9 * stepX) - w) ((9.9 * stepY) + v) ((10 * stepX) - w) ((10 * stepY) + v))
 
+#middle line
+line(-100 verticalHeight + curvedHeight 100 verticalHeight + curvedHeight)
 
-#rightCurve
+#leftCurve
+line(((0 * stepX) + w) ((0 * stepY) + v) ((-1 * stepX) + w)  ((3 * stepY) + v))
+line(((-1 * stepX) + w) ((3 * stepY) + v) ((-2 * stepX) + w)  ((5 * stepY) + v))
+line(((-2 * stepX) + w) ((5 * stepY) + v) ((-3 * stepX) + w) ((6.5 * stepY) + v))
+line(((-3 * stepX) + w) ((6.5 * stepY) + v) ((-4 * stepX) + w) ((7.5 * stepY) + v))
+line(((-4 * stepX) + w) ((7.5 * stepY) + v) ((-5 * stepX) + w) ((8.2 * stepY) + v))
+line(((-5 * stepX) + w) ((8.2 * stepY) + v) ((-6 * stepX) + w) ((8.8 * stepY) + v))
+line(((-6 * stepX) + w) ((8.8 * stepY) + v) ((-7 * stepX) + w) ((9.3 * stepY) + v))
+line(((-7 * stepX) + w) ((9.3 * stepY) + v) ((-8 * stepX) + w) ((9.7 * stepY) + v))
+line(((-8 * stepX) + w) ((9.7 * stepY) + v) ((-9 * stepX) + w) ((9.9 * stepY) + v))
+line(((-9 * stepX) + w) ((9.9 * stepY) + v) ((-10 * stepX) + w) ((10 * stepY) + v))
