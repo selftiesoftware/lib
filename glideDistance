@@ -1,0 +1,38 @@
+import geometry2d
+
+rectangle(-80 0 80 14)
+
+def scale = 500000
+def glideRatio = 9
+
+#draw glide distance for the given altitude
+def glide(ratio as Number airspeed as Number headwind as Number) = {
+  line(0 12.5 0 14)
+  line(0 10 0 2)
+  
+  #distance decay per knot of headwind at given speed
+  def decay = (airspeed / 60) * (1 + headwind)
+  
+  #N.B! CHANGE THE "repeat to" value to adjust extent
+  repeat 1 to 14 using i {
+    def alt as Number = 1000 * 305 / scale
+    def xValue1 = ratio * alt * i - 1
+    def xValue2 = ratio * alt * i
+    def decrease1 = alt * -1 * i - 1
+    def decrease2 = alt * -1 * i
+  
+    line(-80 decrease1 + 10 80 decrease1 + 10)
+   
+    #right side
+    line(xValue1 * decay decrease1 + 10 xValue2 * decay decrease2 + 10)
+    #line(xValue2 * decay decrease2 + 10 xValue2 * decay 14)
+
+
+
+  }
+}
+#run!
+glide(glideRatio 60 0)
+glide(glideRatio 60 -0.2)
+glide(glideRatio 60 -0.4)
+
