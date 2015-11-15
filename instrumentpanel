@@ -1,3 +1,4 @@
+import aircraftInstruments
 #design your own instrument panel for your aircraft!
 
 #INPUT:
@@ -49,5 +50,21 @@ line(((-8 * stepX) + w) ((9.7 * stepY) + v) ((-9 * stepX) + w) ((9.9 * stepY) + 
 line(((-9 * stepX) + w) ((9.9 * stepY) + v) ((-10 * stepX) + w) ((10 * stepY) + v))
 }
 
-#test
-instrumentPanel(1005 150 100)
+#TEST!
+instrumentPanel(1005 170 100)
+
+#primary flight instruments
+threeInchGauge(-420 140)
+twoInchGauge(-420 50)
+threeInchGauge(-310 175)
+threeInchGauge(-310 70)
+threeInchGauge(-200 175)
+threeInchGauge(-200 70)
+
+#engine instruments
+twoInchGauge(-40 50)
+twoInchGauge(-40 130)
+twoInchGauge(-40 210)
+twoInchGauge(40 50)
+twoInchGauge(40 130)
+twoInchGauge(40 210)
