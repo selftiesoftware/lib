@@ -74,4 +74,4 @@ def plate(width as Number height as Number x as Number y as Number radius as Num
 #TEST
 #call the function plate
 #the last parameter determines if it is a front plate (1) or not (0)
-plate(280 140 10 30 3 1)
+plate(180 140 10 30 3 1)
