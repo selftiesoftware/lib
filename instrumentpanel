@@ -1,8 +1,11 @@
 #design your own instrument panel for your aircraft!
 
-def width = 1005
-def verticalHeight = 150
-def curvedHeight = 100
+#INPUT:
+#width = widht of the panel
+#verticalHeight = height of the vertical part of the sides
+#curvedHeight = height of the panel top curve
+
+def instrumentPanel(width as Number verticalHeight as Number curvedHeight as Number) = {
 
 # --- START SCRIPT --- #
 
@@ -44,3 +47,7 @@ line(((-6 * stepX) + w) ((8.8 * stepY) + v) ((-7 * stepX) + w) ((9.3 * stepY) + 
 line(((-7 * stepX) + w) ((9.3 * stepY) + v) ((-8 * stepX) + w) ((9.7 * stepY) + v))
 line(((-8 * stepX) + w) ((9.7 * stepY) + v) ((-9 * stepX) + w) ((9.9 * stepY) + v))
 line(((-9 * stepX) + w) ((9.9 * stepY) + v) ((-10 * stepX) + w) ((10 * stepY) + v))
+}
+
+#test
+instrumentPanel(1005 150 100)
