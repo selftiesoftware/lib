@@ -100,12 +100,18 @@ Am(2)
 B(3)
 Bm(4)
 C(5)
-Cm(6)
-D(7)
-Dm(8)
-E(9)
-Em(10)
-F(11)
-Fm(12)
-G(13)
-Gm(14)
+
+def getY(step as Number) = -50 #accordDistanceY * step
+
+Cm(1)
+D(2)
+Dm(3)
+E(4)
+Em(5)
+
+def getY(step as Number) = -100 #accordDistanceY * step
+
+F(1)
+Fm(2)
+G(3)
+Gm(4)
