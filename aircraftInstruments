@@ -1,0 +1,52 @@
+def threeInchGauge(x as Number y as Number) = {
+def r = 79.375 / 2
+def a = 82.75 / 2
+def b = 88.9 / 2
+def h = 4.318 / 2
+def c = 31.4
+
+line(-1 * a -1 * a -1 * a a)
+line(a -1 * a a a)
+line(-1 * a a a a)
+line(-1 * a -1 * a  a -1 * a)
+
+#HOLES
+circle(-1 * c c h)
+circle(c c h)
+circle(-1 * c -1 * c h)
+circle(c -1 * c h)
+
+#OUTER AND CENTER CIRCLE
+circle(0 0 r)
+circle(0 0 r - 2) #BEZEL
+circle(0 0 1)
+}
+
+#TEST
+threeInchGauge(0 0)
+
+#SIZES FOR 2 1/4 INSTRUMENT CUTOUTS
+def r = 57.15 / 2
+def a = 60.325 / 2
+def b = 66.675 / 2
+def h = 4.318 / 2
+def c = 23.6
+
+#SIZES FOR 3 1/8 INSTRUMENT CUTOUTS
+#def r = 79.375 / 2
+#def a = 82.75 / 2
+#def b = 88.9 / 2
+#def h = 4.318 / 2
+#def c = 31.4
+
+#helping lines for hole cutouts
+#circle(0 0 b)
+#line(-1 * a a a -1 * a) # diagonal
+
+
+### END PARAMETERS ###
+
+
+
+### START SCRIPT ###
+
