@@ -51,24 +51,24 @@ line(((-9 * stepX) + w) ((9.9 * stepY) + v) ((-10 * stepX) + w) ((10 * stepY) + 
 }
 
 #test
-instrumentPanel(1100 130 160)
+instrumentPanel(900 130 160)
 
 #primary flight instruments
-threeInchGauge(-420 140)
-twoInchGauge(-420 50)
-threeInchGauge(-310 175)
-threeInchGauge(-310 70)
-threeInchGauge(-200 175)
-threeInchGauge(-200 70)
+threeInchGauge(-355 140)
+twoInchGauge(-355 50)
+threeInchGauge(-250 175)
+threeInchGauge(-250 70)
+threeInchGauge(-140 175)
+threeInchGauge(-140 70)
 
 #engine instruments
-twoInchGauge(-40 70)
-twoInchGauge(-40 150)
-twoInchGauge(40 70)
-twoInchGauge(40 150)
+twoInchGauge(-40 80)
+twoInchGauge(-40 180)
+twoInchGauge(40 80)
+twoInchGauge(40 180)
 
-repeat 0 to 10 using i {
+repeat 0 to 8 using i {
   def x = i * 20
-  circle(x + 100 15 3) 
+  circle(x - 70 22 3) 
 }
 
