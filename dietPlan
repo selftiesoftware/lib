@@ -1,0 +1,21 @@
+import geometry2d
+rectangle(0 0 180 210)
+text(2 190 8 "DIET PLAN")
+text(2 178 3.3 "SHOPPING LIST")
+
+
+
+
+
+
+
+
+
+##lines##
+repeat 1 to 8 using i {
+def x = (180 / 8) * i
+line(x 13 x 180)
+}
+text(2 10 5 "CALORIES")
+
+line(0 50 180 50)
