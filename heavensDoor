@@ -9,7 +9,7 @@ Am(3)
 #LYRICS
 
 def x = 15 #text horizontal placement
-def y = -40 #text vertical placement
+def y = -140 #text vertical placement
 def size = 6 # text size
 def dist = 12 #line spacing
 
