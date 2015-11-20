@@ -14,11 +14,11 @@ def speedMax = 80
 
 #SCRIPT STARTS HERE:
 
-def yStart = 110 # y-coord of the first speed line
+def yStart = 90 # y-coord of the first speed line
 def textSize = 5
 
 def dist = speedMax - speedMin
-def distance = 210 / dist
+def distance = 190 / dist
 
 repeat speedMin to speedMax using i {
   def y1 = yStart
@@ -65,8 +65,8 @@ repeat speedMin to speedMax using i {
 
 line(-70 yStart 70 yStart)#last speed line
 text(-80 -100 textSize speedMax)#last speed text
-text(-70 113 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
-text(34 113 7 scale)#show the minute paper scale
+text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+text(34 93 7 scale)#show the minute paper scale
 text(-80 -105 5 "disable fit to page when printing!")
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
