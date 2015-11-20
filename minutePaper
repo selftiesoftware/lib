@@ -18,7 +18,7 @@ def yStart = 110 # y-coord of the first speed line
 def textSize = 5
 
 def dist = speedMax - speedMin
-def distance = 230 / dist
+def distance = 220 / dist
 
 repeat speedMin to speedMax using i {
   def y1 = yStart
@@ -44,7 +44,7 @@ repeat speedMin to speedMax using i {
   #minute lines - right side
   
   #TODO: REPLACE 10 with EXTEND  
-  repeat 1 to 10 using j{
+  repeat 1 to 8 using j{
     line(s1 * j y1 s2 * j y2)
   }
 
@@ -54,7 +54,7 @@ repeat speedMin to speedMax using i {
   #minute lines - left side
     #TODO: REPLACE 10 with EXTEND
 
-  repeat 0 to 10 using j{
+  repeat 0 to 8 using j{
     line(s1l * j y1 s2l * j y2)
   }
 
@@ -64,10 +64,10 @@ repeat speedMin to speedMax using i {
 }
 
 line(-80 yStart 80 yStart)#last speed line
-text(-90 -120 textSize speedMax)#last speed text
-text(-89 120 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
-text(14 120 7 scale)#show the minute paper scale
-text(-80 -125 5 "disable fit to page when printing!")
+text(-90 -110 textSize speedMax)#last speed text
+text(-70 113 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+text(34 113 7 scale)#show the minute paper scale
+text(-80 -115 5 "disable fit to page when printing!")
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
 line(90 -60 90 -70)
@@ -76,8 +76,8 @@ line(90 -100 90 -110)
 line(86 -110 90 -110)
 line(86 -60 90 -60)
 text(82 -57 5 "5 cm")
-text(81 -116 5 "print")
-text(81 -120 5 "scale ")
-text(81 -124 5 "check")
+text(61 -116 5 "print")
+text(70 -116 5 "scale ")
+text(81 -116 5 "check")
 
-text(0 -125 5 "generated at www.repocad.com")
+text(0 -115 5 "generated at www.repocad.com")
