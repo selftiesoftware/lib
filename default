@@ -1,15 +1,83 @@
-line(0 180 100 180)
+#SCRIPT-EXAMPLE:
+#minute paper: used by pilots - one minute between each line
 
-text(0 185 7 "hello world!")
-def myValue = 10
+#variables to customize the minute paper
 
-#this loop draws the lines making a ruled paper:
-repeat 0 to 17 using i {
-  line(0 i * myValue 170 i * myValue) 
+##############################################
+#USER INPUT:
+
+def scale = 250000
+def speedMin = 50
+def speedMax = 80
+
+##############################################
+
+#SCRIPT STARTS HERE:
+
+def yStart = 90 # y-coord of the first speed line
+def textSize = 5
+
+def dist = speedMax - speedMin
+def distance = 190 / dist
+
+repeat speedMin to speedMax using i {
+  def y1 = yStart
+  def y2 = yStart - distance
+
+  def speed1 = i * 1852
+  def speed1div = speed1
+  def speed1min = speed1div / 6
+  def speed1mm = speed1min * 100
+
+  def plusOne = i + 1
+  def speed2 = plusOne * 1852
+  def speed2div = speed2
+  def speed2min = speed2div / 6
+  def speed2mm = speed2min * 100
+
+  # scale down to the paper scale
+  def s1 = speed1mm / scale 
+  def s2 = speed2mm / scale 
+  def a = scale / 400
+  def extend = a / i
+  
+  #minute lines - right side
+  
+  #TODO: REPLACE 10 with EXTEND  
+  repeat 1 to 8 using j{
+    line(s1 * j y1 s2 * j y2)
+  }
+
+  def s1l = s1 * -1
+  def s2l = s2 * -1
+
+  #minute lines - left side
+    #TODO: REPLACE 10 with EXTEND
+
+  repeat 0 to 8 using j{
+    line(s1l * j y1 s2l * j y2)
+  }
+
+  line(-70 y1 70 y1)#speed lines
+  text(-80 y1 textSize i) #show knots
+  def yStart = yStart - distance
 }
 
-#these letters are written 
-#by calling functions in the "font" script
-#which is imported in line one:
+line(-70 yStart 70 yStart)#last speed line
+text(-80 -100 textSize speedMax)#last speed text
+text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+text(34 93 7 scale)#show the minute paper scale
+text(-80 -105 5 "disable fit to page when printing!")
 
-def textHeight = 3.5
+#5cm: use to x-check the size of the printed minute paper with a ruler
+line(80 -40 80 -50)
+line(80 -60 80 -70)
+line(80 -80 80 -90)
+line(76 -90 80 -90)
+line(76 -40 80 -40)
+text(72 -37 5 "5 cm")
+text(51 -96 5 "print")
+text(60 -96 5 "scale ")
+text(71 -96 5 "check")
+
+text(0 -105 5 "generated at www.repocad.com")
