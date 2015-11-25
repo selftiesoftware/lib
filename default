@@ -1,83 +1,74 @@
-#SCRIPT-EXAMPLE:
-#minute paper: used by pilots - one minute between each line
+import font
 
-#variables to customize the minute paper
+def d = 157 #CLOCK DIAMETER
 
-##############################################
-#USER INPUT:
+def s = d / 100 #scale factor
 
-def scale = 250000
-def speedMin = 50
-def speedMax = 80
+def fiveSize = 5 * s #FIVE MINUTE MARKS SIZE
+def oneSize = 2.5 * s #ONE MINUTE MARKS SIZE
+def textSize = 5 * s #SIZE OF THE DIGITS
+def innerText = 10 * s #INWARDS OFFSET OF DIGITS
+def textOffsetX = 0 * s #ADJUSTMENT OF TEXT X
+def textOffsetY = 1.5 * s #ADJUSTMENT OF TEXT Y
 
-##############################################
+### END PARAMETERS ###
 
-#SCRIPT STARTS HERE:
+### START SCRIPT ###
 
-def yStart = 90 # y-coord of the first speed line
-def textSize = 5
-
-def dist = speedMax - speedMin
-def distance = 190 / dist
-
-repeat speedMin to speedMax using i {
-  def y1 = yStart
-  def y2 = yStart - distance
-
-  def speed1 = i * 1852
-  def speed1div = speed1
-  def speed1min = speed1div / 6
-  def speed1mm = speed1min * 100
-
-  def plusOne = i + 1
-  def speed2 = plusOne * 1852
-  def speed2div = speed2
-  def speed2min = speed2div / 6
-  def speed2mm = speed2min * 100
-
-  # scale down to the paper scale
-  def s1 = speed1mm / scale 
-  def s2 = speed2mm / scale 
-  def a = scale / 400
-  def extend = a / i
-  
-  #minute lines - right side
-  
-  #TODO: REPLACE 10 with EXTEND  
-  repeat 1 to 8 using j{
-    line(s1 * j y1 s2 * j y2)
-  }
-
-  def s1l = s1 * -1
-  def s2l = s2 * -1
-
-  #minute lines - left side
-    #TODO: REPLACE 10 with EXTEND
-
-  repeat 0 to 8 using j{
-    line(s1l * j y1 s2l * j y2)
-  }
-
-  line(-70 y1 70 y1)#speed lines
-  text(-80 y1 textSize i) #show knots
-  def yStart = yStart - distance
+#calculate which digit to write
+def setChar(x as Number y as Number id as Number ) = {
+  if(id < -1) {if(id > -3) {one(x y textSize)}}
+  if(id < 0) {if(id > -2) {two(x y textSize)}}
+  if(id < 1) {if(id > -1) {three(x y textSize)}}
+  if(id < 2) {if(id > 0) {four(x y textSize)}}
+  if(id < 3) {if(id > 1) {five(x y textSize)}}
+  if(id < 4) {if(id > 2) {six(x y textSize)}}
+  if(id < 5) {if(id > 3) {seven(x y textSize)}}
+  if(id < 6) {if(id > 4) {eight(x y textSize)}}
+  if(id < 7) {if(id > 5) {nine(x y textSize)}}
+  if(id < 8) {if(id > 6) {one(x - (textSize / 2) y textSize)
+  zero(x + (textSize / 2) y textSize)}}
+  if(id < 9) {if(id > 7) {one(x - (textSize / 2) y textSize)
+  one(x + (textSize / 2) y textSize)}}
+  if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
+  two(x + (textSize / 2) y textSize)}}
 }
 
-line(-70 yStart 70 yStart)#last speed line
-text(-80 -100 textSize speedMax)#last speed text
-text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
-text(34 93 7 scale)#show the minute paper scale
-text(-80 -105 5 "disable fit to page when printing!")
+def outer = (d / 2) - 1
+def innerFive = (d / 2) - fiveSize
+def innerOne = (d / 2) - oneSize
 
-#5cm: use to x-check the size of the printed minute paper with a ruler
-line(80 -40 80 -50)
-line(80 -60 80 -70)
-line(80 -80 80 -90)
-line(76 -90 80 -90)
-line(76 -40 80 -40)
-text(72 -37 5 "5 cm")
-text(51 -96 5 "print")
-text(60 -96 5 "scale ")
-text(71 -96 5 "check")
+#FIVE MINUTE MARKS
+repeat -2 to 10 using i {
+  def x = -1 * cos(radians(i * 30))
+  def y = sin(radians(i * 30))
+  line(x * innerFive y * innerFive x * outer y * outer)
 
-text(0 -105 5 "generated at www.repocad.com")
+  #TEXT
+  def textX = (-1 - x * (d / 2) - innerText) - textOffsetX
+  def textY = (-1 - y * (d / 2) - innerText) - textOffsetY
+  setChar(textX textY i)
+}
+
+#ONE MINUTE MARKS
+repeat 0 to 60 using i {
+  def x = cos(radians(i * 6))
+  def y = sin(radians(i * 6))
+  line(x * innerOne y * innerOne x * outer y * outer)
+}
+
+#OUTER AND CENTER CIRCLE
+circle(0 0 d / 2)
+circle(0 0 1)
+
+def s = d / 100
+
+R(-16 * s 5 * s 5 * s)
+E(-12 * s 5 * s 5 * s)
+P(-8 * s 5 * s 5 * s)
+O(-4 * s 5 * s 5 * s)
+C(0 * s 5 * s 5 * s)
+L(4 * s 5 * s 5 * s)
+O(8 * s 5 * s 5 * s)
+C(12 * s 5 * s 5 * s)
+K(16 * s 5 * s 5 * s)
