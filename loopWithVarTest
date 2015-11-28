@@ -1,0 +1,7 @@
+def myVar = 10 
+
+def loopVar = myVar + 5
+repeat 0 to loopVar using i {
+def y = i * 12
+line(0 y 170 y)
+}
