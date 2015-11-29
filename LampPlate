@@ -1,0 +1,34 @@
+
+def height = 200
+def width = 100
+def dent = 20
+def tick_width = 3
+def tick_depth = 10
+
+def bot_width = width * 0.5
+def top_width = width * 0.5
+def fin_height = height * 0.8
+
+line(0 0 bot_width 0)
+line(bot_width 0 width fin_height)
+line(width fin_height top_width height)
+line(width * 0.5 height 20 height)
+
+line(0 0 0 height * 0.1)
+line(0 height * 0.1 dent 30)
+line(20 30 dent 35)
+line(20 35 25 35)
+line(25 35 25 38)
+line(25 38 dent 38)
+line(20 38 dent 42)
+line(20 42 0 50)
+
+line(0 50 0 100)
+line(0 100 dent 120)
+line(dent 120 dent 160)
+
+line(dent 160 35 160)
+line(35 160 35 163)
+line(35 163 dent 163)
+
+line(dent 163 dent height)
