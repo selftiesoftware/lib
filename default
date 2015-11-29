@@ -1,35 +1,48 @@
-import font
+def pi = 3.14159265359
+def pos_x = 0  # pos not working
+def pos_y = 0
 
-line(0 180 100 180)
+# settings
+def n_cogs = 10
+def cog_space = 3
+def cog_height = 10
+def outer_radius = 50
+def inner_radius = 30
 
-text(0 185 7 "hello world!")
-def myValue = 10
-        
-repeat 0 to 17 using i {
-  line(0 i * myValue 170 i * myValue) 
+def length = (pi * 2) / n_cogs
+def radian = pi * outer_radius
+def space_radian = (cog_space / radian) * pi
+def cog_radian = length - space_radian
+
+arc(pos_x pos_y inner_radius 0 pi * 2)
+
+repeat 0 to n_cogs using i {
+	def start = (length * i) - cog_radian
+    def end = length * i
+    def middle = (space_radian / 2)
+    arc(pos_x pos_y outer_radius start end)
+    
+    def sx = cos(length * i)
+    def sy = sin(length * i)
+    def cx = cos(end - middle)
+    def cy = sin(end - middle)
+    def ex = cos(end - space_radian)
+    def ey = sin(end - space_radian)
+    
+    def p1x = sx * outer_radius
+    def p1y = sy * outer_radius
+    def p2x = ex * outer_radius
+    def p2y = ey * outer_radius
+    
+    line(p1x + pos_x p1y + pos_y 
+    	 p1x - cx * cog_height + pos_x
+         p1y - cy * cog_height + pos_y)
+    line(p2x + pos_x p2y + pos_y 
+    	 p2x - cx * cog_height + pos_x 
+         p2y - cy * cog_height + pos_y)
+    line(p1x - cx * cog_height + pos_x 
+    	 p1y - cy * cog_height + pos_y
+         p2x - cx * cog_height + pos_x
+         p2y - cy * cog_height + pos_y)
 }
 
-#these letters are written 
-#by calling functions in the "font" script
-#which is imported in line one
-
-def textHeight = 3.5
-
-W(0 162 textHeight)
-E(5 162 textHeight)
-L(10 162 textHeight)
-C(15 162 textHeight)
-O(20 162 textHeight)
-M(25 162 textHeight)
-E(30 162 textHeight)
-
-T(40 162 textHeight)
-O(45 162 textHeight)
-
-R(0 152 textHeight)
-E(5 152 textHeight)
-P(10 152 textHeight)
-O(15 152 textHeight)
-C(20 152 textHeight)
-A(25 152 textHeight)
-D(30 152 textHeight)
