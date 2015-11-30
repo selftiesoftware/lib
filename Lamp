@@ -1,3 +1,7 @@
 import Gear
+import LampPlate
 
-MakeGear(0 100 10 3 10)
+def material_thickness = 4
+
+MakeGear(0 100 50 10 material_thickness 10)
+LampPlate(0 -200 100 200 material_thickness)
