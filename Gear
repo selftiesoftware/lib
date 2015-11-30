@@ -1,11 +1,12 @@
+
+def Gear(x as Number y as Number
+		 radius as Number
+		 n_cogs as Number
+         cog_space as Number
+         cog_height as Number ) = {
 def pi = 3.14159265359
 
-def pos_x = 0
-def pos_y = 0
-def n_cogs = 10
-def cog_space = 3
-def cog_height = 10
-def outer_radius = 50
+def outer_radius = radius
 def inner_radius = 30
 
 def length = (pi * 2) / n_cogs
@@ -13,13 +14,13 @@ def radian = pi * outer_radius
 def space_radian = (cog_space / radian) * pi
 def cog_radian = length - space_radian
 
-arc(pos_x pos_y inner_radius 0 pi * 2)
+arc(x y inner_radius 0 pi * 2)
 
 repeat 0 to n_cogs using i {
 	def start = (length * i) - cog_radian
     def end = length * i
     def middle = (space_radian / 2)
-    arc(pos_x pos_y outer_radius start end)
+    arc(x y outer_radius start end)
     
     def sx = cos(length * i)
     def sy = sin(length * i)
@@ -28,20 +29,22 @@ repeat 0 to n_cogs using i {
     def ex = cos(end - space_radian)
     def ey = sin(end - space_radian)
     
-    def p1x = sx * outer_radius
-    def p1y = sy * outer_radius
-    def p2x = ex * outer_radius
-    def p2y = ey * outer_radius
+    def p1x = x + sx * outer_radius
+    def p1y = y + sy * outer_radius
+    def p2x = x + ex * outer_radius
+    def p2y = y + ey * outer_radius
     
-    line(p1x + pos_x p1y + pos_y 
-    	 p1x - cx * cog_height + pos_x
-         p1y - cy * cog_height + pos_y)
-    line(p2x + pos_x p2y + pos_y 
-    	 p2x - cx * cog_height + pos_x 
-         p2y - cy * cog_height + pos_y)
-    line(p1x - cx * cog_height + pos_x 
-    	 p1y - cy * cog_height + pos_y
-         p2x - cx * cog_height + pos_x
-         p2y - cy * cog_height + pos_y)
+    line(p1x p1y 
+    	 p1x - cx * cog_height
+         p1y - cy * cog_height)
+    line(p2x p2y
+    	 p2x - cx * cog_height 
+         p2y - cy * cog_height)
+    line(p1x - cx * cog_height 
+    	 p1y - cy * cog_height
+         p2x - cx * cog_height
+         p2y - cy * cog_height)
+}
 }
 
+Gear(10 10 50 10 3 10)
