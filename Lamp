@@ -1,8 +1,3 @@
-import LampPlate
+import Gear
 
-def num_plates = 1
-def width = 100
-def height = 200
-
-LampPlate(0 0 width height 3)
-Gear(300 10 50 10 3 10)
+MakeGear(0 100 10 3 10)
