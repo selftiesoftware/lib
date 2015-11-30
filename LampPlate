@@ -1,5 +1,6 @@
-def LampPlate(height as Number
+def LampPlate(x as Number y as Number
 			  width as Number
+			  height as Number
               tick_width as Number) = {
 def dent = 20
 def tick_depth = 10
@@ -25,24 +26,24 @@ def bump(sx as Number sy as Number
     line(cx cy dx dy)
 }
 
-line(0 0 bot_width 0)
-line(bot_width 0 width fin_height)
-line(width fin_height top_width height)
-line(width * 0.5 height 20 height)
+line(x y bot_width + x y)
+line(bot_width + x y width + x fin_height + y)
+line(width + x fin_height + y top_width + x height + y)
+line(x + width * 0.5 y + height x + 20 y + height)
 
-line(0 0 0 height * 0.1)
+line(x y x y + height * 0.1)
 
-bump(0 height * 0.1  30 15 dent)
-bump(20 
-((height * 0.1) + (30 * 0.5) - (tick_width * 0.5)) 
+bump(x y + height * 0.1  30 15 dent)
+bump(x + 20 
+(y + (height * 0.1) + (30 * 0.5) - (tick_width * 0.5)) 
 tick_width tick_width tick_depth)
 
-line(0 50 0 100)
-line(0 100 dent 120)
-line(dent 120 dent 160)
+line(x y + 50 x y + 100)
+line(x y + 100 x + dent y + 120)
+line(x + dent y + 120 x + dent y + 160)
 
-bump(dent 160 tick_width tick_width tick_depth)
+bump(x + dent y + 160 tick_width tick_width tick_depth)
 
-line(dent 163 dent height)
+line(x + dent y + 163 x + dent y + height)
 }
-LampPlate(200 100 3)
+LampPlate(10 10 100 200 3)
