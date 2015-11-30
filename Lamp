@@ -1,0 +1,9 @@
+import LampPlate
+
+def num_plates = 10
+def width = 100
+def height = 200
+
+repeat 0 to num_plates using x {
+	LampPlate(100 - x * width 0 width height 3)
+}
