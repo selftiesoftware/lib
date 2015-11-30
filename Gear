@@ -1,5 +1,5 @@
 
-def Gear(x as Number y as Number
+def MakeGear(x as Number y as Number
 		 radius as Number
 		 n_cogs as Number
          cog_space as Number
@@ -47,4 +47,4 @@ repeat 0 to n_cogs using i {
 }
 }
 
-Gear(10 10 50 10 3 10)
+MakeGear(10 10 50 10 3 10)
