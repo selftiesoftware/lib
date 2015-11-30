@@ -4,7 +4,5 @@ def num_plates = 1
 def width = 100
 def height = 200
 
-repeat 0 to num_plates using x {
-	LampPlate(x * width 0 width height 3)
-}
+LampPlate(0 0 width height 3)
 Gear(300 10 50 10 3 10)
