@@ -1,6 +1,5 @@
-def size = 120 / 2
+def size = 100 / 2
 def corner = 0.6
-
 
 line(size * corner (-1 * size) (-1 * size * corner) (-1 * size))
 line(size size * corner size (-1 * size * corner))
