@@ -1,0 +1,7 @@
+def size = 20
+
+
+line(size (-1 * size) (-1 * size) (-1 * size))
+line(size size size (-1 * size))
+line(size size (-1 * size) size)
+line((-1 * size) size (-1 * size) (-1 * size))
