@@ -17,10 +17,10 @@ def speedMax = 80
 def yStart = 90 # y-coord of the first speed line
 def textSize = 5
 
-def dist = speedMax - speedMin
+def dist = (speedMax - 1) - speedMin
 def distance = 190 / dist
 
-repeat speedMin to speedMax using i {
+repeat speedMin to (speedMax - 1) using i {
   def y1 = yStart
   def y2 = yStart - distance
 
@@ -42,9 +42,7 @@ repeat speedMin to speedMax using i {
   def extend = a / i
   
   #minute lines - right side
-  
-  #TODO: REPLACE 10 with EXTEND  
-  repeat 1 to 8 using j{
+  repeat 1 to extend - 1 using j{
     line(s1 * j y1 s2 * j y2)
   }
 
@@ -52,32 +50,28 @@ repeat speedMin to speedMax using i {
   def s2l = s2 * -1
 
   #minute lines - left side
-    #TODO: REPLACE 10 with EXTEND
-
-  repeat 0 to 8 using j{
+  repeat 0 to extend - 1 using j{
     line(s1l * j y1 s2l * j y2)
   }
 
   line(-70 y1 70 y1)#speed lines
-  text(-80 y1 textSize i) #show knots
+  text(-69 y1 textSize i) #show knots
   def yStart = yStart - distance
 }
 
-line(-70 yStart 70 yStart)#last speed line
-text(-80 -100 textSize speedMax)#last speed text
-text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
-text(34 93 7 scale)#show the minute paper scale
-text(-80 -105 5 "disable fit to page when printing!")
+line(-70 -100 70 -100)#last speed line
+text(-69 -100 textSize speedMax)#last speed text
+#text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+#text(34 93 7 scale)#show the minute paper scale
+text(-64 -98 5 "disable fit to page when printing!")
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
-line(80 -40 80 -50)
-line(80 -60 80 -70)
-line(80 -80 80 -90)
-line(76 -90 80 -90)
-line(76 -40 80 -40)
-text(72 -37 5 "5 cm")
-text(51 -96 5 "print")
-text(60 -96 5 "scale ")
-text(71 -96 5 "check")
-
-text(0 -105 5 "generated at www.repocad.com")
+line(65 -40 65 -50)
+line(65 -60 65 -70)
+line(65 -80 65 -90)
+line(50 -90 65 -90)
+line(50 -40 65 -40)
+text(49 -39 5 "5 cm")
+text(35 -97 5 "print")
+text(45 -97 5 "scale ")
+text(55 -97 5 "check")
