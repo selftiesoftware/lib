@@ -1,0 +1,9 @@
+repeat 0 to 13 using i {
+  repeat 0 to 15 using j {
+    def a = i * 15
+    def b = j * 15
+    line(0 b 180 b)
+    line(a 210 a 0)
+}
+  
+}
