@@ -1,4 +1,4 @@
-#LODDE/STÃBEGUIDE TIL GENTEGNINGSKURSUS JAN 2016
+#LODDE/STØBEGUIDE TIL GENTEGNINGSKURSUS JAN 2016
 
 repeat 0 to 13 using i { #antal lodrette streger
   repeat 0 to 15 using j { #antal vandrette streger
