@@ -1,7 +1,7 @@
 #LODDE/STØBEGUIDE TIL GENTEGNINGSKURSUS JAN 2016
 
-repeat 0 to 13 using i {
-  repeat 0 to 15 using j {
+repeat 0 to 13 using i { #lodrette streger
+  repeat 0 to 15 using j { #vandrette streger
     def a = i * 15
     def b = j * 15
     line(0 b 180 b)
