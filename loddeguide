@@ -1,5 +1,8 @@
 #LODDE/STØBEGUIDE TIL GENTEGNINGSKURSUS JAN 2016
 
+#VIGTIGT - SLÅ "FIT TO PAGE" FRA NÅR DU PRINTER 
+# - ELLERS BLIVER GRIDDET SKALERET LIDT NED
+
 repeat 0 to 13 using i { #antal lodrette streger
   repeat 0 to 15 using j { #antal vandrette streger
   
