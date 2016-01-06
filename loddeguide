@@ -3,10 +3,10 @@
 repeat 0 to 13 using i { #antal lodrette streger
   repeat 0 to 15 using j { #antal vandrette streger
   
-    def a = i * 30 #afstand lodrette streger
-    def b = j * 30 #afstand vandrette streger
+    def a = i * 15 #afstand lodrette streger
+    def b = j * 15 #afstand vandrette streger
     
-    line(0 b 360 b) #tegn vandrette streger
-    line(a 420 a 0) #tegn lodrette streger
+    line(0 b 180 b) #tegn vandrette streger
+    line(a 210 a 0) #tegn lodrette streger
   } 
 }
