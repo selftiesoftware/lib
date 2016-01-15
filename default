@@ -1,12 +1,13 @@
-#LODDE/STØBEGUIDE TIL GENTEGNINGSKURSUS JAN 2016
+def spacingX = 15
+def spacingY = 15
 
-repeat 0 to 13 using i { #antal lodrette streger
-  repeat 0 to 15 using j { #antal vandrette streger
-  
-    def a = i * 30 #afstand lodrette streger
-    def b = j * 30 #afstand vandrette streger
-    
-    line(0 b 360 b) #tegn vandrette streger
-    line(a 420 a 0) #tegn lodrette streger
-  } 
+repeat 0 to (200 / spacingX - 1) using i { 
+repeat 0 to (190 / spacingY - 1) using j { 
+
+def a = i * spacingX
+def b = j * spacingY
+
+line(0 b spacingX * (200 / spacingX) b)
+line(a spacingY * (190 / spacingY) a 0) 
+} 
 }
