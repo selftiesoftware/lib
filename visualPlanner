@@ -9,7 +9,6 @@ def 1x = 0
 def 1y = 0
 triangle(1x 1y triSize)
 
-
 #WP2
 def 2x = 20
 def 2y = 100
