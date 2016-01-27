@@ -1,7 +1,7 @@
 import geometry2d
 
 #VARS
-def triSize = 5
+def triSize = 3
 def distSize = 8
 
 #WP1
