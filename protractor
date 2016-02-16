@@ -1,0 +1,4 @@
+import geometry2d
+
+text(-30 0 8 "NM 1:500.000")
+rectangle(-100 -100 100 100)
