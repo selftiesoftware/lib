@@ -9,11 +9,18 @@ rectangle(d * -1 d * -1 d d)
 
 #DEGREE TICS
 
-repeat 0 to 45 using i {
+#repeat 0 to 45 using i {
 
 #deg tics here..
+def v = 22.5
+def x1 = cos(radians(v))
+def y1 = sin(radians(v))
+def factor = 1 / y1
+def x2 = x1 * factor
 
-}
+line(0 0 x2 d)
+
+#}
 
 
 
