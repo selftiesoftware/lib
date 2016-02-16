@@ -4,13 +4,13 @@ import geometry2d
 
 def d = -128 / 2
 
-text(-20 0 8 "NM 1:500.000")
+text(-20 1 5 "NM   1 :  500.000")
 rectangle(d * -1 d * -1 d d)
 
 #DEGREE TICS
 
 
-line(0 80 0 90)
+line(0 d 0 d + 6)
 
 
 
