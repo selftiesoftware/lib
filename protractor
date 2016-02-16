@@ -9,10 +9,10 @@ rectangle(d * -1 d * -1 d d)
 
 #DEGREE TICS
 
-repeat 0 to 60 using i {
+repeat -45 to 45 using i {
 
-def x = sin(radians(i * 6))
-def y = cos(radians(i * 6))
+def x = sin(radians(i))
+def y = cos(radians(i))
 line(0 0 y * d x * d)
 }
 
