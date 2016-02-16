@@ -14,6 +14,7 @@ def tic(deg as Number h as Number) = {
   def y1 = sin(radians(deg)) * d
   def x2 = x1 * (d / y1) 
   line((x1 * (d * 0.94) / y1) d * 0.94 x2 d)
+  line((x1 * (d * 0.94) / y1) d * -0.94 x2 d * -1)
 }
 
 repeat 45 to 136 using i {
