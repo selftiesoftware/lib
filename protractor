@@ -2,6 +2,24 @@
 
 import geometry2d
 
-text(-20 0 8 "NM 1:500.000")
-rectangle(-90 -90 90 90)
+def d = -128 / 2
 
+text(-20 0 8 "NM 1:500.000")
+rectangle(d * -1 d * -1 d d)
+
+#DEGREE TICS
+
+
+line(0 80 0 90)
+
+
+
+
+#GRID
+
+repeat -7 to 8 using j {
+  def k = j * 3.704 * 2
+  def l = (d * -1) - 12
+    line(d + 12 k l k)
+    line(k d + 12 k l)
+}
