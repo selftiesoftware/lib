@@ -136,3 +136,5 @@ text(-13 -44 5 "NM   1 :  500.000")
 text(-10 19 5 "5 NM")
 text(-12 38 5 "10 NM")
 
+#center hole
+circle(0 0 1.3)
