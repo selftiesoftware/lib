@@ -124,10 +124,13 @@ repeat 23 to 32 using l{
 #NSEW
 text(-2 (d * -1) - 14 9 "N")
 text(-2 d + 10 9 "S")
-text((d * -1) - 16 -2 9 "E")
+text((d * -1) - 17 -2 9 "E")
 text(d + 13 -2 9 "W")
 
 text((d * -1) - 13 (d * -1) - 11 6 "NE")
+text((d * -1) - 13 d + 8 6 "SE")
+text(d + 5 d + 8 6 "SW")
+text(d + 5 (d * -1) - 11 6 "NW")
 
 #SCALE
 text(-13 -44 5 "NM   1 :  500.000")
