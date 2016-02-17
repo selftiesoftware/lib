@@ -2,7 +2,8 @@ def l = 80
 def h = 110
 def width = 20
 
-#Holes var = number of holes on top (horizontal) part
+#Holes var = number of holes on top (horizontal) part.
+#Holes on vertical part are distributed based on that.
 
 def bracket(x as Number y as Number l as Number h as Number w as Number holes as Number) = {
   
