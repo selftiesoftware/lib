@@ -4,7 +4,8 @@ import geometry2d
 
 def d = -128 / 2
 def offset = 0.94
-text(-20 1 5 "NM   1 :  500.000")
+text(-13 1 5 "NM   1 :  500.000")
+def nm = 3.704
 
 #DEGREE TICS
 
@@ -40,10 +41,20 @@ rectangle(d * -1 d * -1 d d)
 rectangle((d * offset * -1) (d * offset * -1) d * offset d * offset)
 
 #GRID
-
 repeat -7 to 8 using j {
-  def k = j * 3.704 * 2
+  def k = j * nm * 2
   def l = (d * -1) - 12
     line(d + 12 k l k)
     line(k d + 12 k l)
+}
+
+#RANGE CIRCLES
+circle(0 0 nm * 5)
+circle(0 0 nm * 10)
+
+#DISTANCE TICS
+repeat -6 to 8 using k{
+  def l = (k - 0.5) * 2
+  line(-3 nm * l 3 nm * l)
+  line(nm * l -3 nm * l 3)
 }
