@@ -1,16 +1,16 @@
-def size = 100 / 2
+def size = 50
 def corner = 0.6
 
 #Main Shape
-line(size * corner (-1 * size) (-1 * size * corner) (-1 * size))
-line(size size * corner size (-1 * size * corner))
+line(size * corner -1 * size -1 * size * corner -1 * size)
+line(size size * corner size -1 * size * corner)
 line((-1 * size * corner) size size * corner size )
-line((-1 * size) size * corner (-1 * size) (-1 * size * corner))
+line(-1 * size size * corner -1 * size -1 * size * corner)
 
 #Corner lines
-line(size * corner (-1 * size) size (-1 * size * corner))
+line(size * corner -1 * size size -1 * size * corner)
 line(size size * corner size * corner size)
-line((-1 * size * corner) size (-1 * size) size * corner)
+line(-1 * size * corner size -1 * size size * corner)
 line((-1 * size) (-1 * size * corner) (-1 * size * corner) (-1 * size))
 
 #Motor Screws
