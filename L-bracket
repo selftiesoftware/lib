@@ -1,9 +1,42 @@
-def l = 10
-def h = 15
-def width = 5
+def l = 80
+def h = 60
+def width = 20
 
-def bracket(x as Number y as Number l as Number h as Number w as Number) = {
-  line(l / -2 h / -2 l / -2 h / 2) 
-  line(h / -2 l / -2 h / -2 l / 2) 
+#Holes var = number of holes on top (horizontal) part
+
+def bracket(x as Number y as Number l as Number h as Number w as Number holes as Number) = {
+  
+  def holeRadius = 2
+  
+  def tLx = x - (l / 2)
+  def tLy = y + (h / 2)
+ 
+  def tRx = x + (l / 2)
+  def tRy = y + (h / 2)
+  
+  def bLx = x - (l / 2)
+  def bLy = y - (h / 2)
+  
+  def bRx = x + (l / 2)
+  def bRy = y - (h / 2)  
+  
+  line(tLx tLy tRx tRy) #TOP
+  line(tRx tRy bRx bRy) #RIGHT
+  line(bRx bRy bRx - width bRy) #BOTTOM
+  line(bRx - width tRy - width bRx - width bRy) #INNER VERTICAL   
+  line(bRx - width tRy - width tLx tLy - width) #INNER HORIZONTAL
+  line(tLx tLy bLx tLy - width) #TOP
+  
+  #TOP PART HOLES
+  def ctrX = x
+  def ctrY = tLy - width / 2
+  def spacingTop = (tRx - tLx) / holes
+  
+  repeat 0 to holes using i {
+    circle(tLx + (spacingTop * i) + spacingTop / 2 ctrY holeRadius)
+  }
+  #BOTTOM PART HOLES
+  
 }
-bracket(20 40 l h width)
+
+bracket(20 40 l h width 3)
