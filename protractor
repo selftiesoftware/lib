@@ -3,15 +3,14 @@
 import geometry2d
 
 def d = -128 / 2
-
+def offset = 0.94
 text(-20 1 5 "NM   1 :  500.000")
-rectangle(d * -1 d * -1 d d)
 
-def inner = d * 0.94
-def inner2 = d * -0.94
 #DEGREE TICS
 
-def tic(deg as Number h as Number) = { 
+def tic(deg as Number h as Number offset as Number) = { 
+  def inner = d * offset
+  def inner2 = (d * (offset * -1))
   def x1 = cos(radians(deg)) * d
   def y1 = sin(radians(deg)) * d
   def x2 = x1 * (d / y1) 
@@ -23,11 +22,22 @@ def tic(deg as Number h as Number) = {
   line((inner2) (x1 * inner / y1) d * -1 x2)
 }
 
+#one degree tics
 repeat 45 to 136 using i {
-  tic(i d)
+  tic(i d offset)
 }
 
-rectangle(inner2 inner2 inner inner)
+#five degree tics
+repeat 45 to 64 using j {
+  def five = j * 5
+  tic(five d 0.9)
+}
+
+#outer rectangle
+rectangle(d * -1 d * -1 d d)
+
+#inner rectangle
+rectangle((d * offset * -1) (d * offset * -1) d * offset d * offset)
 
 #GRID
 
