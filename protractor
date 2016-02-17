@@ -4,7 +4,7 @@ import geometry2d
 
 def d = -128 / 2
 def offset = 0.94
-text(-13 -56 5 "NM   1 : 500.000")
+text(-13 -51 5 "NM   1 :  500.000")
 def nm = 3.704
 
 #DEGREE TICS
@@ -57,4 +57,47 @@ repeat -6 to 8 using k{
   def l = (k - 0.5) * 2
   line(-3 nm * l 3 nm * l)
   line(nm * l -3 nm * l 3)
+}
+
+def annotation1(deg as Number h as Number offset as Number) = { 
+  def inner = d * offset
+  def inner2 = (d * (offset * -1))
+  def x1 = (cos(radians(deg)) * d) * -1
+  def x2 = (cos(radians(deg)) * d)
+  def y1 = sin(radians(deg)) * d
+  text((x1 * inner / y1) - 4 inner 5 deg - 90)
+}
+
+repeat 23 to 32 using l{
+  def m = l * 10
+  annotation1(m d 0.9)
+}
+
+
+def annotation2(deg as Number h as Number offset as Number) = { 
+  def inner = d * offset
+  def inner2 = (d * (offset * -1))
+  def x1 = (cos(radians(deg)) * d) * -1
+  def x2 = (cos(radians(deg)) * d)
+  def y1 = sin(radians(deg)) * d
+  text((x2 * inner / y1) - 4 inner2 - 2 5 deg + 90)
+}
+
+repeat 23 to 28 using l{
+  def m = l * 10
+  annotation2(m d 0.9)
+}
+
+def annotation3(deg as Number h as Number offset as Number) = { 
+  def inner = d * offset
+  def inner2 = (d * (offset * -1))
+  def x1 = (cos(radians(deg)) * d) * -1
+  def x2 = (cos(radians(deg)) * d)
+  def y1 = sin(radians(deg)) * d
+  text((x2 * inner / y1) - 2 inner2 - 2 5 deg - 270)
+}
+
+repeat 28 to 32 using l{
+  def m = l * 10
+  annotation3(m d 0.9)
 }
