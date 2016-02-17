@@ -1,0 +1,9 @@
+def l = 10
+def h = 15
+def width = 5
+
+def bracket(x as Number y as Number l as Number h as Number w as Number) = {
+  line(l / -2 h / -2 l / -2 h / 2) 
+  line(h / -2 l / -2 h / -2 l / 2) 
+}
+bracket(20 40 l h width)
