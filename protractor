@@ -4,7 +4,6 @@ import geometry2d
 
 def d = -128 / 2
 def offset = 0.94
-text(-13 -51 5 "NM   1 :  500.000")
 def nm = 3.704
 
 #DEGREE TICS
@@ -122,3 +121,11 @@ repeat 23 to 32 using l{
   annotation4(m d 0.9)
 }
 
+#NSEW
+text(-2 (d * -1) - 14 9 "N")
+text(-2 d + 10 9 "S")
+text((d * -1) - 16 -2 9 "E")
+text(d + 13 -2 9 "W")
+
+#SCALE
+text(-13 -44 5 "NM   1 :  500.000")
