@@ -59,6 +59,7 @@ repeat -6 to 8 using k{
   line(nm * l -3 nm * l 3)
 }
 
+#BOTTOM
 def annotation1(deg as Number h as Number offset as Number) = { 
   def inner = d * offset
   def inner2 = (d * (offset * -1))
@@ -73,7 +74,7 @@ repeat 23 to 32 using l{
   annotation1(m d 0.9)
 }
 
-
+#TOP, 320 - 360
 def annotation2(deg as Number h as Number offset as Number) = { 
   def inner = d * offset
   def inner2 = (d * (offset * -1))
@@ -88,6 +89,7 @@ repeat 23 to 28 using l{
   annotation2(m d 0.9)
 }
 
+#TOP, 0 - 40
 def annotation3(deg as Number h as Number offset as Number) = { 
   def inner = d * offset
   def inner2 = (d * (offset * -1))
@@ -101,3 +103,22 @@ repeat 28 to 32 using l{
   def m = l * 10
   annotation3(m d 0.9)
 }
+
+#LEFT AND RIGHT
+def annotation4(deg as Number h as Number offset as Number) = { 
+  def inner = d * offset
+  def inner2 = (d * (offset * -1)) - 5
+  def x1 = (cos(radians(deg)) * d) * -1
+  def x2 = (cos(radians(deg)) * d)
+  def y1 = sin(radians(deg)) * d
+  #LEFT
+  text(inner ((x2 * inner) / y1 5 deg)
+  #RIGHT
+  text(inner2 ((x1 * inner) / y1 5 deg - 180)
+}
+
+repeat 23 to 32 using l{
+  def m = l * 10
+  annotation4(m d 0.9)
+}
+
