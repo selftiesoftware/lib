@@ -13,14 +13,16 @@ def tic(deg as Number h as Number) = {
   def x1 = cos(radians(deg)) * d
   def y1 = sin(radians(deg)) * d
   def x2 = x1 * (d / y1) 
+  #TOP AND BOTTOM
   line((x1 * (d * 0.94) / y1) d * 0.94 x2 d)
   line((x1 * (d * 0.94) / y1) d * -0.94 x2 d * -1)
+  #LEFT AND RIGHT
+  line(d * 0.94 (x1 * (d * 0.94) / y1) d x2)
+  line(d * -0.94 (x1 * (d * 0.94) / y1) d * -1 x2)
 }
 
 repeat 45 to 136 using i {
-tic(i d)
-
-
+  tic(i d)
 }
 
 
