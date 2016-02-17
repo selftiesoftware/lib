@@ -121,10 +121,10 @@ repeat 23 to 32 using l{
 }
 
 #NSEW
-text(-2 (d * -1) - 14 9 "N")
-text(-2 d + 10 9 "S")
-text((d * -1) - 17 -2 9 "E")
-text(d + 13 -2 9 "W")
+text(-2 (d * -1) - 14 8 "N")
+text(-2 d + 10 8 "S")
+text((d * -1) - 17 -2 8 "E")
+text(d + 13 -2 8 "W")
 
 text((d * -1) - 13 (d * -1) - 11 6 "NE")
 text((d * -1) - 13 d + 8 6 "SE")
