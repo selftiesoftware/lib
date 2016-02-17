@@ -4,7 +4,7 @@ import geometry2d
 
 def d = -128 / 2
 def offset = 0.94
-text(-13 1 5 "NM   1 :  500.000")
+text(-13 -56 5 "NM   1 : 500.000")
 def nm = 3.704
 
 #DEGREE TICS
