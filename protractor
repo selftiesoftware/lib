@@ -7,6 +7,8 @@ def d = -128 / 2
 text(-20 1 5 "NM   1 :  500.000")
 rectangle(d * -1 d * -1 d d)
 
+def inner = d * 0.94
+def inner2 = d * -0.94
 #DEGREE TICS
 
 def tic(deg as Number h as Number) = { 
@@ -14,19 +16,18 @@ def tic(deg as Number h as Number) = {
   def y1 = sin(radians(deg)) * d
   def x2 = x1 * (d / y1) 
   #TOP AND BOTTOM
-  line((x1 * (d * 0.94) / y1) d * 0.94 x2 d)
-  line((x1 * (d * 0.94) / y1) d * -0.94 x2 d * -1)
+  line((x1 * inner / y1) inner x2 d)
+  line((x1 * inner / y1) inner2 x2 d * -1)
   #LEFT AND RIGHT
-  line(d * 0.94 (x1 * (d * 0.94) / y1) d x2)
-  line(d * -0.94 (x1 * (d * 0.94) / y1) d * -1 x2)
+  line((inner) (x1 * inner / y1) d x2)
+  line((inner2) (x1 * inner / y1) d * -1 x2)
 }
 
 repeat 45 to 136 using i {
   tic(i d)
 }
 
-
-
+rectangle(inner2 inner2 inner inner)
 
 #GRID
 
