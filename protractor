@@ -7,7 +7,6 @@ def offset = 0.94
 def nm = 3.704
 
 #DEGREE TICS
-
 def tic(deg as Number h as Number offset as Number) = { 
   def inner = d * offset
   def inner2 = (d * (offset * -1))
