@@ -1,6 +1,7 @@
 def l = 80
 def h = 110
 def width = 20
+def holes = 3
 
 #Holes var = number of holes on top (horizontal) part.
 #Holes on vertical part are distributed based on that.
@@ -44,4 +45,4 @@ def bracket(x as Number y as Number l as Number h as Number w as Number holes as
   }
 }
 
-bracket(20 40 l h width 3)
+bracket(20 40 l h width holes)
