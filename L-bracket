@@ -7,7 +7,6 @@ def holes = 3
 #Holes on vertical part are distributed based on that.
 
 def bracket(x as Number y as Number l as Number h as Number w as Number holes as Number) = {
-  
   def holeRadius = 2
   
   def tLx = x - (l / 2)
