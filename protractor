@@ -110,9 +110,9 @@ def annotation4(deg as Number h as Number offset as Number) = {
   def x2 = (cos(radians(deg)) * d)
   def y1 = sin(radians(deg)) * d
   #LEFT
-  text(inner ((x2 * inner) / y1 5 deg)
+  text(inner ((x2 * inner) / y1 5 deg))
   #RIGHT
-  text(inner2 ((x1 * inner) / y1 5 deg - 180)
+  text(inner2 ((x1 * inner) / y1 5 deg - 180))
 }
 
 repeat 23 to 32 using l{
