@@ -23,8 +23,8 @@ def score(x as Number y as Number key as String) = {
   }
 }
 #draw a dot position
-def dot(x as Number y as Number string as Number fret as Number) = {
-   def offsetX = (string * 3) - 12
+def dot(x as Number y as Number z as Number fret as Number) = {
+   def offsetX = (z * 3) - 12
    def offsetY = (fret * 6) - 15
    circle(x + offsetX y - offsetY 1.2)
 }
