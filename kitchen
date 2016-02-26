@@ -1,0 +1,12 @@
+import geometry2d
+
+def centerX = 0
+def centerY = 0
+def width = 600
+
+def half = width / 2
+
+rectangle(0 0 600 800)
+
+arc(190 0 10 3.14 0)
+line(200 0 200 -16)
