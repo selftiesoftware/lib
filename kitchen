@@ -2,11 +2,16 @@ import geometry2d
 
 def centerX = 0
 def centerY = 0
+
 def width = 600
+def height = 800
 
-def half = width / 2
+def halfW = width / 2
+def halfH = height / 2
 
-rectangle(0 0 600 800)
+#GUIDING RECTANGLE - TO BE DELETED
+rectangle(centerX - halfW centerY + halfH centerX + halfW centerY - halfH)
 
+#
 arc(190 0 10 3.14 0)
 line(200 0 200 -16)
