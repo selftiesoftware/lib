@@ -1,301 +1,301 @@
 #REPOCAD single stroke font
 #for a use case search fot the script called "clock"
 
-def A(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) (y) ((h / 2) + x) hgt + y)
-line((h + x) (y) ((h / 2) + x) hgt + y)
-line(((h / 1.3) + x) ((hgt / 2) + y) ((h / 4) + x) (hgt / 2) + y)
+def A(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line((vx) (vy) ((height / 2) + vx) hgt + vy)
+line((height + vx) (vy) ((height / 2) + vx) hgt + vy)
+line(((height / 1.3) + vx) ((hgt / 2) + vy) ((height / 4) + vx) (hgt / 2) + vy)
 }
 
-def B(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x mh2 + y mh + x mh2 + y)
-line(x y mh + x y)
-arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 1.55)
-arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
+def B(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+def mh2 = height / 0.65
+line(vx 0 + vy 0 + vx hgt + vy)
+line(vx hgt + vy mheight + vx hgt + vy)
+line(vx mh2 + vy mheight + vx mh2 + vy)
+line(vx vy mheight + vx vy)
+arc((mheight + vx) (height / 1.3) + vy height / 1.3 -1.55 1.55)
+arc((mheight + vx) (height / 0.44) + vy height / 1.4 -1.55 1.55)
 }
 
-def C(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line((x) ((hgt * 0.35) + y) (x) (hgt * 0.65) + y)
-arc((h + x) (h / 0.5) + y h -3.14 -1.3)
-arc(h + x h + y h 1.3 3.14)
+def C(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line((vx) ((hgt * 0.35) + vy) (vx) (hgt * 0.65) + vy)
+arc((height + vx) (height / 0.5) + vy height -3.14 -1.3)
+arc(height + vx height + vy height 1.3 3.14)
 }
 
-def D(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x y mh + x y)
-line((mh + x + h) ((hgt * 0.35) + y) (mh + x + h) (hgt * 0.65) + y)
-arc((mh + x) (h / 0.5) + y h -1.55 0)
-arc(mh + x h + y h 0 1.55)
+def D(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line(vx vy vx hgt + vy)
+line(vx hgt + vy mheight + vx hgt + vy)
+line(vx vy mheight + vx vy)
+line((mheight + vx + height) ((hgt * 0.35) + vy) (mheight + vx + height) (hgt * 0.65) + vy)
+arc((mheight + vx) (height / 0.5) + vy height -1.55 0)
+arc(mheight + vx height + vy height 0 1.55)
 }
 
-def E(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x hgt + y h + x hgt + y)
-line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
-line(x y h + x y)
+def E(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line(vx vy vx hgt + vy)
+line(vx hgt + vy height + vx hgt + vy)
+line((vx) (hgt / 2) + (vy) (mheight + vx) (hgt / 2) + vy)
+line(vx vy height + vx vy)
 }
 
-def F(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y h + x hgt + y)
-line((x) (hgt / 2) + (y) (mh + x) (hgt / 2) + y)
+def F(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line(vx 0 + vy 0 + vx hgt + vy)
+line(vx hgt + vy height + vx hgt + vy)
+line((vx) (hgt / 2) + (vy) (mheight + vx) (hgt / 2) + vy)
 }
 
-def G(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) ((hgt / 1.4) + y) (x) r + y)
-arc((r + x) (hgt / 1.4) + y r -3.14 -0.4)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 2) + y) (x + r * 2) r + y)
-line((x + r * 2) ((hgt / 2) + y) (r + x) (hgt / 2) + y)
+def G(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.8
+line((vx) ((hgt / 1.4) + vy) (vx) rad + vy)
+arc((rad + vx) (hgt / 1.4) + vy rad -3.14 -0.4)
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) ((hgt / 2) + vy) (vx + rad * 2) rad + vy)
+line((vx + rad * 2) ((hgt / 2) + vy) (rad + vx) (hgt / 2) + vy)
 }
 
-def H(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) (hgt / 2) + (y) (h + x) (hgt / 2) + y)
+def H(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line(vx vy vx hgt + vy)
+line(height + vx vy height + vx hgt + vy)
+line((vx) (hgt / 2) + (vy) (height + vx) (hgt / 2) + vy)
 }
 
-def I(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-def mh = 1.4 * h
-line(((mh / 2) + x) (y) (mh / 2) + x hgt + y)
+def I(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+def mheight = 1.4 * height
+line(((mheight / 2) + vx) (vy) (mheight / 2) + vx hgt + vy)
 }
 
-def J(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) (hgt + y) (x + r * 2) r + y)
+def J(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.8
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) (hgt + vy) (vx + rad * 2) rad + vy)
 }
 
-def K(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line((x) (hgt / 2) + (y) (h + x) hgt + y)
-line((x) (hgt / 2) + (y) (h + x) y)
+def K(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line(vx vy vx hgt + vy)
+line((vx) (hgt / 2) + (vy) (height + vx) hgt + vy)
+line((vx) (hgt / 2) + (vy) (height + vx) vy)
 }
 
-def L(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x hgt + y)
-line(x y h + x y)
+def L(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line(vx vy vx hgt + vy)
+line(vx vy height + vx vy)
 }
 
-def M(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
+def M(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line(vx vy vx hgt + vy)
+line(height + vx vy height + vx hgt + vy)
+line((vx) hgt + (vy) ((height / 2) + vx) (hgt / 2) + vy)
+line((height + vx) hgt + (vy) ((height / 2) + vx) (hgt / 2) + vy)
 }
 
-def N(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(x y x hgt + y)
-line(h + x y h + x hgt + y)
-line((x) hgt + (y) (h + x) y)
+def N(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line(vx vy vx hgt + vy)
+line(height + vx vy height + vx hgt + vy)
+line((vx) hgt + (vy) (height + vx) vy)
 }
 
-def O(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-line((x) ((hgt / 1.3) + y) (x) r + y)
-arc((r + x) (hgt / 1.28) + y r -3.14 0)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.3) + y) (x + r * 2) r + y)
+def O(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+line((vx) ((hgt / 1.3) + vy) (vx) rad + vy)
+arc((rad + vx) (hgt / 1.28) + vy rad -3.14 0)
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) ((hgt / 1.3) + vy) (vx + rad * 2) rad + vy)
 }
 
-def P(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x mh2 + y mh + x mh2 + y)
-arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
+def P(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+def mh2 = height / 0.65
+line(vx 0 + vy 0 + vx hgt + vy)
+line(vx hgt + vy mheight + vx hgt + vy)
+line(vx mh2 + vy mheight + vx mh2 + vy)
+arc((mheight + vx) (height / 0.44) + vy height / 1.4 -1.55 1.55)
 }
 
-def Q(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) ((hgt / 1.4) + y) (x) r + y)
-arc((r + x) (hgt / 1.4) + y r -3.14 0)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.4) + y) (x + r * 2) r + y)
-line((h + x) ((h / 1.2) + y) ((h * 1.4) + x) y) 
+def Q(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.8
+line((vx) ((hgt / 1.4) + vy) (vx) rad + vy)
+arc((rad + vx) (hgt / 1.4) + vy rad -3.14 0)
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) ((hgt / 1.4) + vy) (vx + rad * 2) rad + vy)
+line((height + vx) ((height / 1.2) + vy) ((height * 1.4) + vx) vy) 
 }
 
 
-def R(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-line(x 0 + y 0 + x hgt + y)
-line(x hgt + y mh + x hgt + y)
-line(x mh2 + y mh + x mh2 + y)
-line((mh + x) (mh2 + y) ((h * 1.2) + x) y)
-arc((mh + x) (h / 0.44) + y h / 1.4 -1.55 1.55)
+def R(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+def mh2 = height / 0.65
+line(vx 0 + vy 0 + vx hgt + vy)
+line(vx hgt + vy mheight + vx hgt + vy)
+line(vx mh2 + vy mheight + vx mh2 + vy)
+line((mheight + vx) (mh2 + vy) ((height * 1.2) + vx) vy)
+arc((mheight + vx) (height / 0.44) + vy height / 1.4 -1.55 1.55)
 }
 
-def S(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-arc((r + x) (hgt / 1.3) + y r -3.94 0)
-arc(r + x r + y r -1 3.4)
-line(((h / 4.5) + x) ((h * 1.8) + y) ((h * 1.1) + x) ((h * 1.3) + y))
+def S(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+arc((rad + vx) (hgt / 1.3) + vy rad -3.94 0)
+arc(rad + vx rad + vy rad -1 3.4)
+line(((height / 4.5) + vx) ((height * 1.8) + vy) ((height * 1.1) + vx) ((height * 1.3) + vy))
 }
 
-def T(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 1.4 * h
-line(((mh / 2) + x) (y) (mh / 2) + x hgt + y)
-line(x hgt + y mh + x hgt + y)
+def T(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 1.4 * height
+line(((mheight / 2) + vx) (vy) (mheight / 2) + vx hgt + vy)
+line(vx hgt + vy mheight + vx hgt + vy)
 }
 
-def U(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.8
-line((x) (hgt + y) (x) r + y)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) (hgt + y) (x + r * 2) r + y)
+def U(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.8
+line((vx) (hgt + vy) (vx) rad + vy)
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) (hgt + vy) (vx + rad * 2) rad + vy)
 }
 
-def V(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y) ((h / 2) + x) y)
-line((h + x) hgt + (y) ((h / 2) + x) y)
+def V(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line((vx) hgt + (vy) ((height / 2) + vx) vy)
+line((height + vx) hgt + (vy) ((height / 2) + vx) vy)
 }
-def W(x as Number y as Number hgt as Number) = {
+def W(vx as Number vy as number hgt as Number) = {
 def left = hgt / 6
 def mid = hgt / 3
 def right = hgt / 2
-line(x hgt + y left + x y)
-line(mid + x  hgt + y left + x y)
-line(mid + x hgt + y right + x y)
-line((hgt / 1.5) + x hgt + y right + x y)
+line(vx hgt + vy left + vx vy)
+line(mid + vx hgt + vy left + vx vy)
+line(mid + vx hgt + vy right + vx vy)
+line((hgt / 1.5) + vx hgt + vy right + vx vy)
 }
 
-def X(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y)  h + x y)
-line((h + x) hgt + (y) x y)
+def X(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line((vx) hgt + (vy)  height + vx vy)
+line((height + vx) hgt + (vy) vx vy)
 }
 
-def Y(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line((h + x) hgt + (y) ((h / 2) + x) (hgt / 2) + y)
-line(((h / 2) + x) (y) ((h / 2) + x)(hgt / 2) + y)
+def Y(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line((vx) hgt + (vy) ((height / 2) + vx) (hgt / 2) + vy)
+line((height + vx) hgt + (vy) ((height / 2) + vx) (hgt / 2) + vy)
+line(((height / 2) + vx) (vy) ((height / 2) + vx)(hgt / 2) + vy)
 }
 
-def Z(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-line(x y x + h hgt + y)
-line(x hgt + y h + x hgt + y)
-line(x y h + x y)
+def Z(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+line(vx vy vx + height hgt + vy)
+line(vx hgt + vy height + vx hgt + vy)
+line(vx vy height + vx vy)
 }
 
-def one(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line(((h / 2) + x) (y) (h / 2) + x hgt + y)
-line(((h / 2) + x) hgt + (y) ((h / 5) + x) (hgt / 1.3) + y)
-line(((h / 4) + x) (y) (h / 1.3) + x y)
+def one(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line(((height / 2) + vx) (vy) (height / 2) + vx hgt + vy)
+line(((height / 2) + vx) hgt + (vy) ((height / 5) + vx) (hgt / 1.3) + vy)
+line(((height / 4) + vx) (vy) (height / 1.3) + vx vy)
 }
 
-def two(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-arc((r + x) (hgt / 1.3) + y r -2.8 0.60)
-line(((h * 1.36) + x) ((h * 2.04) + y) ((h / 8) + x) ((h * 0.4) + y))
-arc(r + x y r 3.14 3.8)
-line(x y x + r * 2 y)
+def two(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+arc((rad + vx) (hgt / 1.3) + vy rad -2.8 0.60)
+line(((height * 1.36) + vx) ((height * 2.04) + vy) ((height / 8) + vx) ((height * 0.4) + vy))
+arc(rad + vx vy rad 3.14 3.8)
+line(vx vy vx + rad * 2 vy)
 }
 
-def three(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-arc((mh + x) (h / 1.3) + y h / 1.3 -1.55 2.75)
-arc((mh + x) (h / 0.44) + y h / 1.4 -2 1.75)
+def three(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+def mh2 = height / 0.65
+arc((mheight + vx) (height / 1.3) + vy height / 1.3 -1.55 2.75)
+arc((mheight + vx) (height / 0.44) + vy height / 1.4 -2 1.75)
 }
 
-def four(x as Number y as Number hgt as Number) = {
-def h = hgt / 2
-line((h + x) (y) h + x hgt + y)
-line((h + x) hgt + (y) ((h / 5) + x) h + y)
-line(((h / 4) + x) (h + y) h + x h + y)
+def four(vx as Number vy as number hgt as Number) = {
+def height = hgt / 2
+line((height + vx) (vy) height + vx hgt + vy)
+line((height + vx) hgt + (vy) ((height / 5) + vx) height + vy)
+line(((height / 4) + vx) (height + vy) height + vx height + vy)
 }
 
-def five(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 0.5 * h
-def mh2 = h / 0.65
-arc((mh + x) (h / 1.3) + y h / 1.3 -1.57 1.57)
-line(x y mh + x y)
-line(x mh2 + y mh + x mh2 + y)
-line(x hgt + y h + x hgt + y)
-line((x) (hgt + y) (x) (hgt / 2) + y)
+def five(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 0.5 * height
+def mh2 = height / 0.65
+arc((mheight + vx) (height / 1.3) + vy height / 1.3 -1.57 1.57)
+line(vx vy mheight + vx vy)
+line(vx mh2 + vy mheight + vx mh2 + vy)
+line(vx hgt + vy height + vx hgt + vy)
+line((vx) (hgt + vy) (vx) (hgt / 2) + vy)
 }
 
-def six(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-line((x) ((hgt / 1.3) + y) (x) r + y)
-arc((r + x) (hgt / 1.28) + y r -3.14 0)
-arc(r + x r + y r 1.57 3.14)
-arc(((h * 0.7) + x) (h / 1.3) + y h / 1.3 -2.3 1.87)
+def six(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+line((vx) ((hgt / 1.3) + vy) (vx) rad + vy)
+arc((rad + vx) (hgt / 1.28) + vy rad -3.14 0)
+arc(rad + vx rad + vy rad 1.57 3.14)
+arc(((height * 0.7) + vx) (height / 1.3) + vy height / 1.3 -2.3 1.87)
 }
 
-def seven(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def mh = 1.4 * h
-line(x hgt + y mh + x hgt + y)
-arc((4.9 * h) + x y 4.5 * h 3.14 3.78)
-arc(((mh / 2) + x) y + hgt 0.224 * hgt 0 0.5)
+#def seven(vx as Number vy as number hgt as Number) = {
+#def height = hgt / 3
+#def mheight = 1.4 * height
+#line(vx hgt + vy mheight + vx hgt + vy)
+#arc((4.9 * h) + vx vy 4.5 * height 3.14 3.78)
+#arc(((mheight / 2) + vx) vy + hgt 0.224 * hgt 0 0.5)
+#}
+
+def eight(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+circle((rad + vx) (hgt / 1.28) + vy rad)
+circle(((height * 0.7) + vx) (height / 1.2) + vy height / 1.22)
 }
 
-def eight(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-circle((r + x) (hgt / 1.28) + y r)
-circle(((h * 0.7) + x) (h / 1.2) + y h / 1.22)
+def nine(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+line(((hgt / 2.15) + vx) ((hgt / 1.3) + vy) ((hgt / 2.15) + vx) rad + vy)
+circle((rad + vx) (hgt / 1.28) + vy rad)
+arc(rad + vx rad + vy rad 0 3.14)
 }
 
-def nine(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-line(((hgt / 2.15) + x) ((hgt / 1.3) + y) ((hgt / 2.15) + x) r + y)
-circle((r + x) (hgt / 1.28) + y r)
-arc(r + x r + y r 0 3.14)
-}
-
-def zero(x as Number y as Number hgt as Number) = {
-def h = hgt / 3
-def r = h * 0.7
-line((x) ((hgt / 1.3) + y) (x) r + y)
-arc((r + x) (hgt / 1.28) + y r -3.14 0)
-arc(r + x r + y r 0 3.14)
-line((x + r * 2) ((hgt / 1.3) + y) (x + r * 2) r + y)
+def zero(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def rad = height * 0.7
+line((vx) ((hgt / 1.3) + vy) (vx) rad + vy)
+arc((rad + vx) (hgt / 1.28) + vy rad -3.14 0)
+arc(rad + vx rad + vy rad 0 3.14)
+line((vx + rad * 2) ((hgt / 1.3) + vy) (vx + rad * 2) rad + vy)
 }
 
 #TEST
@@ -346,7 +346,7 @@ three(15 -5 8)
 four(20 -5 8)
 five(27 -5 8)
 six(33 -5 8)
-seven(39 -5 8)
+#seven(39 -5 8)
 eight(45 -5 8)
 nine(52 -5 8)
 zero(59 -5 8)
