@@ -7,36 +7,33 @@ import geometry2d
 def length = 100 
 
 #### - start script - ####
-def unit = 1 # mm
+def un = 1 # mm
 def start = -100
-repeat start to start + length using i {
-    if(unit < 2) {
-    def j = i / unit 
-    line(j 0 j 4)
+repeat start to start + length using inc {
+    if(un < 2) {
+    def jc = inc / un 
+    line(jc 0 jc 4)
     }
 }
 
 #5 MM MARKS
-repeat (2 * start) / 10 to (((2 * start) / 10) + length / 5) + 1 using i {
-    def j = i / unit 
-    def a = j * 5
-    line(a 0 a 6)
+repeat (2 * start) / 10 to (((2 * start) / 10) + length / 5) + 1 using inc {
+    def ja = inc / un 
+    def aa = ja * 5
+    line(aa 0 aa 6)
 }
 
 #10 MM MARKS
-repeat start / 10 to (length / 10) + (start / 10) + 1 using i {
-    def j = i / unit 
-    def a = j * 10
-    def cm1 = a / 10
-    def cm = cm1 * unit
-    line(a * unit 6 a * unit 8)
-    def t = a - 1
+repeat start / 10 to (length / 10) + (start / 10) + 1 using inc {
+    def jnc = inc / un
+    def aa = jnc * 10
+    def cm1 = aa / 10
+    def cm = cm1 * un
+    line(aa * un 6 aa * un 8)
+    def t1 = aa - 1
     def t2 = cm + 10
-    text(t * unit 9 5 t2 / unit)   # NUMBERS
+    text(t1 * un 9 5 t2 / un)   # NUMBERS
 }
 
 #BORDER
 rectangle(start - 10 0 length + start + 10 20)
-#line(-110 25 90 25) line(-110 0 90 0) 
-#line(-110 25 -110 0) line(90 25 90 0)
-
