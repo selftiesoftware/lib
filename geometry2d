@@ -2,6 +2,8 @@
 #use these in other scripts by typing 
 #"import geometry2d" in the script (without ")
 
+def Vector(x as Number y as Number)
+
 #### RECTANGLE ####
 
 #PARAMETERS:
