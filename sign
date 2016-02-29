@@ -1,6 +1,6 @@
 import geometry2d
 
 def scale = 1
-def content = "hello"
+def content = "hello there"
 
 text(0 0 10 content)
