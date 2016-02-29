@@ -9,3 +9,10 @@ MakeGear(width -100 50 10 material_thickness 10)
 LampPlate(width * 0 -400 width 200 material_thickness)
 LampPlate(width -400 width 200 material_thickness)
 LampPlate(width * 2 -420 width 220 material_thickness)
+
+# Draw lines to indicate width
+def widthLine(x as Number y as Number) = {
+  line(x y x + width y)
+  text((x + width / 2.6) y + 5 25 width)
+}
+widthLine(0 -450)
