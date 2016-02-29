@@ -2,11 +2,13 @@ import geometry2d
 
 def scale = 5
 def content = "hello there"
-def marginHeight = -2
-def marginWidth = -9
+def marginHeight = 2
+def marginWidth = 6
 
 def r as Vector = text(0 0 scale content)
-def right = r.x - marginWidth
-def top = r.y - marginHeight + 1
+def bottom = (marginHeight * -1)
+def left = marginWidth * -1
+def right = r.x + marginWidth
+def top = r.y + marginHeight - 1
 
-rectangle(marginWidth marginHeight right top)
+rectangle(left bottom right top)
