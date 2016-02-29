@@ -266,13 +266,13 @@ arc(rad + vx rad + vy rad 1.57 3.14)
 arc(((height * 0.7) + vx) (height / 1.3) + vy height / 1.3 -2.3 1.87)
 }
 
-#def seven(vx as Number vy as number hgt as Number) = {
-#def height = hgt / 3
-#def mheight = 1.4 * height
-#line(vx hgt + vy mheight + vx hgt + vy)
-#arc((4.9 * h) + vx vy 4.5 * height 3.14 3.78)
-#arc(((mheight / 2) + vx) vy + hgt 0.224 * hgt 0 0.5)
-#}
+def seven(vx as Number vy as number hgt as Number) = {
+def height = hgt / 3
+def mheight = 1.4 * height
+line(vx hgt + vy mheight + vx hgt + vy)
+arc((4.9 * height) + vx vy 4.5 * height 3.14 3.78)
+arc(((mheight / 2) + vx) vy + hgt 0.224 * hgt 0 0.5)
+}
 
 def eight(vx as Number vy as number hgt as Number) = {
 def height = hgt / 3
@@ -346,7 +346,7 @@ three(15 -5 8)
 four(20 -5 8)
 five(27 -5 8)
 six(33 -5 8)
-#seven(39 -5 8)
+seven(39 -5 8)
 eight(45 -5 8)
 nine(52 -5 8)
 zero(59 -5 8)
