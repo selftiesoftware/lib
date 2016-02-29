@@ -1,74 +1,74 @@
 import font
 
-def d = 157 #CLOCK DIAMETER
+def diameter = 157 #CLOCK DIAMETER
 
-def s = d / 100 #scale factor
+def scale = diameter / 100 #scale factor
 
-def fiveSize = 5 * s #FIVE MINUTE MARKS SIZE
-def oneSize = 2.5 * s #ONE MINUTE MARKS SIZE
-def textSize = 5 * s #SIZE OF THE DIGITS
-def innerText = 10 * s #INWARDS OFFSET OF DIGITS
-def textOffsetX = 0 * s #ADJUSTMENT OF TEXT X
-def textOffsetY = 1.5 * s #ADJUSTMENT OF TEXT Y
+def fiveSize = 5 * scale #FIVE MINUTE MARKS SIZE
+def oneSize = 2.5 * scale #ONE MINUTE MARKS SIZE
+def textSize = 5 * scale #SIZE OF THE DIGITS
+def innerText = 10 * scale #INWARDS OFFSET OF DIGITS
+def textOffsetX = 0 * scale #ADJUSTMENT OF TEXT X
+def textOffsetY = 1.5 * scale #ADJUSTMENT OF TEXT Y
 
 ### END PARAMETERS ###
 
 ### START SCRIPT ###
 
 #calculate which digit to write
-def setChar(x as Number y as Number id as Number ) = {
-  if(id < -1) {if(id > -3) {one(x y textSize)}}
-  if(id < 0) {if(id > -2) {two(x y textSize)}}
-  if(id < 1) {if(id > -1) {three(x y textSize)}}
-  if(id < 2) {if(id > 0) {four(x y textSize)}}
-  if(id < 3) {if(id > 1) {five(x y textSize)}}
-  if(id < 4) {if(id > 2) {six(x y textSize)}}
-  if(id < 5) {if(id > 3) {seven(x y textSize)}}
-  if(id < 6) {if(id > 4) {eight(x y textSize)}}
-  if(id < 7) {if(id > 5) {nine(x y textSize)}}
-  if(id < 8) {if(id > 6) {one(x - (textSize / 2) y textSize)
-  zero(x + (textSize / 2) y textSize)}}
-  if(id < 9) {if(id > 7) {one(x - (textSize / 2) y textSize)
-  one(x + (textSize / 2) y textSize)}}
-  if(id < 10) {if(id > 8) {one(x - (textSize / 2) y textSize)
-  two(x + (textSize / 2) y textSize)}}
+def setchar(vx as Number vy as Number id as Number ) = {
+  if(id < -1) {if(id > -3) {one(vx vy textSize)}}
+  if(id < 0) {if(id > -2) {two(vx vy textSize)}}
+  if(id < 1) {if(id > -1) {three(vx vy textSize)}}
+  if(id < 2) {if(id > 0) {four(vx vy textSize)}}
+  if(id < 3) {if(id > 1) {five(vx vy textSize)}}
+  if(id < 4) {if(id > 2) {six(vx vy textSize)}}
+  if(id < 5) {if(id > 3) {seven(vx vy textSize)}}
+  if(id < 6) {if(id > 4) {eight(vx vy textSize)}}
+  if(id < 7) {if(id > 5) {nine(vx vy textSize)}}
+  if(id < 8) {if(id > 6) {one(vx - (textSize / 2) vy textSize)
+  zero(vx + (textSize / 2) vy textSize)}}
+  if(id < 9) {if(id > 7) {one(vx - (textSize / 2) vy textSize)
+  one(vx + (textSize / 2) vy textSize)}}
+  if(id < 10) {if(id > 8) {one(vx - (textSize / 2) vy textSize)
+  two(vx + (textSize / 2) vy textSize)}}
 }
 
-def outer = (d / 2) - 1
-def innerFive = (d / 2) - fiveSize
-def innerOne = (d / 2) - oneSize
+def outer = (diameter / 2) - 1
+def innerFive = (diameter / 2) - fiveSize
+def innerOne = (diameter / 2) - oneSize
 
 #FIVE MINUTE MARKS
-repeat -2 to 10 using i {
-  def x = -1 * cos(radians(i * 30))
-  def y = sin(radians(i * 30))
-  line(x * innerFive y * innerFive x * outer y * outer)
+repeat -2 to 10 using inc {
+  def vx = -1 * cos(radians(inc * 30))
+  def vy = sin(radians(inc * 30))
+  line(vx * innerFive vy * innerFive vx * outer vy * outer)
 
   #TEXT
-  def textX = (-1 - x * (d / 2) - innerText) - textOffsetX
-  def textY = (-1 - y * (d / 2) - innerText) - textOffsetY
-  setChar(textX textY i)
+  def textX = (-1 - vx * (diameter / 2) - innerText) - textOffsetX
+  def textY = (-1 - vy * (diameter / 2) - innerText) - textOffsetY
+  setchar(textX textY inc)
 }
 
 #ONE MINUTE MARKS
-repeat 0 to 60 using i {
-  def x = cos(radians(i * 6))
-  def y = sin(radians(i * 6))
-  line(x * innerOne y * innerOne x * outer y * outer)
+repeat 0 to 60 using inc {
+  def vx = cos(radians(inc * 6))
+  def vy = sin(radians(inc * 6))
+  line(vx * innerOne vy * innerOne vx * outer vy * outer)
 }
 
 #OUTER AND CENTER CIRCLE
-circle(0 0 d / 2)
+circle(0 0 diameter / 2)
 circle(0 0 1)
 
-def s = d / 100
+def s = diameter / 100
 
-R(-16 * s 5 * s 5 * s)
-E(-12 * s 5 * s 5 * s)
-P(-8 * s 5 * s 5 * s)
-O(-4 * s 5 * s 5 * s)
-C(0 * s 5 * s 5 * s)
-L(4 * s 5 * s 5 * s)
-O(8 * s 5 * s 5 * s)
-C(12 * s 5 * s 5 * s)
-K(16 * s 5 * s 5 * s)
+R(-16 * scale 5 * scale 5 * scale)
+E(-12 * scale 5 * scale 5 * scale)
+P(-8 * scale 5 * scale 5 * scale)
+O(-4 * scale 5 * scale 5 * scale)
+C(0 * scale 5 * scale 5 * scale)
+L(4 * scale 5 * scale 5 * scale)
+O(8 * scale 5 * scale 5 * scale)
+C(12 * scale 5 * scale 5 * scale)
+K(16 * scale 5 * scale 5 * scale)
