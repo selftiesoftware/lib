@@ -20,6 +20,10 @@ def rectangle (x1 as Number y1 as Number
   line(x1 y1 x2 y1)
 }
 
+def line(v1 as Vector v2 as Vector) = {
+  line(v1.x v1.y  v2.x v2.y)
+}
+
 #example
 repeat -5 to -1 using i {
   repeat -4 to 1 using j {
