@@ -13,8 +13,8 @@ line(v1.x v1.y v2.x v2.y)
 def movedVx2 = v2.x - v1.x
 def movedVy2 = v2.y - v1.y
 
-def rX = (movedVy2 * -1) * (1 / offset)
-def rY = (movedVx2) * (1 / offset) 
+def rX = (movedVy2 * -1) / (offset)
+def rY = (movedVx2) / (offset) 
 
 def a = v1.x
 def b = v1.y
