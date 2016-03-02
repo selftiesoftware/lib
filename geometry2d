@@ -21,7 +21,7 @@ def rectangle (x1 as Number y1 as Number
 }
 
 def line(v1 as Vector v2 as Vector) = {
-  line(v1.x v1.y  v2.x v2.y)
+  line(v1.x v1.y v2.x v2.y)
 }
 
 #example
