@@ -1,6 +1,6 @@
 def dim(vec1 as Vector vec2 as Vector) = {
 
-def offset = 8
+def offset = 8 #can not be zero!
 
 #ref line
 line(vec1.x vec1.y vec2.x vec2.y)
@@ -14,9 +14,11 @@ def movedVx2 = c - a
 def movedVy2 = d - b
 
 text(0 300 30 a)
+text(0 200 30 b)
 
-def rX = (movedVy2 * -1) / (offset)
-def rY = (movedVx2) / (offset) 
+
+def rX = (movedVy2 * -1)# / (offset)
+def rY = (movedVx2) #/ (offset) 
 
 
 
@@ -40,11 +42,10 @@ line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 }
 
 #TEST
-def i = Vector(220 20)
+def i = Vector(20 20)
 def n = Vector(120 200)
 
 #line(0 0 30 30)
-text(0 0 30 i)
+#text(0 0 30 i)
 
-dim(i n)
-line(220 20 0 0)
+dim(i Vector(220 200))
