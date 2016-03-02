@@ -1,0 +1,18 @@
+import geometry2d
+
+def v1 = Vector(20 30)
+def v2 = Vector(100 300)
+
+line(v1 v2)
+
+def movedVx1 = 0
+def movedVy1 = 0
+def movedVx2 = v2.x - v1.x
+def movedVy2 = v2.y - v1.y
+
+#Reference line
+line(movedVx1 movedVy1 movedVx2 movedVy2)
+
+
+line(-20 0 20 0)
+line(0 20 0 -20)
