@@ -30,7 +30,14 @@ def b = v1.y
 def c = v2.x
 def d = v2.y
 
-line(a + rX b + rY c + rX d + rY)
+#DIMENSION LINE
+def e1x = a + rX 
+def e1y = b + rY 
+def e2x = c + rX 
+def e2y = d + rY
+
+line(e1x e1y e2x e2y)
+
 
 line(-20 0 20 0)
 line(0 20 0 -20)
