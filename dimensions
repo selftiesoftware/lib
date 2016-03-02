@@ -1,18 +1,36 @@
-import geometry2d
+#def line(v1 as Vector v2 as Vector) = {
+#  line(v1.x v1.y v2.x v2.y)
+#}
 
-def v1 = Vector(20 30)
-def v2 = Vector(100 300)
+def magnitude = 30
 
-line(v1 v2)
+def v1 = Vector(30 100)
+def v2 = Vector(120 200)
 
-def movedVx1 = 0
-def movedVy1 = 0
+#ref line
+line(v1.x v1.y v2.x v2.y)
+
 def movedVx2 = v2.x - v1.x
 def movedVy2 = v2.y - v1.y
 
-#Reference line
-line(movedVx1 movedVy1 movedVx2 movedVy2)
+def rX = movedVy2 * -1 / magnitude
+def rY = movedVx2 / magnitude
 
+#moved and rotated line
+line(0 0 rX rY)
+
+#unitLine = 
+
+#def magnitude = sqrt(rX * rX + rY * rY) 
+
+#text(0 0 12 magnitude)
+
+def a = v1.x
+def b = v1.y
+def c = v2.x
+def d = v2.y
+
+line(a + rX b + rY c + rX d + rY)
 
 line(-20 0 20 0)
 line(0 20 0 -20)
