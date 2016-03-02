@@ -1,11 +1,6 @@
-#def line(v1 as Vector v2 as Vector) = {
-#  line(v1.x v1.y v2.x v2.y)
-#}
+def dim(v1 as Vector v2 as Vector) = {
 
 def offset = 7
-
-def v1 = Vector(30 100)
-def v2 = Vector(120 200)
 
 #ref line
 line(v1.x v1.y v2.x v2.y)
@@ -29,17 +24,19 @@ def e2y = d + rY
 
 line(e1x e1y e2x e2y)
 
-line(Rx / -6 Ry / -6 Rx / 14 Ry / 14) 
-
+#END TICKS
 def tick1x = Rx / -6
 def tick1y = Ry / -6
 def tick2x = Rx / 14
 def tick2y = Ry / 14
 
-#moved and rotated line
 line(tick1x + e1x tick1y + e1y tick2x + e1x  tick2y + e1y)
 line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 
+}
 
-line(-20 0 20 0)
-line(0 20 0 -20)
+#TEST
+def v1 = Vector(30 100)
+def v2 = Vector(120 200)
+
+dim(v1 v2)
