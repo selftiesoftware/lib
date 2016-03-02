@@ -2,7 +2,7 @@
 #  line(v1.x v1.y v2.x v2.y)
 #}
 
-def magnitude = 30
+def magnitude = 0.0001
 
 def v1 = Vector(30 100)
 def v2 = Vector(120 200)
@@ -13,8 +13,8 @@ line(v1.x v1.y v2.x v2.y)
 def movedVx2 = v2.x - v1.x
 def movedVy2 = v2.y - v1.y
 
-def rX = movedVy2 * -1 / magnitude
-def rY = movedVx2 / magnitude
+def rX = movedVy2 * -1
+def rY = movedVx2 
 
 #moved and rotated line
 line(0 0 rX rY)
