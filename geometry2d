@@ -24,6 +24,16 @@ def line(v1 as Vector v2 as Vector) = {
   line(v1.x v1.y v2.x v2.y)
 }
 
+def length(v1 as Vector v2 as Vector) = {
+   def a = v1.x
+   def b = v1.y
+   def c = v2.x
+   def d = v2.y
+   
+   sqrt(((c - a) * (c - a)) + ((d - b) * (d - b)))  
+}
+
+
 #example
 repeat -5 to -1 using i {
   repeat -4 to 1 using j {
