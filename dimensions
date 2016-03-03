@@ -1,3 +1,5 @@
+import geometry2d
+
 def dim(vec1 as Vector vec2 as Vector) = {
 
 def offset = 8 #can not be zero!
@@ -37,7 +39,9 @@ line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 def middlex = ((c - a) / 2) + a + ( rX * 1.5)
 def middley = ((d - b) / 2) + a + ( rY * 1.5)
 
-text(middlex middley 20 30)
+def t = length(vec1 vec2)
+
+text(middlex middley 20 t)
 
 }
 
