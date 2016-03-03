@@ -13,14 +13,8 @@ def d = vec2.y
 def movedVx2 = c - a
 def movedVy2 = d - b
 
-text(0 300 30 a)
-text(0 200 30 b)
-
-
-def rX = (movedVy2 * -1)# / (offset)
-def rY = (movedVx2) #/ (offset) 
-
-
+def rX = (movedVy2 * -1) / offset
+def rY = (movedVx2) / offset 
 
 #DIMENSION LINE
 def e1x = a + rX 
@@ -39,13 +33,16 @@ def tick2y = Ry / 14
 line(tick1x + e1x tick1y + e1y tick2x + e1x  tick2y + e1y)
 line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 
+#text
+def middlex = ((c - a) / 2) + a + ( rX * 1.5)
+def middley = ((d - b) / 2) + a + ( rY * 1.5)
+
+text(middlex middley 20 30)
+
 }
 
 #TEST
 def i = Vector(20 20)
 def n = Vector(120 200)
-
-#line(0 0 30 30)
-#text(0 0 30 i)
 
 dim(i Vector(220 200))
