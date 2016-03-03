@@ -1,10 +1,10 @@
 import geometry2d
 import dimensions
 
-def scale = 200
+def scale = 20
 def content = "hello there"
-def marginHeight = 2
-def marginWidth = 6
+def marginHeight = 20
+def marginWidth = 16
 
 def r as Vector = text(0 0 scale content)
 def bottom = (marginHeight * -1)
@@ -13,5 +13,10 @@ def right = r.x + marginWidth
 def top = r.y + marginHeight - 1
 
 dim(Vector(left bottom) Vector(left top))
+dim(Vector(left top) Vector(right top))
+dim(Vector(right top) Vector(right bottom))
+dim(Vector(right bottom) Vector(left bottom))
+
+
 
 rectangle(left bottom right top)
