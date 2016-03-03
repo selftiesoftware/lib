@@ -45,4 +45,4 @@ text(middlex middley 20 30)
 def i = Vector(20 20)
 def n = Vector(120 200)
 
-dim(i Vector(220 200))
+dim(i n)
