@@ -36,12 +36,12 @@ line(tick1x + e1x tick1y + e1y tick2x + e1x  tick2y + e1y)
 line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 
 #text
-def middlex = ((c - a) / 2) + a + ( rX * 1.5)
-def middley = ((d - b) / 2) + a + ( rY * 1.5)
+def middlex = ((c - a) / 2) + a + ( rX * 2.5)
+def middley = ((d - b) / 2) + a + ( rY * 2.5)
 
 def t = length(vec1 vec2)
 
-text(middlex middley 20 t)
+text(middlex middley t / 15 t)
 
 }
 
