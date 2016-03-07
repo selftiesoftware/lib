@@ -2,16 +2,16 @@
 def crossWindRose(landingRwyHdg as Number cX as Number cY as Number) = {
 
   #RWY LINE
- def x = cos(radians(landingRwyHdg - 90))
- def y = sin(radians(landingRwyHdg - 90))
+ def x = cos(toradians(landingRwyHdg - 90))
+ def y = sin(toradians(landingRwyHdg - 90))
  def x2 = x * 14
  def y2 = y * 14
   line(cX cY cX + x2 cY - y2)
   line(cX cY cX - x2 cY + y2)
 
   #PERPENDICULAR TO RWY LINE
-  def x3 = cos(radians(landingRwyHdg ))
-  def y3 = sin(radians(landingRwyHdg ))
+  def x3 = cos(toradians(landingRwyHdg ))
+  def y3 = sin(toradians(landingRwyHdg ))
   def x4 = x3 * 9
   def y4 = y3 * 9
   line(cX cY cX + x4 cY - y4)
