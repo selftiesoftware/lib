@@ -80,7 +80,7 @@
 def n1 = sin(radians(tt1 - windDir1))
 def wca1a = (windVel1 * n1)
 def wca1 = degrees(wca1a / tas * -1)
-def th1 = toInt(tt1 + wca1)
+def th1 = floor(tt1 + wca1)
 def c1a = cos(radians(wca1))
 def c1b = cos(radians(tt1 - windDir1))
 def gs1a = tas * c1a
@@ -97,12 +97,12 @@ if (dist1 > 0) {
   text(2 y + 15.5 6 dist1)
   text(9 y + 31 4 windVel1)
   text(3 y + 31 4 windDir1)
-  text(-33 y + 6.5 6 toInt(wca1)) #WCA
+  text(-33 y + 6.5 6 floor(wca1)) #WCA
   text(-15 y + 15.5 6 th1) #TH
   text(-15 y + 6.5 9 th1 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs1)) #GS
-  text(18 y + 15.5 9 toInt(time1)) #TIME, MIN
+  text(18 y + 26.5 6 floor(gs1)) #GS
+  text(18 y + 15.5 9 floor(time1)) #TIME, MIN
 }
 
 #### WPT2 ####
@@ -110,7 +110,7 @@ if (dist1 > 0) {
 def n2 = sin(radians(tt2 - windDir2))
 def wca2a = (windVel2 * n2)
 def wca2 = degrees(wca2a / tas * -1)
-def th2 = toInt(tt2 + wca2)
+def th2 = floor(tt2 + wca2)
 def c2a = cos(radians(wca2))
 def c2b = cos(radians(tt2 - windDir2))
 def gs2a = tas * c2a
@@ -128,13 +128,13 @@ if (dist2 > 0) {
   text(2 y + 6.5 6 dist1 + dist2) #DIST ACC
   text(9 y + 31 4 windVel2)
   text(3 y + 31 4 windDir2)
-  text(-33 y + 6.5 6 toInt(wca2)) #WCA
+  text(-33 y + 6.5 6 floor(wca2)) #WCA
   text(-15 y + 15.5 6 th2) #TH
   text(-15 y + 6.5 9 th2 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs2)) #GS
-  text(18 y + 15.5 9 toInt(time2)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2)) #TIME, MIN
+  text(18 y + 26.5 6 floor(gs2)) #GS
+  text(18 y + 15.5 9 floor(time2)) #TIME, MIN
+  text(18 y + 6.5 6 floor(time1 + time2)) #TIME, MIN
 }
 
 #### WPT3 ####
@@ -142,7 +142,7 @@ if (dist2 > 0) {
 def n3 = sin(radians(tt3 - windDir3))
 def wca3a = (windVel3 * n3)
 def wca3 = degrees(wca3a / tas * -1)
-def th3 = toInt(tt3 + wca3)
+def th3 = floor(tt3 + wca3)
 def c3a = cos(radians(wca3))
 def c3b = cos(radians(tt3 - windDir3))
 def gs3a = tas * c3a
@@ -159,13 +159,13 @@ if (dist3 > 0) {
   text(2 y + 6.5 6 dist1 + dist2 + dist3) #DIST  ACC
   text(9 y + 31 4 windVel3)
   text(3 y + 31 4 windDir3)
-  text(-33 y + 6.5 6 toInt(wca3)) #WCA
+  text(-33 y + 6.5 6 floor(wca3)) #WCA
   text(-15 y + 15.5 6 th3) #TH
   text(-15 y + 6.5 9 th3 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs3))
-  text(18 y + 15.5 9 toInt(time3))
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3))
+  text(18 y + 26.5 6 floor(gs3))
+  text(18 y + 15.5 9 floor(time3))
+  text(18 y + 6.5 6 floor(time1 + time2 + time3))
 }
 
 #### WPT4 ####
@@ -173,7 +173,7 @@ if (dist3 > 0) {
 def n4 = sin(radians(tt4 - windDir4))
 def wca4a = (windVel4 * n4)
 def wca4 = degrees(wca4a / tas * -1)
-def th4 = toInt(tt4 + wca4)
+def th4 = floor(tt4 + wca4)
 def c4a = cos(radians(wca4))
 def c4b = cos(radians(tt4 - windDir4))
 def gs4a = tas * c4a
@@ -191,13 +191,13 @@ if (dist4 > 0) {
   text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4) #DIST ACC
   text(9 y + 31 4 windVel4)
   text(3 y + 31 4 windDir4)
-  text(-33 y + 6.5 6 toInt(wca4)) #WCA
+  text(-33 y + 6.5 6 floor(wca4)) #WCA
   text(-15 y + 15.5 6 th4) #TH
   text(-15 y + 6.5 9 th4 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs4)) #GS
-  text(18 y + 15.5 9 toInt(time4)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3 + time4)) #TIME, MIN
+  text(18 y + 26.5 6 floor(gs4)) #GS
+  text(18 y + 15.5 9 floor(time4)) #TIME, MIN
+  text(18 y + 6.5 6 floor(time1 + time2 + time3 + time4)) #TIME, MIN
 
 }
 
@@ -206,7 +206,7 @@ if (dist4 > 0) {
 def n5 = sin(radians(tt5 - windDir5))
 def wca5a = (windVel5 * n5)
 def wca5 = degrees(wca5a / tas * -1)
-def th5 = toInt(tt5 + wca5)
+def th5 = floor(tt5 + wca5)
 def c5a = cos(radians(wca5))
 def c5b = cos(radians(tt5 - windDir5))
 def gs5a = tas * c5a
@@ -224,13 +224,13 @@ if (dist5 > 0) {
   text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5) #DIST ACC
   text(9 y + 31 4 windVel5)
   text(3 y + 31 4 windDir5)
-  text(-33 y + 6.5 6 toInt(wca5)) #WCA
+  text(-33 y + 6.5 6 floor(wca5)) #WCA
   text(-15 y + 15.5 6 th5) #TH
   text(-15 y + 6.5 9 th5 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs5)) #GS
-  text(18 y + 15.5 9 toInt(time5)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
+  text(18 y + 26.5 6 floor(gs5)) #GS
+  text(18 y + 15.5 9 floor(time5)) #TIME, MIN
+  text(18 y + 6.5 6 floor(time1 + time2 + time3 +   time4 + time5)) #TIME, MIN 
 }
 
 
@@ -239,7 +239,7 @@ if (dist5 > 0) {
 def n6 = sin(radians(tt6 - windDir6))
 def wca6a = (windVel6 * n6)
 def wca6 = degrees(wca6a / tas * -1)
-def th6 = toInt(tt6 + wca6)
+def th6 = floor(tt6 + wca6)
 def c6a = cos(radians(wca6))
 def c6b = cos(radians(tt6 - windDir6))
 def gs6a = tas * c6a
@@ -257,13 +257,13 @@ if (dist6 > 0) {
   text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6) #DIST ACC
   text(9 y + 31 4 windVel6)
   text(3 y + 31 4 windDir6)
-  text(-33 y + 6.5 6 toInt(wca6)) #WCA
+  text(-33 y + 6.5 6 floor(wca6)) #WCA
   text(-15 y + 15.5 6 th6) #TH
   text(-15 y + 6.5 9 th6 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs6)) #GS
-  text(18 y + 15.5 9 toInt(time6)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
+  text(18 y + 26.5 6 floor(gs6)) #GS
+  text(18 y + 15.5 9 floor(time6)) #TIME, MIN
+  text(18 y + 6.5 6 floor(time1 + time2 + time3 +   time4 + time5 + time6)) #TIME, MIN 
 }
 
 #### WPT7 ####
@@ -271,7 +271,7 @@ if (dist6 > 0) {
 def n7 = sin(radians(tt7 - windDir7))
 def wca7a = (windVel7 * n7)
 def wca7 = degrees(wca7a / tas * -1)
-def th7 = toInt(tt7 + wca7)
+def th7 = floor(tt7 + wca7)
 def c7a = cos(radians(wca7))
 def c7b = cos(radians(tt7 - windDir7))
 def gs7a = tas * c7a
@@ -289,13 +289,13 @@ if (dist7 > 0) {
   text(2 y + 6.5 6 dist1 + dist2 + dist3 + dist4 +   dist5 + dist6 + dist7) #DIST ACC
   text(9 y + 31 4 windVel7)
   text(3 y + 31 4 windDir7)
-  text(-33 y + 6.5 6 toInt(wca7)) #WCA
+  text(-33 y + 6.5 6 floor(wca7)) #WCA
   text(-15 y + 15.5 6 th7) #TH
   text(-15 y + 6.5 9 th7 + deviation) #MH
 
-  text(18 y + 26.5 6 toInt(gs7)) #GS
-  text(18 y + 15.5 9 toInt(time7)) #TIME, MIN
-  text(18 y + 6.5 6 toInt(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
+  text(18 y + 26.5 6 floor(gs7)) #GS
+  text(18 y + 15.5 9 floor(time7)) #TIME, MIN
+  text(18 y + 6.5 6 floor(time1 + time2 + time3 +   time4 + time5 + time6 + time7)) #TIME, MIN 
 }
 
 #### FUEL CALCULATION ####
@@ -307,17 +307,17 @@ line(-4 -110 -4 -140)
 text(-40 -114 4 "fuel consumption / LITERS")
 
 text(-38 -120 6 "trip fuel*")
-text(-14 -120 6 toInt(trip))
+text(-14 -120 6 floor(trip))
 text(-38 -140 4 "* 5% added for T/O and climb")
 
 text(-38 -125 6 "alternate")
-text(-14 -125 6 toInt(alternate))
+text(-14 -125 6 floor(alternate))
 
 text(-38 -130 6 "reserve")
-text(-14 -130 6 toInt(reserve))
+text(-14 -130 6 floor(reserve))
 
 text(-38 -135 6 "total fuel")
-text(-14 -135 6 toInt(trip + alternate + reserve))
+text(-14 -135 6 floor(trip + alternate + reserve))
 line(-20 -131 -5 -131)
 line(-20 -136 -5 -136)
 
@@ -328,29 +328,29 @@ def a = 0.001645
 text(0 -114 4 "glide distance in NM / feet")
 #4000 = 5.2 v 1/8
 text(0 -120 6 "4000")
-def a40 = toInt(4000 * a * glide)
+def a40 = floor(4000 * a * glide)
 text(12 -120 6 a40 / 10)
 text(0 -125 6 "3000")
-def a30 = toInt(3000 * a * glide)
+def a30 = floor(3000 * a * glide)
 text(12 -125 6 a30 / 10)
 text(0 -130 6 "2000")
-def a20 = toInt(2000 * a * glide)
+def a20 = floor(2000 * a * glide)
 text(12 -130 6 a20 / 10)
 text(0 -135 6 "1000")
-def a10 = toInt(1000 * a * glide)
+def a10 = floor(1000 * a * glide)
 text(12 -135 6 a10 / 10)
 
 text(27 -120 6 "3500")
-def a35 = toInt(3500 * a * glide)
+def a35 = floor(3500 * a * glide)
 text(40 -120 6 a35 / 10)
 text(27 -125 6 "2500")
-def a25 = toInt(2500 * a * glide)
+def a25 = floor(2500 * a * glide)
 text(40 -125 6 a25 / 10)
 text(27 -130 6 "1500")
-def a15 = toInt(1500 * a * glide)
+def a15 = floor(1500 * a * glide)
 text(40 -130 6 a15 / 10)
 text(27 -135 6 "500")
-def a5 = toInt(500 * a * glide)
+def a5 = floor(500 * a * glide)
 text(40 -135 6 a5 / 10)
 
 ############ ARTWORK ##############
