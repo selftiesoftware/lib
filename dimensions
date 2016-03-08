@@ -41,7 +41,7 @@ def middley = ((d - b) / 2) + a + ( rY * 2.5)
 
 def t = length(vec1 vec2)
 
-text(middlex middley t / 15 t)
+text(middlex middley t / 15 round(t))
 
 }
 
