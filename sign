@@ -12,10 +12,8 @@ def left = marginWidth * -1
 def right = r.x + marginWidth
 def top = r.y + marginHeight - 1
 
-dim(Vector(left bottom) Vector(left top))
-dim(Vector(left top) Vector(right top))
-dim(Vector(right top) Vector(right bottom))
-dim(Vector(right bottom) Vector(left bottom))
+dim(Vector(right top) Vector(right bottom) 7)
+dim(Vector(right bottom) Vector(left bottom) 7)
 
 
 
