@@ -47,7 +47,11 @@ text(textX textY textSize round(t))
 }
 
 #TEST
-def i = Vector(20 140)
-def n = Vector(120 -50)
+def i = Vector(0 0)
+def n = Vector(120 0)
 
-dim(n i 6)
+def o = Vector(0 0)
+def p = Vector(0 -50) 
+
+dim(i n 6)
+dim(p o 6)
