@@ -1,6 +1,6 @@
 import geometry2d
 
-def dim(vec1 as Vector vec2 as Vector) = {
+def dim(vec1 as Vector vec2 as Vector textSize as Number) = {
 
 def offset = 8 #can not be zero!
 
@@ -36,17 +36,18 @@ line(tick1x + e1x tick1y + e1y tick2x + e1x  tick2y + e1y)
 line(tick1x + e2x tick1y + e2y tick2x + e2x  tick2y + e2y)
 
 #text
-def middlex = ((c - a) / 2) + a + ( rX * 2.5)
-def middley = ((d - b) / 2) + a + ( rY * 2.5)
-
+def middlex = if(a < 0 ) {(a - (a - c) / 2)} else {(c - (c - a) / 2)}
+def middley = if(b > 0 ) {(b - (b - d) / 2)} else {(d - (d - b) / 2)}
+def textX = middlex + ( rX * 1.8)
+def textY = middley + ( rY * 1.8)
 def t = length(vec1 vec2)
 
-#text(middlex middley t / 20 round(t))
+text(textX textY textSize round(t))
 
 }
 
 #TEST
-def i = Vector(20 20)
-def n = Vector(120 200)
+def i = Vector(20 140)
+def n = Vector(120 -50)
 
-dim(i n)
+dim(n i 6)
