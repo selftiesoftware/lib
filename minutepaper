@@ -55,23 +55,23 @@ repeat speedMin to (speedMax - 1) using i {
   }
 
   line(-70 y1 70 y1)#speed lines
-  text(-69 y1 textSize i) #show knots
+  text(-79 y1 textSize i) #show knots
   def yStart = yStart - distance
 }
 
 line(-70 -100 70 -100)#last speed line
-text(-69 -100 textSize speedMax)#last speed text
-#text(-70 93 7 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
-#text(34 93 7 scale)#show the minute paper scale
-text(-64 -98 5 "disable fit to page when printing!")
+text(-79 -100 textSize speedMax)#last speed text
+text(-70 96 5 "MINUTE PAPER FOR PILOTS       MAP SCALE   1:" )#show the minute paper scale
+text(38 96 5 scale)#show the minute paper scale
+text(-64 -108 3 "disable fit to page when printing!")
 
 #5cm: use to x-check the size of the printed minute paper with a ruler
-line(65 -40 65 -50)
-line(65 -60 65 -70)
-line(65 -80 65 -90)
-line(50 -90 65 -90)
-line(50 -40 65 -40)
-text(49 -39 5 "5 cm")
-text(35 -97 5 "print")
-text(45 -97 5 "scale ")
-text(55 -97 5 "check")
+line(75 -40 75 -50)
+line(75 -60 75 -70)
+line(75 -80 75 -90)
+line(70 -90 75 -90)
+line(70 -40 75 -40)
+text(69 -39 4 "5 cm")
+text(45 -107 4 "print")
+text(55 -107 4 "scale ")
+text(66 -107 4 "check")
