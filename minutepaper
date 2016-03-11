@@ -6,9 +6,9 @@
 ##############################################
 #USER INPUT:
 
-def scale = 250000
-def speedMin = 50
-def speedMax = 80
+def scale = 500000
+def speedMin = 90
+def speedMax = 120
 
 ##############################################
 
