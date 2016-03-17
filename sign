@@ -2,7 +2,7 @@ import geometry2d
 import dimensions
 
 def font = "Arial"
-def scale = 20
+def scale = 100
 def content = "hello there"
 def marginHeight = 20
 def marginWidth = 16
@@ -13,7 +13,7 @@ def left = marginWidth * -1
 def right = r.x + marginWidth
 def top = r.y + marginHeight - 1
 
-dim(Vector(right bottom) Vector(right top) 7)
-dim(Vector(right bottom) Vector(left bottom) 7)
+dim(Vector(right bottom) Vector(right top) scale / 3)
+dim(Vector(right bottom) Vector(left bottom) scale / 3)
 
 #rectangle(left bottom right top)
