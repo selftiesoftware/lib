@@ -2,10 +2,10 @@ import geometry2d
 import dimensions
 
 def font = "Arial"
-def scale = 100
+def scale = 20
 def content = "hello there"
-def marginHeight = 20
-def marginWidth = 16
+def marginHeight = scale / 2.5
+def marginWidth = scale / 2.5
 
 def r as Vector = text(0 0 scale content font)
 def bottom = (marginHeight * -1)
