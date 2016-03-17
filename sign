@@ -1,12 +1,13 @@
 import geometry2d
 import dimensions
 
+def font = "Arial"
 def scale = 20
 def content = "hello there"
 def marginHeight = 20
 def marginWidth = 16
 
-def r as Vector = text(0 0 scale content)
+def r as Vector = text(0 0 scale content font)
 def bottom = (marginHeight * -1)
 def left = marginWidth * -1
 def right = r.x + marginWidth
