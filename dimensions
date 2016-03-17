@@ -3,7 +3,7 @@ import geometry2d
 def dim(vec1 as Vector vec2 as Vector textSize as Number) = {
 
 #ref line
-line(vec1.x vec1.y vec2.x vec2.y)
+#line(vec1.x vec1.y vec2.x vec2.y)
 
 def a = vec1.x
 def b = vec1.y
