@@ -16,6 +16,4 @@ def top = r.y + marginHeight - 1
 dim(Vector(right bottom) Vector(right top) 7)
 dim(Vector(right bottom) Vector(left bottom) 7)
 
-
-
-rectangle(left bottom right top)
+#rectangle(left bottom right top)
