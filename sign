@@ -4,8 +4,8 @@ import dimensions
 def font = "Arial"
 def scale = 20
 def content = "hello there"
-def marginHeight = scale / 2.5
-def marginWidth = scale / 2.5
+def marginHeight = 0.3 * scale
+def marginWidth = 0.5 * scale
 
 def r as Vector = text(0 0 scale content font)
 def bottom = (marginHeight * -1)
