@@ -10,8 +10,8 @@ def b = vec1.y
 def c = vec2.x
 def d = vec2.y
 
-def movedVx2 = c - a
-def movedVy2 = d - b
+def movedVx2 = c - a + 30
+def movedVy2 = d - b + 20
 
 def rX = (movedVy2) / textSize
 def rY = (movedVx2) / textSize * 2
@@ -52,4 +52,6 @@ def o = Vector(120 0)
 def p = Vector(120 -50) 
 
 dim(i n 6)
+dim(n i 6)
 dim(p o 6)
+dim(o p 6)
