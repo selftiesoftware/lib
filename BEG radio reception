@@ -26,3 +26,6 @@ repeat 0 to 8 using a {
 rectangle(x2 -1 * h x3 0)
 line(x2 -1 * h x3 0)
 line(x3 -1 * h x4 -1 * h)
+
+text(x1 + 30 164 7 "shorthand")
+text(x3 + 30 164 7 "message")
