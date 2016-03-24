@@ -2,9 +2,19 @@ import geometry2d
 
 
 def w = 210 / 2
-def h = 180 / 2
+def h = 16
+
+def x1 = w * -1
+def x2 = -10
+def x3 = 10
+def x4 = w
 
 repeat 0 to 9 using a {
-    def inc = a * 0.25
-    line(w * -1 h * -1 * inc w h * -1 * inc)
-  }
+    def y1 = a * h
+    def y2 = (a + 1) * h
+    
+    rectangle(x1 y1 x2 y2)
+    rectangle(x2 y1 x3 y2)
+    rectangle(x3 y1 x4 y2)
+    
+    }
