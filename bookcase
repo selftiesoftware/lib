@@ -1,6 +1,7 @@
 import geometry2d
 
 def origin as Vector = Vector(0 0)
+def thickness = 12
 
 def w = 750
 def h = 750
@@ -10,4 +11,13 @@ def cornerTab (sV as Vector eV as Vector) = {
 }
 
 #side 1
-rectangle(origin.x origin.y origin.x + w origin.y + h) 
+rectangle(origin.x origin.y origin.x + thickness origin.y + h) 
+
+#side 2
+rectangle(origin.x + w origin.y origin.x + 750 - thickness origin.y + h)
+
+#bottom
+rectangle(origin.x + thickness origin.y origin.x + w - thickness origin.y + thickness) 
+
+#top
+rectangle(origin.x + thickness origin.y + h origin.x + w - thickness origin.y + h - thickness) 
