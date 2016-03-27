@@ -5,6 +5,7 @@ def thickness = 12
 
 def w = 750
 def h = 750
+def d = 320
 
 def cornerTab (sV as Vector eV as Vector) = {
   line(sV eV)
@@ -27,3 +28,15 @@ rectangle(((origin.x + w / 2) - thickness / 2) origin.y + thickness ((origin.x +
 
 #PARTS FOR CUTTING
 
+def makeSide(offs as Vector c1 as Vector c2 as Vector) = {
+  def x1 = c1.x + offs.x
+  def y1 = c1.y + offs.y
+  line(c1.x + offs.x c1.y + offs.y c1.x + offs.x c2.y + offs.y)
+  line(c1.x + offs.x + d c1.y + offs.y c1.x + offs.x + d c2.y + offs.y)
+  cornerTab(Vector(x1 c1.y) Vector(x1 + d c1.y))
+  cornerTab(Vector(x1 c2.y) Vector(x1 + d c2.y))
+}
+def vS1 = Vector(origin.x origin.y)
+def vS2 = Vector(origin.x + d origin.y + h)
+def offset = Vector(1100 0) #olacement of the part
+makeSide(offset vS1 vS2)
