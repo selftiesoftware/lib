@@ -22,6 +22,8 @@ rectangle(origin.x + thickness origin.y origin.x + w - thickness origin.y + thic
 #top
 rectangle(origin.x + thickness origin.y + h origin.x + w - thickness origin.y + h - thickness) 
 
-
 #middle
 rectangle(((origin.x + w / 2) - thickness / 2) origin.y + thickness ((origin.x + thickness / 2) + w / 2) origin.y + h - thickness) 
+
+#PARTS FOR CUTTING
+
