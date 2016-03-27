@@ -1,7 +1,11 @@
 import geometry2d
 
-def origin
+def origin as Vector = Vector(0 0)
 
-def cornerTab (sV as Vector eV a Vector) = {
-  
+def h = 750
+def w = 750
+
+def cornerTab (sV as Vector eV as Vector) = {
+  line(sV eV)
 }
+
