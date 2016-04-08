@@ -11,9 +11,9 @@ def r as Vector = text(0 0 scale content font)
 def bottom = (marginHeight * -1)
 def left = marginWidth * -1
 def right = r.x + marginWidth
-def top = r.y + marginHeight - 1
+def top = r.y + marginHeight - (0.2 * scale)
 
-dim(Vector(right bottom) Vector(right top) scale / 3)
-dim(Vector(right bottom) Vector(left bottom) scale / 3)
+#dim(Vector(right bottom) Vector(right top) scale / 3)
+#dim(Vector(right bottom) Vector(left bottom) scale / 3)
 
 rectangle(left bottom right top)
