@@ -1,13 +1,40 @@
-def spacingX = 15
-def spacingY = 15
+import geometry2d
 
-repeat 0 to (200 / spacingX - 1) using i { 
-repeat 0 to (190 / spacingY - 1) using j { 
+def dim(vec1 as Vector vec2 as Vector) = {
+def textSize = 3
 
-def a = i * spacingX
-def b = j * spacingY
+def 1x = vec1.x
+def 1y = vec1.y
+def 2x = vec2.x
+def 2y = vec2.y
 
-line(0 b spacingX * (200 / spacingX) b)
-line(a spacingY * (190 / spacingY) a 0) 
-} 
+def dx = 2x - 1x
+def dy = 2y - 1y
+
+def rX = dy
+def rY = dx
+
+def e1x = 1x
+def e1y = 1y
+def e2x = 2x
+def e2y = 2y
+
+line(e1x e1y e2x e2y)
+
+def mx = ( 1x + 2x ) / 2
+def my = (1y + 2y ) / 2
+def tx = mx + rX / 6
+def ty = my + rY / 30
+def t = length(vec1 vec2)
+
+text( tx ty textSize round(t) )
 }
+
+def a = Vector(0, 0)
+def b = Vector(a.x + 50, a.y)
+def c = Vector(b.x, b.y - 26)
+def d = Vector(c.x - 20, c.y)
+
+dim(a b)
+dim(b c)
+dim(c d)
