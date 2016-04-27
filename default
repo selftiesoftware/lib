@@ -11,21 +11,13 @@ def 2y = vec2.y
 def dx = 2x - 1x
 def dy = 2y - 1y
 
-def rX = dy
-def rY = dx
-
-def e1x = 1x
-def e1y = 1y
-def e2x = 2x
-def e2y = 2y
-
-line(e1x e1y e2x e2y)
+line(1x 1y 2x 2y)
 
 def mx = ( 1x + 2x ) / 2
-def my = (1y + 2y ) / 2
-def tx = mx + rX / 6
-def ty = my + rY / 30
+def my = ( 1y + 2y ) / 2
 def t = length(vec1 vec2)
+def tx = mx + abs( dy / t ) - textSize / 6
+def ty = my + abs( dx / t ) - textSize / 6
 
 text( tx ty textSize round(t) )
 }
@@ -34,7 +26,15 @@ def a = Vector(0, 0)
 def b = Vector(a.x + 50, a.y)
 def c = Vector(b.x, b.y - 26)
 def d = Vector(c.x - 20, c.y)
+def e = Vector(d.x, d.y - 4)
+def f = Vector(e.x + 20, e.y)
+def g = Vector(f.x, f.y + 4)
+def h = Vector(e.x, e.y - 18)
 
 dim(a b)
 dim(b c)
 dim(c d)
+dim(d e)
+dim(e f)
+dim(f g)
+dim(e h)
