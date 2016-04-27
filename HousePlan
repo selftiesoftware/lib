@@ -46,7 +46,7 @@ def 2y = vec2.y
 def dx = 2x - 1x
 def dy = 2y - 1y
 
-line(1x 1y 2x 2y)
+line(vec1 vec2)
 
 def mx = ( 1x + 2x ) / 2
 def my = ( 1y + 2y ) / 2
