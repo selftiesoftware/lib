@@ -1,0 +1,91 @@
+import geometry2d
+
+def dashed(v1 as Vector v2 as Vector gap as Number) = {
+  def x = v2.x - v1.x
+  def y = v2.y - v1.y
+  def d = 5
+  repeat 0 to d using i {
+     def sX = (x / d) * i + gap
+     def sY = (y / d) * i + gap
+     def eX = (x / d) * (i + 1) - gap
+     def eY = (y / d) * (i + 1) - gap
+     line(sX + v1.x sY + v1.y eX + v1.x eY + v1.y)
+  }
+}
+
+def dimdashed(vec1 as Vector vec2 as Vector) = {
+def textSize = 1.5
+
+def 1x = vec1.x
+def 1y = vec1.y
+def 2x = vec2.x
+def 2y = vec2.y
+
+def dx = 2x - 1x
+def dy = 2y - 1y
+
+dashed(vec1 vec2 0.3)
+
+def mx = ( 1x + 2x ) / 2
+def my = ( 1y + 2y ) / 2
+def t = length(vec1 vec2)
+def tx = mx + abs( dy / t ) - textSize / 6
+def ty = my + abs( dx / t ) - textSize / 3
+
+text( tx ty textSize round(t) )
+}
+
+def dim(vec1 as Vector vec2 as Vector) = {
+def textSize = 1.5
+
+def 1x = vec1.x
+def 1y = vec1.y
+def 2x = vec2.x
+def 2y = vec2.y
+
+def dx = 2x - 1x
+def dy = 2y - 1y
+
+line(1x 1y 2x 2y)
+
+def mx = ( 1x + 2x ) / 2
+def my = ( 1y + 2y ) / 2
+def t = length(vec1 vec2)
+def tx = mx + abs( dy / t ) - textSize / 6
+def ty = my + abs( dx / t ) - textSize / 3
+
+text( tx ty textSize round(t) )
+}
+
+def a = Vector(0, 0)
+def b = Vector(a.x + 50, a.y) dim(a b)
+def c = Vector(b.x, b.y - 22) dim(b c)
+def d = Vector(c.x - 20, c.y) dim(c d)
+def e = Vector(d.x, d.y - 4) dim(d e)
+def f = Vector(e.x + 20, e.y) dim(e f)
+def g = Vector(f.x, f.y + 4) dim(f g)
+def h = Vector(e.x, e.y - 18) dim(e h)
+def i = Vector(h.x - 11, h.y) dim(h i)
+def j = Vector(i.x, i.y + 2) dim(i j)
+def k = Vector(j.x - 10, j.y) dim(j k)
+def l = Vector(k.x, k.y + 11) dim(k l)
+def m = Vector(l.x - 9, l.y) dim(l m)
+def n = Vector(m.x, m.y + 31) dim(m n)
+
+def n = Vector(0, -50)
+def o = Vector(n.x + 18, n.y) dim(n o)
+def p = Vector(o.x, o.y - 20) dimdashed(o p)
+def q = Vector(p.x + 12, p.y) dim(p q)
+def r = Vector(q.x, q.y - 6) dim(q r)
+# def r = Vector(r.x, r.y - 10)
+def s = Vector(r.x, r.y - 20) dim(r s)
+def t = Vector(s.x - 19, s.y) dim(s t)
+def u = Vector(t.x, t.y - 2) dim(t u)
+def v = Vector(u.x - 11, u.y) dim(u v)
+def w = Vector(v.x, v.y + 22) dim(v w)
+def x = Vector(w.x, w.y + 26) dim(w x)
+def y = Vector(w.x + 18, w.y) dim(w y)
+def z = Vector(y.x, y.y + 2) dim(y z)
+def a = Vector(z.x + 4, z.y) dim(z a)
+def b = Vector(a.x, a.y - 2) dim(a b)
+def c = Vector(b.x + 8, b.y) dim(b c)
