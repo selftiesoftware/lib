@@ -1,7 +1,7 @@
 import geometry2d
 
 def dim(vec1 as Vector vec2 as Vector) = {
-def textSize = 3
+def textSize = 1.5
 
 def 1x = vec1.x
 def 1y = vec1.y
@@ -17,7 +17,7 @@ def mx = ( 1x + 2x ) / 2
 def my = ( 1y + 2y ) / 2
 def t = length(vec1 vec2)
 def tx = mx + abs( dy / t ) - textSize / 6
-def ty = my + abs( dx / t ) - textSize / 6
+def ty = my + abs( dx / t ) - textSize / 3
 
 text( tx ty textSize round(t) )
 }
@@ -26,15 +26,36 @@ def a = Vector(0, 0)
 def b = Vector(a.x + 50, a.y)
 def c = Vector(b.x, b.y - 26)
 def d = Vector(c.x - 20, c.y)
-def e = Vector(d.x, d.y - 4)
+def e = Vector(d.x, d.y + 4)
 def f = Vector(e.x + 20, e.y)
-def g = Vector(f.x, f.y + 4)
-def h = Vector(e.x, e.y - 18)
+def g = Vector(d.x, d.y - 18)
+def h = Vector(g.x - 11, g.y)
+def i = Vector(h.x, h.y + 2)
+def j = Vector(i.x - 10, i.y)
+def k = Vector(j.x, j.y + 11)
+def l = Vector(k.x - 9, k.y)
+def m = Vector(l.x, l.y + 31)
 
-dim(a b)
-dim(b c)
-dim(c d)
-dim(d e)
-dim(e f)
-dim(f g)
-dim(e h)
+dim(a b) dim(b c) dim(c d) dim(d e) dim(e f) dim(d g)
+dim(g h) dim(h i) dim(i j) dim(j k) dim(k l) dim(l m)
+
+def n = Vector(0, -50)
+def o = Vector(n.x + 18, n.y)
+def p = Vector(o.x, o.y - 20)
+def q = Vector(p.x + 12, p.y)
+def r = Vector(q.x, q.y - 6)
+def s = Vector(r.x, r.y - 20)
+def t = Vector(s.x - 19, s.y)
+def u = Vector(t.x, t.y - 2)
+def v = Vector(u.x - 11, u.y)
+def w = Vector(v.x, v.y + 22)
+def x = Vector(w.x, w.y + 26)
+def y = Vector(w.x + 18, w.y)
+def z = Vector(y.x, y.y + 2)
+def a = Vector(z.x + 4, z.y)
+def b = Vector(a.x, a.y - 2)
+def c = Vector(b.x + 8, b.y)
+
+dim(n o) dim(o p) dim(p q) dim(q r) dim(r s) dim(s t)
+dim(t u) dim(u v) dim(v w) dim(w x) dim(w y) dim(y z)
+dim(z a) dim(a b) dim(b c)
