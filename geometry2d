@@ -35,6 +35,9 @@ def length(v1 as Vector v2 as Vector) = {
    sqrt(((c - a) * (c - a)) + ((d - b) * (d - b)))  
 }
 
+def midpoint(v1 as Vector v2 as Vector) = {
+	Vector((v1.x + v2.x) / 2, (v1.y + v2.y) / 2)
+}
 
 #example
 repeat -5 to -1 using i {
