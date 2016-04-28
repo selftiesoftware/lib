@@ -36,7 +36,7 @@ text( tx ty textSize round(t) )
 }
 
 def dim(vec1 as Vector vec2 as Vector side as Number) = {
-def textSize = 1.4
+def textSize = 1.9
 
 def 1x = vec1.x
 def 1y = vec1.y
@@ -48,13 +48,13 @@ def dy = 2y - 1y
 
 line(vec1 vec2)
 
-if ( side > 0 ){ def side = 0.5 }
-if ( side < 0 ){ def side = -1.1 }
+def t = length(vec1 vec2)
+if ( side > 0 ){ def side = 1.1 }
+if ( side < 0 ){ def side = -1.5 }
 def mx = ( 1x + 2x ) / 2
 def my = ( 1y + 2y ) / 2
-def t = length(vec1 vec2)
-def tx = mx + side * abs( dy / t ) - side * textSize / 1.8
-def ty = my + side * abs( dx / t ) - side * textSize / 3
+def tx = mx + ( side * abs( dy / t ) ) - ( textSize / 2.5 )
+def ty = my + ( side * abs( dx / t ) ) - ( textSize / 3 )
 
 text( tx ty textSize round(t) )
 }
@@ -75,6 +75,36 @@ def l = Vector(k.x, k.y + 11) dim(k l -1)
 def m = Vector(l.x - 9, l.y) dim(l m -1)
 def n = Vector(m.x, m.y + 31) dim(m n -1)
 
+# Dining Room
+def q = Vector(b.x - 0.5, b.y - 0.5)
+def r = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
+rectangle(q, r)
+
+# Kitchen
+def s = Vector(r.x - 0.5, q.y)
+def t = Vector(s.x - 238 / 12, s.y - 165 / 12)
+rectangle(s, t)
+
+# Bottom stairs
+repeat 1 to 5 using ii {
+     def sX = t.x + ( ii * 11 / 12 )
+     def sY = t.y
+     def eX = sX
+     def eY = sY + 41 / 12
+     line(sX sY eX eY)
+}
+line(t.x, t.y + 41 / 12, t.x + 44 / 12, t.y + 41 / 12 )
+
+# Middle Stairs
+repeat 1 to 5 using ii {
+     def sX = t.x + 44 / 12
+     def sY = t.y - ( ii * 11 / 12 )
+     def eX = sX + 41 / 12
+     def eY = sY
+     line(sX sY eX eY)
+}
+line(t.x, t.y + 41 / 12, t.x + 44 / 12, t.y + 41 / 12 )
+
 # Master Bathroom
 def o = Vector(m.x + 0.5, m.y + 0.5)
 def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
@@ -93,7 +123,7 @@ def x = Vector(n.x, n.y - 26) dim(n x -1)
 def d = Vector(x.x + 0.4, x.y + 0.5)
 def e = Vector(d.x + 165.5 / 12, d.y + 121 / 12)
 rectangle(d, e)
-line(d.x + 135.5 / 12, d.y + 121 / 12,  d.x + 135.5 / 12, d.y)
+line(d.x + 135.5 / 12, e.y,  d.x + 135.5 / 12, d.y)
 
 # Downstair Corridor
 def h = Vector(e.x + 0.2, e.y + 0.4)
@@ -111,7 +141,7 @@ def k = Vector(j.x - 139.5 / 12, j.y + 62 / 12)
 rectangle(j, k)
 
 # Garage
-def r = Vector(r.x, r.y - 5)
+def r = Vector(r.x, r.y - 0) # can change to move down
 def s = Vector(r.x, r.y - 20) dim(r s 1)
 def t = Vector(s.x - 19, s.y) dim(s t -1)
 def u = Vector(t.x, t.y - 2) dim(t u 1)
@@ -120,4 +150,4 @@ def w = Vector(v.x, v.y + 22) dim(v w -1)
 def y = Vector(w.x + 18, w.y) dim(w y -1)
 def a = Vector(y.x + 12, y.y) dim(y a -1)
 def b = midpoint(w, s)
-text(b.x, b.y, 2, 'test')
+text(b.x - 4, b.y, 2, "622 sq ft")
