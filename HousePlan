@@ -62,12 +62,12 @@ text( tx ty textSize round(t) )
 # 2 Upper Levels
 def a = Vector(0, 0)
 def b = Vector(a.x + 50, a.y) dim(a b 1)
-def c = Vector(b.x, b.y - 22) dim(b c 1)
+def c = Vector(b.x, b.y - 26) dim(b c 1)
 def d = Vector(c.x - 20, c.y) dim(c d -1)
 def e = Vector(d.x, d.y - 4) dim(d e 1)
 def f = Vector(e.x + 20, e.y) dim(e f -1)
 def g = Vector(f.x, f.y + 4) dim(f g 1)
-def h = Vector(e.x, e.y - 18) dim(e h 1)
+def h = Vector(e.x, e.y - 14) dim(e h 1)
 def i = Vector(h.x - 11, h.y) dim(h i -1)
 def j = Vector(i.x, i.y + 2) dim(i j -1)
 def k = Vector(j.x - 10, j.y) dim(j k -1)
@@ -79,6 +79,9 @@ def n = Vector(m.x, m.y + 31) dim(m n -1)
 def q = Vector(b.x - 0.5, b.y - 0.5)
 def r = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
 rectangle(q, r)
+
+# Living Room
+# v 160, h 235.5
 
 # Kitchen
 def s = Vector(r.x - 0.5, q.y)
@@ -104,6 +107,11 @@ repeat 1 to 5 using ii {
      line(sX sY eX eY)
 }
 line(t.x, t.y + 41 / 12, t.x + 44 / 12, t.y + 41 / 12 )
+
+# Entrance
+def u = Vector(d.x, d.y + 68.5 / 12)
+dim(d, u, 1)
+dim(u, Vector(t.x + (44 / 12) + (41 / 12), t.y), 1)
 
 # Master Bathroom
 def o = Vector(m.x + 0.5, m.y + 0.5)
