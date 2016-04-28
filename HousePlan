@@ -78,7 +78,7 @@ def n = Vector(m.x, m.y + 31) dim(m n -1)
 # Master Bathroom
 def o = Vector(m.x + 0.5, m.y + 0.5)
 def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
-rectangle(o.x, o.y, p.x, p.y)
+rectangle(o, p)
 
 # Downstairs
 def n = Vector(0, -50)
