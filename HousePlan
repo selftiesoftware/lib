@@ -80,6 +80,7 @@ def o = Vector(m.x + 0.5, m.y + 0.5)
 def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
 rectangle(o, p)
 
+#
 # Downstairs
 def n = Vector(0, -50)
 def o = Vector(n.x + 18, n.y) dim(n o 1)
@@ -91,23 +92,23 @@ def x = Vector(n.x, n.y - 26) dim(n x -1)
 # Office
 def d = Vector(x.x + 0.4, x.y + 0.5)
 def e = Vector(d.x + 165.5 / 12, d.y + 121 / 12)
-rectangle(d.x, d.y, e.x, e.y)
+rectangle(d, e)
 line(d.x + 135.5 / 12, d.y + 121 / 12,  d.x + 135.5 / 12, d.y)
 
 # Downstair Corridor
 def h = Vector(e.x + 0.2, e.y + 0.4)
 def i = Vector(h.x + 40 / 12, h.y - 131.5 / 12)
-rectangle(h.x, h.y, i.x, i.y)
+rectangle(h, i)
 
 # Family Room
 def f = Vector(d.x, d.y + 121 / 12 - 0.4)
 def g = Vector(f.x + 207 / 12, f.y + 175.5 / 12)
-rectangle(f.x, f.y, g.x, g.y)
+rectangle(f, g)
 
 # Downstairs Bathroom
 def j = Vector(r.x - 0.4, r.y + 0.4)
 def k = Vector(j.x - 139.5 / 12, j.y + 62 / 12)
-rectangle(j.x, j.y, k.x, k.y)
+rectangle(j, k)
 
 # Garage
 def r = Vector(r.x, r.y - 5)
@@ -118,3 +119,5 @@ def v = Vector(u.x - 11, u.y) dim(u v -1)
 def w = Vector(v.x, v.y + 22) dim(v w -1)
 def y = Vector(w.x + 18, w.y) dim(w y -1)
 def a = Vector(y.x + 12, y.y) dim(y a -1)
+def b = midpoint(w, s)
+text(b.x, b.y, 2, 'test')
