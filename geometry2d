@@ -36,7 +36,7 @@ def length(v1 as Vector v2 as Vector) = {
 }
 
 def midpoint(v1 as Vector v2 as Vector) = {
-	Vector((v1.x + v2.x) / 2, (v1.y + v2.y) / 2)
+   Vector((v1.x + v2.x) / 2, (v1.y + v2.y) / 2)
 }
 
 #example
