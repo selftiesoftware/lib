@@ -41,6 +41,21 @@ def l = Vector(k.x, k.y + 11), dim(k l -1)
 def m = Vector(l.x - 9, l.y), dim(l m -1)
 def n = Vector(m.x, m.y + 31), dim(m n -1)
 
+# Master Bathroom
+def o = Vector(m.x + 0.5, m.y + 0.5)
+def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
+rectangle(o, p)
+
+# Kids Room
+def q = Vector(i.x + 0.5, i.y + 0.5)
+def r = Vector(q.x + 120 / 12, q.y + 200 / 12) #?
+rectangle(q, r)
+
+# Guest Bedroom
+def s = Vector(k.x + 0.5, k.y + 0.5) #?
+def t = Vector(s.x + 115 / 12, s.y + 200 / 12) #?
+rectangle(s, t)
+
 # Dining Room
 def q = Vector(b.x - 0.5, b.y - 0.5)
 def r = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
@@ -51,7 +66,7 @@ rectangle(q, r)
 
 # Kitchen
 def s = Vector(r.x - 0.5, q.y)
-def t = Vector(s.x - 238 / 12, s.y - 165 / 12)
+def t = Vector(s.x - 238 / 12, s.y - 165 / 12) # !
 rectangle(s, t)
 
 # Stairs
@@ -92,10 +107,6 @@ line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
 line(v, Vector(v.x, temp))
 rectangle(t, Vector(BottomMiddleX, MiddleTopY))
 
-# Master Bathroom
-def o = Vector(m.x + 0.5, m.y + 0.5)
-def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
-rectangle(o, p)
 
 #
 # Downstairs
@@ -104,23 +115,23 @@ def o = Vector(n.x + 18, n.y), dim(n o 1)
 def p = Vector(o.x, o.y - 20), dim(o p 1)
 def q = Vector(p.x + 12, p.y), dim(p q 1)
 def r = Vector(q.x, q.y - 6), dim(q r 1)
-def x = Vector(n.x, n.y - 26), dim(n x -1)
+def s = Vector(n.x, n.y - 26), dim(n s -1)
 
 # Office
-def d = Vector(x.x + 0.4, x.y + 0.5)
+def d = Vector(s.x + 0.4, s.y + 0.5)
 def e = Vector(d.x + 165.5 / 12, d.y + 121 / 12)
 rectangle(d, e)
 line(d.x + 135.5 / 12, e.y,  d.x + 135.5 / 12, d.y)
-
-# Downstair Corridor
-def h = Vector(e.x + 0.2, e.y + 0.4)
-def i = Vector(h.x + 40 / 12, h.y - 131.5 / 12)
-rectangle(h, i)
 
 # Family Room
 def f = Vector(d.x, d.y + 121 / 12 - 0.4)
 def g = Vector(f.x + 207 / 12, f.y + 175.5 / 12)
 rectangle(f, g)
+
+# Downstair Corridor
+def h = Vector(e.x + 0.2, e.y + 0.4)
+def i = Vector(h.x + 40 / 12, h.y - 131.5 / 12)
+rectangle(h, i)
 
 # Downstairs Bathroom
 def j = Vector(r.x - 0.4, r.y + 0.4)
@@ -135,6 +146,6 @@ def u = Vector(t.x, t.y - 2), dim(t u 1)
 def v = Vector(u.x - 11, u.y), dim(u v -1)
 def w = Vector(v.x, v.y + 22), dim(v w -1)
 def y = Vector(w.x + 18, w.y), dim(w y -1)
-def a = Vector(y.x + 12, y.y), dim(y a -1)
-def b = midpoint(w, s)
-text(b.x - 4, b.y, 2, "622 sq ft")
+def z = Vector(y.x + 12, y.y), dim(y z -1)
+def a = midpoint(w, s)
+text(a.x - 4, a.y, 2, "622 sq ft")
