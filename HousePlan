@@ -1,79 +1,45 @@
 import geometry2d
 
-def dashed(v1 as Vector v2 as Vector gap as Number) = {
-  def x = v2.x - v1.x
-  def y = v2.y - v1.y
-  def d = 5
-  repeat 0 to d using i {
-     def sX = (x / d) * i + gap
-     def sY = (y / d) * i + gap
-     def eX = (x / d) * (i + 1) - gap
-     def eY = (y / d) * (i + 1) - gap
-     line(sX + v1.x sY + v1.y eX + v1.x eY + v1.y)
-  }
-}
-
-def dimdashed(vec1 as Vector vec2 as Vector) = {
-def textSize = 1.5
-
-def 1x = vec1.x
-def 1y = vec1.y
-def 2x = vec2.x
-def 2y = vec2.y
-
-def dx = 2x - 1x
-def dy = 2y - 1y
-
-dashed(vec1 vec2 0.3)
-
-def mx = ( 1x + 2x ) / 2
-def my = ( 1y + 2y ) / 2
-def t = length(vec1 vec2)
-def tx = mx + abs( dy / t ) - textSize / 6
-def ty = my + abs( dx / t ) - textSize / 3
-
-text( tx ty textSize round(t) )
+def rectangle(v1 as Vector v2 as Vector) = rectangle(v1.x, v1.y, v2.x, v2.y)
+def midpoint(v1 as Vector v2 as Vector) = {
+   Vector((v1.x + v2.x) / 2, (v1.y + v2.y) / 2)
 }
 
 def dim(vec1 as Vector vec2 as Vector side as Number) = {
-def textSize = 1.9
+ def textSize = 1.9
 
-def 1x = vec1.x
-def 1y = vec1.y
-def 2x = vec2.x
-def 2y = vec2.y
+ def 1x = vec1.x, def 1y = vec1.y
+ def 2x = vec2.x, def 2y = vec2.y
 
-def dx = 2x - 1x
-def dy = 2y - 1y
+ def dx = 2x - 1x, def dy = 2y - 1y
 
-line(vec1 vec2)
+ line(vec1 vec2)
 
-def t = length(vec1 vec2)
-if ( side > 0 ){ def side = 1.1 }
-if ( side < 0 ){ def side = -1.5 }
-def mx = ( 1x + 2x ) / 2
-def my = ( 1y + 2y ) / 2
-def tx = mx + ( side * abs( dy / t ) ) - ( textSize / 2.5 )
-def ty = my + ( side * abs( dx / t ) ) - ( textSize / 3 )
+ def t = length(vec1 vec2)
+ if ( side > 0 ){ def side = 1.1 }
+ if ( side < 0 ){ def side = -1.5 }
+ def mx = ( 1x + 2x ) / 2, def my = ( 1y + 2y ) / 2
+ def tx = mx + ( side * abs( dy / t ) ) - ( textSize / 2.5 )
+ def ty = my + ( side * abs( dx / t ) ) - ( textSize / 3 )
 
-text( tx ty textSize round(t) )
+ text( tx ty textSize round(t) )
 }
 
 # 2 Upper Levels
 def a = Vector(0, 0)
-def b = Vector(a.x + 50, a.y) dim(a b 1)
-def c = Vector(b.x, b.y - 26) dim(b c 1)
-def d = Vector(c.x - 20, c.y) dim(c d -1)
-def e = Vector(d.x, d.y - 4) dim(d e 1)
-def f = Vector(e.x + 20, e.y) dim(e f -1)
-def g = Vector(f.x, f.y + 4) dim(f g 1)
-def h = Vector(e.x, e.y - 14) dim(e h 1)
-def i = Vector(h.x - 11, h.y) dim(h i -1)
-def j = Vector(i.x, i.y + 2) dim(i j -1)
-def k = Vector(j.x - 10, j.y) dim(j k -1)
-def l = Vector(k.x, k.y + 11) dim(k l -1)
-def m = Vector(l.x - 9, l.y) dim(l m -1)
-def n = Vector(m.x, m.y + 31) dim(m n -1)
+def b = Vector(a.x + 50, a.y), dim(a b 1)
+def c = Vector(b.x, b.y - 26), dim(b c 1)
+def d = Vector(c.x - 20, c.y), dim(c d -1)
+def e = Vector(d.x, d.y - 4), dim(d e 1)
+def f = Vector(e.x + 20, e.y), dim(e f -1)
+def g = Vector(f.x, f.y + 4), dim(f g 1)
+def h = Vector(e.x, e.y - 14), dim(e h 1)
+def i = Vector(h.x - 11, h.y), dim(h i -1)
+def j = Vector(i.x, i.y + 2), dim(i j -1)
+def k = Vector(j.x - 10, j.y), dim(j k -1)
+def l = Vector(k.x, k.y + 11), dim(k l -1)
+def m = Vector(l.x - 9, l.y), dim(l m -1)
+def n = Vector(m.x, m.y + 31), dim(m n -1)
 
 # Dining Room
 def q = Vector(b.x - 0.5, b.y - 0.5)
@@ -81,37 +47,50 @@ def r = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
 rectangle(q, r)
 
 # Living Room
-# v 160, h 235.5
+# ~ V 160, H 235.5
 
 # Kitchen
 def s = Vector(r.x - 0.5, q.y)
 def t = Vector(s.x - 238 / 12, s.y - 165 / 12)
 rectangle(s, t)
 
-# Bottom stairs
+# Stairs
+def stairDepth = 11 / 12
+def BottomMiddleX = t.x + 44 / 12
+def MiddleTopY = t.y - 33 / 12
+
+# Bottom Stairs
+def stairWidth = 41 / 12
 repeat 1 to 5 using ii {
-     def sX = t.x + ( ii * 11 / 12 )
-     def sY = t.y
-     def eX = sX
-     def eY = sY + 41 / 12
-     line(sX sY eX eY)
+     def sX = t.x + ( ii * stairDepth )
+     line(sX, t.y, sX, t.y + stairWidth)
 }
-line(t.x, t.y + 41 / 12, t.x + 44 / 12, t.y + 41 / 12 )
+line(t.x, t.y + stairWidth, BottomMiddleX, t.y + stairWidth)
 
 # Middle Stairs
-repeat 1 to 5 using ii {
-     def sX = t.x + 44 / 12
-     def sY = t.y - ( ii * 11 / 12 )
-     def eX = sX + 41 / 12
-     def eY = sY
-     line(sX sY eX eY)
+def stairWidth = 37.5 / 12
+repeat 1 to 4 using ii {
+     def sX = BottomMiddleX
+     def sY = t.y - ( ii * stairDepth )
+     line(sX, sY, sX + stairWidth, sY)
 }
-line(t.x, t.y + 41 / 12, t.x + 44 / 12, t.y + 41 / 12 )
 
-# Entrance
-def u = Vector(d.x, d.y + 68.5 / 12)
-dim(d, u, 1)
-dim(u, Vector(t.x + (44 / 12) + (41 / 12), t.y), 1)
+# Top Stairs
+repeat 0 to 5 using ii {
+     def sX = BottomMiddleX - ( ii * stairDepth )
+     def sY = MiddleTopY
+     def eY = sY - stairWidth
+     line(sX, sY, sX, eY)
+}
+
+# Entrance / Entrance Closet / Stairs Platform
+def u = Vector(d.x, d.y + 68.5 / 12), dim(d, u, 1)
+def v = Vector(BottomMiddleX + stairWidth, t.y)
+dim(u, v, 1)
+def temp = MiddleTopY - stairWidth
+line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
+line(v, Vector(v.x, temp))
+rectangle(t, Vector(BottomMiddleX, MiddleTopY))
 
 # Master Bathroom
 def o = Vector(m.x + 0.5, m.y + 0.5)
@@ -121,11 +100,11 @@ rectangle(o, p)
 #
 # Downstairs
 def n = Vector(0, -50)
-def o = Vector(n.x + 18, n.y) dim(n o 1)
-def p = Vector(o.x, o.y - 20) dim(o p 1)
-def q = Vector(p.x + 12, p.y) dim(p q 1)
-def r = Vector(q.x, q.y - 6) dim(q r 1)
-def x = Vector(n.x, n.y - 26) dim(n x -1)
+def o = Vector(n.x + 18, n.y), dim(n o 1)
+def p = Vector(o.x, o.y - 20), dim(o p 1)
+def q = Vector(p.x + 12, p.y), dim(p q 1)
+def r = Vector(q.x, q.y - 6), dim(q r 1)
+def x = Vector(n.x, n.y - 26), dim(n x -1)
 
 # Office
 def d = Vector(x.x + 0.4, x.y + 0.5)
@@ -150,12 +129,12 @@ rectangle(j, k)
 
 # Garage
 def r = Vector(r.x, r.y - 0) # can change to move down
-def s = Vector(r.x, r.y - 20) dim(r s 1)
-def t = Vector(s.x - 19, s.y) dim(s t -1)
-def u = Vector(t.x, t.y - 2) dim(t u 1)
-def v = Vector(u.x - 11, u.y) dim(u v -1)
-def w = Vector(v.x, v.y + 22) dim(v w -1)
-def y = Vector(w.x + 18, w.y) dim(w y -1)
-def a = Vector(y.x + 12, y.y) dim(y a -1)
+def s = Vector(r.x, r.y - 20), dim(r s 1)
+def t = Vector(s.x - 19, s.y), dim(s t -1)
+def u = Vector(t.x, t.y - 2), dim(t u 1)
+def v = Vector(u.x - 11, u.y), dim(u v -1)
+def w = Vector(v.x, v.y + 22), dim(v w -1)
+def y = Vector(w.x + 18, w.y), dim(w y -1)
+def a = Vector(y.x + 12, y.y), dim(y a -1)
 def b = midpoint(w, s)
 text(b.x - 4, b.y, 2, "622 sq ft")
