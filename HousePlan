@@ -48,13 +48,32 @@ rectangle(o, p)
 
 # Kids Room
 def q = Vector(i.x + 0.5, i.y + 0.5)
-def r = Vector(q.x + 120 / 12, q.y + 200 / 12) #?
-rectangle(q, r)
+def r = Vector(q.x + 120 / 12, q.y + 172.25 / 12)
+def s = Vector(r.x - 83.25 / 12, r.y - 28 / 12)
+rectangle(q, r), rectangle(r, s)
 
 # Guest Bedroom
-def s = Vector(k.x + 0.5, k.y + 0.5) #?
-def t = Vector(s.x + 115 / 12, s.y + 200 / 12) #?
-rectangle(s, t)
+def t = Vector(k.x + 0.5, k.y + 0.5)
+def u = Vector(t.x + 120 / 12, t.y + 148.25 / 12)
+def v = Vector(t.x, t.y + 148.25 / 12)
+def w = Vector(v.x + 58 / 12, v.y + 27.5 / 12)
+rectangle(t, u), rectangle(v, w)
+
+# Kids Bathroom
+# W 103, L 59
+
+# hall way from k.b. to closet
+# width 41, length 118.5
+
+# Laundry
+#58.5 d 76 w
+
+#from top of stairs to laundry door
+#67.5 l, w 37.5
+
+# Master Bedroom
+# w 163.5, h 170
+
 
 # Dining Room
 def q = Vector(b.x - 0.5, b.y - 0.5)
