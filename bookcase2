@@ -1,0 +1,13 @@
+import geometry2d 
+
+def leftWidth = 13
+def rightWidth = 13
+
+def height = 10
+
+
+line(leftWidth 0 leftWidth height)
+rectangle(0 0 (leftWidth + rightWidth) height)
+
+def fsh = (height / 4)
+line(0 fsh leftwidth fsh)
