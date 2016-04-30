@@ -104,7 +104,7 @@ def n = Vector(m.x + 35 / 12, l.y)
 def o = Vector(n.x + 54 / 12, n.y), line(n, o)
 def p = Vector(n.x, n.y + 72 / 12), line(n, p)
 def q = Vector(p.x + 17 / 12, p.y), line(p, q)
-dim(q, mm, 1)
+line(q, mm)
 # 80 diagonal toward hallway
 
 # Closets' corridor width 35
