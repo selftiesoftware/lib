@@ -26,7 +26,7 @@ def dim(vec1 as Vector vec2 as Vector side as Number) = {
 }
 
 # 2 Upper Levels
-def a = Vector(0, 0)
+def a = Vector(0, 0), def aa = a
 def b = Vector(a.x + 50, a.y), dim(a b 1)
 def c = Vector(b.x, b.y - 26), dim(b c 1)
 def d = Vector(c.x - 20, c.y), dim(c d -1)
@@ -82,11 +82,9 @@ def g = Vector(f.x - 118.5 / 12, f.y), line(f, g)
 def h = Vector(f.x, f.y + 39 / 12), line(f, h)
 def i = Vector(h.x - 81.5 / 12, h.y), line(h, i)
 def j = Vector(i.x, i.y + 67.5 / 12), line(i, j)
-def k = Vector(g.x, g.y + 100 / 12), line(g, k)
-
-#100 - from guest bedroom to end of wall
-#20, 28 into the m.bdrm
-
+def k = Vector(g.x, g.y + 103 / 12), line(g, k)
+def l = Vector(k.x - 20 / 12, k.y), line(k, l)
+def m = Vector(l.x, l.y + 28 / 12), line(l, m), def mm = m
 
 # Master Toilet / Shower
 def f = Vector(p.x + 0.2, p.y)
@@ -97,23 +95,19 @@ def j = Vector(i.x, i.y - 31 / 12), line(i,j)
 def k = Vector(j.x - 59 / 12, j.y), line(j,k)
 
 # Tanya's Closet
-def l = Vector(o.x, p.y + 0.5)
-def m = Vector(l.x + 52.5 / 12, l.y + 74 / 12)
+def l = Vector(o.x, p.y)
+def m = Vector(l.x + 52.5 / 12, l.y + 72 / 12)
 rectangle(l, m)
 
 # L's Closet
 def n = Vector(m.x + 35 / 12, l.y)
 def o = Vector(n.x + 54 / 12, n.y), line(n, o)
-def p = Vector(n.x, n.y + 74 / 12), line(n, p)
+def p = Vector(n.x, n.y + 72 / 12), line(n, p)
 def q = Vector(p.x + 17 / 12, p.y), line(p, q)
+dim(q, mm, 1)
 # 80 diagonal toward hallway
 
 # Closets' corridor width 35
-
-# Master Bedroom
-# w 163.5, h 170 (actual end 151),
-# 32 diagonal b4 door, 29 diagonal to top of stairs
-
 
 
 # Dining Room
@@ -128,6 +122,15 @@ rectangle(q, r)
 def s = Vector(r.x - 0.5, q.y)
 def t = Vector(s.x - 238 / 12, s.y - 165 / 12) # !
 rectangle(s, t)
+
+# Master Bedroom
+def c = Vector(aa.x + 0.5, aa.y - 0.5)
+def a = Vector(c.x, c.y - 170 / 12), line(c, a)
+def e = Vector(c.x + 163.5 / 12, c.y), line(c, e)
+def f = Vector(e.x, e.y - 151 / 12), line(e, f)
+line(f, Vector(t.x, t.y - 33 / 12))
+# 32 diagonal b4 door, 29 diagonal to top of stairs
+
 
 # Stairs
 def stairDepth = 11 / 12
