@@ -56,24 +56,37 @@ rectangle(q, r), rectangle(r, s)
 def t = Vector(k.x + 0.4, k.y + 0.5)
 def u = Vector(t.x + 119 / 12, t.y + 148.25 / 12)
 def v = Vector(t.x, u.y + 0.3)
-def w = Vector(v.x + 58 / 12, v.y + 27.5 / 12)
+def w = Vector(v.x + 57 / 12, v.y + 27.5 / 12)
 rectangle(t, u), rectangle(v, w)
 
 # Kids Bathroom
-def x = Vector(r.x, r.y + 0.2)
-def y = Vector(x.x - 59 / 12, x.y + 102 / 12)
+def x = Vector(r.x, r.y + 0.3)
+def y = Vector(x.x - 59 / 12, x.y + 101 / 12)
 rectangle(x, y)
 
 # Laundry
-def z = Vector(y.x - 0.5, y.y)
+def z = Vector(y.x - 0.4, y.y)
 def a = Vector(z.x - 76 / 12, z.y - 58.5 / 12)
 rectangle(z, a)
 
+# B & D reserved !
 # Hallway Closet
 def c = Vector(w.x, w.y + 0.3)
-def e = Vector(c.x - 13 / 12, c.y + 28 / 12)
+def e = Vector(c.x - 12 / 12, c.y + 28 / 12)
 rectangle(e, c)
 # right side 60 from guest bedroom
+
+# Hallway (at top of stairs width 37")
+def f = Vector(y.x - 0.3, x.y)
+def g = Vector(f.x - 118.5 / 12, f.y), line(f, g)
+def h = Vector(f.x, f.y + 39 / 12), line(f, h)
+def i = Vector(h.x - 81.5 / 12, h.y), line(h, i)
+def j = Vector(i.x, i.y + 67.5 / 12), line(i, j)
+def k = Vector(g.x, g.y + 100 / 12), line(g, k)
+
+#100 - from guest bedroom to end of wall
+#20, 28 into the m.bdrm
+
 
 # Master Toilet / Shower
 def f = Vector(p.x + 0.2, p.y)
@@ -89,19 +102,13 @@ def m = Vector(l.x + 52.5 / 12, l.y + 74 / 12)
 rectangle(l, m)
 
 # L's Closet
-# w 54, h74 (79 to bthroom), 17 entrance wall, 80 diagonal toward hallway
+def n = Vector(m.x + 35 / 12, l.y)
+def o = Vector(n.x + 54 / 12, n.y), line(n, o)
+def p = Vector(n.x, n.y + 74 / 12), line(n, p)
+def q = Vector(p.x + 17 / 12, p.y), line(p, q)
+# 80 diagonal toward hallway
 
 # Closets' corridor width 35
-
-# Hallway from kids bathroom to closet
-# width 41, length 118.5
-
-#from top of stairs to laundry door
-#67.5 ln, wd 37.5
-
-#100 - from guest bedroom to end of wall
-#20, 28 into the m.bdrm
-
 
 # Master Bedroom
 # w 163.5, h 170 (actual end 151),
@@ -172,7 +179,7 @@ def s = Vector(n.x, n.y - 26), dim(n s -1)
 
 # Office
 def d = Vector(s.x + 0.4, s.y + 0.5)
-def e = Vector(d.x + 165.5 / 12, d.y + 121 / 12)
+def e = Vector(d.x + 165 / 12, d.y + 121 / 12)
 rectangle(d, e)
 line(d.x + 135.5 / 12, e.y,  d.x + 135.5 / 12, d.y)
 
@@ -182,8 +189,8 @@ def g = Vector(f.x + 207 / 12, f.y + 175.5 / 12)
 rectangle(f, g)
 
 # Downstair Corridor
-def h = Vector(e.x + 0.2, e.y + 0.4)
-def i = Vector(h.x + 40 / 12, h.y - 131.5 / 12)
+def h = Vector(e.x + 0.3, e.y + 0.3)
+def i = Vector(h.x + 39 / 12, h.y - 131 / 12)
 rectangle(h, i)
 
 # Downstairs Bathroom
