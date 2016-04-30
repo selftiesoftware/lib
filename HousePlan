@@ -41,7 +41,7 @@ def l = Vector(k.x, k.y + 11), dim(k l -1)
 def m = Vector(l.x - 9, l.y), dim(l m -1)
 def n = Vector(m.x, m.y + 31), dim(m n -1)
 
-# Master Bathroom
+# Master Bathroom (Tub / Sinks)
 def o = Vector(m.x + 0.5, m.y + 0.5)
 def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
 rectangle(o, p)
@@ -71,8 +71,27 @@ rectangle(t, u), rectangle(v, w)
 #from top of stairs to laundry door
 #67.5 l, w 37.5
 
+#100 - from guest bedroom to end of wall
+#20, 28 into the m.bdrm
+
+# hallway closet 15 x 32
+# right side 60 from guest bedroom
+
 # Master Bedroom
-# w 163.5, h 170
+# w 163.5, h 170 (actual end 151),
+# 32 diagonal b4 door, 29 diagonal to top of stairs
+
+# Tanya's Closet
+# w 52.5, h 74 (79 to bthroom)
+
+# L's Closet
+# w 54, h74 (79 to bthroom), 17 entrance wall, 80 diagonal toward hallway
+
+# Corridor width 35
+
+# Master Toilet / Shower
+# h 67.5 = 31 lft + 36.5 rght (shower)
+# nook 15 = 74 - 59
 
 
 # Dining Room
