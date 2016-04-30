@@ -47,51 +47,66 @@ def p = Vector(o.x + 87 / 12, o.y + 119 / 12)
 rectangle(o, p)
 
 # Kids Room
-def q = Vector(i.x + 0.5, i.y + 0.5)
-def r = Vector(q.x + 120 / 12, q.y + 172.25 / 12)
+def q = Vector(i.x + 0.6, i.y + 0.5)
+def r = Vector(q.x + 119 / 12, q.y + 172.25 / 12)
 def s = Vector(r.x - 83.25 / 12, r.y - 28 / 12)
 rectangle(q, r), rectangle(r, s)
 
 # Guest Bedroom
-def t = Vector(k.x + 0.5, k.y + 0.5)
-def u = Vector(t.x + 120 / 12, t.y + 148.25 / 12)
-def v = Vector(t.x, t.y + 148.25 / 12)
+def t = Vector(k.x + 0.4, k.y + 0.5)
+def u = Vector(t.x + 119 / 12, t.y + 148.25 / 12)
+def v = Vector(t.x, u.y + 0.3)
 def w = Vector(v.x + 58 / 12, v.y + 27.5 / 12)
 rectangle(t, u), rectangle(v, w)
 
 # Kids Bathroom
-# W 103, L 59
-
-# hall way from k.b. to closet
-# width 41, length 118.5
+def x = Vector(r.x, r.y + 0.2)
+def y = Vector(x.x - 59 / 12, x.y + 102 / 12)
+rectangle(x, y)
 
 # Laundry
-#58.5 d 76 w
+def z = Vector(y.x - 0.5, y.y)
+def a = Vector(z.x - 76 / 12, z.y - 58.5 / 12)
+rectangle(z, a)
+
+# Hallway Closet
+def c = Vector(w.x, w.y + 0.3)
+def e = Vector(c.x - 13 / 12, c.y + 28 / 12)
+rectangle(e, c)
+# right side 60 from guest bedroom
+
+# Master Toilet / Shower
+def f = Vector(p.x + 0.2, p.y)
+def g = Vector(f.x + 74 / 12, f.y), line(f, g)
+def h = Vector(g.x, g.y - 36.5 / 12), line(g, h)
+def i = Vector(h.x - 15 / 12, h.y), line(h,i)
+def j = Vector(i.x, i.y - 31 / 12), line(i,j)
+def k = Vector(j.x - 59 / 12, j.y), line(j,k)
+
+# Tanya's Closet
+def l = Vector(o.x, p.y + 0.5)
+def m = Vector(l.x + 52.5 / 12, l.y + 74 / 12)
+rectangle(l, m)
+
+# L's Closet
+# w 54, h74 (79 to bthroom), 17 entrance wall, 80 diagonal toward hallway
+
+# Closets' corridor width 35
+
+# Hallway from kids bathroom to closet
+# width 41, length 118.5
 
 #from top of stairs to laundry door
-#67.5 l, w 37.5
+#67.5 ln, wd 37.5
 
 #100 - from guest bedroom to end of wall
 #20, 28 into the m.bdrm
 
-# hallway closet 15 x 32
-# right side 60 from guest bedroom
 
 # Master Bedroom
 # w 163.5, h 170 (actual end 151),
 # 32 diagonal b4 door, 29 diagonal to top of stairs
 
-# Tanya's Closet
-# w 52.5, h 74 (79 to bthroom)
-
-# L's Closet
-# w 54, h74 (79 to bthroom), 17 entrance wall, 80 diagonal toward hallway
-
-# Corridor width 35
-
-# Master Toilet / Shower
-# h 67.5 = 31 lft + 36.5 rght (shower)
-# nook 15 = 74 - 59
 
 
 # Dining Room
