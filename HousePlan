@@ -83,8 +83,8 @@ def h = Vector(f.x, f.y + 39 / 12), line(f, h)
 def i = Vector(h.x - 81.5 / 12, h.y), line(h, i)
 def j = Vector(i.x, i.y + 67.5 / 12), line(i, j)
 def k = Vector(g.x, g.y + 103 / 12), line(g, k)
-def l = Vector(k.x - 20 / 12, k.y), line(k, l)
-def m = Vector(l.x, l.y + 28 / 12), line(l, m), def mm = m
+def l = Vector(k.x - 18 / 12, k.y), line(k, l)
+def m = Vector(l.x, l.y + 26 / 12), line(l, m), def mm = m
 
 # Master Toilet / Shower
 def f = Vector(p.x + 0.2, p.y)
@@ -99,7 +99,7 @@ def l = Vector(o.x, p.y)
 def m = Vector(l.x + 52.5 / 12, l.y + 72 / 12)
 rectangle(l, m)
 
-# L's Closet
+# Lev's Closet
 def n = Vector(m.x + 35 / 12, l.y)
 def o = Vector(n.x + 54 / 12, n.y), line(n, o)
 def p = Vector(n.x, n.y + 72 / 12), line(n, p)
@@ -128,7 +128,8 @@ def c = Vector(aa.x + 0.5, aa.y - 0.5)
 def a = Vector(c.x, c.y - 170 / 12), line(c, a)
 def e = Vector(c.x + 163.5 / 12, c.y), line(c, e)
 def f = Vector(e.x, e.y - 151 / 12), line(e, f)
-line(f, Vector(t.x, t.y - 33 / 12))
+def g = Vector(t.x, t.y - 33 / 12), line(f, g)
+def h = midpoint(f, g), line(h, mm)
 # 32 diagonal b4 door, 29 diagonal to top of stairs
 
 
