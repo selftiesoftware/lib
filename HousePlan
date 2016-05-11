@@ -174,7 +174,11 @@ def s = Vector(n.x, n.y - 26), dim(n s -1)
 # Dining Room
 def q = Vector(b.x - 5 / 12, b.y - 5 / 12)
 def rr = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
-rectangle(q, rr)
+dim(q, Vector(rr.x, q.y), -1)
+line(rr.x, q.y, rr.x, rr.y)
+def ss = Vector(q.x, rr.y), dim(q, ss, -1)
+dim(ss, Vector(ss.x - 24 / 12, ss.y), 1)
+#rectangle(q, rr)
 
 # Living Room
 # ~ V 160, H 235.5
@@ -182,12 +186,12 @@ rectangle(q, rr)
 # Kitchen
 def ss = Vector(rr.x - 5 / 12, q.y)
 def t = Vector(ss.x - 238 / 12, ss.y - 165 / 12) # !
-line(ss.x, ss.y, t.x, ss.y)
+dim(ss, Vector(t.x, ss.y), -1)
 line(t.x, ss.y, t.x, t.y)
 def u = Vector(ss.x - 24 / 12, t.y), line(t, u)
-def v = Vector(u.x, u.y + 25 / 12), line(u, v)
-def w = Vector(v.x + 24 / 12, v.y), line(v, w)
-line(w, ss)
+def v = Vector(u.x, u.y + 25 / 12), dim(u, v, -1)
+def w = Vector(v.x + 24 / 12, v.y), dim(v, w, 1)
+dim(w, ss, 1)
 
 #rectangle(ss, t)
 
