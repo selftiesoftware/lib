@@ -108,15 +108,10 @@ line(q, mm)
 # Dining Room
 def q = Vector(b.x - 0.5, b.y - 0.5)
 def r = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
-rectangle(q, r)
-
-# Living Room
-# ~ V 160, H 235.5
 
 # Kitchen
 def s = Vector(r.x - 0.5, q.y)
 def t = Vector(s.x - 238 / 12, s.y - 165 / 12) # !
-rectangle(s, t)
 
 # Master Bedroom
 def c = Vector(aa.x + 0.5, aa.y - 0.5)
@@ -127,6 +122,74 @@ def g = Vector(t.x, t.y - 33 / 12), line(f, g)
 def h = midpoint(f, g), line(h, mm)
 # 32 diagonal b4 door, 29 diagonal to top of stairs
 
+
+# Stairs
+def stairDepth = 11 / 12
+def BottomMiddleX = t.x + 44 / 12
+def MiddleTopY = t.y - 33 / 12
+
+# Middle Stairs
+def stairWidth = 37.5 / 12
+repeat 0 to 4 using ii {
+     def sX = BottomMiddleX
+     def sY = t.y - ( ii * stairDepth )
+     line(sX, sY, sX + stairWidth, sY)
+}
+
+# Top Stairs
+repeat 0 to 5 using ii {
+     def sX = BottomMiddleX - ( ii * stairDepth )
+     def sY = MiddleTopY
+     def eY = sY - stairWidth
+     line(sX, sY, sX, eY)
+}
+
+# Entrance / Entrance Closet / Stairs Platform
+def u = Vector(d.x, d.y + 68.5 / 12), dim(d, u, 1)
+def v = Vector(BottomMiddleX + stairWidth, t.y)
+#dim(u, v, 1)
+def temp = MiddleTopY - stairWidth
+line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
+line(v, Vector(v.x, temp))
+rectangle(t, Vector(BottomMiddleX, MiddleTopY))
+
+
+#
+# Downstairs + Middle
+#
+def n = Vector(0, -50)
+def o = Vector(n.x + 18, n.y), dim(n o 1)
+def oo = Vector(o.x + 32, o.y), dim(o oo 1), def b = oo
+def c = Vector(b.x, b.y - 26), dim(b c 1)
+def d = Vector(c.x - 20, c.y), dim(c d -1)
+def e = Vector(c.x, c.y - 4), dim(c e 1)
+def f = Vector(e.x - 20, e.y), dim(e f -1)
+
+def p = Vector(o.x, o.y - 20), #line(o p)
+def q = Vector(p.x + 12, p.y), dim(p q -1)
+def r = Vector(q.x, q.y - 6), dim(q r 1)
+
+def s = Vector(n.x, n.y - 26), dim(n s -1)
+
+# Dining Room
+def q = Vector(b.x - 5 / 12, b.y - 5 / 12)
+def rr = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
+rectangle(q, rr)
+
+# Living Room
+# ~ V 160, H 235.5
+
+# Kitchen
+def ss = Vector(rr.x - 5 / 12, q.y)
+def t = Vector(ss.x - 238 / 12, ss.y - 165 / 12) # !
+line(ss.x, ss.y, t.x, ss.y)
+line(t.x, ss.y, t.x, t.y)
+def u = Vector(ss.x - 24 / 12, t.y), line(t, u)
+def v = Vector(u.x, u.y + 25 / 12), line(u, v)
+def w = Vector(v.x + 24 / 12, v.y), line(v, w)
+line(w, ss)
+
+#rectangle(ss, t)
 
 # Stairs
 def stairDepth = 11 / 12
@@ -149,52 +212,14 @@ repeat 1 to 4 using ii {
      line(sX, sY, sX + stairWidth, sY)
 }
 
-# Top Stairs
-repeat 0 to 5 using ii {
-     def sX = BottomMiddleX - ( ii * stairDepth )
-     def sY = MiddleTopY
-     def eY = sY - stairWidth
-     line(sX, sY, sX, eY)
-}
-
 # Entrance / Entrance Closet / Stairs Platform
-def u = Vector(d.x, d.y + 68.5 / 12), dim(d, u, 1)
+def u = Vector(d.x, d.y + 71 / 12), #dim(d, u, 1)
 def v = Vector(BottomMiddleX + stairWidth, t.y)
 dim(u, v, 1)
 def temp = MiddleTopY - stairWidth
 line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
 line(v, Vector(v.x, temp))
 rectangle(t, Vector(BottomMiddleX, MiddleTopY))
-
-
-#
-# Downstairs + Middle
-def n = Vector(0, -50)
-def o = Vector(n.x + 18, n.y), dim(n o 1)
-def oo = Vector(o.x + 32, o.y), dim(o oo 1), def b = oo
-def c = Vector(b.x, b.y - 26), dim(b c 1)
-def d = Vector(c.x - 20, c.y), dim(c d -1)
-def e = Vector(c.x, c.y - 4), dim(c e 1)
-def f = Vector(e.x - 20, e.y), dim(e f -1)
-
-def p = Vector(o.x, o.y - 20), #line(o p)
-def q = Vector(p.x + 12, p.y), dim(p q 1)
-def r = Vector(q.x, q.y - 6), dim(q r 1)
-
-def s = Vector(n.x, n.y - 26), dim(n s -1)
-
-# Dining Room
-def q = Vector(b.x - 5 / 12, b.y - 5 / 12)
-def rr = Vector(q.x - 139.5 / 12, q.y - 140 / 12)
-rectangle(q, rr)
-
-# Living Room
-# ~ V 160, H 235.5
-
-# Kitchen
-def ss = Vector(rr.x - 5 / 12, q.y)
-def t = Vector(ss.x - 238 / 12, ss.y - 165 / 12) # !
-rectangle(ss, t)
 
 # Office
 def d = Vector(s.x + 5 / 12, s.y + 5 / 12)
@@ -219,8 +244,8 @@ rectangle(j, k)
 
 # Garage
 def r = Vector(r.x, r.y - 0) # can change to move down
-def s = Vector(r.x, r.y - 4), dim(r s -1)
-def ss = Vector(s.x, s.y - 16), dim(s ss -1)
+def s = Vector(r.x, r.y - 4), dim(r s 1)
+def ss = Vector(s.x, s.y - 16), dim(s ss 1)
 def t = Vector(ss.x - 19, ss.y), dim(ss t -1)
 def u = Vector(t.x, t.y - 2), dim(t u 1)
 def v = Vector(u.x - 11, u.y), dim(u v -1)
