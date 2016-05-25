@@ -20,7 +20,9 @@ def dim(vec1 as Vector vec2 as Vector side as Number) = {
  text( tx ty textSize round(t) )
 }
 
-# 2 Upper Levels
+#
+# Upstairs
+#
 def a = Vector(0, 0), def aa = a
 def b = Vector(a.x + 50, a.y), dim(a b 1)
 def c = Vector(b.x, b.y - 26), dim(b c 1)
@@ -87,7 +89,7 @@ def g = Vector(f.x + 74 / 12, f.y), line(f, g)
 def h = Vector(g.x, g.y - 36.5 / 12), line(g, h)
 def i = Vector(h.x - 15 / 12, h.y), line(h,i)
 def j = Vector(i.x, i.y - 31 / 12), line(i,j)
-def k = Vector(j.x - 59 / 12, j.y), line(j,k)
+def k = Vector(j.x - 61 / 12, j.y), line(j,k)
 
 # Tanya's Closet
 def l = Vector(o.x, p.y)
@@ -145,11 +147,10 @@ repeat 0 to 5 using ii {
 }
 
 # Entrance / Entrance Closet / Stairs Platform
-def u = Vector(d.x, d.y + 68.5 / 12), dim(d, u, 1)
+def u = Vector(d.x, d.y + 70 / 12), dim(d, u, 1)
 def v = Vector(BottomMiddleX + stairWidth, t.y)
-#dim(u, v, 1)
 def temp = MiddleTopY - stairWidth
-line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
+line(Vector(d.x, temp), Vector(t.x, temp))
 line(v, Vector(v.x, temp))
 rectangle(t, Vector(BottomMiddleX, MiddleTopY))
 
@@ -166,7 +167,7 @@ def e = Vector(c.x, c.y - 4), dim(c e 1)
 def f = Vector(e.x - 20, e.y), dim(e f -1)
 
 def p = Vector(o.x, o.y - 20), #line(o p)
-def q = Vector(p.x + 12, p.y), dim(p q -1)
+def q = Vector(p.x + 12, p.y), #dim(p q -1)
 def r = Vector(q.x, q.y - 6), dim(q r 1)
 
 def s = Vector(n.x, n.y - 26), dim(n s -1)
@@ -217,11 +218,11 @@ repeat 1 to 4 using ii {
 }
 
 # Entrance / Entrance Closet / Stairs Platform
-def u = Vector(d.x, d.y + 71 / 12), #dim(d, u, 1)
+def u = Vector(d.x, d.y + 71 / 12)
 def v = Vector(BottomMiddleX + stairWidth, t.y)
 dim(u, v, 1)
 def temp = MiddleTopY - stairWidth
-line(Vector(d.x - 0.2, temp), Vector(t.x, temp))
+dim(Vector(d.x - 0.2, temp), Vector(t.x, temp), -1)
 line(v, Vector(v.x, temp))
 rectangle(t, Vector(BottomMiddleX, MiddleTopY))
 
